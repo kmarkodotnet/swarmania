@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_living_object" kind="class" prot="public">
+    <compoundname>LivingObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_living_object_1a2086c26915cebcafbe1ef24afdba4df6" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LivingObject.lookDistance</definition>
+        <argsstring></argsstring>
+        <name>lookDistance</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_living_object_1a40e5386d2fc93d74cd4513c38dd2b1ac" compoundref="_living_object_8cs" startline="10" endline="13">GetLookDistance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_living_object_1a40e5386d2fc93d74cd4513c38dd2b1ac" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float LivingObject.GetLookDistance</definition>
+        <argsstring>()</argsstring>
+        <name>GetLookDistance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" bodystart="10" bodyend="13"/>
+        <references refid="class_living_object_1a2086c26915cebcafbe1ef24afdba4df6" compoundref="_living_object_8cs" startline="8">lookDistance</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="90">
+        <label>LivingObject</label>
+        <link refid="class_living_object"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="92">
+        <label>LivingObject</label>
+        <link refid="class_living_object"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/LivingObject.cs" bodystart="6" bodyend="14"/>
+    <listofallmembers>
+      <member refid="class_living_object_1a40e5386d2fc93d74cd4513c38dd2b1ac" prot="public" virt="non-virtual"><scope>LivingObject</scope><name>GetLookDistance</name></member>
+      <member refid="class_living_object_1a2086c26915cebcafbe1ef24afdba4df6" prot="private" virt="non-virtual"><scope>LivingObject</scope><name>lookDistance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

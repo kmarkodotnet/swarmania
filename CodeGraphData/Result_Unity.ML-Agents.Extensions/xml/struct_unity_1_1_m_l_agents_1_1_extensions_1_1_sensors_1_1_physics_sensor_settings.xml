@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kind="struct" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adbd1203e874fe846f60c8090dfb4974f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceTranslations</definition>
+        <argsstring></argsstring>
+        <name>UseModelSpaceTranslations</name>
+        <briefdescription>
+<para>Whether to use model space (relative to the root body) translations as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="15" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ad25a515a09cf8ebbfeccc7a87594f290" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceRotations</definition>
+        <argsstring></argsstring>
+        <name>UseModelSpaceRotations</name>
+        <briefdescription>
+<para>Whether to use model space (relative to the root body) rotations as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="20" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adff31cd80504dae433daaf8f8f519a3a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceTranslations</definition>
+        <argsstring></argsstring>
+        <name>UseLocalSpaceTranslations</name>
+        <briefdescription>
+<para>Whether to use local space (relative to the parent body) translations as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="25" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a4b6367230400f6477ee178ad3f1ac2c6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceRotations</definition>
+        <argsstring></argsstring>
+        <name>UseLocalSpaceRotations</name>
+        <briefdescription>
+<para>Whether to use local space (relative to the parent body) translations as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="30" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1aa5ea7b0974e4e9f48d70bfcc64d7c8e6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceLinearVelocity</definition>
+        <argsstring></argsstring>
+        <name>UseModelSpaceLinearVelocity</name>
+        <briefdescription>
+<para>Whether to use model space (relative to the root body) linear velocities as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="35" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a5f1549aa05e2718f8a47e48b8b5681a5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceLinearVelocity</definition>
+        <argsstring></argsstring>
+        <name>UseLocalSpaceLinearVelocity</name>
+        <briefdescription>
+<para>Whether to use local space (relative to the parent body) linear velocities as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="40" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a21e93fa3778e94bce1ef0fec5867c4b5" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseJointPositionsAndAngles</definition>
+        <argsstring></argsstring>
+        <name>UseJointPositionsAndAngles</name>
+        <briefdescription>
+<para>Whether to use joint-specific positions and angles as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="45" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseJointForces</definition>
+        <argsstring></argsstring>
+        <name>UseJointForces</name>
+        <briefdescription>
+<para>Whether to use the joint forces and torques that are applied by the solver as observations. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="50" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" compoundref="_rigid_body_joint_extractor_8cs" startline="22" endline="37">Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.NumObservations</referencedby>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" compoundref="_rigid_body_joint_extractor_8cs" startline="39" endline="59">Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.Write</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ae77ef47539499e7551f41839273b33fc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpace</definition>
+        <argsstring></argsstring>
+        <name>UseModelSpace</name>
+        <briefdescription>
+<para>Whether any model space observations are being used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="68" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0476942d770f0c75fe908c6be3869c76" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpace</definition>
+        <argsstring></argsstring>
+        <name>UseLocalSpace</name>
+        <briefdescription>
+<para>Whether any local space observations are being used. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="76" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a2d01cbf651cd236beb663cf51f9cc8e2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+        <definition>static PhysicsSensorSettings Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.Default</definition>
+        <argsstring>()</argsstring>
+        <name>Default</name>
+        <briefdescription>
+<para>Creates a <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref> with reasonable default values. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="56" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="56" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Settings that define the observations generated for physics-based sensors. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="11" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="10" bodyend="80"/>
+    <listofallmembers>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a2d01cbf651cd236beb663cf51f9cc8e2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>Default</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseJointForces</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a21e93fa3778e94bce1ef0fec5867c4b5" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseJointPositionsAndAngles</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0476942d770f0c75fe908c6be3869c76" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseLocalSpace</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a5f1549aa05e2718f8a47e48b8b5681a5" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseLocalSpaceLinearVelocity</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a4b6367230400f6477ee178ad3f1ac2c6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseLocalSpaceRotations</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adff31cd80504dae433daaf8f8f519a3a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseLocalSpaceTranslations</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ae77ef47539499e7551f41839273b33fc" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseModelSpace</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1aa5ea7b0974e4e9f48d70bfcc64d7c8e6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseModelSpaceLinearVelocity</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ad25a515a09cf8ebbfeccc7a87594f290" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseModelSpaceRotations</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adbd1203e874fe846f60c8090dfb4974f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</scope><name>UseModelSpaceTranslations</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

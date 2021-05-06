@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_grid_8cs" kind="file">
+    <compoundname>Grid.cs</compoundname>
+    <innerclass refid="class_grid" prot="public">Grid</innerclass>
+    <innerclass refid="class_node" prot="public">Node</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.UI;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="class_grid" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_grid" kindref="compound">Grid</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>LayerMask<sp/><ref refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" kindref="member">unwalkableMask</ref>;</highlight></codeline>
+<codeline lineno="11" refid="class_grid_1a85605d1763151a71205da412d488908d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector2<sp/><ref refid="class_grid_1a85605d1763151a71205da412d488908d" kindref="member">gridWorldSize</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kindref="member">nodeRadius</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_node" kindref="compound">Node</ref>[,]<sp/><ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref>;</highlight></codeline>
+<codeline lineno="16" refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kindref="member">gridSizeX</ref>,<sp/><ref refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kindref="member">gridSizeY</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref><sp/>=<sp/><ref refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kindref="member">nodeRadius</ref><sp/>*<sp/>2;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kindref="member">gridSizeX</ref><sp/>=<sp/>Mathf.RoundToInt(gridWorldSize.x<sp/>/<sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kindref="member">gridSizeY</ref><sp/>=<sp/>Mathf.RoundToInt(gridWorldSize.y<sp/>/<sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref>);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" kindref="member">CreateGrid</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" kindref="member">CreateGrid</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_node" kindref="compound">Node</ref>[<ref refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kindref="member">gridSizeX</ref>,<sp/><ref refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kindref="member">gridSizeY</ref>];</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>worldBottomLeft<sp/>=<sp/>transform.position<sp/>-<sp/>Vector3.right<sp/>*<sp/>gridWorldSize.x<sp/>/<sp/>2<sp/>-<sp/>Vector3.forward<sp/>*<sp/>gridWorldSize.y<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>0;<sp/>x<sp/>&lt;<sp/><ref refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kindref="member">gridSizeX</ref>;<sp/>x++)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>0;<sp/>y<sp/>&lt;<sp/><ref refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kindref="member">gridSizeY</ref>;<sp/>y++)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>worldPoint<sp/>=<sp/>worldBottomLeft<sp/>+<sp/>Vector3.right<sp/>*<sp/>(x<sp/>*<sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref><sp/>+<sp/><ref refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kindref="member">nodeRadius</ref>)<sp/>+<sp/>Vector3.forward<sp/>*<sp/>(y<sp/>*<sp/><ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref><sp/>+<sp/><ref refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kindref="member">nodeRadius</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>walkable<sp/>=<sp/>!(Physics.CheckSphere(worldPoint,<sp/><ref refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kindref="member">nodeRadius</ref>,<sp/><ref refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" kindref="member">unwalkableMask</ref>));</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref>[x,<sp/>y]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_node" kindref="compound">Node</ref>(walkable,<sp/>worldPoint);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_node" kindref="compound">Node</ref><sp/><ref refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" kindref="member">NodeFromWorldPoint</ref>(Vector3<sp/>worldPosition)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>percentX<sp/>=<sp/>(worldPosition.x<sp/>+<sp/>gridWorldSize.x<sp/>/<sp/>2)<sp/>/<sp/><ref refid="class_grid_1a85605d1763151a71205da412d488908d" kindref="member">gridWorldSize</ref>.x;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>percentY<sp/>=<sp/>(worldPosition.z<sp/>+<sp/><ref refid="class_grid_1a85605d1763151a71205da412d488908d" kindref="member">gridWorldSize</ref>.y<sp/>/<sp/>2)<sp/>/<sp/>gridWorldSize.y;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percentX<sp/>=<sp/>Mathf.Clamp01(percentX);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>percentY<sp/>=<sp/>Mathf.Clamp01(percentY);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>Mathf.RoundToInt((<ref refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kindref="member">gridSizeX</ref><sp/>-<sp/>1)<sp/>*<sp/>percentX);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>Mathf.RoundToInt((<ref refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kindref="member">gridSizeY</ref><sp/>-<sp/>1)<sp/>*<sp/>percentY);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref>[x,<sp/>y];</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" kindref="member">OnDrawGizmos</ref>()</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawWireCube(transform.position,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(<ref refid="class_grid_1a85605d1763151a71205da412d488908d" kindref="member">gridWorldSize</ref>.x,<sp/>1,<sp/><ref refid="class_grid_1a85605d1763151a71205da412d488908d" kindref="member">gridWorldSize</ref>.y));</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">foreach</highlight><highlight class="normal"><sp/>(<ref refid="class_node" kindref="compound">Node</ref><sp/>n<sp/></highlight><highlight class="keywordflow">in</highlight><highlight class="normal"><sp/><ref refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kindref="member">grid</ref>)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.color<sp/>=<sp/>(n.walkable)<sp/>?<sp/>Color.white<sp/>:<sp/>Color.red;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Gizmos.DrawCube(n.<ref refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" kindref="member">worldPosition</ref>,<sp/>Vector3.one<sp/>*<sp/>(<ref refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kindref="member">nodeDiameter</ref><sp/>-<sp/>.1f));</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="class_node" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_node" kindref="compound">Node</ref></highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" kindref="member">walkable</ref>;</highlight></codeline>
+<codeline lineno="74" refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" kindref="member">worldPosition</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" kindref="member">Node</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_walkable,<sp/>Vector3<sp/>_worldPos)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" kindref="member">walkable</ref><sp/>=<sp/>_walkable;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" kindref="member">worldPosition</ref><sp/>=<sp/>_worldPos;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs"/>
+  </compounddef>
+</doxygen>

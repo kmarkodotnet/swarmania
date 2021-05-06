@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ActuatorComponent</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1ab09da75839eb8e26306c2ccaeba13e22" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent.ActuatorName</definition>
+        <argsstring></argsstring>
+        <name>ActuatorName</name>
+        <initializer>= &quot;Match3 Actuator&quot;</initializer>
+        <briefdescription>
+<para>Name of the generated <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator" kindref="compound">Match3Actuator</ref> object. Note that changing this at runtime does not affect how the Agent sorts the actuators. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="16" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a9116027139204e028fb9c3be9824bd51" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent.RandomSeed</definition>
+        <argsstring></argsstring>
+        <name>RandomSeed</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+<para>A random seed used to generate a board, if needed. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="21" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a6c50a055cbd907a4618b2b977ea1f175" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent.ForceHeuristic</definition>
+        <argsstring></argsstring>
+        <name>ForceHeuristic</name>
+        <briefdescription>
+<para>Force using the Agent&apos;s Heuristic() method to decide the action. This should only be used in testing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="28" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a14e2385b4edb9ad39742890ac5b02fde" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>override ActionSpec</type>
+        <definition>override ActionSpec Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent.ActionSpec</definition>
+        <argsstring></argsstring>
+        <name>ActionSpec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="42" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a8a4f5e587d363cdd3a52be01dddd5270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override IActuator</type>
+        <definition>override IActuator Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent.CreateActuator</definition>
+        <argsstring>()</argsstring>
+        <name>CreateActuator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="32" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="32" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Actuator component for a <ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3" kindref="compound">Match3</ref> game. Generates a <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator" kindref="compound">Match3Actuator</ref> at runtime. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="38">
+        <label>Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component"/>
+        <childnode refid="39" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>ActuatorComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="40">
+        <label>Unity.MLAgents.Extensions.Match3.Match3ActuatorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component"/>
+        <childnode refid="41" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>ActuatorComponent</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" line="11" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs" bodystart="10" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a14e2385b4edb9ad39742890ac5b02fde" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</scope><name>ActionSpec</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1ab09da75839eb8e26306c2ccaeba13e22" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</scope><name>ActuatorName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a8a4f5e587d363cdd3a52be01dddd5270" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</scope><name>CreateActuator</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a6c50a055cbd907a4618b2b977ea1f175" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</scope><name>ForceHeuristic</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a9116027139204e028fb9c3be9824bd51" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</scope><name>RandomSeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

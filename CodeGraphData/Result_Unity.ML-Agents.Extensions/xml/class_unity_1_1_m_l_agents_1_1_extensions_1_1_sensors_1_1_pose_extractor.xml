@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kind="class" prot="public" abstract="yes">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::PoseExtractor</compoundname>
+    <derivedcompoundref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" prot="public" virt="non-virtual">Unity.MLAgents.Extensions.Sensors.RigidBodyPoseExtractor</derivedcompoundref>
+    <innerclass refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node" prot="package">Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afa0dd84890d0c7cea903bae509d792ab" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_ParentIndices</definition>
+        <argsstring></argsstring>
+        <name>m_ParentIndices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="19" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1abfe9137640f1243b1719fa3694ee95a1" prot="private" static="no" mutable="no">
+        <type>Pose[]</type>
+        <definition>Pose [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_ModelSpacePoses</definition>
+        <argsstring></argsstring>
+        <name>m_ModelSpacePoses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="20" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ac5a5a0a9a10255b22dcd84facc826a4c" prot="private" static="no" mutable="no">
+        <type>Pose[]</type>
+        <definition>Pose [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_LocalSpacePoses</definition>
+        <argsstring></argsstring>
+        <name>m_LocalSpacePoses</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="21" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a32012f2f06314e5cfe0d28b6d1f1fe0f" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_ModelSpaceLinearVelocities</definition>
+        <argsstring></argsstring>
+        <name>m_ModelSpaceLinearVelocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="23" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a66dde88898e3d588a4ea95fa0dfd011a" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_LocalSpaceLinearVelocities</definition>
+        <argsstring></argsstring>
+        <name>m_LocalSpaceLinearVelocities</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="24" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0cd92d546276c9f52b6bb6c7535c3087" prot="private" static="no" mutable="no">
+        <type>bool[]</type>
+        <definition>bool [] Unity.MLAgents.Extensions.Sensors.PoseExtractor.m_PoseEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_PoseEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="26" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a02bcae993757fe76caf9d0b4adb67bc8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.NumEnabledPoses</definition>
+        <argsstring></argsstring>
+        <name>NumEnabledPoses</name>
+        <briefdescription>
+<para>Number of enabled poses in the hierarchy (read-only). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="108" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afb17bfb8e8e88c7f8aea70187ae7a73a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.NumPoses</definition>
+        <argsstring></argsstring>
+        <name>NumPoses</name>
+        <briefdescription>
+<para>Number of total poses in the hierarchy (read-only). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="130" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a76e78a8f84de92ddd809a22a651d665c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Pose &gt;</type>
+        <definition>IEnumerable&lt;Pose&gt; Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledModelSpacePoses</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnabledModelSpacePoses</name>
+        <briefdescription>
+<para>Read iterator for the enabled model space transforms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="32" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="32" bodyend="46"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ad81ca1ae71c5632cf12e48733111034c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Pose &gt;</type>
+        <definition>IEnumerable&lt;Pose&gt; Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledLocalSpacePoses</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnabledLocalSpacePoses</name>
+        <briefdescription>
+<para>Read iterator for the enabled local space transforms. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="51" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="51" bodyend="65"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0f09d09be052757df03096eed887e0bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Vector3 &gt;</type>
+        <definition>IEnumerable&lt;Vector3&gt; Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledModelSpaceVelocities</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnabledModelSpaceVelocities</name>
+        <briefdescription>
+<para>Read iterator for the enabled model space linear velocities. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="70" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="70" bodyend="84"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afd438e0eb4212d8d19337c44f9473298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; Vector3 &gt;</type>
+        <definition>IEnumerable&lt;Vector3&gt; Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledLocalSpaceVelocities</definition>
+        <argsstring>()</argsstring>
+        <name>GetEnabledLocalSpaceVelocities</name>
+        <briefdescription>
+<para>Read iterator for the enabled local space linear velocities. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="89" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="89" bodyend="103"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" compoundref="_physics_sensor_settings_8cs" startline="92" endline="150">Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a38b71b0f6a0639e00a5e1c6ff8c22fbf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetParentIndex</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetParentIndex</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the parent index of the body at the specified index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="140" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="140" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ab7c49cdd62b017c79aa725ce4458f2d4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PoseExtractor.SetPoseEnabled</definition>
+        <argsstring>(int index, bool val)</argsstring>
+        <name>SetPoseEnabled</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the pose at the given index is enabled or disabled for observations. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="155" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0a838d40b410ae42f20edde040919032" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PoseExtractor.IsPoseEnabled</definition>
+        <argsstring>(int index)</argsstring>
+        <name>IsPoseEnabled</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="160" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0c0476e7915e2a9fb9b5beb46e8504b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PoseExtractor.UpdateModelSpacePoses</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateModelSpacePoses</name>
+        <briefdescription>
+<para>Update the internal model space transform storage based on the underlying system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="223" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="223" bodyend="247"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1aacc784e57801ee809e874952fa97b283" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PoseExtractor.UpdateLocalSpacePoses</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateLocalSpacePoses</name>
+        <briefdescription>
+<para>Update the internal model space transform storage based on the underlying system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="252" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="252" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1acbcf07b8d06db295a775109867a82bd6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetNumPoseObservations</definition>
+        <argsstring>(PhysicsSensorSettings settings)</argsstring>
+        <name>GetNumPoseObservations</name>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Compute the number of floats needed to represent the poses for the given <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="290" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="290" bodyend="302"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a42225aef4f556d25edb0b920ace6ffbb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PoseExtractor.Setup</definition>
+        <argsstring>(int[] parentIndices)</argsstring>
+        <name>Setup</name>
+        <param>
+          <type>int[]</type>
+          <declname>parentIndices</declname>
+        </param>
+        <briefdescription>
+<para>Initialize with the mapping of parent indices. The 0th element is assumed to be -1, indicating that it&apos;s the root. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parentIndices</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="170" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="170" bodyend="192"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1adc50fe4b0f6d0c099ca7d4d5477fb620" prot="package" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract Pose</type>
+        <definition>abstract Pose Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetPoseAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetPoseAt</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1afbb50bfd49e60ba71bf2082aa3d8d842">GetPoseAt</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return the world space Pose of the i&apos;th object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a9b4476f04491c3adfd40528da66e3fbe" prot="package" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract Vector3</type>
+        <definition>abstract Vector3 Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetLinearVelocityAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetLinearVelocityAt</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1a2f89c6003113844637e00ac019fa9a5d">GetLinearVelocityAt</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return the world space linear velocity of the i&apos;th object. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a2453f72ed834887ea7b34654fa737eb3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type><ref refid="_pose_extractor_8cs_1aef19bab18b9814edeef255c43e4f6bbc" kindref="member">Object</ref></type>
+        <definition>virtual Object Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetObjectAt</definition>
+        <argsstring>(int index)</argsstring>
+        <name>GetObjectAt</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1ac81d08fa167ec2dea38ee7471e55cc39">GetObjectAt</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Return the underlying object at the given index. This is only used for display in the inspector. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="214" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a00744829e03110dafd3c9457e8cfc002" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PoseExtractor.DrawModelSpace</definition>
+        <argsstring>(Vector3 offset)</argsstring>
+        <name>DrawModelSpace</name>
+        <param>
+          <type>Vector3</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="304" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="304" bodyend="328"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a80a76816d3f02d925800c26e7b8c1730" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IList&lt; <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node" kindref="compound">DisplayNode</ref> &gt;</type>
+        <definition>IList&lt;DisplayNode&gt; Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetDisplayNodes</definition>
+        <argsstring>()</argsstring>
+        <name>GetDisplayNodes</name>
+        <briefdescription>
+<para>Get a list of display nodes in depth-first order. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="360" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="360" bodyend="424"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Abstract class for managing the transforms of a hierarchy of objects. This could be GameObjects or Monobehaviours in the scene graph, but this is not a requirement; for example, the objects could be rigid bodies whose hierarchy is defined by Joint configurations. </para>    </briefdescription>
+    <detaileddescription>
+<para>Poses are either considered in model space, which is relative to a root body, or in local space, which is relative to their parent. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="73">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodyPoseExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Unity.MLAgents.Extensions.Sensors.PoseExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor"/>
+      </node>
+    </inheritancegraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="18" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="17" bodyend="426"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a00744829e03110dafd3c9457e8cfc002" prot="package" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>DrawModelSpace</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a80a76816d3f02d925800c26e7b8c1730" prot="package" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetDisplayNodes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ad81ca1ae71c5632cf12e48733111034c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetEnabledLocalSpacePoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afd438e0eb4212d8d19337c44f9473298" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetEnabledLocalSpaceVelocities</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a76e78a8f84de92ddd809a22a651d665c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetEnabledModelSpacePoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0f09d09be052757df03096eed887e0bb" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetEnabledModelSpaceVelocities</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a9b4476f04491c3adfd40528da66e3fbe" prot="package" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetLinearVelocityAt</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1acbcf07b8d06db295a775109867a82bd6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetNumPoseObservations</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a2453f72ed834887ea7b34654fa737eb3" prot="package" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetObjectAt</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a38b71b0f6a0639e00a5e1c6ff8c22fbf" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetParentIndex</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1adc50fe4b0f6d0c099ca7d4d5477fb620" prot="package" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>GetPoseAt</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0a838d40b410ae42f20edde040919032" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>IsPoseEnabled</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a66dde88898e3d588a4ea95fa0dfd011a" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_LocalSpaceLinearVelocities</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ac5a5a0a9a10255b22dcd84facc826a4c" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_LocalSpacePoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a32012f2f06314e5cfe0d28b6d1f1fe0f" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_ModelSpaceLinearVelocities</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1abfe9137640f1243b1719fa3694ee95a1" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_ModelSpacePoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afa0dd84890d0c7cea903bae509d792ab" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_ParentIndices</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0cd92d546276c9f52b6bb6c7535c3087" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>m_PoseEnabled</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a02bcae993757fe76caf9d0b4adb67bc8" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>NumEnabledPoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afb17bfb8e8e88c7f8aea70187ae7a73a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>NumPoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ab7c49cdd62b017c79aa725ce4458f2d4" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>SetPoseEnabled</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a42225aef4f556d25edb0b920ace6ffbb" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>Setup</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1aacc784e57801ee809e874952fa97b283" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>UpdateLocalSpacePoses</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0c0476e7915e2a9fb9b5beb46e8504b2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor</scope><name>UpdateModelSpacePoses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

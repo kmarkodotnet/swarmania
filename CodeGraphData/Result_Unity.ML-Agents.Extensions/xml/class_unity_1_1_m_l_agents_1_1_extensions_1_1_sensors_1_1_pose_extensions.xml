@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::PoseExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1aabe47917a98833a934453d5feb30b630" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pose</type>
+        <definition>static Pose Unity.MLAgents.Extensions.Sensors.PoseExtensions.Inverse</definition>
+        <argsstring>(this Pose pose)</argsstring>
+        <name>Inverse</name>
+        <param>
+          <type>this Pose</type>
+          <declname>pose</declname>
+        </param>
+        <briefdescription>
+<para>Compute the inverse of a Pose. For any Pose P, P.Inverse() * P will equal the identity pose (within tolerance). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pose</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="440" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="440" bodyend="445"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1af3cf0c826e1634d57ef77bac031394af" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Pose</type>
+        <definition>static Pose Unity.MLAgents.Extensions.Sensors.PoseExtensions.Multiply</definition>
+        <argsstring>(this Pose pose, Pose rhs)</argsstring>
+        <name>Multiply</name>
+        <param>
+          <type>this Pose</type>
+          <declname>pose</declname>
+        </param>
+        <param>
+          <type>Pose</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>This is equivalent to Pose.GetTransformedBy(), but keeps the order more intuitive. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pose</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="453" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1a691a8341610eb3e0207f99e5f8a04b95" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>static Vector3 Unity.MLAgents.Extensions.Sensors.PoseExtensions.Multiply</definition>
+        <argsstring>(this Pose pose, Vector3 rhs)</argsstring>
+        <name>Multiply</name>
+        <param>
+          <type>this Pose</type>
+          <declname>pose</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Transform the vector by the pose. Conceptually this is equivalent to treating the Pose as a 4x4 matrix and multiplying the augmented vector. See <ulink url="https://en.wikipedia.org/wiki/Affine_transformation#Augmented_matrix">https://en.wikipedia.org/wiki/Affine_transformation#Augmented_matrix</ulink> for more details. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pose</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="466" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="466" bodyend="469"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Extension methods for the Pose struct, in order to improve the readability of some math. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="432" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="431" bodyend="472"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1aabe47917a98833a934453d5feb30b630" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtensions</scope><name>Inverse</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1af3cf0c826e1634d57ef77bac031394af" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtensions</scope><name>Multiply</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1a691a8341610eb3e0207f99e5f8a04b95" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtensions</scope><name>Multiply</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

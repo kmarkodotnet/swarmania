@@ -1,0 +1,417 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Match3::Match3Sensor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ISparseChannelSensor</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IBuiltInSensor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a4d95a0832f65d5637b23b8a67ef542a3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9d" kindref="member">Match3ObservationType</ref></type>
+        <definition>Match3ObservationType Unity.MLAgents.Extensions.Match3.Match3Sensor.m_ObservationType</definition>
+        <argsstring></argsstring>
+        <name>m_ObservationType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="40" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3239cfc8cde5a3526591929c454e7543" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board" kindref="compound">AbstractBoard</ref></type>
+        <definition>AbstractBoard Unity.MLAgents.Extensions.Match3.Match3Sensor.m_Board</definition>
+        <argsstring></argsstring>
+        <name>m_Board</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="41" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ac3a5c34804f45af73e6ce11d8a09379b" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Match3.Match3Sensor.m_Shape</definition>
+        <argsstring></argsstring>
+        <name>m_Shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="42" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a96fa52ed25b12ad6623816d7dbe37037" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Match3.Match3Sensor.m_SparseChannelMapping</definition>
+        <argsstring></argsstring>
+        <name>m_SparseChannelMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="43" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2d803dbcd7849a307241fd12c2c7bad7" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Match3.Match3Sensor.m_Name</definition>
+        <argsstring></argsstring>
+        <name>m_Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="44" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1af7d6eb2e5fa9f400e6191bdfa2bad7d3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.m_Rows</definition>
+        <argsstring></argsstring>
+        <name>m_Rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="46" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a69998b71365ae523a6779bffcd69b203" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.m_Columns</definition>
+        <argsstring></argsstring>
+        <name>m_Columns</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="47" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a5706e2280ebe03377ce398b0b4273e7a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.m_NumCellTypes</definition>
+        <argsstring></argsstring>
+        <name>m_NumCellTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="48" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a158e3432570a97c55c7401508fc928fc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.m_NumSpecialTypes</definition>
+        <argsstring></argsstring>
+        <name>m_NumSpecialTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="49" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3be061d7094ba29b4b075d34398f3339" prot="private" static="no" mutable="no">
+        <type>ISparseChannelSensor</type>
+        <definition>ISparseChannelSensor Unity.MLAgents.Extensions.Match3.Match3Sensor.sparseChannelSensorImplementation</definition>
+        <argsstring></argsstring>
+        <name>sparseChannelSensorImplementation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="50" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a99ea9da8f9041c328fccd3ee6d87bc39" prot="private" static="no" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.SpecialTypeSize</definition>
+        <argsstring></argsstring>
+        <name>SpecialTypeSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="52" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1aa435b92305788e4f228b6819aa4f0aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unity.MLAgents.Extensions.Match3.Match3Sensor.Match3Sensor</definition>
+        <argsstring>(AbstractBoard board, Match3ObservationType obsType, string name)</argsstring>
+        <name>Match3Sensor</name>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board" kindref="compound">AbstractBoard</ref></type>
+          <declname>board</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9d" kindref="member">Match3ObservationType</ref></type>
+          <declname>obsType</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Create a sensor for the board with the specified observation type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>board</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obsType</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="63" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="63" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3bf119576988d1ac703dc976af58d819" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Match3.Match3Sensor.GetObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetObservationShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="99" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a22fbd481cb1290717e28d602b4a29e33" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Match3Sensor.Write</definition>
+        <argsstring>(ObservationWriter writer)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="105" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="105" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a63fe2111567ebea774eaf041d4805e28" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte [] Unity.MLAgents.Extensions.Match3.Match3Sensor.GetCompressedObservation</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressedObservation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="176" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="176" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a39c9304a20bfc79d3ef96198b03375d3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Match3.Match3Sensor.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="208" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="208" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ae5be46f00ef93300123af2a63f504477" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Match3.Match3Sensor.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="213" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="213" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2be1a9c2b7430e15e9f06b3fea1b4913" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SensorCompressionType</type>
+        <definition>SensorCompressionType Unity.MLAgents.Extensions.Match3.Match3Sensor.GetCompressionType</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="218" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="218" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a1414b1411a4b4d9d4623f74267d12f40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Match3.Match3Sensor.GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="226" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="226" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a54d4b5f68ef4596d14115c8e65309c9c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Match3.Match3Sensor.GetCompressedChannelMapping</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressedChannelMapping</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="232" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a6558bc56a792ad6b90a07077548cbf59" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BuiltInSensorType</type>
+        <definition>BuiltInSensorType Unity.MLAgents.Extensions.Match3.Match3Sensor.GetBuiltInSensorType</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuiltInSensorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="238" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="238" bodyend="241"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a89c338149399eebf51e739a5a1f94ea7" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Unity.MLAgents.Extensions.Match3.Match3Sensor.DestroyTexture</definition>
+        <argsstring>(Texture2D texture)</argsstring>
+        <name>DestroyTexture</name>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="243" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="243" bodyend="254"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor for <ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3" kindref="compound">Match3</ref> games. Can generate either vector, compressed visual, or uncompressed visual observations. Uses <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a4b2d69b94af34e6639eac211d436ad56" kindref="member">AbstractBoard.GetCellType()</ref> and <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1acbdd179d299c7c32e4fbb27b63946979" kindref="member">AbstractBoard.GetSpecialType()</ref> to determine the observation values. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="44">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="42">
+        <label>Unity.MLAgents.Extensions.Match3.Match3Sensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>ISparseChannelSensor</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="47">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="45">
+        <label>Unity.MLAgents.Extensions.Match3.Match3Sensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+        <childnode refid="48" relation="usage">
+          <edgelabel>m_Board</edgelabel>
+        </childnode>
+      </node>
+      <node id="48">
+        <label>Unity.MLAgents.Extensions.Match3.AbstractBoard</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>ISparseChannelSensor</label>
+      </node>
+      <node id="49">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="39" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="38" bodyend="255"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a89c338149399eebf51e739a5a1f94ea7" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>DestroyTexture</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a6558bc56a792ad6b90a07077548cbf59" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetBuiltInSensorType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a54d4b5f68ef4596d14115c8e65309c9c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetCompressedChannelMapping</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a63fe2111567ebea774eaf041d4805e28" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetCompressedObservation</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2be1a9c2b7430e15e9f06b3fea1b4913" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetCompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a1414b1411a4b4d9d4623f74267d12f40" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3bf119576988d1ac703dc976af58d819" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3239cfc8cde5a3526591929c454e7543" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_Board</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a69998b71365ae523a6779bffcd69b203" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_Columns</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2d803dbcd7849a307241fd12c2c7bad7" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_Name</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a5706e2280ebe03377ce398b0b4273e7a" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_NumCellTypes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a158e3432570a97c55c7401508fc928fc" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_NumSpecialTypes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a4d95a0832f65d5637b23b8a67ef542a3" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_ObservationType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1af7d6eb2e5fa9f400e6191bdfa2bad7d3" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_Rows</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ac3a5c34804f45af73e6ce11d8a09379b" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_Shape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a96fa52ed25b12ad6623816d7dbe37037" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>m_SparseChannelMapping</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1aa435b92305788e4f228b6819aa4f0aaa" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>Match3Sensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ae5be46f00ef93300123af2a63f504477" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>Reset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3be061d7094ba29b4b075d34398f3339" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>sparseChannelSensorImplementation</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a99ea9da8f9041c328fccd3ee6d87bc39" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>SpecialTypeSize</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a39c9304a20bfc79d3ef96198b03375d3" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>Update</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a22fbd481cb1290717e28d602b4a29e33" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3Sensor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

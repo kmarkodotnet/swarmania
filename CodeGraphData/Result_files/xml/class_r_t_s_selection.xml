@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_r_t_s_selection" kind="class" prot="public">
+    <compoundname>RTSSelection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_r_t_s_selection_1ad077decc31f3f298025c2621a4d08440" prot="public" static="yes" mutable="no">
+        <type>List&lt; <ref refid="class_selectable" kindref="compound">Selectable</ref> &gt;</type>
+        <definition>List&lt;Selectable&gt; RTSSelection.selectables</definition>
+        <argsstring></argsstring>
+        <name>selectables</name>
+        <initializer>= new List&lt;<ref refid="class_selectable" kindref="compound">Selectable</ref>&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_r_t_s_selection_1ae9c84bcb0ddf7c6685d7c2af2cf69979" prot="public" static="no" mutable="no">
+        <type>Canvas</type>
+        <definition>Canvas RTSSelection.canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" compoundref="_r_t_s_selection_8cs" startline="26" endline="40">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_t_s_selection_1ad11cdd1267650a27d42b3ff9bad40f77" prot="public" static="no" mutable="no">
+        <type>Image</type>
+        <definition>Image RTSSelection.selectionBox</definition>
+        <argsstring></argsstring>
+        <name>selectionBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" compoundref="_r_t_s_selection_8cs" startline="26" endline="40">Awake</referencedby>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_t_s_selection_1a4eff728c4fca2182fcd9a3ac24dc00cb" prot="public" static="no" mutable="no">
+        <type>KeyCode</type>
+        <definition>KeyCode RTSSelection.copyKey</definition>
+        <argsstring></argsstring>
+        <name>copyKey</name>
+        <initializer>= KeyCode.LeftControl</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_t_s_selection_1a69bc512c563022a270a9faa0808c33fd" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 RTSSelection.startScreenPos</definition>
+        <argsstring></argsstring>
+        <name>startScreenPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_t_s_selection_1ad8c972ee28c96f521134dafd59ed130b" prot="private" static="no" mutable="no">
+        <type>BoxCollider</type>
+        <definition>BoxCollider RTSSelection.worldCollider</definition>
+        <argsstring></argsstring>
+        <name>worldCollider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="20" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_t_s_selection_1ac19edf6ad3762ad611e0a1c4acdfa7b0" prot="private" static="no" mutable="no">
+        <type>RectTransform</type>
+        <definition>RectTransform RTSSelection.rt</definition>
+        <argsstring></argsstring>
+        <name>rt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="22" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" compoundref="_r_t_s_selection_8cs" startline="26" endline="40">Awake</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_r_t_s_selection_1afd8ada5eb3bf64043cff2429d5a000d8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RTSSelection.isSelecting</definition>
+        <argsstring></argsstring>
+        <name>isSelecting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="24" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTSSelection.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="26" bodyend="40"/>
+        <references refid="class_r_t_s_selection_1ae9c84bcb0ddf7c6685d7c2af2cf69979" compoundref="_r_t_s_selection_8cs" startline="12">canvas</references>
+        <references refid="class_r_t_s_selection_1ac19edf6ad3762ad611e0a1c4acdfa7b0" compoundref="_r_t_s_selection_8cs" startline="22">rt</references>
+        <references refid="class_r_t_s_selection_1ad11cdd1267650a27d42b3ff9bad40f77" compoundref="_r_t_s_selection_8cs" startline="14">selectionBox</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTSSelection.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="42" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="42" bodyend="115"/>
+        <references refid="class_r_t_s_selection_1a97380738527e45f79823cdcb59d54aed" compoundref="_r_t_s_selection_8cs" startline="140" endline="143">ClearSelected</references>
+        <references refid="class_r_t_s_selection_1a4eff728c4fca2182fcd9a3ac24dc00cb" compoundref="_r_t_s_selection_8cs" startline="16">copyKey</references>
+        <references refid="class_selectable_1a30352797af83fdea9ad937855034a0e4" compoundref="_r_t_s_selection_8cs" startline="151">Selectable.isSelected</references>
+        <references refid="class_r_t_s_selection_1afd8ada5eb3bf64043cff2429d5a000d8" compoundref="_r_t_s_selection_8cs" startline="24">isSelecting</references>
+        <references refid="class_r_t_s_selection_1ad077decc31f3f298025c2621a4d08440" compoundref="_r_t_s_selection_8cs" startline="9">selectables</references>
+        <references refid="class_r_t_s_selection_1ad11cdd1267650a27d42b3ff9bad40f77" compoundref="_r_t_s_selection_8cs" startline="14">selectionBox</references>
+        <references refid="class_r_t_s_selection_1a69bc512c563022a270a9faa0808c33fd" compoundref="_r_t_s_selection_8cs" startline="18">startScreenPos</references>
+        <references refid="class_r_t_s_selection_1ae2d30f06066a80f37dade85919359cd0" compoundref="_r_t_s_selection_8cs" startline="122" endline="126">UpdateSelection</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_s_selection_1ae2d30f06066a80f37dade85919359cd0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTSSelection.UpdateSelection</definition>
+        <argsstring>(Selectable s, bool value)</argsstring>
+        <name>UpdateSelection</name>
+        <param>
+          <type><ref refid="class_selectable" kindref="compound">Selectable</ref></type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Add or remove a <ref refid="class_selectable" kindref="compound">Selectable</ref> from our selection </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="122" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="122" bodyend="126"/>
+        <references refid="class_selectable_1a30352797af83fdea9ad937855034a0e4" compoundref="_r_t_s_selection_8cs" startline="151">Selectable.isSelected</references>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_s_selection_1add6b9e1da90ef7db7000429805e0aa4e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="class_selectable" kindref="compound">Selectable</ref> &gt;</type>
+        <definition>List&lt;Selectable&gt; RTSSelection.GetSelected</definition>
+        <argsstring>()</argsstring>
+        <name>GetSelected</name>
+        <briefdescription>
+<para>Returns all <ref refid="class_selectable" kindref="compound">Selectable</ref> objects with isSelected set to true </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="132" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_s_selection_1a97380738527e45f79823cdcb59d54aed" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTSSelection.ClearSelected</definition>
+        <argsstring>()</argsstring>
+        <name>ClearSelected</name>
+        <briefdescription>
+<para>Clears the full selection </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="140" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="140" bodyend="143"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="115">
+        <label>RTSSelection</label>
+        <link refid="class_r_t_s_selection"/>
+        <childnode refid="116" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="116">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="117">
+        <label>RTSSelection</label>
+        <link refid="class_r_t_s_selection"/>
+        <childnode refid="118" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="7" bodyend="145"/>
+    <listofallmembers>
+      <member refid="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>Awake</name></member>
+      <member refid="class_r_t_s_selection_1ae9c84bcb0ddf7c6685d7c2af2cf69979" prot="public" virt="non-virtual"><scope>RTSSelection</scope><name>canvas</name></member>
+      <member refid="class_r_t_s_selection_1a97380738527e45f79823cdcb59d54aed" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>ClearSelected</name></member>
+      <member refid="class_r_t_s_selection_1a4eff728c4fca2182fcd9a3ac24dc00cb" prot="public" virt="non-virtual"><scope>RTSSelection</scope><name>copyKey</name></member>
+      <member refid="class_r_t_s_selection_1add6b9e1da90ef7db7000429805e0aa4e" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>GetSelected</name></member>
+      <member refid="class_r_t_s_selection_1afd8ada5eb3bf64043cff2429d5a000d8" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>isSelecting</name></member>
+      <member refid="class_r_t_s_selection_1ac19edf6ad3762ad611e0a1c4acdfa7b0" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>rt</name></member>
+      <member refid="class_r_t_s_selection_1ad077decc31f3f298025c2621a4d08440" prot="public" virt="non-virtual"><scope>RTSSelection</scope><name>selectables</name></member>
+      <member refid="class_r_t_s_selection_1ad11cdd1267650a27d42b3ff9bad40f77" prot="public" virt="non-virtual"><scope>RTSSelection</scope><name>selectionBox</name></member>
+      <member refid="class_r_t_s_selection_1a69bc512c563022a270a9faa0808c33fd" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>startScreenPos</name></member>
+      <member refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>Update</name></member>
+      <member refid="class_r_t_s_selection_1ae2d30f06066a80f37dade85919359cd0" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>UpdateSelection</name></member>
+      <member refid="class_r_t_s_selection_1ad8c972ee28c96f521134dafd59ed130b" prot="private" virt="non-virtual"><scope>RTSSelection</scope><name>worldCollider</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

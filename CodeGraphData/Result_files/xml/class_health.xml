@@ -1,0 +1,229 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_health" kind="class" prot="public">
+    <compoundname>Health</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_health_1a3a88c607ce77007b4f46ee774629309e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Health.health</definition>
+        <argsstring></argsstring>
+        <name>health</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_health_1adb79a09c34b83a28f11edc3aaff8a4a0" compoundref="_health_8cs" startline="65" endline="68">AddHealth</referencedby>
+        <referencedby refid="class_health_1a49cc1ac7f38140c3109f1675277e457e" compoundref="_health_8cs" startline="13" endline="16">Awake</referencedby>
+        <referencedby refid="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" compoundref="_health_8cs" startline="35" endline="50">DealDamage</referencedby>
+        <referencedby refid="class_health_1a8e8013723bd354bd998affc9029b09ea" compoundref="_health_8cs" startline="52" endline="63">Die</referencedby>
+        <referencedby refid="class_health_1aa8571ffbf03d9b94c565867776b6d069" compoundref="_health_8cs" startline="21" endline="24">GetHealth</referencedby>
+        <referencedby refid="class_health_1aed450a495643087e14c745eb0994d5c3" compoundref="_health_8cs" startline="25" endline="29">ResetHealth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_1ac9b454c09df35eb7536247df3a613a41" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Health.shield</definition>
+        <argsstring></argsstring>
+        <name>shield</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" compoundref="_health_8cs" startline="35" endline="50">DealDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_health_1a603c3c84ec6421f5e99194220c4b77ae" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Health.maxHealth</definition>
+        <argsstring></argsstring>
+        <name>maxHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_health_1a49cc1ac7f38140c3109f1675277e457e" compoundref="_health_8cs" startline="13" endline="16">Awake</referencedby>
+        <referencedby refid="class_health_1a4f81ff51fb2ad4a4f218d817c5dc68b2" compoundref="_health_8cs" startline="31" endline="34">GetMaxHealth</referencedby>
+        <referencedby refid="class_health_1aed450a495643087e14c745eb0994d5c3" compoundref="_health_8cs" startline="25" endline="29">ResetHealth</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_health_1a49cc1ac7f38140c3109f1675277e457e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="13" bodyend="16"/>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+        <references refid="class_health_1a603c3c84ec6421f5e99194220c4b77ae" compoundref="_health_8cs" startline="11">maxHealth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_health_1a366b149e3af33a37ec985c861aaa3f6e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="17" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="17" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_health_1a8e8013723bd354bd998affc9029b09ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health.Die</definition>
+        <argsstring>()</argsstring>
+        <name>Die</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="52" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="52" bodyend="63"/>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+        <referencedby refid="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" compoundref="_health_8cs" startline="35" endline="50">DealDamage</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_health_1aa8571ffbf03d9b94c565867776b6d069" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Health.GetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="21" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="21" bodyend="24"/>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+        <referencedby refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" compoundref="_castle_state_handler_8cs" startline="92" endline="113">CastleStateHandler.HandleCastleState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_health_1aed450a495643087e14c745eb0994d5c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health.ResetHealth</definition>
+        <argsstring>()</argsstring>
+        <name>ResetHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="25" bodyend="29"/>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+        <references refid="class_health_1a603c3c84ec6421f5e99194220c4b77ae" compoundref="_health_8cs" startline="11">maxHealth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_health_1a4f81ff51fb2ad4a4f218d817c5dc68b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Health.GetMaxHealth</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="31" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="31" bodyend="34"/>
+        <references refid="class_health_1a603c3c84ec6421f5e99194220c4b77ae" compoundref="_health_8cs" startline="11">maxHealth</references>
+      </memberdef>
+      <memberdef kind="function" id="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Health.DealDamage</definition>
+        <argsstring>(int damage)</argsstring>
+        <name>DealDamage</name>
+        <param>
+          <type>int</type>
+          <declname>damage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="35" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="35" bodyend="50"/>
+        <references refid="class_health_1a8e8013723bd354bd998affc9029b09ea" compoundref="_health_8cs" startline="52" endline="63">Die</references>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+        <references refid="class_health_1ac9b454c09df35eb7536247df3a613a41" compoundref="_health_8cs" startline="9">shield</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_health_1adb79a09c34b83a28f11edc3aaff8a4a0" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Health.AddHealth</definition>
+        <argsstring>(int healthIncreasingValue)</argsstring>
+        <name>AddHealth</name>
+        <param>
+          <type>int</type>
+          <declname>healthIncreasingValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="65" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="65" bodyend="68"/>
+        <references refid="class_health_1a3a88c607ce77007b4f46ee774629309e" compoundref="_health_8cs" startline="8">health</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>Health</label>
+        <link refid="class_health"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="80">
+        <label>Health</label>
+        <link refid="class_health"/>
+        <childnode refid="81" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Health.cs" bodystart="6" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_health_1adb79a09c34b83a28f11edc3aaff8a4a0" prot="package" virt="non-virtual"><scope>Health</scope><name>AddHealth</name></member>
+      <member refid="class_health_1a49cc1ac7f38140c3109f1675277e457e" prot="private" virt="non-virtual"><scope>Health</scope><name>Awake</name></member>
+      <member refid="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" prot="public" virt="non-virtual"><scope>Health</scope><name>DealDamage</name></member>
+      <member refid="class_health_1a8e8013723bd354bd998affc9029b09ea" prot="private" virt="non-virtual"><scope>Health</scope><name>Die</name></member>
+      <member refid="class_health_1aa8571ffbf03d9b94c565867776b6d069" prot="public" virt="non-virtual"><scope>Health</scope><name>GetHealth</name></member>
+      <member refid="class_health_1a4f81ff51fb2ad4a4f218d817c5dc68b2" prot="public" virt="non-virtual"><scope>Health</scope><name>GetMaxHealth</name></member>
+      <member refid="class_health_1a3a88c607ce77007b4f46ee774629309e" prot="private" virt="non-virtual"><scope>Health</scope><name>health</name></member>
+      <member refid="class_health_1a603c3c84ec6421f5e99194220c4b77ae" prot="private" virt="non-virtual"><scope>Health</scope><name>maxHealth</name></member>
+      <member refid="class_health_1aed450a495643087e14c745eb0994d5c3" prot="public" virt="non-virtual"><scope>Health</scope><name>ResetHealth</name></member>
+      <member refid="class_health_1ac9b454c09df35eb7536247df3a613a41" prot="private" virt="non-virtual"><scope>Health</scope><name>shield</name></member>
+      <member refid="class_health_1a366b149e3af33a37ec985c861aaa3f6e" prot="private" virt="non-virtual"><scope>Health</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

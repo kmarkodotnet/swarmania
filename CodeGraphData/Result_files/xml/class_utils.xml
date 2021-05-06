@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_utils" kind="class" prot="public">
+    <compoundname>Utils</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_utils_1ac6eeca84c143e1b4de005204eb06f8e2" prot="private" static="yes" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Utils._whiteTexture</definition>
+        <argsstring></argsstring>
+        <name>_whiteTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_utils_1af130eacacd59216767d159f2931310a2" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Utils.WhiteTexture</definition>
+        <argsstring></argsstring>
+        <name>WhiteTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_utils_1ac6280682e0d6914f74fab34958a74113" compoundref="_utils_8cs" startline="26" endline="31">DrawScreenRect</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_utils_1ac6280682e0d6914f74fab34958a74113" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Utils.DrawScreenRect</definition>
+        <argsstring>(Rect rect, Color color)</argsstring>
+        <name>DrawScreenRect</name>
+        <param>
+          <type>Rect</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="26" bodyend="31"/>
+        <references refid="class_utils_1af130eacacd59216767d159f2931310a2" compoundref="_utils_8cs" startline="12">WhiteTexture</references>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1a66a22c1559646815a31d7b5515386da4" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Utils.DrawScreenRectBorder</definition>
+        <argsstring>(Rect rect, float thickness, Color color)</argsstring>
+        <name>DrawScreenRectBorder</name>
+        <param>
+          <type>Rect</type>
+          <declname>rect</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>thickness</declname>
+        </param>
+        <param>
+          <type>Color</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="34" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="34" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1a7216fbaaa2d7b95a374b8dab68282cb2" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Rect</type>
+        <definition>static Rect Utils.GetScreenRect</definition>
+        <argsstring>(Vector3 screenPosition1, Vector3 screenPosition2)</argsstring>
+        <name>GetScreenRect</name>
+        <param>
+          <type>Vector3</type>
+          <declname>screenPosition1</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>screenPosition2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="46" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utils_1a8cc9f03d3ae0760eccb375557024bd78" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Bounds</type>
+        <definition>static Bounds Utils.GetViewportBounds</definition>
+        <argsstring>(Camera camera, Vector3 screenPosition1, Vector3 screenPosition2)</argsstring>
+        <name>GetViewportBounds</name>
+        <param>
+          <type>Camera</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>screenPosition1</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>screenPosition2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="58" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="58" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Utils.cs" bodystart="8" bodyend="71"/>
+    <listofallmembers>
+      <member refid="class_utils_1ac6eeca84c143e1b4de005204eb06f8e2" prot="private" virt="non-virtual"><scope>Utils</scope><name>_whiteTexture</name></member>
+      <member refid="class_utils_1ac6280682e0d6914f74fab34958a74113" prot="public" virt="non-virtual"><scope>Utils</scope><name>DrawScreenRect</name></member>
+      <member refid="class_utils_1a66a22c1559646815a31d7b5515386da4" prot="public" virt="non-virtual"><scope>Utils</scope><name>DrawScreenRectBorder</name></member>
+      <member refid="class_utils_1a7216fbaaa2d7b95a374b8dab68282cb2" prot="public" virt="non-virtual"><scope>Utils</scope><name>GetScreenRect</name></member>
+      <member refid="class_utils_1a8cc9f03d3ae0760eccb375557024bd78" prot="public" virt="non-virtual"><scope>Utils</scope><name>GetViewportBounds</name></member>
+      <member refid="class_utils_1af130eacacd59216767d159f2931310a2" prot="public" virt="non-virtual"><scope>Utils</scope><name>WhiteTexture</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

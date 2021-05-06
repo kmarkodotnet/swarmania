@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_game_area" kind="class" prot="public">
+    <compoundname>GameArea</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_game_area_1a4da0944d34e800cc29f806a42a3ef881" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 GameArea.mousePosition</definition>
+        <argsstring></argsstring>
+        <name>mousePosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_game_area_1a6bbea45ae0d43bda3fbecc41d0efec61" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 GameArea.dragOrigin</definition>
+        <argsstring></argsstring>
+        <name>dragOrigin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_game_area_1a0edbb136548408d0178d8630c9af5bce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float GameArea.dragSpeed</definition>
+        <argsstring></argsstring>
+        <name>dragSpeed</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_game_area_1ab433023548383d65ce74d83e9df8e477" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameArea.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_game_area_1a5f2b0c755c1aa643f2fb921b1db802b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameArea.OnMouseOver</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="17" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="17" bodyend="28"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5">Move</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_game_area_1a01fe24295da7d22af71793e66adbf4e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void GameArea.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="30" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="30" bodyend="94"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="65">
+        <label>GameArea</label>
+        <link refid="class_game_area"/>
+        <childnode refid="66" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="67">
+        <label>GameArea</label>
+        <link refid="class_game_area"/>
+        <childnode refid="68" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/GameArea.cs" bodystart="5" bodyend="95"/>
+    <listofallmembers>
+      <member refid="class_game_area_1a6bbea45ae0d43bda3fbecc41d0efec61" prot="private" virt="non-virtual"><scope>GameArea</scope><name>dragOrigin</name></member>
+      <member refid="class_game_area_1a0edbb136548408d0178d8630c9af5bce" prot="public" virt="non-virtual"><scope>GameArea</scope><name>dragSpeed</name></member>
+      <member refid="class_game_area_1a4da0944d34e800cc29f806a42a3ef881" prot="private" virt="non-virtual"><scope>GameArea</scope><name>mousePosition</name></member>
+      <member refid="class_game_area_1ab433023548383d65ce74d83e9df8e477" prot="private" virt="non-virtual"><scope>GameArea</scope><name>OnGUI</name></member>
+      <member refid="class_game_area_1a5f2b0c755c1aa643f2fb921b1db802b9" prot="private" virt="non-virtual"><scope>GameArea</scope><name>OnMouseOver</name></member>
+      <member refid="class_game_area_1a01fe24295da7d22af71793e66adbf4e1" prot="public" virt="non-virtual"><scope>GameArea</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

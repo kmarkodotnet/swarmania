@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_2aaa43201141ca86f971ed40d8c5488d" kind="dir">
+    <compoundname>G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors</compoundname>
+    <innerfile refid="_articulation_body_joint_extractor_8cs">ArticulationBodyJointExtractor.cs</innerfile>
+    <innerfile refid="_articulation_body_pose_extractor_8cs">ArticulationBodyPoseExtractor.cs</innerfile>
+    <innerfile refid="_articulation_body_sensor_component_8cs">ArticulationBodySensorComponent.cs</innerfile>
+    <innerfile refid="_counting_grid_sensor_8cs">CountingGridSensor.cs</innerfile>
+    <innerfile refid="_grid_sensor_8cs">GridSensor.cs</innerfile>
+    <innerfile refid="_i_joint_extractor_8cs">IJointExtractor.cs</innerfile>
+    <innerfile refid="_physics_body_sensor_8cs">PhysicsBodySensor.cs</innerfile>
+    <innerfile refid="_physics_sensor_settings_8cs">PhysicsSensorSettings.cs</innerfile>
+    <innerfile refid="_pose_extractor_8cs">PoseExtractor.cs</innerfile>
+    <innerfile refid="_rigid_body_joint_extractor_8cs">RigidBodyJointExtractor.cs</innerfile>
+    <innerfile refid="_rigid_body_pose_extractor_8cs">RigidBodyPoseExtractor.cs</innerfile>
+    <innerfile refid="_rigid_body_sensor_component_8cs">RigidBodySensorComponent.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/"/>
+  </compounddef>
+</doxygen>

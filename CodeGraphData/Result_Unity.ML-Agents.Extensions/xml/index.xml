@@ -1,0 +1,377 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board" kind="class"><name>Unity::MLAgents::Extensions::Match3::AbstractBoard</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae840fe1477f119181daffbe9c451d4e6" kind="variable"><name>Rows</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a177efde9b1aa76839c106de93b5a84ab" kind="variable"><name>Columns</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a90e99a5cacda4babb1cf42ffc8fa9dcb" kind="variable"><name>NumCellTypes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a9598de6f856a6fece24ff8f4a1923a9b" kind="variable"><name>NumSpecialTypes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac08cd2e076cb61facc6bf82294f7c76" kind="variable"><name>OnNoValidMovesAction</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a4b2d69b94af34e6639eac211d436ad56" kind="function"><name>GetCellType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1acbdd179d299c7c32e4fbb27b63946979" kind="function"><name>GetSpecialType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a54d2da7182359cb8c1bbfbec753804b9" kind="function"><name>IsMoveValid</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1e2e53190cd82dfd826921c0feaede7b" kind="function"><name>MakeMove</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae112747141269d8a43f140667594b733" kind="function"><name>NumMoves</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ad5570e162e4ff900b41f8d998eb3845b" kind="function"><name>AllMoves</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1890280c07619970f885c2599f4a17bd" kind="function"><name>ValidMoves</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac2c4297d12ea44c8b68423521bd76e6" kind="function"><name>InvalidMoves</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" kind="function"><name>SimpleIsMoveValid</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ab90eccdb315667860f6aed7392f207ad" kind="function"><name>CheckHalfMove</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1af3a160b28f0d09a928e162dd0a98ef44" kind="function"><name>InitDepthType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1ab4ad4fcc1d8ee56905e10870d0479dbb" kind="function"><name>InitChannelHotDefaultPerceptionBuffer</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a4be54af21294023f9cea4d0f67239250" kind="function"><name>SetParameters</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a2be6341f5eb8709cefa9a4544d844d47" kind="function"><name>ParseColliders</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a34cabbf9bc7c7727e8ff13e2f6aa2fe9" kind="function"><name>GetObjectData</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a215d534e45a5a1f753d32271b82f9a06" kind="function"><name>LoadObjectData</name></member>
+  </compound>
+  <compound refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node" kind="struct"><name>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</name>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af29e1b9ff7ce0873ebb128606fae65fe" kind="variable"><name>NodeObject</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1afaf420ce2207f53e7e408c1e0e074b16" kind="variable"><name>Enabled</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1a37ff90213562bccf8cd4d25f37760163" kind="variable"><name>Depth</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af5862ba3d4c90db0986e74b0bbeb6787" kind="variable"><name>OriginalIndex</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::GridSensor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" kind="enum"><name>GridDepthType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1a781dc97dc62331eec3ea9ec4373a3ca8" kind="enumvalue"><name>Channel</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1aadbc0bbd60976f468b6be879680a48c1" kind="enumvalue"><name>ChannelHot</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22eb4493a9f3b657ed01d9a8b7f88c05" kind="variable"><name>Name</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22dd960f4334e19f594c40baf97946f7" kind="variable"><name>CellScaleX</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab7f415207e12ed31735eb64c67a6a5b7" kind="variable"><name>CellScaleZ</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a478435ce71e3129119abf8d64fabb7ac" kind="variable"><name>GridNumSideX</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad033ff46574e54cd72959dc8661954b5" kind="variable"><name>GridNumSideZ</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a152c50387e415be767404d231048ab0d" kind="variable"><name>CellScaleY</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a13b6cf32e32ac3ec724b5993ddb2cc04" kind="variable"><name>RotateToAgent</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a8d7554bee0e82e1814652ca0bf1daed9" kind="variable"><name>ChannelDepth</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a03c7f37a27d77ed3478bcb65c23c658f" kind="variable"><name>DetectableObjects</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad9104467b2777836fd869359d2f3c40a" kind="variable"><name>ObserveMask</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aec38955b033c6cd4d22839411b9de639" kind="variable"><name>gridDepthType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1c292a2aa779a8424b5f164c80375f0e" kind="variable"><name>rootReference</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bcb62e4a34b36d9815b87919e8d775" kind="variable"><name>ObservationPerCell</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a58b0e7ed33f97f47e1760da6bd72ae26" kind="variable"><name>NumberOfObservations</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a191ff8d4f6cdb0cf5fcca1cc80f9aa68" kind="variable"><name>ChannelOffsets</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aade683d4adc95cd03070913afe8db96d" kind="variable"><name>DebugColors</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4ad4b8b4749e985a15956cb7a5e535dc" kind="variable"><name>GizmoYOffset</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a69438c570834f19e66e2bcbdbb65ebdf" kind="variable"><name>ShowGizmos</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a54e32fb855d40eb0170c6f00bcdb3c65" kind="variable"><name>CompressionType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1996cbb52518052a1cfc90cdd99ba81b" kind="variable"><name>m_PerceptionBuffer</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad29809e37e4bc943c77f08f8ba041761" kind="variable"><name>m_ChannelHotDefaultPerceptionBuffer</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5d220ff2a38ea8ecb6f033ccaa4a63e2" kind="variable"><name>m_PerceptionColors</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a37df97f3f6397404efcd22a11551542d" kind="variable"><name>m_perceptionTexture2D</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae6e9d5a4ce95dd41c8e5bf4fc81d2c86" kind="variable"><name>SphereRadius</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab283431950b0e75de8cb59b566a9cc71" kind="variable"><name>DiffNumSideZX</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abaa159a3e15f060a3fc50fae166a58cc" kind="variable"><name>OffsetGridNumSide</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7232f180bfd4972b606aa03e04416ce6" kind="variable"><name>Initialized</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a11e8acbe646b97ee7403ad4f19e465cd" kind="variable"><name>CellActivity</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29ca674c6f8ce12e5dc05eb820f0d4b3" kind="variable"><name>NumImages</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab5307d98906b070a888cbdc82d30cc98" kind="variable"><name>NumChannelsOnLastImage</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a704eec844b3a029544c1bb6e8524084a" kind="variable"><name>NumCells</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a073c0a715c4031954eed5e0d434427dc" kind="variable"><name>HalfOfGridX</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5645615be18d88c95fa53af8a9b4e7ff" kind="variable"><name>HalfOfGridZ</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a228e45103fa072ccfc11e804225dc280" kind="variable"><name>PointToCellScalingX</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2fd21230f959c45d53857a843c4cf96c" kind="variable"><name>PointToCellScalingZ</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8e9b3c9f4b0b89df6c6b880c4ae92a2" kind="variable"><name>m_Shape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4299b4221ca8b08ecf9bc3977df3b6d5" kind="variable"><name>CellPoints</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0b759f829862a33f0868ab3ac5481f16" kind="variable"><name>compressedImgs</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad2ee98273a2c59937c09a3728caecfc3" kind="variable"><name>byteSizesBytesList</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5dcf3f3ecf4722a770da5e4d41fdfee6" kind="variable"><name>DebugDefaultColor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2878a885ca505e585f0d94aa66b0d22a" kind="function"><name>CreateSensor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab549cad9b055f4d075ecbe7d96dec402" kind="function"><name>SetParameters</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a416435abe00596129dff2b6f83835e5e" kind="function"><name>InitGridParameters</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a57e8b2b89575d8b3ce3fc8d1908d0cbe" kind="function"><name>InitDepthType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8063a8b4e3581923312de643f158b60" kind="function"><name>InitChannelHotDefaultPerceptionBuffer</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a094a46956e0e176dcbba18eeec540df2" kind="function"><name>InitPerceptionBuffer</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a184b8ebab72f0a5b9e0b9316ff2ccf9e" kind="function"><name>Start</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a961a21aeff49ec0cae0addd1082e6ada" kind="function"><name>Reset</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7dd21f8af1fa4601f972e2fc293157c8" kind="function"><name>GetFloatObservationShape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1af06df27f5cb4862637fc5945c3f3109b" kind="function"><name>GetName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ada4ffb68e772d2b144fe540a797246ec" kind="function"><name>GetCompressionType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a315c1b61f333bf2bb978bd8298a08bc6" kind="function"><name>GetBuiltInSensorType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0dfc80fea3e72ae46e265033cd36a2de" kind="function"><name>GetCompressedObservation</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0cb0bc7648a626b985bd4924e3212f70" kind="function"><name>Perceive</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abe9f16dc1247e53a0620997247d5c61f" kind="function"><name>PointToCell</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2e6d2cce19d727866438869c3ad15e9d" kind="function"><name>IndexOfTag</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a97339586c271bb1c650b685706e460d2" kind="function"><name>GetObservationShape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a82ad27c3e7c10451f9832e4f866234f4" kind="function"><name>Write</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a67134e489d4426adbda680c2b738c1d1" kind="function"><name>InitCellPoints</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a02af5438e271135127dd31bdd653cc9e" kind="function"><name>OnDrawGizmos</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aaa61655b9cfde34c34d440d1bbaede99" kind="function"><name>Update</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a997b7c5d055222351ace7efc824c309d" kind="function"><name>ChannelsToTexture</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aa47358cd12d6f4fc3f18f7c621f5a487" kind="function"><name>ParseColliders</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abf8cd061ee49f5e89f365273447ecefb" kind="function"><name>GetObjectData</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a48cdd87f2f1cb7e4721989b27ad080cb" kind="function"><name>ValidateValues</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a535cb156948697f8b459e0b4f2ead06e" kind="function"><name>LoadObjectData</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bf0ff3b3bdb30753fc2565e7611451" kind="function"><name>CellToPoint</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2eb468083b267683c2d0f6bbf867f53c" kind="function"><name>CopyCellData</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a6a4eec6dc2b85eee09310860ad7403ff" kind="function"><name>CreateCopy</name></member>
+  </compound>
+  <compound refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" kind="interface"><name>Unity::MLAgents::Extensions::Sensors::IJointExtractor</name>
+    <member refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1ae81b02cbdda0df00f908dab8aabe5765" kind="function"><name>NumObservations</name></member>
+    <member refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1a0ba793473e5d4503441c505cd7279498" kind="function"><name>Write</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator" kind="class"><name>Unity::MLAgents::Extensions::Match3::Match3Actuator</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a58291b69299f9871df0c540915833019" kind="variable"><name>m_Board</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1aa93bcc3d19ed3b9748abc975843e09f3" kind="variable"><name>m_Random</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1afcc70a0e42602510b9188981472b6e1a" kind="variable"><name>m_ActionSpec</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1aea0760ccbbbbc9e919cd3e95002e286d" kind="variable"><name>m_ForceHeuristic</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a14decd97bdb7e47be8b2d93d54b9b96a" kind="variable"><name>m_Agent</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a7b003319b075602b73c5591007d2a8a2" kind="variable"><name>m_Rows</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a64aaeb7ecb605f12ec5aa8f1c2fe5d4b" kind="variable"><name>m_Columns</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a35452b0f5de9f22fba93c9117cbc42b3" kind="variable"><name>m_NumCellTypes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a0f14fe447383404977f05352a71a5770" kind="variable"><name>ActionSpec</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1aa7a3da215363d7a3364d7c6fd4395bef" kind="property"><name>Name</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a1aa721aafe916af0e83be574d01ecd53" kind="function"><name>Match3Actuator</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1ad77016ed8a7c03bab1c6cee27da07a63" kind="function"><name>OnActionReceived</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a7062c507e1603c03d4320ba1d3ffc69c" kind="function"><name>WriteDiscreteActionMask</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a9581e6c2e4b9b0122b329025a35d4d89" kind="function"><name>ResetData</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1ab2162bcb479a76b4a0a88e8b7304d1d8" kind="function"><name>Heuristic</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1adf02d63e3bb990beb30fbccbcaefa61a" kind="function"><name>InvalidMoveIndices</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1a5acb122591daa7c5a0ad8e80e8dfaa64" kind="function"><name>GreedyMove</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_1abdf6d2fd252d2f96ad4796b711d508e1" kind="function"><name>EvalMovePoints</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" kind="class"><name>Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1ab09da75839eb8e26306c2ccaeba13e22" kind="variable"><name>ActuatorName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a9116027139204e028fb9c3be9824bd51" kind="variable"><name>RandomSeed</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a6c50a055cbd907a4618b2b977ea1f175" kind="variable"><name>ForceHeuristic</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a14e2385b4edb9ad39742890ac5b02fde" kind="property"><name>ActionSpec</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a8a4f5e587d363cdd3a52be01dddd5270" kind="function"><name>CreateActuator</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor" kind="class"><name>Unity::MLAgents::Extensions::Match3::Match3Sensor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a4d95a0832f65d5637b23b8a67ef542a3" kind="variable"><name>m_ObservationType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3239cfc8cde5a3526591929c454e7543" kind="variable"><name>m_Board</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ac3a5c34804f45af73e6ce11d8a09379b" kind="variable"><name>m_Shape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a96fa52ed25b12ad6623816d7dbe37037" kind="variable"><name>m_SparseChannelMapping</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2d803dbcd7849a307241fd12c2c7bad7" kind="variable"><name>m_Name</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1af7d6eb2e5fa9f400e6191bdfa2bad7d3" kind="variable"><name>m_Rows</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a69998b71365ae523a6779bffcd69b203" kind="variable"><name>m_Columns</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a5706e2280ebe03377ce398b0b4273e7a" kind="variable"><name>m_NumCellTypes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a158e3432570a97c55c7401508fc928fc" kind="variable"><name>m_NumSpecialTypes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3be061d7094ba29b4b075d34398f3339" kind="variable"><name>sparseChannelSensorImplementation</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a99ea9da8f9041c328fccd3ee6d87bc39" kind="property"><name>SpecialTypeSize</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1aa435b92305788e4f228b6819aa4f0aaa" kind="function"><name>Match3Sensor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a3bf119576988d1ac703dc976af58d819" kind="function"><name>GetObservationShape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a22fbd481cb1290717e28d602b4a29e33" kind="function"><name>Write</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a63fe2111567ebea774eaf041d4805e28" kind="function"><name>GetCompressedObservation</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a39c9304a20bfc79d3ef96198b03375d3" kind="function"><name>Update</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1ae5be46f00ef93300123af2a63f504477" kind="function"><name>Reset</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a2be1a9c2b7430e15e9f06b3fea1b4913" kind="function"><name>GetCompressionType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a1414b1411a4b4d9d4623f74267d12f40" kind="function"><name>GetName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a54d4b5f68ef4596d14115c8e65309c9c" kind="function"><name>GetCompressedChannelMapping</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a6558bc56a792ad6b90a07077548cbf59" kind="function"><name>GetBuiltInSensorType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_1a89c338149399eebf51e739a5a1f94ea7" kind="function"><name>DestroyTexture</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component" kind="class"><name>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a151ba494961b748b190d4c7ff96a6199" kind="variable"><name>SensorName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1aae34981410bd3b7e2922c4a5c32e699f" kind="variable"><name>ObservationType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a531740aa669eb68b41de79bfa99309b3" kind="function"><name>CreateSensor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a75f2e08983d8fb2fe535c7e9d95a5727" kind="function"><name>GetObservationShape</name></member>
+  </compound>
+  <compound refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kind="struct"><name>Unity::MLAgents::Extensions::Match3::Move</name>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a632872559b0872d976923236f8d10f4a" kind="variable"><name>MoveIndex</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1af80a75183c930cf6a2c6efd791167248" kind="variable"><name>Row</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0fe5bfbbf78e356dfccbc67f964af734" kind="variable"><name>Column</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1ab01283525643467e45a9e077116e5434" kind="variable"><name>Direction</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0c7eb3c3b19bec2c4ed56b3ea57a9233" kind="function"><name>FromMoveIndex</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a4f3e7e7653324e40726c7711142941cc" kind="function"><name>FromPositionAndDirection</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a44628570bc1ff94eae3e06867a25520b" kind="function"><name>NumPotentialMoves</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a31d0405d295b3d2cbdba66c8b5a79b02" kind="function"><name>Next</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a2aff6955be6e5740911d7ceb1a68178e" kind="function"><name>OtherCell</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a654f587941d10c19951b4df297c2e55c" kind="function"><name>OtherDirection</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions" kind="class"><name>Unity::MLAgents::Extensions::Sensors::ObservationWriterPhysicsExtensions</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" kind="function"><name>WritePoses</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util" kind="class"><name>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1ac19647e55d06f06b3aac67ade8b7ea04" kind="variable"><name>m_Colors</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a776e2ec0fdf5664c4d12008fbb523f7d" kind="variable"><name>m_Height</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1af5c9a19f59c7e7d6fc02bb899704d0e1" kind="variable"><name>m_Width</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a366f35e3baeb75ad30712eafae4344ed" kind="variable"><name>s_OneHotColors</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a17b4aef02757864e7c07b1047d39dbc9" kind="function"><name>GridValueProvider</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a4267bd7ea0ead7c3f58192fcaac0596a" kind="function"><name>OneHotToTextureUtil</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a21c696c7ede785203e2f4477a2531033" kind="function"><name>EncodeToTexture</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a8d81c5b73dd151472bc02b3dcabbaf0d" kind="variable"><name>m_Shape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a1653dc1d90274908eb02f363b5866a84" kind="variable"><name>m_SensorName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3be78880f5ce9f1f71391d6be0d18d98" kind="variable"><name>m_PoseExtractor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ae087a6fbb25036b9b2e23e952195a1d8" kind="variable"><name>m_JointExtractors</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1afcea20a8b7a25d2471a1cf9f5dd8468a" kind="variable"><name>m_Settings</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a0050432b1f75ddd557489cf799901514" kind="function"><name>PhysicsBodySensor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3d8e529bfc433fa90960787320b78d6c" kind="function"><name>GetObservationShape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a7d2cb62705551695fddda305e7541006" kind="function"><name>Write</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a01e1398e4c423ebb873cdea1f872739a" kind="function"><name>GetCompressedObservation</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a21a0b3017f2e390679a670e637aeee9a" kind="function"><name>Update</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ad4d0d0ecad7fa94e7dfbe0f0e0d0907d" kind="function"><name>Reset</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa605d91917dbc89d287ec29c28bc9282" kind="function"><name>GetCompressionType</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a59b37f8ebb39ad7eebbd93d335470220" kind="function"><name>GetName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa695ade5caf742d53c642cff2cd9abdc" kind="function"><name>GetBuiltInSensorType</name></member>
+  </compound>
+  <compound refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kind="struct"><name>Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</name>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adbd1203e874fe846f60c8090dfb4974f" kind="variable"><name>UseModelSpaceTranslations</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ad25a515a09cf8ebbfeccc7a87594f290" kind="variable"><name>UseModelSpaceRotations</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adff31cd80504dae433daaf8f8f519a3a" kind="variable"><name>UseLocalSpaceTranslations</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a4b6367230400f6477ee178ad3f1ac2c6" kind="variable"><name>UseLocalSpaceRotations</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1aa5ea7b0974e4e9f48d70bfcc64d7c8e6" kind="variable"><name>UseModelSpaceLinearVelocity</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a5f1549aa05e2718f8a47e48b8b5681a5" kind="variable"><name>UseLocalSpaceLinearVelocity</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a21e93fa3778e94bce1ef0fec5867c4b5" kind="variable"><name>UseJointPositionsAndAngles</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" kind="variable"><name>UseJointForces</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ae77ef47539499e7551f41839273b33fc" kind="property"><name>UseModelSpace</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0476942d770f0c75fe908c6be3869c76" kind="property"><name>UseLocalSpace</name></member>
+    <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a2d01cbf651cd236beb663cf51f9cc8e2" kind="function"><name>Default</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions" kind="class"><name>Unity::MLAgents::Extensions::Sensors::PoseExtensions</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1aabe47917a98833a934453d5feb30b630" kind="function"><name>Inverse</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1af3cf0c826e1634d57ef77bac031394af" kind="function"><name>Multiply</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions_1a691a8341610eb3e0207f99e5f8a04b95" kind="function"><name>Multiply</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::PoseExtractor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afa0dd84890d0c7cea903bae509d792ab" kind="variable"><name>m_ParentIndices</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1abfe9137640f1243b1719fa3694ee95a1" kind="variable"><name>m_ModelSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ac5a5a0a9a10255b22dcd84facc826a4c" kind="variable"><name>m_LocalSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a32012f2f06314e5cfe0d28b6d1f1fe0f" kind="variable"><name>m_ModelSpaceLinearVelocities</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a66dde88898e3d588a4ea95fa0dfd011a" kind="variable"><name>m_LocalSpaceLinearVelocities</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0cd92d546276c9f52b6bb6c7535c3087" kind="variable"><name>m_PoseEnabled</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a02bcae993757fe76caf9d0b4adb67bc8" kind="property"><name>NumEnabledPoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afb17bfb8e8e88c7f8aea70187ae7a73a" kind="property"><name>NumPoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a76e78a8f84de92ddd809a22a651d665c" kind="function"><name>GetEnabledModelSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ad81ca1ae71c5632cf12e48733111034c" kind="function"><name>GetEnabledLocalSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0f09d09be052757df03096eed887e0bb" kind="function"><name>GetEnabledModelSpaceVelocities</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afd438e0eb4212d8d19337c44f9473298" kind="function"><name>GetEnabledLocalSpaceVelocities</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a38b71b0f6a0639e00a5e1c6ff8c22fbf" kind="function"><name>GetParentIndex</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ab7c49cdd62b017c79aa725ce4458f2d4" kind="function"><name>SetPoseEnabled</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0a838d40b410ae42f20edde040919032" kind="function"><name>IsPoseEnabled</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0c0476e7915e2a9fb9b5beb46e8504b2" kind="function"><name>UpdateModelSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1aacc784e57801ee809e874952fa97b283" kind="function"><name>UpdateLocalSpacePoses</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1acbcf07b8d06db295a775109867a82bd6" kind="function"><name>GetNumPoseObservations</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a42225aef4f556d25edb0b920ace6ffbb" kind="function"><name>Setup</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1adc50fe4b0f6d0c099ca7d4d5477fb620" kind="function"><name>GetPoseAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a9b4476f04491c3adfd40528da66e3fbe" kind="function"><name>GetLinearVelocityAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a2453f72ed834887ea7b34654fa737eb3" kind="function"><name>GetObjectAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a00744829e03110dafd3c9457e8cfc002" kind="function"><name>DrawModelSpace</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a80a76816d3f02d925800c26e7b8c1730" kind="function"><name>GetDisplayNodes</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a77a367d6c0533ee8fac3256aea9563fd" kind="variable"><name>m_Body</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ac7304f3df6daa52fe12422b25db9a2e5" kind="variable"><name>m_Joint</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a929fa744bde1e17d575c6a67187d7349" kind="function"><name>RigidBodyJointExtractor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f" kind="function"><name>NumObservations</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" kind="function"><name>Write</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" kind="function"><name>NumObservations</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" kind="class"><name>Unity::MLAgents::Extensions::Sensors::RigidBodyPoseExtractor</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1ac06b2d2ff570b8cc23a2b39be46b8c75" kind="variable"><name>m_Bodies</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1ab3122cc4b0cd69dcc1740ed5813d79bc" kind="variable"><name>m_VirtualRoot</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1a8920890c41d0304b08caa99deecd2ce6" kind="variable"><name>Bodies</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1a731e3edb7e3e85954de6302ae80818e6" kind="function"><name>RigidBodyPoseExtractor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1a2f89c6003113844637e00ac019fa9a5d" kind="function"><name>GetLinearVelocityAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1afbb50bfd49e60ba71bf2082aa3d8d842" kind="function"><name>GetPoseAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1ac81d08fa167ec2dea38ee7471e55cc39" kind="function"><name>GetObjectAt</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1a5c009c047ed21e68b4d2415e8b2b8e8e" kind="function"><name>GetBodyPosesEnabled</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor_1aefb6b4febe885071fd047a25daa7bb98" kind="function"><name>GetEnabledRigidbodies</name></member>
+  </compound>
+  <compound refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component" kind="class"><name>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</name>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b9e1f97c8c8e6ac14aa7f011159a30e" kind="variable"><name>RootBody</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7c605ff3d25ef5c65f4edb04b62a5820" kind="variable"><name>VirtualRoot</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a23be806d4ee278b4d173cc0c9bf0e617" kind="variable"><name>Settings</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a5f2bb475c39efe2adc09aa80a84184ee" kind="variable"><name>sensorName</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1af00abc594399a596aade97b77b81f6e0" kind="variable"><name>m_PoseExtractor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b7024b2cc75d91cf2c9a5604369d114" kind="function"><name>CreateSensor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1ad48948e506d99e20ae9edab9fbbb4676" kind="function"><name>GetObservationShape</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a68cf3e4f3d3d0b41c87d83c9dfc1b03a" kind="function"><name>GetDisplayNodes</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7f9ba03454085e9ed17b78b88dbc7674" kind="function"><name>ResetPoseExtractor</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7e1eba98172020da194e9926ffd49ff7" kind="function"><name>SetPoseEnabled</name></member>
+    <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a3c8f89bcb85617bdc03ea7625a199109" kind="function"><name>GetPoseExtractor</name></member>
+  </compound>
+  <compound refid="namespace_object" kind="namespace"><name>Object</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_unity" kind="namespace"><name>Unity</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents" kind="namespace"><name>Unity::MLAgents</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_actuators" kind="namespace"><name>Unity::MLAgents::Actuators</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_extensions" kind="namespace"><name>Unity::MLAgents::Extensions</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3" kind="namespace"><name>Unity::MLAgents::Extensions::Match3</name>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9d" kind="enum"><name>Match3ObservationType</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9da57dea6f5039281b7fee517fc43bf3110" kind="enumvalue"><name>Vector</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9dac1987afedf39327f17c7995795cd6def" kind="enumvalue"><name>UncompressedVisual</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9da0ce5126fd978d41794046b8b1ab0e33d" kind="enumvalue"><name>CompressedVisual</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" kind="enum"><name>Direction</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a258f49887ef8d14ac268c92b02503aaa" kind="enumvalue"><name>Up</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a08a38277b0309070706f6652eeae9a53" kind="enumvalue"><name>Down</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a945d5e233cf7d6240f6b783b36a374ff" kind="enumvalue"><name>Left</name></member>
+    <member refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a92b09c7c48c520c3c55e497875da437c" kind="enumvalue"><name>Right</name></member>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors" kind="namespace"><name>Unity::MLAgents::Extensions::Sensors</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_sensors" kind="namespace"><name>Unity::MLAgents::Sensors</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_assertions" kind="namespace"><name>UnityEngine::Assertions</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_serialization" kind="namespace"><name>UnityEngine::Serialization</name>
+  </compound>
+  <compound refid="_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_abstract_board_8cs" kind="file"><name>AbstractBoard.cs</name>
+  </compound>
+  <compound refid="_match3_actuator_8cs" kind="file"><name>Match3Actuator.cs</name>
+  </compound>
+  <compound refid="_match3_actuator_component_8cs" kind="file"><name>Match3ActuatorComponent.cs</name>
+  </compound>
+  <compound refid="_match3_sensor_8cs" kind="file"><name>Match3Sensor.cs</name>
+  </compound>
+  <compound refid="_match3_sensor_component_8cs" kind="file"><name>Match3SensorComponent.cs</name>
+  </compound>
+  <compound refid="_move_8cs" kind="file"><name>Move.cs</name>
+  </compound>
+  <compound refid="_articulation_body_joint_extractor_8cs" kind="file"><name>ArticulationBodyJointExtractor.cs</name>
+  </compound>
+  <compound refid="_articulation_body_pose_extractor_8cs" kind="file"><name>ArticulationBodyPoseExtractor.cs</name>
+  </compound>
+  <compound refid="_articulation_body_sensor_component_8cs" kind="file"><name>ArticulationBodySensorComponent.cs</name>
+  </compound>
+  <compound refid="_counting_grid_sensor_8cs" kind="file"><name>CountingGridSensor.cs</name>
+  </compound>
+  <compound refid="_grid_sensor_8cs" kind="file"><name>GridSensor.cs</name>
+  </compound>
+  <compound refid="_i_joint_extractor_8cs" kind="file"><name>IJointExtractor.cs</name>
+  </compound>
+  <compound refid="_physics_body_sensor_8cs" kind="file"><name>PhysicsBodySensor.cs</name>
+  </compound>
+  <compound refid="_physics_sensor_settings_8cs" kind="file"><name>PhysicsSensorSettings.cs</name>
+  </compound>
+  <compound refid="_pose_extractor_8cs" kind="file"><name>PoseExtractor.cs</name>
+    <member refid="_pose_extractor_8cs_1aef19bab18b9814edeef255c43e4f6bbc" kind="typedef"><name>Object</name></member>
+  </compound>
+  <compound refid="_rigid_body_joint_extractor_8cs" kind="file"><name>RigidBodyJointExtractor.cs</name>
+  </compound>
+  <compound refid="_rigid_body_pose_extractor_8cs" kind="file"><name>RigidBodyPoseExtractor.cs</name>
+  </compound>
+  <compound refid="_rigid_body_sensor_component_8cs" kind="file"><name>RigidBodySensorComponent.cs</name>
+  </compound>
+  <compound refid="dir_812c3ac5d839cbc8797097dd273ebbc0" kind="dir"><name>G:/Work/git/unity/com.unity.ml-agents.extensions</name>
+  </compound>
+  <compound refid="dir_934f46a345653ef2b3014a1b37a162c1" kind="dir"><name>G:</name>
+  </compound>
+  <compound refid="dir_a89a7ef7ab88db1c0bb174a942a41052" kind="dir"><name>G:/Work/git</name>
+  </compound>
+  <compound refid="dir_926b9ce825e0db91f79bbbadda4b6258" kind="dir"><name>G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3</name>
+  </compound>
+  <compound refid="dir_48608770b802ffb4b2df798c2115a926" kind="dir"><name>G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime</name>
+  </compound>
+  <compound refid="dir_2aaa43201141ca86f971ed40d8c5488d" kind="dir"><name>G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors</name>
+  </compound>
+  <compound refid="dir_6a3462158a0be7506c8e57b46991b10e" kind="dir"><name>G:/Work/git/unity</name>
+  </compound>
+  <compound refid="dir_9a9e1aabf8142aa8697eb25647f36fb7" kind="dir"><name>G:/Work</name>
+  </compound>
+</doxygenindex>

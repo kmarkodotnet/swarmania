@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_attackable_bug" kind="class" prot="public">
+    <compoundname>AttackableBug</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attackable_bug_1a377bfcc18de2a3b77d8112cfc08a9f26" prot="private" static="no" mutable="no">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+        <definition>BugTypeEnum AttackableBug.BugType</definition>
+        <argsstring></argsstring>
+        <name>BugType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_attackable_bug_1a88c56f35f25248ca94a135cd34b190e9" compoundref="_attackable_bug_8cs" startline="25" endline="28">GetBugType</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attackable_bug_1addac28140ec38226315d54b44106d974" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AttackableBug.OnMouseOver</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" bodystart="11" bodyend="23"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aadcfafcb4323b102c7e204555d313ba0a">Attack</references>
+        <references refid="class_attackable_bug_1a9d3e37871727a5b9fca3ae770f860ef9" compoundref="_attackable_bug_8cs" startline="29" endline="35">IsEnemy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attackable_bug_1a9d3e37871727a5b9fca3ae770f860ef9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool AttackableBug.IsEnemy</definition>
+        <argsstring>(GameObject attacker)</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>attacker</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>GetComponent&lt;SelectableObject&gt;().IsOwnedByPlayer(); </para>        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" line="29" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" bodystart="29" bodyend="35"/>
+        <referencedby refid="class_attackable_bug_1addac28140ec38226315d54b44106d974" compoundref="_attackable_bug_8cs" startline="11" endline="23">OnMouseOver</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attackable_bug_1a88c56f35f25248ca94a135cd34b190e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+        <definition>BugTypeEnum AttackableBug.GetBugType</definition>
+        <argsstring>()</argsstring>
+        <name>GetBugType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" bodystart="25" bodyend="28"/>
+        <references refid="class_attackable_bug_1a377bfcc18de2a3b77d8112cfc08a9f26" compoundref="_attackable_bug_8cs" startline="9">BugType</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="19">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="18">
+        <label>AttackableBug</label>
+        <link refid="class_attackable_bug"/>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="21">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="20">
+        <label>AttackableBug</label>
+        <link refid="class_attackable_bug"/>
+        <childnode refid="21" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/AttackableBug.cs" bodystart="7" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_attackable_bug_1a377bfcc18de2a3b77d8112cfc08a9f26" prot="private" virt="non-virtual"><scope>AttackableBug</scope><name>BugType</name></member>
+      <member refid="class_attackable_bug_1a88c56f35f25248ca94a135cd34b190e9" prot="public" virt="non-virtual"><scope>AttackableBug</scope><name>GetBugType</name></member>
+      <member refid="class_attackable_bug_1a9d3e37871727a5b9fca3ae770f860ef9" prot="private" virt="non-virtual"><scope>AttackableBug</scope><name>IsEnemy</name></member>
+      <member refid="class_attackable_bug_1addac28140ec38226315d54b44106d974" prot="private" virt="non-virtual"><scope>AttackableBug</scope><name>OnMouseOver</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

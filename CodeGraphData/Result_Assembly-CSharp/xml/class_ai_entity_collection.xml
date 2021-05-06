@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ai_entity_collection" kind="class" prot="public">
+    <compoundname>AiEntityCollection</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ai_entity_collection_1ace1c08eee6ba860e037512a9b594d97d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiEntityCollection.calculateHordesFrame</definition>
+        <argsstring></argsstring>
+        <name>calculateHordesFrame</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1ae61e489c409de81a348d9519e8678616" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiEntityCollection.maxHordesNumber</definition>
+        <argsstring></argsstring>
+        <name>maxHordesNumber</name>
+        <initializer>= 24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" compoundref="_ai_entity_collection_8cs" startline="36" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1a79fdce304fe3696b2961cd843734c795" prot="private" static="no" mutable="no">
+        <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+        <definition>Horde AiEntityCollection.hordePrefab</definition>
+        <argsstring></argsstring>
+        <name>hordePrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_ai_entity_collection_1a203cb9fb472ad222c9fd0dc31801f032" compoundref="_ai_entity_collection_8cs" startline="46" endline="66">CreateHordePool</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1a165eefa9d9954c8df12575b3e3d051ea" prot="private" static="no" mutable="no">
+        <type>List&lt; NNModel &gt;</type>
+        <definition>List&lt;NNModel&gt; AiEntityCollection.models</definition>
+        <argsstring></argsstring>
+        <name>models</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" prot="private" static="no" mutable="no">
+        <type>ConcurrentDictionary&lt; int, GameObject &gt;</type>
+        <definition>ConcurrentDictionary&lt;int,GameObject&gt; AiEntityCollection._bugs</definition>
+        <argsstring></argsstring>
+        <name>_bugs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_ai_entity_collection_1a60a2d2aa42df3d02b1d13bf8bc721f7f" compoundref="_ai_entity_collection_8cs" startline="114" endline="124">AddBug</referencedby>
+        <referencedby refid="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" compoundref="_ai_entity_collection_8cs" startline="18" endline="34">Awake</referencedby>
+        <referencedby refid="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" compoundref="_ai_entity_collection_8cs" startline="186" endline="203">CalculateHordes</referencedby>
+        <referencedby refid="class_ai_entity_collection_1a2c83109ddc9d69d6b02d87b6ebd8c382" compoundref="_ai_entity_collection_8cs" startline="154" endline="164">ClearBugs</referencedby>
+        <referencedby refid="class_ai_entity_collection_1a30dd7574bdf37b4ee21e299a67beefa7" compoundref="_ai_entity_collection_8cs" startline="133" endline="152">RemoveBug</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" prot="private" static="no" mutable="no">
+        <type>Dictionary&lt; string, List&lt; <ref refid="class_horde_pool_object" kindref="compound">HordePoolObject</ref> &gt; &gt;</type>
+        <definition>Dictionary&lt;string, List&lt;HordePoolObject&gt; &gt; AiEntityCollection._hordePool</definition>
+        <argsstring></argsstring>
+        <name>_hordePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" compoundref="_ai_entity_collection_8cs" startline="18" endline="34">Awake</referencedby>
+        <referencedby refid="class_ai_entity_collection_1acda81b2b1254f5d6dc66d546a368fe6a" compoundref="_ai_entity_collection_8cs" startline="68" endline="78">AwardHordePool</referencedby>
+        <referencedby refid="class_ai_entity_collection_1a45f6503ba9d042a1be68d2bc4c977372" compoundref="_ai_entity_collection_8cs" startline="91" endline="100">EndHordePoolEpisode</referencedby>
+        <referencedby refid="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" compoundref="_ai_entity_collection_8cs" startline="102" endline="112">GetHorde</referencedby>
+        <referencedby refid="class_ai_entity_collection_1ac52b99da31dc320d7dfb02530b79bd5d" compoundref="_ai_entity_collection_8cs" startline="80" endline="89">ResetHordePool</referencedby>
+        <referencedby refid="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" compoundref="_ai_entity_collection_8cs" startline="36" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_horde" kindref="compound">Horde</ref> &gt;</type>
+        <definition>List&lt;Horde&gt; AiEntityCollection._hordes</definition>
+        <argsstring></argsstring>
+        <name>_hordes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" compoundref="_ai_entity_collection_8cs" startline="18" endline="34">Awake</referencedby>
+        <referencedby refid="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" compoundref="_ai_entity_collection_8cs" startline="186" endline="203">CalculateHordes</referencedby>
+        <referencedby refid="class_ai_entity_collection_1ab35ec352100685b464efe580dd9f4ce3" compoundref="_ai_entity_collection_8cs" startline="165" endline="168">ClearHordes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="18" bodyend="34"/>
+        <references refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" compoundref="_ai_entity_collection_8cs" startline="14">_bugs</references>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+        <references refid="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" compoundref="_ai_entity_collection_8cs" startline="16">_hordes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="36" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="36" bodyend="44"/>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+        <references refid="class_ai_entity_collection_1a203cb9fb472ad222c9fd0dc31801f032" compoundref="_ai_entity_collection_8cs" startline="46" endline="66">CreateHordePool</references>
+        <references refid="class_ai_entity_collection_1ae61e489c409de81a348d9519e8678616" compoundref="_ai_entity_collection_8cs" startline="10">maxHordesNumber</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a203cb9fb472ad222c9fd0dc31801f032" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Dictionary&lt; string, List&lt; <ref refid="class_horde_pool_object" kindref="compound">HordePoolObject</ref> &gt; &gt;</type>
+        <definition>Dictionary&lt;string, List&lt;HordePoolObject&gt; &gt; AiEntityCollection.CreateHordePool</definition>
+        <argsstring>(int v)</argsstring>
+        <name>CreateHordePool</name>
+        <param>
+          <type>int</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="46" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="46" bodyend="66"/>
+        <references refid="class_ai_entity_collection_1a79fdce304fe3696b2961cd843734c795" compoundref="_ai_entity_collection_8cs" startline="11">hordePrefab</references>
+        <referencedby refid="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" compoundref="_ai_entity_collection_8cs" startline="36" endline="44">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+        <definition>Horde AiEntityCollection.GetHorde</definition>
+        <argsstring>(string teamId)</argsstring>
+        <name>GetHorde</name>
+        <param>
+          <type>string</type>
+          <declname>teamId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="102" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="102" bodyend="112"/>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+        <referencedby refid="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" compoundref="_ai_entity_collection_8cs" startline="186" endline="203">CalculateHordes</referencedby>
+        <referencedby refid="class_ai_entity_collection_1ad7c5ebd2a458863950ce2a4b72a61ccc" compoundref="_ai_entity_collection_8cs" startline="170" endline="184">GetMyHorde</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_ai_entity_collection_1acda81b2b1254f5d6dc66d546a368fe6a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.AwardHordePool</definition>
+        <argsstring>()</argsstring>
+        <name>AwardHordePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="68" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="68" bodyend="78"/>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1ab35ec352100685b464efe580dd9f4ce3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.ClearHordes</definition>
+        <argsstring>()</argsstring>
+        <name>ClearHordes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="165" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="165" bodyend="168"/>
+        <references refid="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" compoundref="_ai_entity_collection_8cs" startline="16">_hordes</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ai_entity_collection_1ac52b99da31dc320d7dfb02530b79bd5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.ResetHordePool</definition>
+        <argsstring>()</argsstring>
+        <name>ResetHordePool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="80" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="80" bodyend="89"/>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a45f6503ba9d042a1be68d2bc4c977372" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.EndHordePoolEpisode</definition>
+        <argsstring>()</argsstring>
+        <name>EndHordePoolEpisode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="91" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="91" bodyend="100"/>
+        <references refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" compoundref="_ai_entity_collection_8cs" startline="15">_hordePool</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a60a2d2aa42df3d02b1d13bf8bc721f7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.AddBug</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>AddBug</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="114" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="114" bodyend="124"/>
+        <references refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" compoundref="_ai_entity_collection_8cs" startline="14">_bugs</references>
+        <references refid="class_bug_1a170cea8f49ce8d864439618a07562063" compoundref="_bug_8cs" startline="35" endline="38">Bug.GetId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1ab9f6c2cb796cfa370eb92fb7206cee8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiEntityCollection.GetTeamWeight</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>GetTeamWeight</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="126" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="126" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a30dd7574bdf37b4ee21e299a67beefa7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.RemoveBug</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>RemoveBug</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="133" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="133" bodyend="152"/>
+        <references refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" compoundref="_ai_entity_collection_8cs" startline="14">_bugs</references>
+        <referencedby refid="class_ai_entity_collection_1a2c83109ddc9d69d6b02d87b6ebd8c382" compoundref="_ai_entity_collection_8cs" startline="154" endline="164">ClearBugs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1a2c83109ddc9d69d6b02d87b6ebd8c382" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.ClearBugs</definition>
+        <argsstring>()</argsstring>
+        <name>ClearBugs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="154" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="154" bodyend="164"/>
+        <references refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" compoundref="_ai_entity_collection_8cs" startline="14">_bugs</references>
+        <references refid="class_ai_entity_collection_1a30dd7574bdf37b4ee21e299a67beefa7" compoundref="_ai_entity_collection_8cs" startline="133" endline="152">RemoveBug</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1ad7c5ebd2a458863950ce2a4b72a61ccc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+        <definition>Horde AiEntityCollection.GetMyHorde</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>GetMyHorde</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="170" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="170" bodyend="184"/>
+        <references refid="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" compoundref="_ai_entity_collection_8cs" startline="102" endline="112">GetHorde</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiEntityCollection.CalculateHordes</definition>
+        <argsstring>()</argsstring>
+        <name>CalculateHordes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="186" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="186" bodyend="203"/>
+        <references refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" compoundref="_ai_entity_collection_8cs" startline="14">_bugs</references>
+        <references refid="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" compoundref="_ai_entity_collection_8cs" startline="16">_hordes</references>
+        <references refid="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" compoundref="_ai_entity_collection_8cs" startline="102" endline="112">GetHorde</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>AiEntityCollection</label>
+        <link refid="class_ai_entity_collection"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>AiEntityCollection</label>
+        <link refid="class_ai_entity_collection"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>hordePrefab</edgelabel>
+        </childnode>
+      </node>
+      <node id="9">
+        <label>Agent</label>
+      </node>
+      <node id="8">
+        <label>Horde</label>
+        <link refid="class_horde"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="usage">
+          <edgelabel>_enemyHorde</edgelabel>
+        </childnode>
+      </node>
+      <node id="7">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiEntityCollection.cs" bodystart="7" bodyend="204"/>
+    <listofallmembers>
+      <member refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>_bugs</name></member>
+      <member refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>_hordePool</name></member>
+      <member refid="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>_hordes</name></member>
+      <member refid="class_ai_entity_collection_1a60a2d2aa42df3d02b1d13bf8bc721f7f" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>AddBug</name></member>
+      <member refid="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>Awake</name></member>
+      <member refid="class_ai_entity_collection_1acda81b2b1254f5d6dc66d546a368fe6a" prot="package" virt="non-virtual"><scope>AiEntityCollection</scope><name>AwardHordePool</name></member>
+      <member refid="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>CalculateHordes</name></member>
+      <member refid="class_ai_entity_collection_1ace1c08eee6ba860e037512a9b594d97d" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>calculateHordesFrame</name></member>
+      <member refid="class_ai_entity_collection_1a2c83109ddc9d69d6b02d87b6ebd8c382" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>ClearBugs</name></member>
+      <member refid="class_ai_entity_collection_1ab35ec352100685b464efe580dd9f4ce3" prot="package" virt="non-virtual"><scope>AiEntityCollection</scope><name>ClearHordes</name></member>
+      <member refid="class_ai_entity_collection_1a203cb9fb472ad222c9fd0dc31801f032" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>CreateHordePool</name></member>
+      <member refid="class_ai_entity_collection_1a45f6503ba9d042a1be68d2bc4c977372" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>EndHordePoolEpisode</name></member>
+      <member refid="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>GetHorde</name></member>
+      <member refid="class_ai_entity_collection_1ad7c5ebd2a458863950ce2a4b72a61ccc" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>GetMyHorde</name></member>
+      <member refid="class_ai_entity_collection_1ab9f6c2cb796cfa370eb92fb7206cee8e" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>GetTeamWeight</name></member>
+      <member refid="class_ai_entity_collection_1a79fdce304fe3696b2961cd843734c795" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>hordePrefab</name></member>
+      <member refid="class_ai_entity_collection_1ae61e489c409de81a348d9519e8678616" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>maxHordesNumber</name></member>
+      <member refid="class_ai_entity_collection_1a165eefa9d9954c8df12575b3e3d051ea" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>models</name></member>
+      <member refid="class_ai_entity_collection_1a30dd7574bdf37b4ee21e299a67beefa7" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>RemoveBug</name></member>
+      <member refid="class_ai_entity_collection_1ac52b99da31dc320d7dfb02530b79bd5d" prot="public" virt="non-virtual"><scope>AiEntityCollection</scope><name>ResetHordePool</name></member>
+      <member refid="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" prot="private" virt="non-virtual"><scope>AiEntityCollection</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

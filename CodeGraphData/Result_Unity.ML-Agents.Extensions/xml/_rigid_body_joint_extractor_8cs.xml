@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_rigid_body_joint_extractor_8cs" kind="file">
+    <compoundname>RigidBodyJointExtractor.cs</compoundname>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" prot="public">Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</innerclass>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors">Unity::MLAgents::Extensions::Sensors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Unity.MLAgents.Sensors;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Unity.MLAgents.Extensions.Sensors</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" kindref="compound">RigidBodyJointExtractor</ref><sp/>:<sp/><ref refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" kindref="compound">IJointExtractor</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a77a367d6c0533ee8fac3256aea9563fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Rigidbody<sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a77a367d6c0533ee8fac3256aea9563fd" kindref="member">m_Body</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ac7304f3df6daa52fe12422b25db9a2e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Joint<sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ac7304f3df6daa52fe12422b25db9a2e5" kindref="member">m_Joint</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a929fa744bde1e17d575c6a67187d7349" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a929fa744bde1e17d575c6a67187d7349" kindref="member">RigidBodyJointExtractor</ref>(Rigidbody<sp/>body)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Body<sp/>=<sp/>body;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>m_Joint<sp/>=<sp/>m_Body?.GetComponent&lt;Joint&gt;();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f" kindref="member">NumObservations</ref>(<ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref><sp/>settings)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NumObservations(m_Body,<sp/>m_Joint,<sp/>settings);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" kindref="member">NumObservations</ref>(Rigidbody<sp/>body,<sp/>Joint<sp/>joint,<sp/><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref><sp/>settings)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(body<sp/>==<sp/>null<sp/>||<sp/>joint<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>numObservations<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(settings.<ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" kindref="member">UseJointForces</ref>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>3<sp/>force<sp/>and<sp/>3<sp/>torque<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numObservations<sp/>+=<sp/>6;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numObservations;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" kindref="member">Write</ref>(<ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref><sp/>settings,<sp/>ObservationWriter<sp/>writer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m_Body<sp/>==<sp/>null<sp/>||<sp/>m_Joint<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>currentOffset<sp/>=<sp/>offset;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(settings.<ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" kindref="member">UseJointForces</ref>)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Take<sp/>tanh<sp/>of<sp/>the<sp/>forces<sp/>and<sp/>torques<sp/>to<sp/>ensure<sp/>they&apos;re<sp/>in<sp/>[-1,<sp/>1]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentForce.x);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentForce.y);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentForce.z);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentTorque.x);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentTorque.y);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writer[currentOffset++]<sp/>=<sp/>(float)System.Math.Tanh(m_Joint.currentTorque.z);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>currentOffset<sp/>-<sp/>offset;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs"/>
+  </compounddef>
+</doxygen>

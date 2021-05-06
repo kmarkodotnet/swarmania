@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_unity_1_1_m_l_agents_1_1_extensions" kind="namespace">
+    <compoundname>Unity::MLAgents::Extensions</compoundname>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3">Unity::MLAgents::Extensions::Match3</innernamespace>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors">Unity::MLAgents::Extensions::Sensors</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="[generated]" line="1" column="1"/>
+  </compounddef>
+</doxygen>

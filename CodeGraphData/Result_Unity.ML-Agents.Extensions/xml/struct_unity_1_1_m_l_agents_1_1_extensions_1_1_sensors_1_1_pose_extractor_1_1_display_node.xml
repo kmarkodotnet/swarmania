@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node" kind="struct" prot="package">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af29e1b9ff7ce0873ebb128606fae65fe" prot="public" static="no" mutable="no">
+        <type><ref refid="_pose_extractor_8cs_1aef19bab18b9814edeef255c43e4f6bbc" kindref="member">Object</ref></type>
+        <definition>Object Unity.MLAgents.Extensions.Sensors.PoseExtractor.DisplayNode.NodeObject</definition>
+        <argsstring></argsstring>
+        <name>NodeObject</name>
+        <briefdescription>
+<para>Underlying object in the hierarchy. Pass to EditorGUIUtility.ObjectContent() for display. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="338" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1afaf420ce2207f53e7e408c1e0e074b16" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.PoseExtractor.DisplayNode.Enabled</definition>
+        <argsstring></argsstring>
+        <name>Enabled</name>
+        <briefdescription>
+<para>Whether the poses for the object are enabled. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="343" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1a37ff90213562bccf8cd4d25f37760163" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.DisplayNode.Depth</definition>
+        <argsstring></argsstring>
+        <name>Depth</name>
+        <briefdescription>
+<para>Depth in the hierarchy, used for adjusting the indent level. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="348" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af5862ba3d4c90db0986e74b0bbeb6787" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PoseExtractor.DisplayNode.OriginalIndex</definition>
+        <argsstring></argsstring>
+        <name>OriginalIndex</name>
+        <briefdescription>
+<para>The index of the corresponding object in the <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kindref="compound">PoseExtractor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="353" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Simplified representation of the a node in the hierarchy for display. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="16">
+        <label>UnityEngine</label>
+      </node>
+      <node id="15">
+        <label>Unity.MLAgents.Extensions.Sensors.PoseExtractor.DisplayNode</label>
+        <link refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>NodeObject</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" line="334" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PoseExtractor.cs" bodystart="333" bodyend="354"/>
+    <listofallmembers>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1a37ff90213562bccf8cd4d25f37760163" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</scope><name>Depth</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1afaf420ce2207f53e7e408c1e0e074b16" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</scope><name>Enabled</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af29e1b9ff7ce0873ebb128606fae65fe" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</scope><name>NodeObject</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node_1af5862ba3d4c90db0986e74b0bbeb6787" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PoseExtractor::DisplayNode</scope><name>OriginalIndex</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

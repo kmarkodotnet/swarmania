@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a89a7ef7ab88db1c0bb174a942a41052" kind="dir">
+    <compoundname>G:/Work/git</compoundname>
+    <innerdir refid="dir_6a3462158a0be7506c8e57b46991b10e">G:/Work/git/unity</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/"/>
+  </compounddef>
+</doxygen>

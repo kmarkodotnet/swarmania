@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_dcd27a669a6bf34a1253857a01c28bff" kind="dir">
+    <compoundname>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug</compoundname>
+    <innerfile refid="_attackable_bug_8cs">AttackableBug.cs</innerfile>
+    <innerfile refid="_bug_8cs">Bug.cs</innerfile>
+    <innerfile refid="_bug_action_set_8cs">BugActionSet.cs</innerfile>
+    <innerfile refid="_bug_appearance_8cs">BugAppearance.cs</innerfile>
+    <innerfile refid="_bug_movement_8cs">BugMovement.cs</innerfile>
+    <innerfile refid="_bug_state_handler_8cs">BugStateHandler.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/"/>
+  </compounddef>
+</doxygen>

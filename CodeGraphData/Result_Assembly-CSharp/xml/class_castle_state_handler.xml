@@ -1,0 +1,735 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_castle_state_handler" kind="class" prot="public">
+    <compoundname>CastleStateHandler</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_castle_state_handler_1a1e77a97a8db7ed76fdb7a88d495587e6" prot="private" static="no" mutable="no">
+        <type><ref refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5" kindref="member">CastleTypeEnum</ref></type>
+        <definition>CastleTypeEnum CastleStateHandler.castleType</definition>
+        <argsstring></argsstring>
+        <name>castleType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" prot="private" static="no" mutable="no">
+        <type><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" kindref="member">CastleStateEnum</ref></type>
+        <definition>CastleStateEnum CastleStateHandler.castleState</definition>
+        <argsstring></argsstring>
+        <name>castleState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" compoundref="_castle_state_handler_8cs" startline="237" endline="246">CreateBug</referencedby>
+        <referencedby refid="class_castle_state_handler_1a02016dbb45b957f1652c6ccd64e7231e" compoundref="_castle_state_handler_8cs" startline="248" endline="251">GetState</referencedby>
+        <referencedby refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" compoundref="_castle_state_handler_8cs" startline="92" endline="113">HandleCastleState</referencedby>
+        <referencedby refid="class_castle_state_handler_1a8f50188051fb325595840b418edf63b9" compoundref="_castle_state_handler_8cs" startline="87" endline="90">SetState</referencedby>
+        <referencedby refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" compoundref="_castle_state_handler_8cs" startline="76" endline="85">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a673bb373c434aa765d0bdd6b9e30581e" prot="private" static="no" mutable="no">
+        <type><ref refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dce" kindref="member">CastleJobEnum</ref></type>
+        <definition>CastleJobEnum CastleStateHandler.castleJob</definition>
+        <argsstring></argsstring>
+        <name>castleJob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" compoundref="_castle_state_handler_8cs" startline="128" endline="145">DoCastleJob</referencedby>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" prot="private" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] CastleStateHandler.ownedResourceAmmount</definition>
+        <argsstring></argsstring>
+        <name>ownedResourceAmmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1ad87b6e09181b30c225b3c879aeadda98" compoundref="_castle_state_handler_8cs" startline="193" endline="197">AddResource</referencedby>
+        <referencedby refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" compoundref="_castle_state_handler_8cs" startline="199" endline="214">HasEnoughResource</referencedby>
+        <referencedby refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" compoundref="_castle_state_handler_8cs" startline="63" endline="74">InitializeResourceAmmount</referencedby>
+        <referencedby refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" compoundref="_castle_state_handler_8cs" startline="184" endline="191">TakeResourceForCreation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a00da00b5e9d98b06f8cae8ae3b71c35c" prot="private" static="no" mutable="no">
+        <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+        <definition>ResourceTypeEnum CastleStateHandler.preferedResourceType</definition>
+        <argsstring></argsstring>
+        <name>preferedResourceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" compoundref="_castle_state_handler_8cs" startline="63" endline="74">InitializeResourceAmmount</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1aca417f94f3d5e5e193edcdf4a3e654a2" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CastleStateHandler.startValueOfPreferedResourceType</definition>
+        <argsstring></argsstring>
+        <name>startValueOfPreferedResourceType</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" compoundref="_castle_state_handler_8cs" startline="63" endline="74">InitializeResourceAmmount</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" prot="private" static="no" mutable="no">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref>[]</type>
+        <definition>BugTypeEnum [] CastleStateHandler.bugCreationQueue</definition>
+        <argsstring></argsstring>
+        <name>bugCreationQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1ad4143ec22290e9349de876b57b882732" compoundref="_castle_state_handler_8cs" startline="44" endline="51">AddNewBugToQueue</referencedby>
+        <referencedby refid="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" compoundref="_castle_state_handler_8cs" startline="221" endline="226">CreateBug</referencedby>
+        <referencedby refid="class_castle_state_handler_1ab99651f2627c9f241b49723a926773b3" compoundref="_castle_state_handler_8cs" startline="147" endline="150">IsAnyBugInQueue</referencedby>
+        <referencedby refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</referencedby>
+        <referencedby refid="class_castle_state_handler_1a687a89d62cc478eecb0e44ca1d2d9e8d" compoundref="_castle_state_handler_8cs" startline="228" endline="235">ShiftQueue</referencedby>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" prot="private" static="no" mutable="no">
+        <type>GameObject[]</type>
+        <definition>GameObject [] CastleStateHandler.bugPrefabs</definition>
+        <argsstring></argsstring>
+        <name>bugPrefabs</name>
+        <initializer>= new GameObject[<ref refid="class_castle_state_handler_1ad7b544956fc791096f9ca55f00aeb23d" kindref="member">bugPrefabCount</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" compoundref="_castle_state_handler_8cs" startline="237" endline="246">CreateBug</referencedby>
+        <referencedby refid="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" compoundref="_castle_state_handler_8cs" startline="216" endline="219">GetCreationTimeOfBug</referencedby>
+        <referencedby refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" compoundref="_castle_state_handler_8cs" startline="199" endline="214">HasEnoughResource</referencedby>
+        <referencedby refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" compoundref="_castle_state_handler_8cs" startline="184" endline="191">TakeResourceForCreation</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1aedf7d1983bc3645c10b139574dd5ee41" prot="private" static="no" mutable="no">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref>[]</type>
+        <definition>BugTypeEnum [] CastleStateHandler.bugPrefabKeys</definition>
+        <argsstring></argsstring>
+        <name>bugPrefabKeys</name>
+        <initializer>= new <ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref>[<ref refid="class_castle_state_handler_1ad7b544956fc791096f9ca55f00aeb23d" kindref="member">bugPrefabCount</ref>]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" compoundref="_castle_state_handler_8cs" startline="237" endline="246">CreateBug</referencedby>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1aa94cac777e8e6e9f74dc6b83fe3ab9a7" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject CastleStateHandler.targetToAttack</definition>
+        <argsstring></argsstring>
+        <name>targetToAttack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" compoundref="_castle_state_handler_8cs" startline="120" endline="126">FindAttacker</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1ad7b544956fc791096f9ca55f00aeb23d" prot="private" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CastleStateHandler.bugPrefabCount</definition>
+        <argsstring></argsstring>
+        <name>bugPrefabCount</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="23" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a72a13afb398ac6c1737952f9925e2dae" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CastleStateHandler.bugCreationPeriod</definition>
+        <argsstring></argsstring>
+        <name>bugCreationPeriod</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" compoundref="_castle_state_handler_8cs" startline="160" endline="169">CreateUnit</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CastleStateHandler.bugCreationTimeLeft</definition>
+        <argsstring></argsstring>
+        <name>bugCreationTimeLeft</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" compoundref="_castle_state_handler_8cs" startline="160" endline="169">CreateUnit</referencedby>
+        <referencedby refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</referencedby>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1a6bde93a229ecf7ef4f79834aa995663b" prot="private" static="no" mutable="no">
+        <type>System.DateTime</type>
+        <definition>System.DateTime CastleStateHandler.start</definition>
+        <argsstring></argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="27" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+        <referencedby refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" compoundref="_castle_state_handler_8cs" startline="76" endline="85">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_castle_state_handler_1a67060b09cad12201b83c752eb3803838" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int CastleStateHandler.healthIncreasingValue</definition>
+        <argsstring></argsstring>
+        <name>healthIncreasingValue</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1aa51526b2f0acbc17ceb0d87814abf550" compoundref="_castle_state_handler_8cs" startline="152" endline="158">IncreaseHealth</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_castle_state_handler_1add82b684df574d4bbbc29cc92a5247c4" prot="private" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float CastleStateHandler.defaultScale</definition>
+        <argsstring></argsstring>
+        <name>defaultScale</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="21" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" compoundref="_castle_state_handler_8cs" startline="76" endline="85">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="29" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="29" bodyend="42"/>
+        <references refid="class_castle_state_handler_1ad4143ec22290e9349de876b57b882732" compoundref="_castle_state_handler_8cs" startline="44" endline="51">AddNewBugToQueue</references>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <references refid="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" compoundref="_castle_state_handler_8cs" startline="26">bugCreationTimeLeft</references>
+        <references refid="class_castle_state_handler_1aedf7d1983bc3645c10b139574dd5ee41" compoundref="_castle_state_handler_8cs" startline="15">bugPrefabKeys</references>
+        <references refid="class_castle_state_handler_1a673bb373c434aa765d0bdd6b9e30581e" compoundref="_castle_state_handler_8cs" startline="9">castleJob</references>
+        <references refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dcea14edc9448aae591ffb606483d50e12ec">CreatingUnit</references>
+        <references refid="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" compoundref="_castle_state_handler_8cs" startline="216" endline="219">GetCreationTimeOfBug</references>
+        <references refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" compoundref="_castle_state_handler_8cs" startline="63" endline="74">InitializeResourceAmmount</references>
+        <references refid="class_castle_state_handler_1a6bde93a229ecf7ef4f79834aa995663b" compoundref="_castle_state_handler_8cs" startline="27">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1ad4143ec22290e9349de876b57b882732" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.AddNewBugToQueue</definition>
+        <argsstring>(BugTypeEnum bugTypeEnum)</argsstring>
+        <name>AddNewBugToQueue</name>
+        <param>
+          <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+          <declname>bugTypeEnum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="44" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="44" bodyend="51"/>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref> &gt;</type>
+        <definition>List&lt;ResourceTypeEnum&gt; CastleStateHandler.GetResourceTypes</definition>
+        <argsstring>()</argsstring>
+        <name>GetResourceTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="53" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="53" bodyend="62"/>
+        <referencedby refid="class_castle_state_handler_1ad87b6e09181b30c225b3c879aeadda98" compoundref="_castle_state_handler_8cs" startline="193" endline="197">AddResource</referencedby>
+        <referencedby refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" compoundref="_castle_state_handler_8cs" startline="199" endline="214">HasEnoughResource</referencedby>
+        <referencedby refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" compoundref="_castle_state_handler_8cs" startline="63" endline="74">InitializeResourceAmmount</referencedby>
+        <referencedby refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" compoundref="_castle_state_handler_8cs" startline="184" endline="191">TakeResourceForCreation</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.InitializeResourceAmmount</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeResourceAmmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="63" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="63" bodyend="74"/>
+        <references refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" compoundref="_castle_state_handler_8cs" startline="53" endline="62">GetResourceTypes</references>
+        <references refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" compoundref="_castle_state_handler_8cs" startline="10">ownedResourceAmmount</references>
+        <references refid="class_castle_state_handler_1a00da00b5e9d98b06f8cae8ae3b71c35c" compoundref="_castle_state_handler_8cs" startline="11">preferedResourceType</references>
+        <references refid="class_castle_state_handler_1aca417f94f3d5e5e193edcdf4a3e654a2" compoundref="_castle_state_handler_8cs" startline="12">startValueOfPreferedResourceType</references>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="76" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="76" bodyend="85"/>
+        <references refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" compoundref="_castle_state_handler_8cs" startline="8">castleState</references>
+        <references refid="class_castle_state_handler_1add82b684df574d4bbbc29cc92a5247c4" compoundref="_castle_state_handler_8cs" startline="21">defaultScale</references>
+        <references refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b">Destroyed</references>
+        <references refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" compoundref="_castle_state_handler_8cs" startline="128" endline="145">DoCastleJob</references>
+        <references refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" compoundref="_castle_state_handler_8cs" startline="92" endline="113">HandleCastleState</references>
+        <references refid="class_castle_state_handler_1a6bde93a229ecf7ef4f79834aa995663b" compoundref="_castle_state_handler_8cs" startline="27">start</references>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a8f50188051fb325595840b418edf63b9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.SetState</definition>
+        <argsstring>(CastleStateEnum mewCastleState)</argsstring>
+        <name>SetState</name>
+        <param>
+          <type><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" kindref="member">CastleStateEnum</ref></type>
+          <declname>mewCastleState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="87" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="87" bodyend="90"/>
+        <references refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" compoundref="_castle_state_handler_8cs" startline="8">castleState</references>
+        <referencedby refid="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" compoundref="_castle_state_handler_8cs" startline="120" endline="126">FindAttacker</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.HandleCastleState</definition>
+        <argsstring>()</argsstring>
+        <name>HandleCastleState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="92" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="92" bodyend="113"/>
+        <references refid="class_castle_state_handler_1a206396dc87d0cdfdffee51a51d32e871" compoundref="_castle_state_handler_8cs" startline="115" endline="118">Attack</references>
+        <references refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" compoundref="_castle_state_handler_8cs" startline="8">castleState</references>
+        <references refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b">Destroyed</references>
+        <references refid="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" compoundref="_castle_state_handler_8cs" startline="120" endline="126">FindAttacker</references>
+        <references refid="class_health_1aa8571ffbf03d9b94c565867776b6d069" compoundref="_health_8cs" startline="21" endline="24">Health.GetHealth</references>
+        <referencedby refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" compoundref="_castle_state_handler_8cs" startline="76" endline="85">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a206396dc87d0cdfdffee51a51d32e871" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.Attack</definition>
+        <argsstring>()</argsstring>
+        <name>Attack</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="115" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="115" bodyend="118"/>
+        <referencedby refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" compoundref="_castle_state_handler_8cs" startline="92" endline="113">HandleCastleState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.FindAttacker</definition>
+        <argsstring>()</argsstring>
+        <name>FindAttacker</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="120" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="120" bodyend="126"/>
+        <references refid="class_castle_state_handler_1a8f50188051fb325595840b418edf63b9" compoundref="_castle_state_handler_8cs" startline="87" endline="90">SetState</references>
+        <references refid="class_castle_state_handler_1aa94cac777e8e6e9f74dc6b83fe3ab9a7" compoundref="_castle_state_handler_8cs" startline="16">targetToAttack</references>
+        <referencedby refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" compoundref="_castle_state_handler_8cs" startline="92" endline="113">HandleCastleState</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.DoCastleJob</definition>
+        <argsstring>()</argsstring>
+        <name>DoCastleJob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="128" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="128" bodyend="145"/>
+        <references refid="class_castle_state_handler_1a673bb373c434aa765d0bdd6b9e30581e" compoundref="_castle_state_handler_8cs" startline="9">castleJob</references>
+        <references refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" compoundref="_castle_state_handler_8cs" startline="160" endline="169">CreateUnit</references>
+        <references refid="class_castle_state_handler_1aa51526b2f0acbc17ceb0d87814abf550" compoundref="_castle_state_handler_8cs" startline="152" endline="158">IncreaseHealth</references>
+        <references refid="class_castle_state_handler_1ab99651f2627c9f241b49723a926773b3" compoundref="_castle_state_handler_8cs" startline="147" endline="150">IsAnyBugInQueue</references>
+        <referencedby refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" compoundref="_castle_state_handler_8cs" startline="76" endline="85">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1ab99651f2627c9f241b49723a926773b3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CastleStateHandler.IsAnyBugInQueue</definition>
+        <argsstring>()</argsstring>
+        <name>IsAnyBugInQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="147" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="147" bodyend="150"/>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <referencedby refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" compoundref="_castle_state_handler_8cs" startline="128" endline="145">DoCastleJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1aa51526b2f0acbc17ceb0d87814abf550" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.IncreaseHealth</definition>
+        <argsstring>()</argsstring>
+        <name>IncreaseHealth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="152" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="152" bodyend="158"/>
+        <references refid="class_castle_state_handler_1a67060b09cad12201b83c752eb3803838" compoundref="_castle_state_handler_8cs" startline="18">healthIncreasingValue</references>
+        <referencedby refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" compoundref="_castle_state_handler_8cs" startline="128" endline="145">DoCastleJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1af2961131987544e86295f30ff798890d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.CreateUnit</definition>
+        <argsstring>()</argsstring>
+        <name>CreateUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="160" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="160" bodyend="169"/>
+        <references refid="class_castle_state_handler_1a72a13afb398ac6c1737952f9925e2dae" compoundref="_castle_state_handler_8cs" startline="25">bugCreationPeriod</references>
+        <references refid="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" compoundref="_castle_state_handler_8cs" startline="26">bugCreationTimeLeft</references>
+        <references refid="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" compoundref="_castle_state_handler_8cs" startline="221" endline="226">CreateBug</references>
+        <references refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</references>
+        <referencedby refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" compoundref="_castle_state_handler_8cs" startline="128" endline="145">DoCastleJob</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.SetNewCreationUnit</definition>
+        <argsstring>()</argsstring>
+        <name>SetNewCreationUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="171" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="171" bodyend="182"/>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <references refid="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" compoundref="_castle_state_handler_8cs" startline="26">bugCreationTimeLeft</references>
+        <references refid="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" compoundref="_castle_state_handler_8cs" startline="216" endline="219">GetCreationTimeOfBug</references>
+        <references refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" compoundref="_castle_state_handler_8cs" startline="199" endline="214">HasEnoughResource</references>
+        <references refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" compoundref="_castle_state_handler_8cs" startline="184" endline="191">TakeResourceForCreation</references>
+        <referencedby refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" compoundref="_castle_state_handler_8cs" startline="160" endline="169">CreateUnit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.TakeResourceForCreation</definition>
+        <argsstring>(BugTypeEnum bugType)</argsstring>
+        <name>TakeResourceForCreation</name>
+        <param>
+          <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+          <declname>bugType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="184" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="184" bodyend="191"/>
+        <references refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" compoundref="_castle_state_handler_8cs" startline="14">bugPrefabs</references>
+        <references refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" compoundref="_castle_state_handler_8cs" startline="53" endline="62">GetResourceTypes</references>
+        <references refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" compoundref="_castle_state_handler_8cs" startline="10">ownedResourceAmmount</references>
+        <referencedby refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1af484607d146e8e401634609c426460dc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CastleStateHandler.HasEnoughResource</definition>
+        <argsstring>(BugTypeEnum bugType)</argsstring>
+        <name>HasEnoughResource</name>
+        <param>
+          <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+          <declname>bugType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="199" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="199" bodyend="214"/>
+        <references refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" compoundref="_castle_state_handler_8cs" startline="14">bugPrefabs</references>
+        <references refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" compoundref="_castle_state_handler_8cs" startline="53" endline="62">GetResourceTypes</references>
+        <references refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" compoundref="_castle_state_handler_8cs" startline="10">ownedResourceAmmount</references>
+        <referencedby refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float CastleStateHandler.GetCreationTimeOfBug</definition>
+        <argsstring>(BugTypeEnum bugType)</argsstring>
+        <name>GetCreationTimeOfBug</name>
+        <param>
+          <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+          <declname>bugType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="216" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="216" bodyend="219"/>
+        <references refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" compoundref="_castle_state_handler_8cs" startline="14">bugPrefabs</references>
+        <referencedby refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" compoundref="_castle_state_handler_8cs" startline="171" endline="182">SetNewCreationUnit</referencedby>
+        <referencedby refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" compoundref="_castle_state_handler_8cs" startline="29" endline="42">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.CreateBug</definition>
+        <argsstring>()</argsstring>
+        <name>CreateBug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="221" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="221" bodyend="226"/>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <references refid="class_castle_state_handler_1a687a89d62cc478eecb0e44ca1d2d9e8d" compoundref="_castle_state_handler_8cs" startline="228" endline="235">ShiftQueue</references>
+        <referencedby refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" compoundref="_castle_state_handler_8cs" startline="160" endline="169">CreateUnit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a687a89d62cc478eecb0e44ca1d2d9e8d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.ShiftQueue</definition>
+        <argsstring>()</argsstring>
+        <name>ShiftQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="228" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="228" bodyend="235"/>
+        <references refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" compoundref="_castle_state_handler_8cs" startline="13">bugCreationQueue</references>
+        <referencedby refid="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" compoundref="_castle_state_handler_8cs" startline="221" endline="226">CreateBug</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject CastleStateHandler.CreateBug</definition>
+        <argsstring>(BugTypeEnum bugType)</argsstring>
+        <name>CreateBug</name>
+        <param>
+          <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+          <declname>bugType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="237" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="237" bodyend="246"/>
+        <references refid="class_castle_state_handler_1aedf7d1983bc3645c10b139574dd5ee41" compoundref="_castle_state_handler_8cs" startline="15">bugPrefabKeys</references>
+        <references refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" compoundref="_castle_state_handler_8cs" startline="14">bugPrefabs</references>
+        <references refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" compoundref="_castle_state_handler_8cs" startline="8">castleState</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_castle_state_handler_1ad87b6e09181b30c225b3c879aeadda98" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CastleStateHandler.AddResource</definition>
+        <argsstring>(ResourceTypeEnum resourceType, float ammount)</argsstring>
+        <name>AddResource</name>
+        <param>
+          <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+          <declname>resourceType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>ammount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="193" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="193" bodyend="197"/>
+        <references refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" compoundref="_castle_state_handler_8cs" startline="53" endline="62">GetResourceTypes</references>
+        <references refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" compoundref="_castle_state_handler_8cs" startline="10">ownedResourceAmmount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_castle_state_handler_1a02016dbb45b957f1652c6ccd64e7231e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" kindref="member">CastleStateEnum</ref></type>
+        <definition>CastleStateEnum CastleStateHandler.GetState</definition>
+        <argsstring>()</argsstring>
+        <name>GetState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="248" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="248" bodyend="251"/>
+        <references refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" compoundref="_castle_state_handler_8cs" startline="8">castleState</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="46">
+        <label>CastleStateHandler</label>
+        <link refid="class_castle_state_handler"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="48">
+        <label>CastleStateHandler</label>
+        <link refid="class_castle_state_handler"/>
+        <childnode refid="49" relation="public-inheritance">
+        </childnode>
+        <childnode refid="50" relation="usage">
+          <edgelabel>start</edgelabel>
+        </childnode>
+      </node>
+      <node id="50">
+        <label>System</label>
+      </node>
+      <node id="49">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle/CastleStateHandler.cs" bodystart="5" bodyend="252"/>
+    <listofallmembers>
+      <member refid="class_castle_state_handler_1ad4143ec22290e9349de876b57b882732" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>AddNewBugToQueue</name></member>
+      <member refid="class_castle_state_handler_1ad87b6e09181b30c225b3c879aeadda98" prot="public" virt="non-virtual"><scope>CastleStateHandler</scope><name>AddResource</name></member>
+      <member refid="class_castle_state_handler_1a206396dc87d0cdfdffee51a51d32e871" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>Attack</name></member>
+      <member refid="class_castle_state_handler_1a72a13afb398ac6c1737952f9925e2dae" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugCreationPeriod</name></member>
+      <member refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugCreationQueue</name></member>
+      <member refid="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugCreationTimeLeft</name></member>
+      <member refid="class_castle_state_handler_1ad7b544956fc791096f9ca55f00aeb23d" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugPrefabCount</name></member>
+      <member refid="class_castle_state_handler_1aedf7d1983bc3645c10b139574dd5ee41" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugPrefabKeys</name></member>
+      <member refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>bugPrefabs</name></member>
+      <member refid="class_castle_state_handler_1a673bb373c434aa765d0bdd6b9e30581e" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>castleJob</name></member>
+      <member refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>castleState</name></member>
+      <member refid="class_castle_state_handler_1a1e77a97a8db7ed76fdb7a88d495587e6" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>castleType</name></member>
+      <member refid="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>CreateBug</name></member>
+      <member refid="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>CreateBug</name></member>
+      <member refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>CreateUnit</name></member>
+      <member refid="class_castle_state_handler_1add82b684df574d4bbbc29cc92a5247c4" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>defaultScale</name></member>
+      <member refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>DoCastleJob</name></member>
+      <member refid="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>FindAttacker</name></member>
+      <member refid="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>GetCreationTimeOfBug</name></member>
+      <member refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>GetResourceTypes</name></member>
+      <member refid="class_castle_state_handler_1a02016dbb45b957f1652c6ccd64e7231e" prot="public" virt="non-virtual"><scope>CastleStateHandler</scope><name>GetState</name></member>
+      <member refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>HandleCastleState</name></member>
+      <member refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>HasEnoughResource</name></member>
+      <member refid="class_castle_state_handler_1a67060b09cad12201b83c752eb3803838" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>healthIncreasingValue</name></member>
+      <member refid="class_castle_state_handler_1aa51526b2f0acbc17ceb0d87814abf550" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>IncreaseHealth</name></member>
+      <member refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>InitializeResourceAmmount</name></member>
+      <member refid="class_castle_state_handler_1ab99651f2627c9f241b49723a926773b3" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>IsAnyBugInQueue</name></member>
+      <member refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>ownedResourceAmmount</name></member>
+      <member refid="class_castle_state_handler_1a00da00b5e9d98b06f8cae8ae3b71c35c" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>preferedResourceType</name></member>
+      <member refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>SetNewCreationUnit</name></member>
+      <member refid="class_castle_state_handler_1a8f50188051fb325595840b418edf63b9" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>SetState</name></member>
+      <member refid="class_castle_state_handler_1a687a89d62cc478eecb0e44ca1d2d9e8d" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>ShiftQueue</name></member>
+      <member refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>Start</name></member>
+      <member refid="class_castle_state_handler_1a6bde93a229ecf7ef4f79834aa995663b" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>start</name></member>
+      <member refid="class_castle_state_handler_1aca417f94f3d5e5e193edcdf4a3e654a2" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>startValueOfPreferedResourceType</name></member>
+      <member refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>TakeResourceForCreation</name></member>
+      <member refid="class_castle_state_handler_1aa94cac777e8e6e9f74dc6b83fe3ab9a7" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>targetToAttack</name></member>
+      <member refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" prot="private" virt="non-virtual"><scope>CastleStateHandler</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_selection_control" kind="class" prot="public">
+    <compoundname>SelectionControl</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" prot="private" static="no" mutable="no">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; SelectionControl.SelectedObjects</definition>
+        <argsstring></argsstring>
+        <name>SelectedObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_selection_control_1a49fe531bf936581b14d23133c6d54fef" compoundref="_selection_control_8cs" startline="30" endline="46">Attack</referencedby>
+        <referencedby refid="class_selection_control_1aa54692dd5883209e4611950ffc63b590" compoundref="_selection_control_8cs" startline="68" endline="71">GetSelectedObjects</referencedby>
+        <referencedby refid="class_selection_control_1a4ceaf4e5075c6599c62b1880ec4ad321" compoundref="_selection_control_8cs" startline="47" endline="56">Move</referencedby>
+        <referencedby refid="class_selection_control_1a3561fe9fd9a6a8d2c6e4a2f389b6d2dd" compoundref="_selection_control_8cs" startline="25" endline="28">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SelectionControl.AttackedObject</definition>
+        <argsstring></argsstring>
+        <name>AttackedObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_selection_control_1a49fe531bf936581b14d23133c6d54fef" compoundref="_selection_control_8cs" startline="30" endline="46">Attack</referencedby>
+        <referencedby refid="class_selection_control_1a3ce2e16c1bcc4ba1e52d236ff3eee42c" compoundref="_selection_control_8cs" startline="58" endline="61">GetAttackedObject</referencedby>
+        <referencedby refid="class_selection_control_1a4ceaf4e5075c6599c62b1880ec4ad321" compoundref="_selection_control_8cs" startline="47" endline="56">Move</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_control_1a0c5e90bfaeddf676a7c29939b6e820a4" prot="private" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 SelectionControl.groundPoint</definition>
+        <argsstring></argsstring>
+        <name>groundPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_selection_control_1a5cec446204a232730117887ec06d9fad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionControl.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="12" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1a3561fe9fd9a6a8d2c6e4a2f389b6d2dd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionControl.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="25" bodyend="28"/>
+        <references refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" compoundref="_selection_control_8cs" startline="8">SelectedObjects</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_selection_control_1a49fe531bf936581b14d23133c6d54fef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SelectionControl.Attack</definition>
+        <argsstring>(GameObject attackedObject)</argsstring>
+        <name>Attack</name>
+        <param>
+          <type>GameObject</type>
+          <declname>attackedObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="30" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="30" bodyend="46"/>
+        <references refid="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" compoundref="_selection_control_8cs" startline="9">AttackedObject</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e">MoveToAttack</references>
+        <references refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" compoundref="_selection_control_8cs" startline="8">SelectedObjects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1a4ceaf4e5075c6599c62b1880ec4ad321" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionControl.Move</definition>
+        <argsstring>()</argsstring>
+        <name>Move</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="47" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="47" bodyend="56"/>
+        <references refid="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" compoundref="_selection_control_8cs" startline="9">AttackedObject</references>
+        <references refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" compoundref="_selection_control_8cs" startline="8">SelectedObjects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1a3ce2e16c1bcc4ba1e52d236ff3eee42c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject SelectionControl.GetAttackedObject</definition>
+        <argsstring>()</argsstring>
+        <name>GetAttackedObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="58" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="58" bodyend="61"/>
+        <references refid="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" compoundref="_selection_control_8cs" startline="9">AttackedObject</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1a7cff09249f2c6ea3405157427c3d7d53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionControl.AddSelectedObject</definition>
+        <argsstring>(GameObject selectableObject)</argsstring>
+        <name>AddSelectedObject</name>
+        <param>
+          <type>GameObject</type>
+          <declname>selectableObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="63" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1aa54692dd5883209e4611950ffc63b590" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; SelectionControl.GetSelectedObjects</definition>
+        <argsstring>()</argsstring>
+        <name>GetSelectedObjects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="68" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="68" bodyend="71"/>
+        <references refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" compoundref="_selection_control_8cs" startline="8">SelectedObjects</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_control_1a29018cdd63eed195043e78e5499f8fb5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionControl.CleanSelectableObject</definition>
+        <argsstring>(GameObject selectableObject)</argsstring>
+        <name>CleanSelectableObject</name>
+        <param>
+          <type>GameObject</type>
+          <declname>selectableObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="73" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="73" bodyend="76"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="135">
+        <label>SelectionControl</label>
+        <link refid="class_selection_control"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="137">
+        <label>SelectionControl</label>
+        <link refid="class_selection_control"/>
+        <childnode refid="138" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="138">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionControl.cs" bodystart="6" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_selection_control_1a7cff09249f2c6ea3405157427c3d7d53" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>AddSelectedObject</name></member>
+      <member refid="class_selection_control_1a49fe531bf936581b14d23133c6d54fef" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>Attack</name></member>
+      <member refid="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" prot="private" virt="non-virtual"><scope>SelectionControl</scope><name>AttackedObject</name></member>
+      <member refid="class_selection_control_1a5cec446204a232730117887ec06d9fad" prot="private" virt="non-virtual"><scope>SelectionControl</scope><name>Awake</name></member>
+      <member refid="class_selection_control_1a29018cdd63eed195043e78e5499f8fb5" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>CleanSelectableObject</name></member>
+      <member refid="class_selection_control_1a3ce2e16c1bcc4ba1e52d236ff3eee42c" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>GetAttackedObject</name></member>
+      <member refid="class_selection_control_1aa54692dd5883209e4611950ffc63b590" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>GetSelectedObjects</name></member>
+      <member refid="class_selection_control_1a0c5e90bfaeddf676a7c29939b6e820a4" prot="private" virt="non-virtual"><scope>SelectionControl</scope><name>groundPoint</name></member>
+      <member refid="class_selection_control_1a4ceaf4e5075c6599c62b1880ec4ad321" prot="public" virt="non-virtual"><scope>SelectionControl</scope><name>Move</name></member>
+      <member refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" prot="private" virt="non-virtual"><scope>SelectionControl</scope><name>SelectedObjects</name></member>
+      <member refid="class_selection_control_1a3561fe9fd9a6a8d2c6e4a2f389b6d2dd" prot="private" virt="non-virtual"><scope>SelectionControl</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

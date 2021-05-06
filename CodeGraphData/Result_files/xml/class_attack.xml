@@ -1,0 +1,232 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_attack" kind="class" prot="public">
+    <compoundname>Attack</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Attack.damage</definition>
+        <argsstring></argsstring>
+        <name>damage</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_attack_1a4a09806c251a9b943465f6a6e5343ba8" compoundref="_attack_8cs" startline="32" endline="36">AttackTarget</referencedby>
+        <referencedby refid="class_attack_1ac9bdb2c0bc453c21fbe51123c9429df7" compoundref="_attack_8cs" startline="28" endline="31">GetDamage</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attack_1a69ad2a54f4fd4f23e2611119118f576f" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Attack.attackRadius</definition>
+        <argsstring></argsstring>
+        <name>attackRadius</name>
+        <initializer>= 0.1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_attack_1abcc583563017125ff6e91fbd4d63ec40" compoundref="_attack_8cs" startline="23" endline="26">GetAttackRadius</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attack_1ab5fe994e1444e8c84515fe1b4b00bfa4" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Attack.periodicity</definition>
+        <argsstring></argsstring>
+        <name>periodicity</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_attack_1ae2453126b074aca24a35cf064524a12b" compoundref="_attack_8cs" startline="38" endline="64">AttackTarget</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_attack_1a5d071df2c5179e81d4cfa16f731e580d" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Attack.lookDistance</definition>
+        <argsstring></argsstring>
+        <name>lookDistance</name>
+        <initializer>= 5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attack_1a52fb05dee75428a0af37d2134caec59f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Attack.spawn</definition>
+        <argsstring></argsstring>
+        <name>spawn</name>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_attack_1aa31499f126d995c8d01cf1e6a823d205" prot="private" static="no" mutable="no">
+        <type>DateTime</type>
+        <definition>DateTime Attack.lastChecked</definition>
+        <argsstring></argsstring>
+        <name>lastChecked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_attack_1ae2453126b074aca24a35cf064524a12b" compoundref="_attack_8cs" startline="38" endline="64">AttackTarget</referencedby>
+        <referencedby refid="class_attack_1a438c2bcbbcaa8070adabf3378666e76f" compoundref="_attack_8cs" startline="18" endline="21">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_attack_1a438c2bcbbcaa8070adabf3378666e76f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Attack.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="18" bodyend="21"/>
+        <references refid="class_attack_1aa31499f126d995c8d01cf1e6a823d205" compoundref="_attack_8cs" startline="16">lastChecked</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_attack_1abcc583563017125ff6e91fbd4d63ec40" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Attack.GetAttackRadius</definition>
+        <argsstring>()</argsstring>
+        <name>GetAttackRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="23" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="23" bodyend="26"/>
+        <references refid="class_attack_1a69ad2a54f4fd4f23e2611119118f576f" compoundref="_attack_8cs" startline="9">attackRadius</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attack_1ac9bdb2c0bc453c21fbe51123c9429df7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Attack.GetDamage</definition>
+        <argsstring>()</argsstring>
+        <name>GetDamage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="28" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="28" bodyend="31"/>
+        <references refid="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" compoundref="_attack_8cs" startline="8">damage</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_attack_1a4a09806c251a9b943465f6a6e5343ba8" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Attack.AttackTarget</definition>
+        <argsstring>(GameObject targetToAttack, out float dmg)</argsstring>
+        <name>AttackTarget</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetToAttack</declname>
+        </param>
+        <param>
+          <type>out float</type>
+          <declname>dmg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="32" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="32" bodyend="36"/>
+        <references refid="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" compoundref="_attack_8cs" startline="8">damage</references>
+      </memberdef>
+      <memberdef kind="function" id="class_attack_1ae2453126b074aca24a35cf064524a12b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Attack.AttackTarget</definition>
+        <argsstring>(GameObject targetToAttack)</argsstring>
+        <name>AttackTarget</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetToAttack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="38" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="38" bodyend="64"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aadcfafcb4323b102c7e204555d313ba0a">Attack</references>
+        <references refid="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" compoundref="_attack_8cs" startline="8">damage</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="class_attack_1aa31499f126d995c8d01cf1e6a823d205" compoundref="_attack_8cs" startline="16">lastChecked</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e">MoveToAttack</references>
+        <references refid="class_attack_1ab5fe994e1444e8c84515fe1b4b00bfa4" compoundref="_attack_8cs" startline="10">periodicity</references>
+        <references refid="class_constants_1ad2de058db56f1603ab89820a08319ac0" compoundref="_constants_8cs" startline="10">Constants.TimeScale</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="14">
+        <label>Attack</label>
+        <link refid="class_attack"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>Attack</label>
+        <link refid="class_attack"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Attack.cs" bodystart="6" bodyend="65"/>
+    <listofallmembers>
+      <member refid="class_attack_1a69ad2a54f4fd4f23e2611119118f576f" prot="private" virt="non-virtual"><scope>Attack</scope><name>attackRadius</name></member>
+      <member refid="class_attack_1a4a09806c251a9b943465f6a6e5343ba8" prot="package" virt="non-virtual"><scope>Attack</scope><name>AttackTarget</name></member>
+      <member refid="class_attack_1ae2453126b074aca24a35cf064524a12b" prot="package" virt="non-virtual"><scope>Attack</scope><name>AttackTarget</name></member>
+      <member refid="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" prot="private" virt="non-virtual"><scope>Attack</scope><name>damage</name></member>
+      <member refid="class_attack_1abcc583563017125ff6e91fbd4d63ec40" prot="public" virt="non-virtual"><scope>Attack</scope><name>GetAttackRadius</name></member>
+      <member refid="class_attack_1ac9bdb2c0bc453c21fbe51123c9429df7" prot="public" virt="non-virtual"><scope>Attack</scope><name>GetDamage</name></member>
+      <member refid="class_attack_1aa31499f126d995c8d01cf1e6a823d205" prot="private" virt="non-virtual"><scope>Attack</scope><name>lastChecked</name></member>
+      <member refid="class_attack_1a5d071df2c5179e81d4cfa16f731e580d" prot="private" virt="non-virtual"><scope>Attack</scope><name>lookDistance</name></member>
+      <member refid="class_attack_1ab5fe994e1444e8c84515fe1b4b00bfa4" prot="private" virt="non-virtual"><scope>Attack</scope><name>periodicity</name></member>
+      <member refid="class_attack_1a52fb05dee75428a0af37d2134caec59f" prot="private" virt="non-virtual"><scope>Attack</scope><name>spawn</name></member>
+      <member refid="class_attack_1a438c2bcbbcaa8070adabf3378666e76f" prot="private" virt="non-virtual"><scope>Attack</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_bug_type_enum_8cs" kind="file">
+    <compoundname>BugTypeEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" prot="public" static="no">
+        <name>BugTypeEnum</name>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aab341084581b0fcaeea6678a9c7afeb95" prot="public">
+          <name>AntSlave</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa6841d298c95ef7c32b2be93e6d5c96af" prot="public">
+          <name>AntWarrior</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aace55e06d847a08d49d83d6ccf9a1c9a2" prot="public">
+          <name>AntFlyer</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa4e0b8f74f83559c0691a4b82957b7812" prot="public">
+          <name>Termite1</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa03d4abb9e3c8ad77819bdcc8e7bf8f43" prot="public">
+          <name>Ladybug</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa9fd3ff5b6ff3cd3f3a1a900e46295f8" prot="public">
+          <name>Scarab</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa041ed1675260b45c769e3696906a2ef" prot="public">
+          <name>StagBeetle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugTypeEnum.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugTypeEnum.cs" bodystart="7" bodyend="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aab341084581b0fcaeea6678a9c7afeb95" kindref="member">AntSlave</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa6841d298c95ef7c32b2be93e6d5c96af" kindref="member">AntWarrior</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aace55e06d847a08d49d83d6ccf9a1c9a2" kindref="member">AntFlyer</ref>,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa4e0b8f74f83559c0691a4b82957b7812" kindref="member">Termite1</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa03d4abb9e3c8ad77819bdcc8e7bf8f43" kindref="member">Ladybug</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa9fd3ff5b6ff3cd3f3a1a900e46295f8" kindref="member">Scarab</ref>,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa041ed1675260b45c769e3696906a2ef" kindref="member">StagBeetle</ref></highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugTypeEnum.cs"/>
+  </compounddef>
+</doxygen>

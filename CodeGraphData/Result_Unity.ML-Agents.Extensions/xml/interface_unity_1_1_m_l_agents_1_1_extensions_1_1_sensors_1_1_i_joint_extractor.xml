@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" kind="interface" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::IJointExtractor</compoundname>
+    <derivedcompoundref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" prot="public" virt="non-virtual">Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1ae81b02cbdda0df00f908dab8aabe5765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.IJointExtractor.NumObservations</definition>
+        <argsstring>(PhysicsSensorSettings settings)</argsstring>
+        <name>NumObservations</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f">NumObservations</reimplementedby>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Determine the number of observations that would be generated for the particular joint using the provided <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of floats that will be written.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/IJointExtractor.cs" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1a0ba793473e5d4503441c505cd7279498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.IJointExtractor.Write</definition>
+        <argsstring>(PhysicsSensorSettings settings, ObservationWriter writer, int offset)</argsstring>
+        <name>Write</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c">Write</reimplementedby>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Write the observations to the ObservationWriter, starting at the specified offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of floats that were written.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/IJointExtractor.cs" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Interface for generating observations from a physical joint or constraint. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor"/>
+        <childnode refid="26" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>Unity.MLAgents.Extensions.Sensors.IJointExtractor</label>
+        <link refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor"/>
+      </node>
+    </inheritancegraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/IJointExtractor.cs" line="9" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/IJointExtractor.cs" bodystart="8" bodyend="26"/>
+    <listofallmembers>
+      <member refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1ae81b02cbdda0df00f908dab8aabe5765" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::IJointExtractor</scope><name>NumObservations</name></member>
+      <member refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1a0ba793473e5d4503441c505cd7279498" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::IJointExtractor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

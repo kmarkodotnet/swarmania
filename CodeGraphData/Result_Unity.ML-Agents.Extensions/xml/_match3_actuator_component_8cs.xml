@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_match3_actuator_component_8cs" kind="file">
+    <compoundname>Match3ActuatorComponent.cs</compoundname>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" prot="public">Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</innerclass>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3">Unity::MLAgents::Extensions::Match3</innernamespace>
+    <innernamespace refid="namespace_unity_engine_1_1_serialization">UnityEngine::Serialization</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Unity.MLAgents.Actuators;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine.Serialization;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Unity.MLAgents.Extensions.Match3</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" kindref="compound">Match3ActuatorComponent</ref><sp/>:<sp/>ActuatorComponent</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1ab09da75839eb8e26306c2ccaeba13e22" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ActuatorName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Match3<sp/>Actuator&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a9116027139204e028fb9c3be9824bd51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>RandomSeed<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[FormerlySerializedAs(</highlight><highlight class="stringliteral">&quot;ForceRandom&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[Tooltip(</highlight><highlight class="stringliteral">&quot;Force<sp/>using<sp/>the<sp/>Agent&apos;s<sp/>Heuristic()<sp/>method<sp/>to<sp/>decide<sp/>the<sp/>action.<sp/>This<sp/>should<sp/>only<sp/>be<sp/>used<sp/>in<sp/>testing.&quot;</highlight><highlight class="normal">)]</highlight></codeline>
+<codeline lineno="28" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a6c50a055cbd907a4618b2b977ea1f175" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a6c50a055cbd907a4618b2b977ea1f175" kindref="member">ForceHeuristic</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor">#pragma<sp/>warning<sp/>disable<sp/>672</highlight></codeline>
+<codeline lineno="32" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a8a4f5e587d363cdd3a52be01dddd5270" refkind="member"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>IActuator<sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a8a4f5e587d363cdd3a52be01dddd5270" kindref="member">CreateActuator</ref>()</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>warning<sp/>restore<sp/>672</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>board<sp/>=<sp/>GetComponent&lt;AbstractBoard&gt;();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>agent<sp/>=<sp/>GetComponentInParent&lt;Agent&gt;();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>seed<sp/>=<sp/>RandomSeed<sp/>==<sp/>-1<sp/>?<sp/>gameObject.GetInstanceID()<sp/>:<sp/>RandomSeed<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator" kindref="compound">Match3Actuator</ref>(board,<sp/>ForceHeuristic,<sp/>seed,<sp/>agent,<sp/>ActuatorName);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/>ActionSpec<sp/>ActionSpec</highlight></codeline>
+<codeline lineno="43" refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component_1a14e2385b4edb9ad39742890ac5b02fde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>board<sp/>=<sp/>GetComponent&lt;AbstractBoard&gt;();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(board<sp/>==<sp/>null)</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ActionSpec.MakeContinuous(0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>numMoves<sp/>=<sp/>Move.NumPotentialMoves(board.Rows,<sp/>board.Columns);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ActionSpec.MakeDiscrete(numMoves);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3ActuatorComponent.cs"/>
+  </compounddef>
+</doxygen>

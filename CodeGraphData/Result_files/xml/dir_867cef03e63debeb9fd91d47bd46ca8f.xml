@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_867cef03e63debeb9fd91d47bd46ca8f" kind="dir">
+    <compoundname>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game</compoundname>
+    <innerfile refid="_animation_timescale_8cs">AnimationTimescale.cs</innerfile>
+    <innerfile refid="_config_8cs">Config.cs</innerfile>
+    <innerfile refid="_constants_8cs">Constants.cs</innerfile>
+    <innerfile refid="_game_area_8cs">GameArea.cs</innerfile>
+    <innerfile refid="_grid_8cs">Grid.cs</innerfile>
+    <innerfile refid="_r_t_s_selection_8cs">RTSSelection.cs</innerfile>
+    <innerfile refid="_scroll_controller_8cs">ScrollController.cs</innerfile>
+    <innerfile refid="_selection_control_8cs">SelectionControl.cs</innerfile>
+    <innerfile refid="_selection_core_component_8cs">SelectionCoreComponent.cs</innerfile>
+    <innerfile refid="_utils_8cs">Utils.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/"/>
+  </compounddef>
+</doxygen>

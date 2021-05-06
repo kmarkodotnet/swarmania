@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_horde_pool_object" kind="class" prot="public">
+    <compoundname>HordePoolObject</compoundname>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" prot="public" static="no">
+        <name>HordePoolObjectState</name>
+        <enumvalue id="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164aa87026a344997ce04709fb7b1377c9e7" prot="public">
+          <name>ReadyToUse</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164a019d1ca7d50cc54b995f60d456435e87" prot="public">
+          <name>Used</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" bodystart="6" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_horde_pool_object_1a83f2458470e532b7c434937b7911678d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+        <definition>Horde HordePoolObject.Horde</definition>
+        <argsstring></argsstring>
+        <name>Horde</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" line="3" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_horde_pool_object_1a5b48a9e71a0df6817c40dd4b7f073c51" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" kindref="member">HordePoolObjectState</ref></type>
+        <definition>HordePoolObjectState HordePoolObject.State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" line="4" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" line="2" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs" bodystart="1" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_horde_pool_object_1a83f2458470e532b7c434937b7911678d" prot="public" virt="non-virtual"><scope>HordePoolObject</scope><name>Horde</name></member>
+      <member refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" prot="public" virt="non-virtual"><scope>HordePoolObject</scope><name>HordePoolObjectState</name></member>
+      <member refid="class_horde_pool_object_1a5b48a9e71a0df6817c40dd4b7f073c51" prot="public" virt="non-virtual"><scope>HordePoolObject</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

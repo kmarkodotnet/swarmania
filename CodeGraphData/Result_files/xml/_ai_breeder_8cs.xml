@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_ai_breeder_8cs" kind="file">
+    <compoundname>AiBreeder.cs</compoundname>
+    <innerclass refid="class_ai_breeder" prot="public">AiBreeder</innerclass>
+    <innernamespace refid="namespace_unity_1_1_barracuda">Unity::Barracuda</innernamespace>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents">Unity::MLAgents</innernamespace>
+    <innernamespace refid="namespace_unity_1_1_m_l_agents_1_1_policies">Unity::MLAgents::Policies</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Unity.Barracuda;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Unity.MLAgents;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>Unity.MLAgents.Policies;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="class_ai_breeder" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ai_breeder" kindref="compound">AiBreeder</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>List&lt;GameObject&gt;<sp/><ref refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" kindref="member">bugPrefabs</ref>;</highlight></codeline>
+<codeline lineno="12" refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/>List&lt;int&gt;<sp/><ref refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" kindref="member">playerWeights</ref>;</highlight></codeline>
+<codeline lineno="13" refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" kindref="member">maxSteps</ref><sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="14" refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" kindref="member">maxN</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="15" refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" kindref="member">maxM</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="16" refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" kindref="member">randomRange</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" kindref="member">currentStep</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="19" refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" kindref="member">currentBreed</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="20" refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref>[]<sp/><ref refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" kindref="member">bugTypes</ref>;</highlight></codeline>
+<codeline lineno="21" refid="class_ai_breeder_1a69d4f599302d379c3b00f89fc093104a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a69d4f599302d379c3b00f89fc093104a" kindref="member">Awake</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>c<sp/>=<sp/>FindObjectsOfType&lt;AiBreeder&gt;().Length;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>&gt;<sp/>1)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Destroy(gameObject);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DontDestroyOnLoad(gameObject);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33" refid="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" kindref="member">Start</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" kindref="member">bugTypes</ref><sp/>=<sp/>bugPrefabs.Select(b<sp/>=&gt;<sp/>b.GetComponent&lt;<ref refid="class_attackable_bug" kindref="compound">AttackableBug</ref>&gt;().GetBugType()).ToArray();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" kindref="member">Update</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" kindref="member">maxSteps</ref><sp/>&lt;=<sp/><ref refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" kindref="member">currentStep</ref>)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" kindref="member">Breed</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" kindref="member">currentStep</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" kindref="member">currentStep</ref>++;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50" refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" kindref="member">Clear</ref>()</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().AwardHordePool();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().ClearBugs();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().ResetHordePool();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().EndHordePoolEpisode();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" kindref="member">GetMaxN</ref>()</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" kindref="member">maxN</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63" refid="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" kindref="member">GetMaxM</ref>()</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" kindref="member">maxM</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67" refid="class_ai_breeder_1a9431f51c9778c302577ed600d9d75a3d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a9431f51c9778c302577ed600d9d75a3d" kindref="member">GetPlayersNum</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>playerWeights.Count;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" kindref="member">GetCurrentBreed</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" kindref="member">currentBreed</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" kindref="member">Breed</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" kindref="member">currentBreed</ref>++;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" kindref="member">Clear</ref>();</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/>0;<sp/>n<sp/>&lt;<sp/><ref refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" kindref="member">maxN</ref>;<sp/>n++)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>m<sp/>=<sp/>0;<sp/>m<sp/>&lt;<sp/><ref refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" kindref="member">maxM</ref>;<sp/>m++)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>deltaN<sp/>=<sp/>35<sp/>*<sp/>n;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>deltaM<sp/>=<sp/>25<sp/>*<sp/>m;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>j<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>j<sp/>=<sp/>Random.Range(0,<sp/>3);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>playerWeights.Count;<sp/>i++)</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>r1<sp/>=<sp/>Random.Range(-<ref refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" kindref="member">randomRange</ref>,<sp/><ref refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" kindref="member">randomRange</ref>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>index<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" kindref="member">Breed</ref>(index,<sp/><ref refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" kindref="member">playerWeights</ref>[index]<sp/>+<sp/>r1,<sp/>deltaN,<sp/>deltaM);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>System.Threading.Thread.Sleep(2);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().CalculateHordes();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105" refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" kindref="member">Breed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerIndex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerWeight,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deltaN,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deltaM)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>playerWeight;<sp/>i++)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>Random.Range(0,<sp/>5);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" kindref="member">BreedOne</ref>(<ref refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" kindref="member">bugPrefabs</ref>[j],<sp/>playerIndex,<sp/>deltaN,<sp/>deltaM);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" kindref="member">BreedOne</ref>(GameObject<sp/>gameObject,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>playerIndex,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deltaN,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>deltaM)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>p<sp/>=<sp/>gameObject.transform.position;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>bug<sp/>=<sp/>Instantiate(gameObject,<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Vector3(p.x<sp/>+<sp/>Random.Range(-2,<sp/>2)<sp/>+<sp/>3<sp/>*<sp/>playerIndex<sp/>+<sp/>deltaN,<sp/>p.y<sp/>+<sp/>Random.Range(-2,<sp/>2)<sp/>+<sp/>deltaM,<sp/>p.z),<sp/>Quaternion.identity);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bug.GetComponent&lt;<ref refid="class_selectable_object" kindref="compound">SelectableObject</ref>&gt;().SetOwnerId(playerIndex.ToString());</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bug.GetComponentInChildren&lt;SpriteRenderer&gt;().color<sp/>=<sp/>playerIndex<sp/>==<sp/>0<sp/>?<sp/>Color.white<sp/>:<sp/>Color.blue;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>c<sp/>=<sp/>bug.GetComponentInChildren&lt;SpriteRenderer&gt;().color;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bug.GetComponentInChildren&lt;SpriteRenderer&gt;().color<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Color(c.r,<sp/>c.g,<sp/>c.b,<sp/>1);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FindObjectOfType&lt;AiEntityCollection&gt;().AddBug(bug);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs"/>
+  </compounddef>
+</doxygen>

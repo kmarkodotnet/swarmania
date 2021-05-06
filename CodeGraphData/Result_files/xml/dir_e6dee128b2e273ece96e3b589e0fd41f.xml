@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_e6dee128b2e273ece96e3b589e0fd41f" kind="dir">
+    <compoundname>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource</compoundname>
+    <innerfile refid="_resource_8cs">Resource.cs</innerfile>
+    <innerfile refid="_resource_handler_8cs">ResourceHandler.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/"/>
+  </compounddef>
+</doxygen>

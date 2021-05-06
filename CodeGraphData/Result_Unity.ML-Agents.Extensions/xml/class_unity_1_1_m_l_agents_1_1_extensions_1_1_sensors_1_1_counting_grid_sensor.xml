@@ -1,0 +1,424 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</compoundname>
+    <basecompoundref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor" prot="public" virt="non-virtual">Unity.MLAgents.Extensions.Sensors.GridSensor</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1af3a160b28f0d09a928e162dd0a98ef44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Unity.MLAgents.Extensions.Sensors.CountingGridSensor.InitDepthType</definition>
+        <argsstring>()</argsstring>
+        <name>InitDepthType</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a57e8b2b89575d8b3ce3fc8d1908d0cbe">InitDepthType</reimplements>
+        <briefdescription>
+<para><para>Initializes the constant parameters that are based on the Grid Depth Type Sets the ObservationPerCell and the ChannelOffsets properties </para> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="9" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="9" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1ab4ad4fcc1d8ee56905e10870d0479dbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Unity.MLAgents.Extensions.Sensors.CountingGridSensor.InitChannelHotDefaultPerceptionBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>InitChannelHotDefaultPerceptionBuffer</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8063a8b4e3581923312de643f158b60">InitChannelHotDefaultPerceptionBuffer</reimplements>
+        <briefdescription>
+<para>Overrides the initialization ofthe m_ChannelHotDefaultPerceptionBuffer with 0s as the counting grid sensor starts within its initialization equal to 0 </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="18" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="18" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a4be54af21294023f9cea4d0f67239250" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Unity.MLAgents.Extensions.Sensors.CountingGridSensor.SetParameters</definition>
+        <argsstring>(string[] detectableObjects, int[] channelDepth, GridDepthType gridDepthType, float cellScaleX, float cellScaleZ, int gridWidth, int gridHeight, int observeMaskInt, bool rotateToAgent, Color[] debugColors)</argsstring>
+        <name>SetParameters</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab549cad9b055f4d075ecbe7d96dec402">SetParameters</reimplements>
+        <param>
+          <type>string[]</type>
+          <declname>detectableObjects</declname>
+        </param>
+        <param>
+          <type>int[]</type>
+          <declname>channelDepth</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" kindref="member">GridDepthType</ref></type>
+          <declname>gridDepthType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cellScaleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cellScaleZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridHeight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>observeMaskInt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rotateToAgent</declname>
+        </param>
+        <param>
+          <type>Color[]</type>
+          <declname>debugColors</declname>
+        </param>
+        <briefdescription>
+<para><para>Sets the parameters of the grid sensor </para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>detectableObjects</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of strings representing the tags to be detected by the sensor</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelDepth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of ints representing the depth of each channel</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridDepthType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enum representing the GridDepthType of the sensor</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellScaleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float representing the X scaling of each cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellScaleZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float representing the Z scaling of each cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the number of cells in the X direction. Width of the Grid</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the number of cells in the Z direction. Height of the Grid</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observeMaskInt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the layer mask to observe</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotateToAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool if true then the grid is rotated to the rotation of the transform the rootReference</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debugColors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of colors corresponding the the tags in the detectableObjects array</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="24" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="24" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a2be6341f5eb8709cefa9a4544d844d47" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Unity.MLAgents.Extensions.Sensors.CountingGridSensor.ParseColliders</definition>
+        <argsstring>(Collider[] foundColliders, int cellIndex, Vector3 cellCenter)</argsstring>
+        <name>ParseColliders</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aa47358cd12d6f4fc3f18f7c621f5a487">ParseColliders</reimplements>
+        <param>
+          <type>Collider[]</type>
+          <declname>foundColliders</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cellIndex</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>cellCenter</declname>
+        </param>
+        <briefdescription>
+<para>For each collider, calls LoadObjectData on the gameobejct </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>foundColliders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array of colliders</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cell index the collider is in</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellCenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the center of the cell the collider is in</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="49" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="49" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a34cabbf9bc7c7727e8ff13e2f6aa2fe9" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override float[]</type>
+        <definition>override float [] Unity.MLAgents.Extensions.Sensors.CountingGridSensor.GetObjectData</definition>
+        <argsstring>(GameObject currentColliderGo, float typeIndex, float normalizedDistance)</argsstring>
+        <name>GetObjectData</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abf8cd061ee49f5e89f365273447ecefb">GetObjectData</reimplements>
+        <param>
+          <type>GameObject</type>
+          <declname>currentColliderGo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>typeIndex</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>normalizedDistance</declname>
+        </param>
+        <briefdescription>
+<para>Throws an execption as this should not be called from the <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor" kindref="compound">CountingGridSensor</ref> class </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentColliderGo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current gameobject to get data from</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the detectable tag of this gameobject</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalizedDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The normalized distance to the gridsensor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="76" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a215d534e45a5a1f753d32271b82f9a06" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void Unity.MLAgents.Extensions.Sensors.CountingGridSensor.LoadObjectData</definition>
+        <argsstring>(GameObject currentColliderGo, int cellIndex, float normalizedDistance)</argsstring>
+        <name>LoadObjectData</name>
+        <reimplements refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a535cb156948697f8b459e0b4f2ead06e">LoadObjectData</reimplements>
+        <param>
+          <type>GameObject</type>
+          <declname>currentColliderGo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cellIndex</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>normalizedDistance</declname>
+        </param>
+        <briefdescription>
+<para>Adds 1 to the counting index for this gameobject of this type </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentColliderGo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the current game object</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the index of the cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalizedDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the normalized distance from the gameobject to the sensor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>The observations are &quot;channel count&quot; so each grid is WxHxC where C is the number of tags This means that each value channelValues[i] is a counter of gameobject included into grid cells where i is the index of the tag in DetectableObjects </para>        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="87" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="87" bodyend="112"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="7">
+        <label>ISensor</label>
+      </node>
+      <node id="4">
+        <label>Unity.MLAgents.Extensions.Sensors.CountingGridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>GridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+        <childnode refid="8" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>SensorComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="13">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="12">
+        <label>ISensor</label>
+      </node>
+      <node id="9">
+        <label>Unity.MLAgents.Extensions.Sensors.CountingGridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>GridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>SensorComponent</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="7" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" bodystart="6" bodyend="113"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a11e8acbe646b97ee7403ad4f19e465cd" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CellActivity</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22dd960f4334e19f594c40baf97946f7" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CellScaleX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a152c50387e415be767404d231048ab0d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CellScaleY</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab7f415207e12ed31735eb64c67a6a5b7" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CellScaleZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bf0ff3b3bdb30753fc2565e7611451" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CellToPoint</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a8d7554bee0e82e1814652ca0bf1daed9" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ChannelDepth</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a191ff8d4f6cdb0cf5fcca1cc80f9aa68" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ChannelOffsets</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a997b7c5d055222351ace7efc824c309d" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ChannelsToTexture</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a54e32fb855d40eb0170c6f00bcdb3c65" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2eb468083b267683c2d0f6bbf867f53c" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CopyCellData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2878a885ca505e585f0d94aa66b0d22a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>CreateSensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aade683d4adc95cd03070913afe8db96d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>DebugColors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a03c7f37a27d77ed3478bcb65c23c658f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>DetectableObjects</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab283431950b0e75de8cb59b566a9cc71" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>DiffNumSideZX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a315c1b61f333bf2bb978bd8298a08bc6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetBuiltInSensorType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0dfc80fea3e72ae46e265033cd36a2de" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetCompressedObservation</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ada4ffb68e772d2b144fe540a797246ec" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetCompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7dd21f8af1fa4601f972e2fc293157c8" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetFloatObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1af06df27f5cb4862637fc5945c3f3109b" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a34cabbf9bc7c7727e8ff13e2f6aa2fe9" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetObjectData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a97339586c271bb1c650b685706e460d2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4ad4b8b4749e985a15956cb7a5e535dc" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GizmoYOffset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aec38955b033c6cd4d22839411b9de639" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>gridDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GridDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a478435ce71e3129119abf8d64fabb7ac" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GridNumSideX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad033ff46574e54cd72959dc8661954b5" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>GridNumSideZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2e6d2cce19d727866438869c3ad15e9d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>IndexOfTag</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1ab4ad4fcc1d8ee56905e10870d0479dbb" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>InitChannelHotDefaultPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1af3a160b28f0d09a928e162dd0a98ef44" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>InitDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a416435abe00596129dff2b6f83835e5e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>InitGridParameters</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7232f180bfd4972b606aa03e04416ce6" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Initialized</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a094a46956e0e176dcbba18eeec540df2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>InitPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a215d534e45a5a1f753d32271b82f9a06" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>LoadObjectData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad29809e37e4bc943c77f08f8ba041761" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>m_ChannelHotDefaultPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1996cbb52518052a1cfc90cdd99ba81b" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>m_PerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5d220ff2a38ea8ecb6f033ccaa4a63e2" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>m_PerceptionColors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a37df97f3f6397404efcd22a11551542d" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>m_perceptionTexture2D</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22eb4493a9f3b657ed01d9a8b7f88c05" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Name</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a58b0e7ed33f97f47e1760da6bd72ae26" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>NumberOfObservations</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bcb62e4a34b36d9815b87919e8d775" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ObservationPerCell</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad9104467b2777836fd869359d2f3c40a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ObserveMask</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abaa159a3e15f060a3fc50fae166a58cc" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>OffsetGridNumSide</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a2be6341f5eb8709cefa9a4544d844d47" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ParseColliders</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0cb0bc7648a626b985bd4924e3212f70" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Perceive</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abe9f16dc1247e53a0620997247d5c61f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>PointToCell</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a961a21aeff49ec0cae0addd1082e6ada" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Reset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1c292a2aa779a8424b5f164c80375f0e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>rootReference</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a13b6cf32e32ac3ec724b5993ddb2cc04" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>RotateToAgent</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a4be54af21294023f9cea4d0f67239250" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>SetParameters</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a69438c570834f19e66e2bcbdbb65ebdf" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ShowGizmos</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae6e9d5a4ce95dd41c8e5bf4fc81d2c86" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>SphereRadius</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a184b8ebab72f0a5b9e0b9316ff2ccf9e" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Start</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a48cdd87f2f1cb7e4721989b27ad080cb" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>ValidateValues</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a82ad27c3e7c10451f9832e4f866234f4" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::CountingGridSensor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

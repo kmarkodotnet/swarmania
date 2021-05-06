@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bug" kind="class" prot="public">
+    <compoundname>Bug</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bug_1a5da06f6beee583bb3a21c60a817b1cfa" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bug.current</definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_bug_1a23e72577aaaa943f35539ad152f8cb1b" compoundref="_bug_8cs" startline="40" endline="48">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_1a3fa02d1eafb37fd01bf9d8cea6c4c6b7" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Bug.bugId</definition>
+        <argsstring></argsstring>
+        <name>bugId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_bug_1a9895cc09d5b5b69ece5653e55a9e1131" compoundref="_bug_8cs" startline="25" endline="28">Awake</referencedby>
+        <referencedby refid="class_bug_1a170cea8f49ce8d864439618a07562063" compoundref="_bug_8cs" startline="35" endline="38">GetId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_1a00f3c2eb3823578286e7e9a41f5aff62" prot="private" static="no" mutable="no">
+        <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+        <definition>ResourceTypeEnum Bug.bugCreationResoucreType</definition>
+        <argsstring></argsstring>
+        <name>bugCreationResoucreType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_bug_1ab7d35c84a533e4fda57611159075dbaf" compoundref="_bug_8cs" startline="50" endline="53">GetBugCreationResoucreType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_1a88284e7f441859ab49a06bf4544cbad0" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Bug.bugCreationResourceAmmount</definition>
+        <argsstring></argsstring>
+        <name>bugCreationResourceAmmount</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_bug_1ab562cad51a4eb7fed47e2fd7a55b5b0d" compoundref="_bug_8cs" startline="54" endline="57">GetBugCreationResourceAmmount</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_1a81214df2a10075f0ad153b7864b0d423" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Bug.bugCreationTime</definition>
+        <argsstring></argsstring>
+        <name>bugCreationTime</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_bug_1a0bfb352d1d0ad7df2458afe7506da84c" compoundref="_bug_8cs" startline="58" endline="61">GetBugCreationTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_1a4e59443d23503bb79eb0b0db3214ff6e" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Bug.birthCastle</definition>
+        <argsstring></argsstring>
+        <name>birthCastle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_bug_1ad2ae06299289f6b72f13287fdd113aca" compoundref="_bug_8cs" startline="63" endline="66">GetBirthCastle</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_bug_1a79f2c069e46d417de8f21164299e9e39" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Bug._nextId</definition>
+        <argsstring></argsstring>
+        <name>_nextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_bug_1a208050f0d8975cac63809e8a724b7f14" prot="private" static="yes" readable="no" writable="no" gettable="yes" settable="no">
+        <type>int</type>
+        <definition>int Bug.NextId</definition>
+        <argsstring></argsstring>
+        <name>NextId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="17" bodyend="-1"/>
+        <referencedby refid="class_bug_1a9895cc09d5b5b69ece5653e55a9e1131" compoundref="_bug_8cs" startline="25" endline="28">Awake</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bug_1a9895cc09d5b5b69ece5653e55a9e1131" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bug.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="25" bodyend="28"/>
+        <references refid="class_bug_1a3fa02d1eafb37fd01bf9d8cea6c4c6b7" compoundref="_bug_8cs" startline="9">bugId</references>
+        <references refid="class_bug_1a208050f0d8975cac63809e8a724b7f14" compoundref="_bug_8cs" startline="17">NextId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1ac0d4db9bf4b5ad087104826829042863" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bug.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="30" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1a23e72577aaaa943f35539ad152f8cb1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bug.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="40" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="40" bodyend="48"/>
+        <references refid="class_bug_1a5da06f6beee583bb3a21c60a817b1cfa" compoundref="_bug_8cs" startline="7">current</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bug_1a170cea8f49ce8d864439618a07562063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Bug.GetId</definition>
+        <argsstring>()</argsstring>
+        <name>GetId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="35" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="35" bodyend="38"/>
+        <references refid="class_bug_1a3fa02d1eafb37fd01bf9d8cea6c4c6b7" compoundref="_bug_8cs" startline="9">bugId</references>
+        <referencedby refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" compoundref="_horde_8cs" startline="346" endline="358">Horde.Add</referencedby>
+        <referencedby refid="class_entity_collection_1a0fef532c54938d89f676c5a4bf84b6c9" compoundref="_entity_collection_8cs" startline="113" endline="123">EntityCollection.AddBug</referencedby>
+        <referencedby refid="class_ai_entity_collection_1a60a2d2aa42df3d02b1d13bf8bc721f7f" compoundref="_ai_entity_collection_8cs" startline="114" endline="124">AiEntityCollection.AddBug</referencedby>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Horde.Lookup</referencedby>
+        <referencedby refid="class_bug_state_handler_1a2d3fe7c8eaddca05f09f867d470c7747" compoundref="_bug_state_handler_8cs" startline="45" endline="51">BugStateHandler.SetNoAttackTarget</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1ab7d35c84a533e4fda57611159075dbaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+        <definition>ResourceTypeEnum Bug.GetBugCreationResoucreType</definition>
+        <argsstring>()</argsstring>
+        <name>GetBugCreationResoucreType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="50" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="50" bodyend="53"/>
+        <references refid="class_bug_1a00f3c2eb3823578286e7e9a41f5aff62" compoundref="_bug_8cs" startline="10">bugCreationResoucreType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1ab562cad51a4eb7fed47e2fd7a55b5b0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Bug.GetBugCreationResourceAmmount</definition>
+        <argsstring>()</argsstring>
+        <name>GetBugCreationResourceAmmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="54" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="54" bodyend="57"/>
+        <references refid="class_bug_1a88284e7f441859ab49a06bf4544cbad0" compoundref="_bug_8cs" startline="11">bugCreationResourceAmmount</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1a0bfb352d1d0ad7df2458afe7506da84c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Bug.GetBugCreationTime</definition>
+        <argsstring>()</argsstring>
+        <name>GetBugCreationTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="58" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="58" bodyend="61"/>
+        <references refid="class_bug_1a81214df2a10075f0ad153b7864b0d423" compoundref="_bug_8cs" startline="12">bugCreationTime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_1ad2ae06299289f6b72f13287fdd113aca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Bug.GetBirthCastle</definition>
+        <argsstring>()</argsstring>
+        <name>GetBirthCastle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="63" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="63" bodyend="66"/>
+        <references refid="class_bug_1a4e59443d23503bb79eb0b0db3214ff6e" compoundref="_bug_8cs" startline="13">birthCastle</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="22">
+        <label>Bug</label>
+        <link refid="class_bug"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="24">
+        <label>Bug</label>
+        <link refid="class_bug"/>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/Bug.cs" bodystart="5" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_bug_1a79f2c069e46d417de8f21164299e9e39" prot="private" virt="non-virtual"><scope>Bug</scope><name>_nextId</name></member>
+      <member refid="class_bug_1a9895cc09d5b5b69ece5653e55a9e1131" prot="private" virt="non-virtual"><scope>Bug</scope><name>Awake</name></member>
+      <member refid="class_bug_1a4e59443d23503bb79eb0b0db3214ff6e" prot="private" virt="non-virtual"><scope>Bug</scope><name>birthCastle</name></member>
+      <member refid="class_bug_1a00f3c2eb3823578286e7e9a41f5aff62" prot="private" virt="non-virtual"><scope>Bug</scope><name>bugCreationResoucreType</name></member>
+      <member refid="class_bug_1a88284e7f441859ab49a06bf4544cbad0" prot="private" virt="non-virtual"><scope>Bug</scope><name>bugCreationResourceAmmount</name></member>
+      <member refid="class_bug_1a81214df2a10075f0ad153b7864b0d423" prot="private" virt="non-virtual"><scope>Bug</scope><name>bugCreationTime</name></member>
+      <member refid="class_bug_1a3fa02d1eafb37fd01bf9d8cea6c4c6b7" prot="private" virt="non-virtual"><scope>Bug</scope><name>bugId</name></member>
+      <member refid="class_bug_1a5da06f6beee583bb3a21c60a817b1cfa" prot="private" virt="non-virtual"><scope>Bug</scope><name>current</name></member>
+      <member refid="class_bug_1ad2ae06299289f6b72f13287fdd113aca" prot="public" virt="non-virtual"><scope>Bug</scope><name>GetBirthCastle</name></member>
+      <member refid="class_bug_1ab7d35c84a533e4fda57611159075dbaf" prot="public" virt="non-virtual"><scope>Bug</scope><name>GetBugCreationResoucreType</name></member>
+      <member refid="class_bug_1ab562cad51a4eb7fed47e2fd7a55b5b0d" prot="public" virt="non-virtual"><scope>Bug</scope><name>GetBugCreationResourceAmmount</name></member>
+      <member refid="class_bug_1a0bfb352d1d0ad7df2458afe7506da84c" prot="public" virt="non-virtual"><scope>Bug</scope><name>GetBugCreationTime</name></member>
+      <member refid="class_bug_1a170cea8f49ce8d864439618a07562063" prot="public" virt="non-virtual"><scope>Bug</scope><name>GetId</name></member>
+      <member refid="class_bug_1a208050f0d8975cac63809e8a724b7f14" prot="private" virt="non-virtual"><scope>Bug</scope><name>NextId</name></member>
+      <member refid="class_bug_1ac0d4db9bf4b5ad087104826829042863" prot="private" virt="non-virtual"><scope>Bug</scope><name>Start</name></member>
+      <member refid="class_bug_1a23e72577aaaa943f35539ad152f8cb1b" prot="private" virt="non-virtual"><scope>Bug</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

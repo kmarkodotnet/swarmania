@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_bug_state_enum_8cs" kind="file">
+    <compoundname>BugStateEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" prot="public" static="no">
+        <name>BugStateEnum</name>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5" prot="public">
+          <name>Move</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e" prot="public">
+          <name>MoveToAttack</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aadcfafcb4323b102c7e204555d313ba0a" prot="public">
+          <name>Attack</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa45fadab7d4651692c382b567b760233e" prot="public">
+          <name>MoveToHarvest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa047cc77d62a791b613cdff1e3553cce1" prot="public">
+          <name>MoveRunAway</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aacb49ad33f3491104647183fd72ffb9fe" prot="public">
+          <name>Harvest</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aaf17105ebbabedfc63353a1904fc386df" prot="public">
+          <name>Attacked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa9edfb8f99786b8d55d8ed576fdd23fad" prot="public">
+          <name>MoveToCastle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617" prot="public">
+          <name>Dead</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugStateEnum.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugStateEnum.cs" bodystart="7" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" kindref="member">BugStateEnum</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aae599161956d626eda4cb0a5ffb85271c" kindref="member">Idle</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5" kindref="member">Move</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e" kindref="member">MoveToAttack</ref>,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aadcfafcb4323b102c7e204555d313ba0a" kindref="member">Attack</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa45fadab7d4651692c382b567b760233e" kindref="member">MoveToHarvest</ref>,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa047cc77d62a791b613cdff1e3553cce1" kindref="member">MoveRunAway</ref>,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aacb49ad33f3491104647183fd72ffb9fe" kindref="member">Harvest</ref>,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aaf17105ebbabedfc63353a1904fc386df" kindref="member">Attacked</ref>,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa9edfb8f99786b8d55d8ed576fdd23fad" kindref="member">MoveToCastle</ref>,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617" kindref="member">Dead</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/BugStateEnum.cs"/>
+  </compounddef>
+</doxygen>

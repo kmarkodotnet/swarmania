@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors" kind="namespace">
+    <compoundname>Unity::MLAgents::Extensions::Sensors</compoundname>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor" prot="public">Unity::MLAgents::Extensions::Sensors::CountingGridSensor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor" prot="public">Unity::MLAgents::Extensions::Sensors::GridSensor</innerclass>
+    <innerclass refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" prot="public">Unity::MLAgents::Extensions::Sensors::IJointExtractor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" prot="public">Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</innerclass>
+    <innerclass refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" prot="public">Unity::MLAgents::Extensions::Sensors::PhysicsSensorSettings</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions" prot="package">Unity::MLAgents::Extensions::Sensors::ObservationWriterPhysicsExtensions</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" prot="public">Unity::MLAgents::Extensions::Sensors::PoseExtractor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extensions" prot="public">Unity::MLAgents::Extensions::Sensors::PoseExtensions</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" prot="public">Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" prot="public">Unity::MLAgents::Extensions::Sensors::RigidBodyPoseExtractor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component" prot="public">Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/CountingGridSensor.cs" line="5" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_resource" kind="class" prot="public">
+    <compoundname>Resource</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_resource_1a13057f66ec11e8fb7e561c783884f0ff" prot="private" static="no" mutable="no">
+        <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+        <definition>ResourceTypeEnum Resource.resourceType</definition>
+        <argsstring></argsstring>
+        <name>resourceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_resource_1a66b774716ba9db8e2550da19e44e5212" compoundref="_resource_8cs" startline="10" endline="13">GetResourceType</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_resource_1a3af040073a2711bf01d5b7ecc3608422" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Resource.resourceAmmount</definition>
+        <argsstring></argsstring>
+        <name>resourceAmmount</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_resource_1a2f8bd91b99799413a4d5fa59a18dd19e" compoundref="_resource_8cs" startline="20" endline="37">GetResourceAmmount</referencedby>
+        <referencedby refid="class_resource_1aa0fb45318b49ca4697397f9e02cf43e2" compoundref="_resource_8cs" startline="15" endline="18">GetTotalResourceAmmount</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_resource_1a66b774716ba9db8e2550da19e44e5212" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kindref="member">ResourceTypeEnum</ref></type>
+        <definition>ResourceTypeEnum Resource.GetResourceType</definition>
+        <argsstring>()</argsstring>
+        <name>GetResourceType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="10" bodyend="13"/>
+        <references refid="class_resource_1a13057f66ec11e8fb7e561c783884f0ff" compoundref="_resource_8cs" startline="7">resourceType</references>
+      </memberdef>
+      <memberdef kind="function" id="class_resource_1aa0fb45318b49ca4697397f9e02cf43e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Resource.GetTotalResourceAmmount</definition>
+        <argsstring>()</argsstring>
+        <name>GetTotalResourceAmmount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="15" bodyend="18"/>
+        <references refid="class_resource_1a3af040073a2711bf01d5b7ecc3608422" compoundref="_resource_8cs" startline="8">resourceAmmount</references>
+        <referencedby refid="class_common_service_1a5e69dab1fd1ff5472dc311f817ec4da4" compoundref="_common_service_8cs" startline="98" endline="101">CommonService.IsAnyResource</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_resource_1a2f8bd91b99799413a4d5fa59a18dd19e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Resource.GetResourceAmmount</definition>
+        <argsstring>(float resourceToCarry)</argsstring>
+        <name>GetResourceAmmount</name>
+        <param>
+          <type>float</type>
+          <declname>resourceToCarry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="20" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="20" bodyend="37"/>
+        <references refid="class_resource_1a3af040073a2711bf01d5b7ecc3608422" compoundref="_resource_8cs" startline="8">resourceAmmount</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="107">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="106">
+        <label>Resource</label>
+        <link refid="class_resource"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="109">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="108">
+        <label>Resource</label>
+        <link refid="class_resource"/>
+        <childnode refid="109" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource/Resource.cs" bodystart="5" bodyend="38"/>
+    <listofallmembers>
+      <member refid="class_resource_1a2f8bd91b99799413a4d5fa59a18dd19e" prot="public" virt="non-virtual"><scope>Resource</scope><name>GetResourceAmmount</name></member>
+      <member refid="class_resource_1a66b774716ba9db8e2550da19e44e5212" prot="public" virt="non-virtual"><scope>Resource</scope><name>GetResourceType</name></member>
+      <member refid="class_resource_1aa0fb45318b49ca4697397f9e02cf43e2" prot="public" virt="non-virtual"><scope>Resource</scope><name>GetTotalResourceAmmount</name></member>
+      <member refid="class_resource_1a3af040073a2711bf01d5b7ecc3608422" prot="private" virt="non-virtual"><scope>Resource</scope><name>resourceAmmount</name></member>
+      <member refid="class_resource_1a13057f66ec11e8fb7e561c783884f0ff" prot="private" virt="non-virtual"><scope>Resource</scope><name>resourceType</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

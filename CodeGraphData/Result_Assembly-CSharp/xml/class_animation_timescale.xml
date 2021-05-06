@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_animation_timescale" kind="class" prot="public">
+    <compoundname>AnimationTimescale</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_animation_timescale_1aa1dbfb4fa86fd66e2da7e8fb4acb95b8" prot="private" static="no" mutable="no">
+        <type>Animator</type>
+        <definition>Animator AnimationTimescale.m_Animator</definition>
+        <argsstring></argsstring>
+        <name>m_Animator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_animation_timescale_1a738497371239066dfcc121b87834bba7" compoundref="_animation_timescale_8cs" startline="9" endline="12">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_animation_timescale_1a738497371239066dfcc121b87834bba7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationTimescale.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" bodystart="9" bodyend="12"/>
+        <references refid="class_animation_timescale_1aa1dbfb4fa86fd66e2da7e8fb4acb95b8" compoundref="_animation_timescale_8cs" startline="7">m_Animator</references>
+      </memberdef>
+      <memberdef kind="function" id="class_animation_timescale_1a4ecaf976d7734c4ec5d3d2461c33f78f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AnimationTimescale.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" bodystart="14" bodyend="17"/>
+        <references refid="class_constants_1ad2de058db56f1603ab89820a08319ac0" compoundref="_constants_8cs" startline="10">Constants.TimeScale</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>AnimationTimescale</label>
+        <link refid="class_animation_timescale"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>AnimationTimescale</label>
+        <link refid="class_animation_timescale"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/AnimationTimescale.cs" bodystart="5" bodyend="18"/>
+    <listofallmembers>
+      <member refid="class_animation_timescale_1aa1dbfb4fa86fd66e2da7e8fb4acb95b8" prot="private" virt="non-virtual"><scope>AnimationTimescale</scope><name>m_Animator</name></member>
+      <member refid="class_animation_timescale_1a4ecaf976d7734c4ec5d3d2461c33f78f" prot="private" virt="non-virtual"><scope>AnimationTimescale</scope><name>OnGUI</name></member>
+      <member refid="class_animation_timescale_1a738497371239066dfcc121b87834bba7" prot="private" virt="non-virtual"><scope>AnimationTimescale</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

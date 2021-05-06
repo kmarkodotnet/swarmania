@@ -1,0 +1,677 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_ai_breeder" kind="class"><name>AiBreeder</name>
+    <member refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" kind="variable"><name>bugPrefabs</name></member>
+    <member refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" kind="variable"><name>playerWeights</name></member>
+    <member refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" kind="variable"><name>maxSteps</name></member>
+    <member refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" kind="variable"><name>maxN</name></member>
+    <member refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" kind="variable"><name>maxM</name></member>
+    <member refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" kind="variable"><name>randomRange</name></member>
+    <member refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" kind="variable"><name>currentStep</name></member>
+    <member refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" kind="variable"><name>currentBreed</name></member>
+    <member refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" kind="variable"><name>bugTypes</name></member>
+    <member refid="class_ai_breeder_1a69d4f599302d379c3b00f89fc093104a" kind="function"><name>Awake</name></member>
+    <member refid="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" kind="function"><name>Start</name></member>
+    <member refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" kind="function"><name>Update</name></member>
+    <member refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" kind="function"><name>BreedOne</name></member>
+    <member refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" kind="function"><name>Clear</name></member>
+    <member refid="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" kind="function"><name>GetMaxN</name></member>
+    <member refid="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" kind="function"><name>GetMaxM</name></member>
+    <member refid="class_ai_breeder_1a9431f51c9778c302577ed600d9d75a3d" kind="function"><name>GetPlayersNum</name></member>
+    <member refid="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" kind="function"><name>GetCurrentBreed</name></member>
+    <member refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" kind="function"><name>Breed</name></member>
+    <member refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" kind="function"><name>Breed</name></member>
+  </compound>
+  <compound refid="class_ai_entity_collection" kind="class"><name>AiEntityCollection</name>
+    <member refid="class_ai_entity_collection_1ace1c08eee6ba860e037512a9b594d97d" kind="variable"><name>calculateHordesFrame</name></member>
+    <member refid="class_ai_entity_collection_1ae61e489c409de81a348d9519e8678616" kind="variable"><name>maxHordesNumber</name></member>
+    <member refid="class_ai_entity_collection_1a79fdce304fe3696b2961cd843734c795" kind="variable"><name>hordePrefab</name></member>
+    <member refid="class_ai_entity_collection_1a165eefa9d9954c8df12575b3e3d051ea" kind="variable"><name>models</name></member>
+    <member refid="class_ai_entity_collection_1a787c12ea9cb926934c9eb34ae766baf1" kind="variable"><name>_bugs</name></member>
+    <member refid="class_ai_entity_collection_1a4d0a24178f2e50c3571ededc4199c429" kind="variable"><name>_hordePool</name></member>
+    <member refid="class_ai_entity_collection_1a196e4f4b3b722ebe74263c23dd6926a8" kind="variable"><name>_hordes</name></member>
+    <member refid="class_ai_entity_collection_1ae2a8dfdb11d83e75b418767dd1af68e7" kind="function"><name>Awake</name></member>
+    <member refid="class_ai_entity_collection_1aa9be33cb1c5d29091161b5a98646ea78" kind="function"><name>Start</name></member>
+    <member refid="class_ai_entity_collection_1a203cb9fb472ad222c9fd0dc31801f032" kind="function"><name>CreateHordePool</name></member>
+    <member refid="class_ai_entity_collection_1a1e8759d909bfe5073ade82771ea9d31b" kind="function"><name>GetHorde</name></member>
+    <member refid="class_ai_entity_collection_1acda81b2b1254f5d6dc66d546a368fe6a" kind="function"><name>AwardHordePool</name></member>
+    <member refid="class_ai_entity_collection_1ab35ec352100685b464efe580dd9f4ce3" kind="function"><name>ClearHordes</name></member>
+    <member refid="class_ai_entity_collection_1ac52b99da31dc320d7dfb02530b79bd5d" kind="function"><name>ResetHordePool</name></member>
+    <member refid="class_ai_entity_collection_1a45f6503ba9d042a1be68d2bc4c977372" kind="function"><name>EndHordePoolEpisode</name></member>
+    <member refid="class_ai_entity_collection_1a60a2d2aa42df3d02b1d13bf8bc721f7f" kind="function"><name>AddBug</name></member>
+    <member refid="class_ai_entity_collection_1ab9f6c2cb796cfa370eb92fb7206cee8e" kind="function"><name>GetTeamWeight</name></member>
+    <member refid="class_ai_entity_collection_1a30dd7574bdf37b4ee21e299a67beefa7" kind="function"><name>RemoveBug</name></member>
+    <member refid="class_ai_entity_collection_1a2c83109ddc9d69d6b02d87b6ebd8c382" kind="function"><name>ClearBugs</name></member>
+    <member refid="class_ai_entity_collection_1ad7c5ebd2a458863950ce2a4b72a61ccc" kind="function"><name>GetMyHorde</name></member>
+    <member refid="class_ai_entity_collection_1aa0e5a70044efdd9a2f281e7ad9bfed5b" kind="function"><name>CalculateHordes</name></member>
+  </compound>
+  <compound refid="class_animation_timescale" kind="class"><name>AnimationTimescale</name>
+    <member refid="class_animation_timescale_1aa1dbfb4fa86fd66e2da7e8fb4acb95b8" kind="variable"><name>m_Animator</name></member>
+    <member refid="class_animation_timescale_1a738497371239066dfcc121b87834bba7" kind="function"><name>Start</name></member>
+    <member refid="class_animation_timescale_1a4ecaf976d7734c4ec5d3d2461c33f78f" kind="function"><name>OnGUI</name></member>
+  </compound>
+  <compound refid="class_attack" kind="class"><name>Attack</name>
+    <member refid="class_attack_1ad4abb5f34c7e43a517283158fe7293b2" kind="variable"><name>damage</name></member>
+    <member refid="class_attack_1a69ad2a54f4fd4f23e2611119118f576f" kind="variable"><name>attackRadius</name></member>
+    <member refid="class_attack_1ab5fe994e1444e8c84515fe1b4b00bfa4" kind="variable"><name>periodicity</name></member>
+    <member refid="class_attack_1a5d071df2c5179e81d4cfa16f731e580d" kind="variable"><name>lookDistance</name></member>
+    <member refid="class_attack_1a52fb05dee75428a0af37d2134caec59f" kind="variable"><name>spawn</name></member>
+    <member refid="class_attack_1aa31499f126d995c8d01cf1e6a823d205" kind="variable"><name>lastChecked</name></member>
+    <member refid="class_attack_1a438c2bcbbcaa8070adabf3378666e76f" kind="function"><name>Start</name></member>
+    <member refid="class_attack_1abcc583563017125ff6e91fbd4d63ec40" kind="function"><name>GetAttackRadius</name></member>
+    <member refid="class_attack_1ac9bdb2c0bc453c21fbe51123c9429df7" kind="function"><name>GetDamage</name></member>
+    <member refid="class_attack_1a4a09806c251a9b943465f6a6e5343ba8" kind="function"><name>AttackTarget</name></member>
+    <member refid="class_attack_1ae2453126b074aca24a35cf064524a12b" kind="function"><name>AttackTarget</name></member>
+  </compound>
+  <compound refid="class_attackable_bug" kind="class"><name>AttackableBug</name>
+    <member refid="class_attackable_bug_1a377bfcc18de2a3b77d8112cfc08a9f26" kind="variable"><name>BugType</name></member>
+    <member refid="class_attackable_bug_1addac28140ec38226315d54b44106d974" kind="function"><name>OnMouseOver</name></member>
+    <member refid="class_attackable_bug_1a9d3e37871727a5b9fca3ae770f860ef9" kind="function"><name>IsEnemy</name></member>
+    <member refid="class_attackable_bug_1a88c56f35f25248ca94a135cd34b190e9" kind="function"><name>GetBugType</name></member>
+  </compound>
+  <compound refid="class_bug" kind="class"><name>Bug</name>
+    <member refid="class_bug_1a5da06f6beee583bb3a21c60a817b1cfa" kind="variable"><name>current</name></member>
+    <member refid="class_bug_1a3fa02d1eafb37fd01bf9d8cea6c4c6b7" kind="variable"><name>bugId</name></member>
+    <member refid="class_bug_1a00f3c2eb3823578286e7e9a41f5aff62" kind="variable"><name>bugCreationResoucreType</name></member>
+    <member refid="class_bug_1a88284e7f441859ab49a06bf4544cbad0" kind="variable"><name>bugCreationResourceAmmount</name></member>
+    <member refid="class_bug_1a81214df2a10075f0ad153b7864b0d423" kind="variable"><name>bugCreationTime</name></member>
+    <member refid="class_bug_1a4e59443d23503bb79eb0b0db3214ff6e" kind="variable"><name>birthCastle</name></member>
+    <member refid="class_bug_1a79f2c069e46d417de8f21164299e9e39" kind="variable"><name>_nextId</name></member>
+    <member refid="class_bug_1a208050f0d8975cac63809e8a724b7f14" kind="property"><name>NextId</name></member>
+    <member refid="class_bug_1a9895cc09d5b5b69ece5653e55a9e1131" kind="function"><name>Awake</name></member>
+    <member refid="class_bug_1ac0d4db9bf4b5ad087104826829042863" kind="function"><name>Start</name></member>
+    <member refid="class_bug_1a23e72577aaaa943f35539ad152f8cb1b" kind="function"><name>Update</name></member>
+    <member refid="class_bug_1a170cea8f49ce8d864439618a07562063" kind="function"><name>GetId</name></member>
+    <member refid="class_bug_1ab7d35c84a533e4fda57611159075dbaf" kind="function"><name>GetBugCreationResoucreType</name></member>
+    <member refid="class_bug_1ab562cad51a4eb7fed47e2fd7a55b5b0d" kind="function"><name>GetBugCreationResourceAmmount</name></member>
+    <member refid="class_bug_1a0bfb352d1d0ad7df2458afe7506da84c" kind="function"><name>GetBugCreationTime</name></member>
+    <member refid="class_bug_1ad2ae06299289f6b72f13287fdd113aca" kind="function"><name>GetBirthCastle</name></member>
+  </compound>
+  <compound refid="class_bug_action_set" kind="class"><name>BugActionSet</name>
+    <member refid="class_bug_action_set_1a06e1494f75e83ef6e4805c143d0da5a4" kind="variable"><name>nearestEnemy</name></member>
+    <member refid="class_bug_action_set_1a1d9c7169f5f762862e7fc478f6b14aa6" kind="variable"><name>nearestResource</name></member>
+    <member refid="class_bug_action_set_1ac060f085f4389717242cc7e5e81acbde" kind="function"><name>Start</name></member>
+    <member refid="class_bug_action_set_1a3d150dea4c6fbf6eaad14d4b460b9ed2" kind="function"><name>Update</name></member>
+    <member refid="class_bug_action_set_1aade549100c6a5f93da11b48a76d2083d" kind="function"><name>RunAway</name></member>
+    <member refid="class_bug_action_set_1a5aa98bd7f22068a8569ca4c149921c1f" kind="function"><name>RunAway</name></member>
+    <member refid="class_bug_action_set_1ae320d74ad06baa69ff06b0707e630e29" kind="function"><name>FindNearestEnemy</name></member>
+    <member refid="class_bug_action_set_1aca7ec93f5a1518c3a2d7c53897419aa0" kind="function"><name>FindNearestResource</name></member>
+    <member refid="class_bug_action_set_1ab1ecf0141f7f2b6b8373801859828cd5" kind="function"><name>IsEnemy</name></member>
+    <member refid="class_bug_action_set_1a8a08433e6fb84423242d7993f366928f" kind="function"><name>IsAnyResource</name></member>
+    <member refid="class_bug_action_set_1a55336bb80348d61687879c1d9c9d4e39" kind="function"><name>Attacked</name></member>
+    <member refid="class_bug_action_set_1a4cd6cbfa10338a0bb23e22cc8d5cefdd" kind="function"><name>Dead</name></member>
+    <member refid="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" kind="function"><name>Idle</name></member>
+    <member refid="class_bug_action_set_1a98139e1d5ea8b4bf3f0049e9c829983a" kind="function"><name>Attack</name></member>
+    <member refid="class_bug_action_set_1ab3b0ddcace60ab4df48e7fc8c76c6e21" kind="function"><name>UnloadResourceToCastle</name></member>
+    <member refid="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" kind="function"><name>MoveToHarvest</name></member>
+    <member refid="class_bug_action_set_1ada58907c75d44bac2ec7dbb47a07b34e" kind="function"><name>MoveToAttack</name></member>
+    <member refid="class_bug_action_set_1a8ed7fb8daa730fcc5cf058803f565e2a" kind="function"><name>MoveToCastle</name></member>
+    <member refid="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" kind="function"><name>BaseRunAway</name></member>
+    <member refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" kind="function"><name>Move</name></member>
+    <member refid="class_bug_action_set_1a6fc02b45f251c1b07b9213fd44c66271" kind="function"><name>Harvest</name></member>
+  </compound>
+  <compound refid="class_bug_appearance" kind="class"><name>BugAppearance</name>
+    <member refid="class_bug_appearance_1a01f947c7950a70611ef8832c3d9800b8" kind="variable"><name>bug</name></member>
+    <member refid="class_bug_appearance_1ab376c000c3614c3e5b30dc3aa3f8a4a2" kind="function"><name>Start</name></member>
+    <member refid="class_bug_appearance_1ab923b90816d3f6bcf1539c7cf3fe76aa" kind="function"><name>SetVisible</name></member>
+    <member refid="class_bug_appearance_1a3ad14fe22524050b645870db4ea24324" kind="function"><name>SetHidden</name></member>
+  </compound>
+  <compound refid="class_bug_movement" kind="class"><name>BugMovement</name>
+    <member refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" kind="variable"><name>MovementSpeed</name></member>
+    <member refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kind="variable"><name>movementTargetVector</name></member>
+    <member refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" kind="variable"><name>BugMoveStates</name></member>
+    <member refid="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" kind="function"><name>SetMovementTargetVector</name></member>
+    <member refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" kind="function"><name>Move</name></member>
+    <member refid="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" kind="function"><name>IsArrivedToTargetVector</name></member>
+    <member refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" kind="function"><name>SetUnitPositions</name></member>
+    <member refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" kind="function"><name>SetTargetPosition</name></member>
+    <member refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" kind="function"><name>TurnUnitToCorrectDirection</name></member>
+  </compound>
+  <compound refid="class_bug_state_handler" kind="class"><name>BugStateHandler</name>
+    <member refid="class_bug_state_handler_1a24db3aed20e6daf4c256b8026f34cd0c" kind="variable"><name>state</name></member>
+    <member refid="class_bug_state_handler_1a2e965764d67c884b7b9386fdcc9ca54d" kind="variable"><name>decideAttack</name></member>
+    <member refid="class_bug_state_handler_1a1c803b83119ecb3f8ebb7cf8513aaa66" kind="variable"><name>targetToAttack</name></member>
+    <member refid="class_bug_state_handler_1a21192c550c140866561c8edecee11fe7" kind="variable"><name>targetToHarvest</name></member>
+    <member refid="class_bug_state_handler_1ab31acb3fdad5044116ffbd3e6da64530" kind="variable"><name>targetCastle</name></member>
+    <member refid="class_bug_state_handler_1a1db3728c0de02d6a11097cada118a1a9" kind="variable"><name>carriedResource</name></member>
+    <member refid="class_bug_state_handler_1aa9092e4d7dcb8729a56509744f5bea52" kind="variable"><name>requested</name></member>
+    <member refid="class_bug_state_handler_1afcf4cd826e6b1de4dbe8ce0432b26c71" kind="function"><name>GetState</name></member>
+    <member refid="class_bug_state_handler_1aa20143a12fc384e083269d7c470089d0" kind="function"><name>InitState</name></member>
+    <member refid="class_bug_state_handler_1aef465fd115bd0f4c7a951e4218a9e018" kind="function"><name>SetState</name></member>
+    <member refid="class_bug_state_handler_1a482a1c7e577b471b0cea3117dcfc8aa7" kind="function"><name>SetDecideAttack</name></member>
+    <member refid="class_bug_state_handler_1a2d3fe7c8eaddca05f09f867d470c7747" kind="function"><name>SetNoAttackTarget</name></member>
+    <member refid="class_bug_state_handler_1a8bce6aa68e8120680a782ddd6573e5b0" kind="function"><name>SetTargetToAttack</name></member>
+    <member refid="class_bug_state_handler_1ad1a889ab37a86fd4b01406bd2ec46825" kind="function"><name>SetNoTargetToHarvest</name></member>
+    <member refid="class_bug_state_handler_1a36555f24771da4254f4e640ee52ed463" kind="function"><name>SetTargetToHarvest</name></member>
+    <member refid="class_bug_state_handler_1a45ce1c46cf60e77af84022e0525f1fcd" kind="function"><name>HandleStates</name></member>
+    <member refid="class_bug_state_handler_1adc4c0da9b9a023a36a77f0c6f6bac374" kind="function"><name>SetTargetCastle</name></member>
+  </compound>
+  <compound refid="class_bullet" kind="class"><name>Bullet</name>
+    <member refid="class_bullet_1a3ded03e8e7f3e47acec393763302668b" kind="variable"><name>projectile</name></member>
+    <member refid="class_bullet_1a75e914c39a4154ced3d653ae44a05539" kind="variable"><name>speed</name></member>
+    <member refid="class_bullet_1ac6941e4e535a484e4b3a86b993633572" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_castle_state_handler" kind="class"><name>CastleStateHandler</name>
+    <member refid="class_castle_state_handler_1a1e77a97a8db7ed76fdb7a88d495587e6" kind="variable"><name>castleType</name></member>
+    <member refid="class_castle_state_handler_1aef80cecc1286d3d92bb1e05ef203556a" kind="variable"><name>castleState</name></member>
+    <member refid="class_castle_state_handler_1a673bb373c434aa765d0bdd6b9e30581e" kind="variable"><name>castleJob</name></member>
+    <member refid="class_castle_state_handler_1a7c6bd2a90a0e5b0d16e937137cee61e9" kind="variable"><name>ownedResourceAmmount</name></member>
+    <member refid="class_castle_state_handler_1a00da00b5e9d98b06f8cae8ae3b71c35c" kind="variable"><name>preferedResourceType</name></member>
+    <member refid="class_castle_state_handler_1aca417f94f3d5e5e193edcdf4a3e654a2" kind="variable"><name>startValueOfPreferedResourceType</name></member>
+    <member refid="class_castle_state_handler_1a4692bcc4c1d6282a5ba849108825ac59" kind="variable"><name>bugCreationQueue</name></member>
+    <member refid="class_castle_state_handler_1a18b0075a49bd66ffa04c6c97f27cc39f" kind="variable"><name>bugPrefabs</name></member>
+    <member refid="class_castle_state_handler_1aedf7d1983bc3645c10b139574dd5ee41" kind="variable"><name>bugPrefabKeys</name></member>
+    <member refid="class_castle_state_handler_1aa94cac777e8e6e9f74dc6b83fe3ab9a7" kind="variable"><name>targetToAttack</name></member>
+    <member refid="class_castle_state_handler_1ad7b544956fc791096f9ca55f00aeb23d" kind="variable"><name>bugPrefabCount</name></member>
+    <member refid="class_castle_state_handler_1a72a13afb398ac6c1737952f9925e2dae" kind="variable"><name>bugCreationPeriod</name></member>
+    <member refid="class_castle_state_handler_1a3930c3867d094dc653fc6e843ec07e6b" kind="variable"><name>bugCreationTimeLeft</name></member>
+    <member refid="class_castle_state_handler_1a6bde93a229ecf7ef4f79834aa995663b" kind="variable"><name>start</name></member>
+    <member refid="class_castle_state_handler_1a67060b09cad12201b83c752eb3803838" kind="variable"><name>healthIncreasingValue</name></member>
+    <member refid="class_castle_state_handler_1add82b684df574d4bbbc29cc92a5247c4" kind="variable"><name>defaultScale</name></member>
+    <member refid="class_castle_state_handler_1a5cb381f5963af2fffe386aaa0bf67592" kind="function"><name>Start</name></member>
+    <member refid="class_castle_state_handler_1ad4143ec22290e9349de876b57b882732" kind="function"><name>AddNewBugToQueue</name></member>
+    <member refid="class_castle_state_handler_1a0177c63573f4e85e2b180b303f65218f" kind="function"><name>GetResourceTypes</name></member>
+    <member refid="class_castle_state_handler_1ac5427a07b956b3bbef10556f6da9e104" kind="function"><name>InitializeResourceAmmount</name></member>
+    <member refid="class_castle_state_handler_1a8aa1bd60d69f765ccdfe96aabe9d1467" kind="function"><name>Update</name></member>
+    <member refid="class_castle_state_handler_1a8f50188051fb325595840b418edf63b9" kind="function"><name>SetState</name></member>
+    <member refid="class_castle_state_handler_1ae4b8f0f89fd42252394378561c908d39" kind="function"><name>HandleCastleState</name></member>
+    <member refid="class_castle_state_handler_1a206396dc87d0cdfdffee51a51d32e871" kind="function"><name>Attack</name></member>
+    <member refid="class_castle_state_handler_1a65ffe6c7b43e516ef0243e0367030f4e" kind="function"><name>FindAttacker</name></member>
+    <member refid="class_castle_state_handler_1a6211321e2f02be4a9b7685b09095b9fb" kind="function"><name>DoCastleJob</name></member>
+    <member refid="class_castle_state_handler_1ab99651f2627c9f241b49723a926773b3" kind="function"><name>IsAnyBugInQueue</name></member>
+    <member refid="class_castle_state_handler_1aa51526b2f0acbc17ceb0d87814abf550" kind="function"><name>IncreaseHealth</name></member>
+    <member refid="class_castle_state_handler_1af2961131987544e86295f30ff798890d" kind="function"><name>CreateUnit</name></member>
+    <member refid="class_castle_state_handler_1a68351cde56f8c472f8daae6dfb85d0eb" kind="function"><name>SetNewCreationUnit</name></member>
+    <member refid="class_castle_state_handler_1a079c0f0a10712cd9ebfec3f7b3d6201d" kind="function"><name>TakeResourceForCreation</name></member>
+    <member refid="class_castle_state_handler_1af484607d146e8e401634609c426460dc" kind="function"><name>HasEnoughResource</name></member>
+    <member refid="class_castle_state_handler_1a50de7b139e72f53ffad52234e3a2971f" kind="function"><name>GetCreationTimeOfBug</name></member>
+    <member refid="class_castle_state_handler_1aa6359dc06cf2c13195286882f82b0311" kind="function"><name>CreateBug</name></member>
+    <member refid="class_castle_state_handler_1a687a89d62cc478eecb0e44ca1d2d9e8d" kind="function"><name>ShiftQueue</name></member>
+    <member refid="class_castle_state_handler_1a4c801242abe1e73f2b47712865e26b30" kind="function"><name>CreateBug</name></member>
+    <member refid="class_castle_state_handler_1ad87b6e09181b30c225b3c879aeadda98" kind="function"><name>AddResource</name></member>
+    <member refid="class_castle_state_handler_1a02016dbb45b957f1652c6ccd64e7231e" kind="function"><name>GetState</name></member>
+  </compound>
+  <compound refid="class_common_service" kind="class"><name>CommonService</name>
+    <member refid="class_common_service_1a9e7c72b28494482ae13950dc57b8904d" kind="function"><name>FindNearestEnemy</name></member>
+    <member refid="class_common_service_1a730f290ba8dbbb44d582cac7cba28253" kind="function"><name>IsEnemy</name></member>
+    <member refid="class_common_service_1a11a0990ebe5ba6d3f7153f67d3011647" kind="function"><name>IsEnemy</name></member>
+    <member refid="class_common_service_1a1140b23a379a633102b836b05a057b76" kind="function"><name>MakeDead</name></member>
+    <member refid="class_common_service_1a62f2f9eff53f20a1f173c0178fac045e" kind="function"><name>FindNearestResource</name></member>
+    <member refid="class_common_service_1a5c8a6de4f0cbfa6f18cdc0389dbb6c16" kind="function"><name>IsAlive</name></member>
+    <member refid="class_common_service_1a5e69dab1fd1ff5472dc311f817ec4da4" kind="function"><name>IsAnyResource</name></member>
+  </compound>
+  <compound refid="class_config" kind="class"><name>Config</name>
+    <member refid="class_config_1a85c8dce3deb05f0e7b0f894b83018754" kind="variable"><name>movementScale</name></member>
+    <member refid="class_config_1a3fdc544af1464d3f3544095a425ee808" kind="variable"><name>attackPeriodicyScale</name></member>
+    <member refid="class_config_1a19c28a8964bf38384dd0faa977de71b7" kind="variable"><name>harvestPeriodicyScale</name></member>
+    <member refid="class_config_1aa716587dbdc2f7f7159d8cc7d122a6ad" kind="function"><name>Awake</name></member>
+    <member refid="class_config_1a4456a1fcfe0083b5e3811db998297ead" kind="function"><name>GetMovementScale</name></member>
+    <member refid="class_config_1a4bd8524e6372ea33eac32fa12214c3be" kind="function"><name>GetAttackPeriodicyScale</name></member>
+    <member refid="class_config_1aaebe4d7a250e7869483c9c43a7ba82d9" kind="function"><name>GetHarvestkPeriodicyScale</name></member>
+  </compound>
+  <compound refid="class_constants" kind="class"><name>Constants</name>
+    <member refid="class_constants_1ad2de058db56f1603ab89820a08319ac0" kind="variable"><name>TimeScale</name></member>
+  </compound>
+  <compound refid="class_entity_collection" kind="class"><name>EntityCollection</name>
+    <member refid="class_entity_collection_1a41497be65750cb71eaf8f10f13ce77fb" kind="variable"><name>calculateHordesFrame</name></member>
+    <member refid="class_entity_collection_1aa9cf769d1420a68e7e0b180b38e3e0c7" kind="variable"><name>maxHordesNumber</name></member>
+    <member refid="class_entity_collection_1a20c7a9748ba60d1b664becffd42dcbd5" kind="variable"><name>hordePrefab</name></member>
+    <member refid="class_entity_collection_1a555163d2c8d73c00284bef6faf0bcd9f" kind="variable"><name>models</name></member>
+    <member refid="class_entity_collection_1a21a003ef2c79b6ce690326dba51795e5" kind="variable"><name>_bugs</name></member>
+    <member refid="class_entity_collection_1a553a0cc9c9208fffde6e719845ae2379" kind="variable"><name>_hordePool</name></member>
+    <member refid="class_entity_collection_1ae7c111a17277dde6c15fdb1a489400a1" kind="variable"><name>_hordes</name></member>
+    <member refid="class_entity_collection_1aa1922afb6e20d6850cac4602ba544bec" kind="function"><name>Awake</name></member>
+    <member refid="class_entity_collection_1a81ecc7fba388eeba20c0aaa49a12a91a" kind="function"><name>Start</name></member>
+    <member refid="class_entity_collection_1a05e85d733345072d60b8267e62291e5c" kind="function"><name>CreateHordePool</name></member>
+    <member refid="class_entity_collection_1a4908800d4b6f55551b81e062e7b35696" kind="function"><name>GetHorde</name></member>
+    <member refid="class_entity_collection_1ac756bb2b278b3abe17691ed029140694" kind="function"><name>AwardHordePool</name></member>
+    <member refid="class_entity_collection_1ad7e6e09cc33073db7c78a9974b54e7d2" kind="function"><name>ClearHordes</name></member>
+    <member refid="class_entity_collection_1ade9124eeaf1f908cc3f604a6fe21465e" kind="function"><name>ResetHordePool</name></member>
+    <member refid="class_entity_collection_1a1dc459b11ffb7d524a7606fec7c77466" kind="function"><name>EndHordePoolEpisode</name></member>
+    <member refid="class_entity_collection_1a0fef532c54938d89f676c5a4bf84b6c9" kind="function"><name>AddBug</name></member>
+    <member refid="class_entity_collection_1ac1521e164d96b2a1bc372a45404df995" kind="function"><name>GetTeamWeight</name></member>
+    <member refid="class_entity_collection_1aab2e81b5aea47a8e707888ac99928796" kind="function"><name>RemoveBug</name></member>
+    <member refid="class_entity_collection_1a77eef0a8c22c43b59dfabeaab7b68a49" kind="function"><name>ClearBugs</name></member>
+    <member refid="class_entity_collection_1a3a32a90d0a2c8cb7f2d4194576c6c263" kind="function"><name>GetMyHorde</name></member>
+    <member refid="class_entity_collection_1afba92a84c3b5f5cfe5a59d6f5b7c44db" kind="function"><name>CalculateHordes</name></member>
+  </compound>
+  <compound refid="class_game_area" kind="class"><name>GameArea</name>
+    <member refid="class_game_area_1a4da0944d34e800cc29f806a42a3ef881" kind="variable"><name>mousePosition</name></member>
+    <member refid="class_game_area_1a6bbea45ae0d43bda3fbecc41d0efec61" kind="variable"><name>dragOrigin</name></member>
+    <member refid="class_game_area_1a0edbb136548408d0178d8630c9af5bce" kind="variable"><name>dragSpeed</name></member>
+    <member refid="class_game_area_1ab433023548383d65ce74d83e9df8e477" kind="function"><name>OnGUI</name></member>
+    <member refid="class_game_area_1a5f2b0c755c1aa643f2fb921b1db802b9" kind="function"><name>OnMouseOver</name></member>
+    <member refid="class_game_area_1a01fe24295da7d22af71793e66adbf4e1" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_grid" kind="class"><name>Grid</name>
+    <member refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" kind="variable"><name>unwalkableMask</name></member>
+    <member refid="class_grid_1a85605d1763151a71205da412d488908d" kind="variable"><name>gridWorldSize</name></member>
+    <member refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" kind="variable"><name>nodeRadius</name></member>
+    <member refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" kind="variable"><name>grid</name></member>
+    <member refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" kind="variable"><name>nodeDiameter</name></member>
+    <member refid="class_grid_1a57c20289f00d0e530f9728d78803455c" kind="variable"><name>gridSizeX</name></member>
+    <member refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" kind="variable"><name>gridSizeY</name></member>
+    <member refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" kind="function"><name>Start</name></member>
+    <member refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" kind="function"><name>CreateGrid</name></member>
+    <member refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" kind="function"><name>OnDrawGizmos</name></member>
+    <member refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" kind="function"><name>NodeFromWorldPoint</name></member>
+  </compound>
+  <compound refid="class_gun" kind="class"><name>Gun</name>
+    <member refid="class_gun_1ab627cefe1038ff2c5109d5d26cc08f92" kind="variable"><name>bullet</name></member>
+    <member refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" kind="function"><name>Update</name></member>
+  </compound>
+  <compound refid="class_health" kind="class"><name>Health</name>
+    <member refid="class_health_1a3a88c607ce77007b4f46ee774629309e" kind="variable"><name>health</name></member>
+    <member refid="class_health_1ac9b454c09df35eb7536247df3a613a41" kind="variable"><name>shield</name></member>
+    <member refid="class_health_1a603c3c84ec6421f5e99194220c4b77ae" kind="variable"><name>maxHealth</name></member>
+    <member refid="class_health_1a49cc1ac7f38140c3109f1675277e457e" kind="function"><name>Awake</name></member>
+    <member refid="class_health_1a366b149e3af33a37ec985c861aaa3f6e" kind="function"><name>Update</name></member>
+    <member refid="class_health_1a8e8013723bd354bd998affc9029b09ea" kind="function"><name>Die</name></member>
+    <member refid="class_health_1aa8571ffbf03d9b94c565867776b6d069" kind="function"><name>GetHealth</name></member>
+    <member refid="class_health_1aed450a495643087e14c745eb0994d5c3" kind="function"><name>ResetHealth</name></member>
+    <member refid="class_health_1a4f81ff51fb2ad4a4f218d817c5dc68b2" kind="function"><name>GetMaxHealth</name></member>
+    <member refid="class_health_1a2b829dd2c4d45ab0f0bc213d957afc6a" kind="function"><name>DealDamage</name></member>
+    <member refid="class_health_1adb79a09c34b83a28f11edc3aaff8a4a0" kind="function"><name>AddHealth</name></member>
+  </compound>
+  <compound refid="class_horde" kind="class"><name>Horde</name>
+    <member refid="class_horde_1acc6d59f0eb6309432c4662b750ab792b" kind="variable"><name>counter</name></member>
+    <member refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" kind="property"><name>_members</name></member>
+    <member refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" kind="property"><name>_species</name></member>
+    <member refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" kind="variable"><name>_enemyHorde</name></member>
+    <member refid="class_horde_1ae8a26ac19bc9ab5998a68bf7687c2dc8" kind="variable"><name>_initGameObject</name></member>
+    <member refid="class_horde_1afacbbaef460fe64909d4136736bb7157" kind="variable"><name>myTeamId</name></member>
+    <member refid="class_horde_1ac6857ac528686052e21a72146ddee1a9" kind="variable"><name>teamCount</name></member>
+    <member refid="class_horde_1a3cf43c94f5944de2df1a44a9299857be" kind="variable"><name>hordeId</name></member>
+    <member refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" kind="variable"><name>friendsWeights</name></member>
+    <member refid="class_horde_1a332806e694273d262e97b8b423165609" kind="variable"><name>enemiesWeights</name></member>
+    <member refid="class_horde_1a69f8568d2085169134a677713d4d3966" kind="variable"><name>state</name></member>
+    <member refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" kind="variable"><name>_attack</name></member>
+    <member refid="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" kind="function"><name>Initialize</name></member>
+    <member refid="class_horde_1a5501d55a7855a923528dfea20193d2b4" kind="function"><name>Reset</name></member>
+    <member refid="class_horde_1a1c36c962d85734089ab4c917fe992c7a" kind="function"><name>SetAgentModel</name></member>
+    <member refid="class_horde_1a12d44b6835c41d94e9269234f7b84a6c" kind="function"><name>OnEpisodeBegin</name></member>
+    <member refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" kind="function"><name>CollectObservations</name></member>
+    <member refid="class_horde_1a745994f2b89b6049a29ae9c185234098" kind="function"><name>OnActionReceived</name></member>
+    <member refid="class_horde_1aaf6550feeddd81e3352efeed16eaa42d" kind="function"><name>GetHordeBugType</name></member>
+    <member refid="class_horde_1a9d7b181b69dc83fa890e41ca8c22101c" kind="function"><name>ContainsBug</name></member>
+    <member refid="class_horde_1a5ce77f872eadb11531dc22d42e301f54" kind="function"><name>Remove</name></member>
+    <member refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" kind="function"><name>Attack</name></member>
+    <member refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" kind="function"><name>RunAway</name></member>
+    <member refid="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" kind="function"><name>GetNearestEnemy</name></member>
+    <member refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" kind="function"><name>Lookup</name></member>
+    <member refid="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" kind="function"><name>GetWeightOfSpecies</name></member>
+    <member refid="class_horde_1a85a11db316ebbb33a27853694a8808cd" kind="function"><name>GetZeroWeightOfSpecies</name></member>
+    <member refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" kind="function"><name>GetWeightSum</name></member>
+    <member refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" kind="function"><name>GetAliveSum</name></member>
+    <member refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" kind="function"><name>Members</name></member>
+    <member refid="class_horde_1a90be4a08746165696766ebf836d00cab" kind="function"><name>AddObservations</name></member>
+    <member refid="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" kind="function"><name>GetWeightsAsString</name></member>
+    <member refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" kind="function"><name>GetCumulativeWeights</name></member>
+    <member refid="class_horde_1a4fd25725d9b71af2c3462d35aa3fbe2c" kind="function"><name>GetCumulativeWeight</name></member>
+    <member refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" kind="function"><name>FindEnemyHorde</name></member>
+    <member refid="class_horde_1a59f0c250f5611d38cb099421a21569cc" kind="function"><name>Log</name></member>
+    <member refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" kind="function"><name>Log</name></member>
+    <member refid="class_horde_1a56b6ff621aebe61d7b7794ec43a2e285" kind="function"><name>Update</name></member>
+    <member refid="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" kind="function"><name>RewardAlives</name></member>
+    <member refid="class_horde_1ab50f795206fe88e86457690b69481b38" kind="function"><name>HandleStates</name></member>
+    <member refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" kind="function"><name>SetState</name></member>
+    <member refid="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" kind="function"><name>CheckIfFinished</name></member>
+    <member refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" kind="function"><name>AttackOrRunaway</name></member>
+    <member refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" kind="function"><name>Add</name></member>
+    <member refid="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" kind="function"><name>FindNearestEnemy</name></member>
+    <member refid="class_horde_1aee448f571fbe71c27da404cb42f0ea2f" kind="function"><name>CalculateEnemyToAttack</name></member>
+    <member refid="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" kind="function"><name>FindHordeCenter</name></member>
+    <member refid="class_horde_1ae18ec39372ad3f17df3a1f6ac9c296ac" kind="function"><name>AttackEnemy</name></member>
+    <member refid="class_horde_1ad01395631b0b873547457148558e43cd" kind="function"><name>AreEnemies</name></member>
+    <member refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" kind="function"><name>AwardBeforeEndEpisode</name></member>
+    <member refid="class_horde_1a54c76d58b65a8e476c68c6697fe22575" kind="function"><name>GetSpecies</name></member>
+  </compound>
+  <compound refid="class_horde_member" kind="class"><name>HordeMember</name>
+    <member refid="class_horde_member_1a487dcd03cc2f7a18929600c3c4dfdc24" kind="property"><name>Bug</name></member>
+    <member refid="class_horde_member_1ab7358fcecd63aa226cd5339baabca489" kind="property"><name>State</name></member>
+  </compound>
+  <compound refid="class_horde_pool_object" kind="class"><name>HordePoolObject</name>
+    <member refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" kind="enum"><name>HordePoolObjectState</name></member>
+    <member refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164aa87026a344997ce04709fb7b1377c9e7" kind="enumvalue"><name>ReadyToUse</name></member>
+    <member refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164a019d1ca7d50cc54b995f60d456435e87" kind="enumvalue"><name>Used</name></member>
+    <member refid="class_horde_pool_object_1a83f2458470e532b7c434937b7911678d" kind="property"><name>Horde</name></member>
+    <member refid="class_horde_pool_object_1a5b48a9e71a0df6817c40dd4b7f073c51" kind="property"><name>State</name></member>
+  </compound>
+  <compound refid="class_living_object" kind="class"><name>LivingObject</name>
+    <member refid="class_living_object_1a2086c26915cebcafbe1ef24afdba4df6" kind="variable"><name>lookDistance</name></member>
+    <member refid="class_living_object_1a40e5386d2fc93d74cd4513c38dd2b1ac" kind="function"><name>GetLookDistance</name></member>
+  </compound>
+  <compound refid="class_node" kind="class"><name>Node</name>
+    <member refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" kind="variable"><name>walkable</name></member>
+    <member refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" kind="variable"><name>worldPosition</name></member>
+    <member refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" kind="function"><name>Node</name></member>
+  </compound>
+  <compound refid="class_player_manager_1_1_player" kind="class"><name>PlayerManager::Player</name>
+    <member refid="class_player_manager_1_1_player_1a32be0d1ab5e7b191c42702747c374efe" kind="property"><name>Id</name></member>
+    <member refid="class_player_manager_1_1_player_1aeb5263423872544375281ab2cbea9c12" kind="property"><name>Name</name></member>
+  </compound>
+  <compound refid="class_player_manager" kind="class"><name>PlayerManager</name>
+    <member refid="class_player_manager_1a2186cfc5b7dd3231c4e74f224205831a" kind="variable"><name>myId</name></member>
+    <member refid="class_player_manager_1aa788ad107505cc4684130b6bd93fb8ff" kind="variable"><name>players</name></member>
+    <member refid="class_player_manager_1a1416e7628e83873973f7e6bf513e2e11" kind="function"><name>Awake</name></member>
+    <member refid="class_player_manager_1abdb444060fde7b515c89247b97f5167c" kind="function"><name>Start</name></member>
+    <member refid="class_player_manager_1a931e7079e070fd31d0efaa03b8302e73" kind="function"><name>InitPlayers</name></member>
+    <member refid="class_player_manager_1a23bccc7a5f1ba61dee23158b503c9fbe" kind="function"><name>IsExistingPlayer</name></member>
+    <member refid="class_player_manager_1a874252bab231a0ecca024685166c5bb1" kind="function"><name>Add</name></member>
+    <member refid="class_player_manager_1a743bd9e5a1f4b5344a466440849c0816" kind="function"><name>IsPlayerId</name></member>
+  </compound>
+  <compound refid="class_player_manager_1_1_players" kind="class"><name>PlayerManager::Players</name>
+    <member refid="class_player_manager_1_1_players_1a5316082d52a2f47128334ac9bd551559" kind="variable"><name>players</name></member>
+    <member refid="class_player_manager_1_1_players_1a6bcc79d838a124c675731013e928db66" kind="function"><name>Players</name></member>
+    <member refid="class_player_manager_1_1_players_1a6b05db30f961151a82e634623cc0ecad" kind="function"><name>Add</name></member>
+    <member refid="class_player_manager_1_1_players_1a65eac01854cc97c0c262f07b82e9ac3e" kind="function"><name>IsExists</name></member>
+  </compound>
+  <compound refid="class_resource" kind="class"><name>Resource</name>
+    <member refid="class_resource_1a13057f66ec11e8fb7e561c783884f0ff" kind="variable"><name>resourceType</name></member>
+    <member refid="class_resource_1a3af040073a2711bf01d5b7ecc3608422" kind="variable"><name>resourceAmmount</name></member>
+    <member refid="class_resource_1a66b774716ba9db8e2550da19e44e5212" kind="function"><name>GetResourceType</name></member>
+    <member refid="class_resource_1aa0fb45318b49ca4697397f9e02cf43e2" kind="function"><name>GetTotalResourceAmmount</name></member>
+    <member refid="class_resource_1a2f8bd91b99799413a4d5fa59a18dd19e" kind="function"><name>GetResourceAmmount</name></member>
+  </compound>
+  <compound refid="class_resource_handler" kind="class"><name>ResourceHandler</name>
+    <member refid="class_resource_handler_1a269705e853fad0fe54cfafd5d06a69dd" kind="variable"><name>preferedResourceType</name></member>
+    <member refid="class_resource_handler_1afd0ea67ab7875055505a5589733a6a3e" kind="variable"><name>resourceType</name></member>
+    <member refid="class_resource_handler_1acaab63448e4920da3197cafe40ebc1a1" kind="variable"><name>maxResourceCarryAmmount</name></member>
+    <member refid="class_resource_handler_1a2cc3d6b806b0b5b2cb40ef9994db41e5" kind="variable"><name>resourceCarryAmmount</name></member>
+    <member refid="class_resource_handler_1aeabfaae11c05b55d459b65434b339317" kind="variable"><name>lastChecked</name></member>
+    <member refid="class_resource_handler_1af59a8784202162532a7057975e1c8319" kind="variable"><name>periodicity</name></member>
+    <member refid="class_resource_handler_1a08d745366dcbcdec6fcd08967f666c23" kind="variable"><name>x</name></member>
+    <member refid="class_resource_handler_1ad0bf0386630bf685c2b53411a14944fc" kind="function"><name>GetPreferedResourceType</name></member>
+    <member refid="class_resource_handler_1a8d8c469409800cdedce6f3340e330e3b" kind="function"><name>GetMaxResourceCarryAmmount</name></member>
+    <member refid="class_resource_handler_1a4cf02c978f14f7af7e0aea8ca0490a71" kind="function"><name>SetResourceCarryAmmount</name></member>
+    <member refid="class_resource_handler_1aa19120c17af5210c75b8aa991bc384ef" kind="function"><name>HarvestTarget</name></member>
+    <member refid="class_resource_handler_1a7bac6308b755e6e943c74955883d5384" kind="function"><name>GetCarriedResourceType</name></member>
+    <member refid="class_resource_handler_1ac9a1189c00db4a82831e04845746a9ce" kind="function"><name>EmptyCarriedResourceAmmount</name></member>
+  </compound>
+  <compound refid="class_r_t_s_selection" kind="class"><name>RTSSelection</name>
+    <member refid="class_r_t_s_selection_1ad077decc31f3f298025c2621a4d08440" kind="variable"><name>selectables</name></member>
+    <member refid="class_r_t_s_selection_1ae9c84bcb0ddf7c6685d7c2af2cf69979" kind="variable"><name>canvas</name></member>
+    <member refid="class_r_t_s_selection_1ad11cdd1267650a27d42b3ff9bad40f77" kind="variable"><name>selectionBox</name></member>
+    <member refid="class_r_t_s_selection_1a4eff728c4fca2182fcd9a3ac24dc00cb" kind="variable"><name>copyKey</name></member>
+    <member refid="class_r_t_s_selection_1a69bc512c563022a270a9faa0808c33fd" kind="variable"><name>startScreenPos</name></member>
+    <member refid="class_r_t_s_selection_1ad8c972ee28c96f521134dafd59ed130b" kind="variable"><name>worldCollider</name></member>
+    <member refid="class_r_t_s_selection_1ac19edf6ad3762ad611e0a1c4acdfa7b0" kind="variable"><name>rt</name></member>
+    <member refid="class_r_t_s_selection_1afd8ada5eb3bf64043cff2429d5a000d8" kind="variable"><name>isSelecting</name></member>
+    <member refid="class_r_t_s_selection_1ae0900f667efbefb779dc4086564c2f34" kind="function"><name>Awake</name></member>
+    <member refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" kind="function"><name>Update</name></member>
+    <member refid="class_r_t_s_selection_1ae2d30f06066a80f37dade85919359cd0" kind="function"><name>UpdateSelection</name></member>
+    <member refid="class_r_t_s_selection_1add6b9e1da90ef7db7000429805e0aa4e" kind="function"><name>GetSelected</name></member>
+    <member refid="class_r_t_s_selection_1a97380738527e45f79823cdcb59d54aed" kind="function"><name>ClearSelected</name></member>
+  </compound>
+  <compound refid="class_scroll_controller" kind="class"><name>ScrollController</name>
+    <member refid="class_scroll_controller_1a006061088eb725b18fff286509ceb9d7" kind="variable"><name>zoomSpeed</name></member>
+    <member refid="class_scroll_controller_1a7cfd580ad90dbbd1dfac4ba5cf4a9d08" kind="variable"><name>targetOrtho</name></member>
+    <member refid="class_scroll_controller_1a5f9de14e3a360bad78b686889fbf741a" kind="variable"><name>smoothSpeed</name></member>
+    <member refid="class_scroll_controller_1ab5782ab505b75d4d77620128136d2858" kind="variable"><name>minOrtho</name></member>
+    <member refid="class_scroll_controller_1ab52bb811b65a269f7bd355abb2612b1d" kind="variable"><name>maxOrtho</name></member>
+    <member refid="class_scroll_controller_1a293da55d20541c0b4bfcbe0c238a7e1f" kind="variable"><name>scrolled</name></member>
+    <member refid="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" kind="function"><name>Start</name></member>
+    <member refid="class_scroll_controller_1a31810935acd44a58e3dc39bd245d69a4" kind="function"><name>Update</name></member>
+    <member refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" kind="function"><name>Scrolling</name></member>
+  </compound>
+  <compound refid="class_selectable" kind="class"><name>Selectable</name>
+    <member refid="class_selectable_1a30352797af83fdea9ad937855034a0e4" kind="property"><name>isSelected</name></member>
+    <member refid="class_selectable_1ae9aaf9a193654b1d4fe51b32934a7c16" kind="variable"><name>_isSelected</name></member>
+    <member refid="class_selectable_1afc0be25549d91bd9dfd9aa3040e5691b" kind="function"><name>OnEnable</name></member>
+    <member refid="class_selectable_1ac54b0f77c5408b80436948df0b9b681e" kind="function"><name>OnDisable</name></member>
+  </compound>
+  <compound refid="class_selectable_object" kind="class"><name>SelectableObject</name>
+    <member refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548c" kind="enum"><name>SingleSelectStateEnum</name></member>
+    <member refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548ca6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548ca91b442d385b54e1418d81adc34871053" kind="enumvalue"><name>Selected</name></member>
+    <member refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548cad654878909f880dbfea86e1ab67b8e13" kind="enumvalue"><name>Deselected</name></member>
+    <member refid="class_selectable_object_1a358ab2a373977ce450df79767988da8b" kind="variable"><name>ownerId</name></member>
+    <member refid="class_selectable_object_1ab212cc72df67f2b4ee639a5b2c6554de" kind="variable"><name>selectionPrefab</name></member>
+    <member refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" kind="variable"><name>selection</name></member>
+    <member refid="class_selectable_object_1a4a029824ec986ef36f041012c27438cd" kind="variable"><name>playerManager</name></member>
+    <member refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" kind="variable"><name>IsSelected</name></member>
+    <member refid="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" kind="variable"><name>SingleSelectState</name></member>
+    <member refid="class_selectable_object_1a6b262e113ef8985a40dbb022402dff75" kind="variable"><name>selectionComponent</name></member>
+    <member refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" kind="function"><name>Start</name></member>
+    <member refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" kind="function"><name>Update</name></member>
+    <member refid="class_selectable_object_1abcb7f9055dec18f22389bd0cd99a898e" kind="function"><name>OnMouseOver</name></member>
+    <member refid="class_selectable_object_1aedb8a7d7f24bbda24132c2c88592d6da" kind="function"><name>OnTriggerEnter2D</name></member>
+    <member refid="class_selectable_object_1adee80cbf925edc29ac2d63945c139631" kind="function"><name>OnMouseExit</name></member>
+    <member refid="class_selectable_object_1a0c5b0f662b2e918251c669e281c42faa" kind="function"><name>GetSelection</name></member>
+    <member refid="class_selectable_object_1ace7558423ee75185ab85b3ba103d1213" kind="function"><name>SetOwnerId</name></member>
+    <member refid="class_selectable_object_1ab786723de9db26aa0cfe7b60192481bb" kind="function"><name>GetIsSelected</name></member>
+    <member refid="class_selectable_object_1a80fea77fbeb17dec1ed3f383b0c97e44" kind="function"><name>GetOwnerId</name></member>
+    <member refid="class_selectable_object_1a066b2ab816b7c7f0bde109a4a602fae0" kind="function"><name>IsOwnedByPlayer</name></member>
+    <member refid="class_selectable_object_1a78c88bb2b88e1d4e01de84ac2604cd34" kind="function"><name>SetPosition</name></member>
+    <member refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" kind="function"><name>SetIsSelected</name></member>
+    <member refid="class_selectable_object_1aeb83cd65e2c450719d522a5f40335ab8" kind="function"><name>DestroySelection</name></member>
+  </compound>
+  <compound refid="class_selection_control" kind="class"><name>SelectionControl</name>
+    <member refid="class_selection_control_1a4fe8ee10891bebcfc8e5f78b5f194299" kind="variable"><name>SelectedObjects</name></member>
+    <member refid="class_selection_control_1ae340d2adf40ad8fec1f11b869ad4fd30" kind="variable"><name>AttackedObject</name></member>
+    <member refid="class_selection_control_1a0c5e90bfaeddf676a7c29939b6e820a4" kind="variable"><name>groundPoint</name></member>
+    <member refid="class_selection_control_1a5cec446204a232730117887ec06d9fad" kind="function"><name>Awake</name></member>
+    <member refid="class_selection_control_1a3561fe9fd9a6a8d2c6e4a2f389b6d2dd" kind="function"><name>Start</name></member>
+    <member refid="class_selection_control_1a49fe531bf936581b14d23133c6d54fef" kind="function"><name>Attack</name></member>
+    <member refid="class_selection_control_1a4ceaf4e5075c6599c62b1880ec4ad321" kind="function"><name>Move</name></member>
+    <member refid="class_selection_control_1a3ce2e16c1bcc4ba1e52d236ff3eee42c" kind="function"><name>GetAttackedObject</name></member>
+    <member refid="class_selection_control_1a7cff09249f2c6ea3405157427c3d7d53" kind="function"><name>AddSelectedObject</name></member>
+    <member refid="class_selection_control_1aa54692dd5883209e4611950ffc63b590" kind="function"><name>GetSelectedObjects</name></member>
+    <member refid="class_selection_control_1a29018cdd63eed195043e78e5499f8fb5" kind="function"><name>CleanSelectableObject</name></member>
+  </compound>
+  <compound refid="class_selection_core_component" kind="class"><name>SelectionCoreComponent</name>
+    <member refid="class_selection_core_component_1acf7d1902f6376ba0dffb6d1ccab9be32" kind="variable"><name>selectionEpsilon</name></member>
+    <member refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" kind="variable"><name>isSelecting</name></member>
+    <member refid="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" kind="variable"><name>mousePosition1</name></member>
+    <member refid="class_selection_core_component_1a9b130e331cf66d0203c9126c2b4103ee" kind="function"><name>Update</name></member>
+    <member refid="class_selection_core_component_1a18cc956c815f615b31e6655bd1343bbf" kind="function"><name>OnGUI</name></member>
+    <member refid="class_selection_core_component_1aed2af4884738de5f14d19904bc6b17d8" kind="function"><name>GetIsSSelecting</name></member>
+    <member refid="class_selection_core_component_1af0592be7906e4d25c6eb8bf14ee755bd" kind="function"><name>IsWithinSelectionBounds</name></member>
+  </compound>
+  <compound refid="class_utils" kind="class"><name>Utils</name>
+    <member refid="class_utils_1ac6eeca84c143e1b4de005204eb06f8e2" kind="variable"><name>_whiteTexture</name></member>
+    <member refid="class_utils_1af130eacacd59216767d159f2931310a2" kind="property"><name>WhiteTexture</name></member>
+    <member refid="class_utils_1ac6280682e0d6914f74fab34958a74113" kind="function"><name>DrawScreenRect</name></member>
+    <member refid="class_utils_1a66a22c1559646815a31d7b5515386da4" kind="function"><name>DrawScreenRectBorder</name></member>
+    <member refid="class_utils_1a7216fbaaa2d7b95a374b8dab68282cb2" kind="function"><name>GetScreenRect</name></member>
+    <member refid="class_utils_1a8cc9f03d3ae0760eccb375557024bd78" kind="function"><name>GetViewportBounds</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections" kind="namespace"><name>System::Collections</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_concurrent" kind="namespace"><name>System::Collections::Concurrent</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_barracuda" kind="namespace"><name>Unity::Barracuda</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents" kind="namespace"><name>Unity::MLAgents</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_actuators" kind="namespace"><name>Unity::MLAgents::Actuators</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_policies" kind="namespace"><name>Unity::MLAgents::Policies</name>
+  </compound>
+  <compound refid="namespace_unity_1_1_m_l_agents_1_1_sensors" kind="namespace"><name>Unity::MLAgents::Sensors</name>
+  </compound>
+  <compound refid="namespace_unity_engine" kind="namespace"><name>UnityEngine</name>
+  </compound>
+  <compound refid="namespace_unity_engine_1_1_u_i" kind="namespace"><name>UnityEngine::UI</name>
+  </compound>
+  <compound refid="_attackable_bug_8cs" kind="file"><name>AttackableBug.cs</name>
+  </compound>
+  <compound refid="_bug_8cs" kind="file"><name>Bug.cs</name>
+  </compound>
+  <compound refid="_bug_action_set_8cs" kind="file"><name>BugActionSet.cs</name>
+  </compound>
+  <compound refid="_bug_appearance_8cs" kind="file"><name>BugAppearance.cs</name>
+  </compound>
+  <compound refid="_bug_movement_8cs" kind="file"><name>BugMovement.cs</name>
+  </compound>
+  <compound refid="_bug_state_handler_8cs" kind="file"><name>BugStateHandler.cs</name>
+  </compound>
+  <compound refid="_castle_state_handler_8cs" kind="file"><name>CastleStateHandler.cs</name>
+  </compound>
+  <compound refid="_bug_state_enum_8cs" kind="file"><name>BugStateEnum.cs</name>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" kind="enum"><name>BugStateEnum</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aae599161956d626eda4cb0a5ffb85271c" kind="enumvalue"><name>Idle</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5" kind="enumvalue"><name>Move</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e" kind="enumvalue"><name>MoveToAttack</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aadcfafcb4323b102c7e204555d313ba0a" kind="enumvalue"><name>Attack</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa45fadab7d4651692c382b567b760233e" kind="enumvalue"><name>MoveToHarvest</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa047cc77d62a791b613cdff1e3553cce1" kind="enumvalue"><name>MoveRunAway</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aacb49ad33f3491104647183fd72ffb9fe" kind="enumvalue"><name>Harvest</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aaf17105ebbabedfc63353a1904fc386df" kind="enumvalue"><name>Attacked</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa9edfb8f99786b8d55d8ed576fdd23fad" kind="enumvalue"><name>MoveToCastle</name></member>
+    <member refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617" kind="enumvalue"><name>Dead</name></member>
+  </compound>
+  <compound refid="_bug_type_enum_8cs" kind="file"><name>BugTypeEnum.cs</name>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kind="enum"><name>BugTypeEnum</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aab341084581b0fcaeea6678a9c7afeb95" kind="enumvalue"><name>AntSlave</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa6841d298c95ef7c32b2be93e6d5c96af" kind="enumvalue"><name>AntWarrior</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aace55e06d847a08d49d83d6ccf9a1c9a2" kind="enumvalue"><name>AntFlyer</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa4e0b8f74f83559c0691a4b82957b7812" kind="enumvalue"><name>Termite1</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa03d4abb9e3c8ad77819bdcc8e7bf8f43" kind="enumvalue"><name>Ladybug</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa9fd3ff5b6ff3cd3f3a1a900e46295f8" kind="enumvalue"><name>Scarab</name></member>
+    <member refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aaa041ed1675260b45c769e3696906a2ef" kind="enumvalue"><name>StagBeetle</name></member>
+  </compound>
+  <compound refid="_castle_job_enum_8cs" kind="file"><name>CastleJobEnum.cs</name>
+    <member refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dce" kind="enum"><name>CastleJobEnum</name></member>
+    <member refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceae599161956d626eda4cb0a5ffb85271c" kind="enumvalue"><name>Idle</name></member>
+    <member refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dcea14edc9448aae591ffb606483d50e12ec" kind="enumvalue"><name>CreatingUnit</name></member>
+    <member refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceaaf35f3c146dae21ca4447ebba8d46f43" kind="enumvalue"><name>Healthing</name></member>
+  </compound>
+  <compound refid="_castle_state_enum_8cs" kind="file"><name>CastleStateEnum.cs</name>
+    <member refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" kind="enum"><name>CastleStateEnum</name></member>
+    <member refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3ae599161956d626eda4cb0a5ffb85271c" kind="enumvalue"><name>Idle</name></member>
+    <member refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3af17105ebbabedfc63353a1904fc386df" kind="enumvalue"><name>Attacked</name></member>
+    <member refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3adcfafcb4323b102c7e204555d313ba0a" kind="enumvalue"><name>Attack</name></member>
+    <member refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b" kind="enumvalue"><name>Destroyed</name></member>
+  </compound>
+  <compound refid="_castle_type_enum_8cs" kind="file"><name>CastleTypeEnum.cs</name>
+    <member refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5" kind="enum"><name>CastleTypeEnum</name></member>
+    <member refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a938db156ad9b67fa1d4276ac67649940" kind="enumvalue"><name>Ant</name></member>
+    <member refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a605f677627dcfe149b000f93b0e28660" kind="enumvalue"><name>Termite</name></member>
+    <member refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a1811944b9abeaa2ec9c73902103631c7" kind="enumvalue"><name>Beetle</name></member>
+  </compound>
+  <compound refid="_entity_type_enum_8cs" kind="file"><name>EntityTypeEnum.cs</name>
+    <member refid="_entity_type_enum_8cs_1a2741b29f6595c4f606e47c9a2a16674b" kind="enum"><name>EntityTypeEnum</name></member>
+    <member refid="_entity_type_enum_8cs_1a2741b29f6595c4f606e47c9a2a16674bac83640c604dd5e0eacbf3de0a1181101" kind="enumvalue"><name>Bug</name></member>
+    <member refid="_entity_type_enum_8cs_1a2741b29f6595c4f606e47c9a2a16674bac39b56d4489fb2507289e7ae19567b80" kind="enumvalue"><name>Building</name></member>
+    <member refid="_entity_type_enum_8cs_1a2741b29f6595c4f606e47c9a2a16674babe8545ae7ab0276e15898aae7acfbd7a" kind="enumvalue"><name>Resource</name></member>
+  </compound>
+  <compound refid="_find_object_type_enum_8cs" kind="file"><name>FindObjectTypeEnum.cs</name>
+    <member refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1f" kind="enum"><name>FindObjectTypeEnum</name></member>
+    <member refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1fa930a91848917f92cf7e2f8d744fa4177" kind="enumvalue"><name>Friend</name></member>
+    <member refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1fa8c6d21187fb58b7a079d70030686b33e" kind="enumvalue"><name>Enemy</name></member>
+    <member refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1fab1c94ca2fbc3e78fc30069c8d0f01680" kind="enumvalue"><name>All</name></member>
+  </compound>
+  <compound refid="_horde_client_state_enum_8cs" kind="file"><name>HordeClientStateEnum.cs</name>
+    <member refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6" kind="enum"><name>HordeClientStateEnum</name></member>
+    <member refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6a157d034f9c98a305eb73776582550027" kind="enumvalue"><name>Inserted</name></member>
+    <member refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6acff1272f88046feacfc5cdb3ce9227e2" kind="enumvalue"><name>LookedUp</name></member>
+  </compound>
+  <compound refid="_horde_state_enum_8cs" kind="file"><name>HordeStateEnum.cs</name>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" kind="enum"><name>HordeStateEnum</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa0eceeb45861f9585dd7a97a3e36f85c6" kind="enumvalue"><name>Created</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aae599161956d626eda4cb0a5ffb85271c" kind="enumvalue"><name>Idle</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aaa67a83dbab285245a2ec229315ca5120" kind="enumvalue"><name>RequestingDecision</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aacac05d08d72ff3eb67cdde030a8230c7" kind="enumvalue"><name>DecisionArrived</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa00d99952b7d13847f20fed9923d5cc38" kind="enumvalue"><name>InProgressDecision</name></member>
+    <member refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa8f3d10eb21bd36347c258679eba9e92b" kind="enumvalue"><name>Finished</name></member>
+  </compound>
+  <compound refid="_resource_type_enum_8cs" kind="file"><name>ResourceTypeEnum.cs</name>
+    <member refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084e" kind="enum"><name>ResourceTypeEnum</name></member>
+    <member refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084ea8dc0611245a871ac51bbeebb85f33a58" kind="enumvalue"><name>Honey</name></member>
+    <member refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084eadba005190e58b252f9b5375cdf5655d9" kind="enumvalue"><name>Seed</name></member>
+    <member refid="_resource_type_enum_8cs_1ab0b22d595879040cbdccd97c06aa084eae4b662d3892f8c0c86801919f979467f" kind="enumvalue"><name>Meat</name></member>
+  </compound>
+  <compound refid="_animation_timescale_8cs" kind="file"><name>AnimationTimescale.cs</name>
+  </compound>
+  <compound refid="_config_8cs" kind="file"><name>Config.cs</name>
+  </compound>
+  <compound refid="_constants_8cs" kind="file"><name>Constants.cs</name>
+  </compound>
+  <compound refid="_game_area_8cs" kind="file"><name>GameArea.cs</name>
+  </compound>
+  <compound refid="_grid_8cs" kind="file"><name>Grid.cs</name>
+  </compound>
+  <compound refid="_r_t_s_selection_8cs" kind="file"><name>RTSSelection.cs</name>
+  </compound>
+  <compound refid="_scroll_controller_8cs" kind="file"><name>ScrollController.cs</name>
+  </compound>
+  <compound refid="_selection_control_8cs" kind="file"><name>SelectionControl.cs</name>
+  </compound>
+  <compound refid="_selection_core_component_8cs" kind="file"><name>SelectionCoreComponent.cs</name>
+  </compound>
+  <compound refid="_utils_8cs" kind="file"><name>Utils.cs</name>
+  </compound>
+  <compound refid="_attack_8cs" kind="file"><name>Attack.cs</name>
+  </compound>
+  <compound refid="_bullet_8cs" kind="file"><name>Bullet.cs</name>
+  </compound>
+  <compound refid="_gun_8cs" kind="file"><name>Gun.cs</name>
+  </compound>
+  <compound refid="_health_8cs" kind="file"><name>Health.cs</name>
+  </compound>
+  <compound refid="_living_object_8cs" kind="file"><name>LivingObject.cs</name>
+  </compound>
+  <compound refid="_selectable_object_8cs" kind="file"><name>SelectableObject.cs</name>
+  </compound>
+  <compound refid="_ai_breeder_8cs" kind="file"><name>AiBreeder.cs</name>
+  </compound>
+  <compound refid="_ai_entity_collection_8cs" kind="file"><name>AiEntityCollection.cs</name>
+  </compound>
+  <compound refid="_entity_collection_8cs" kind="file"><name>EntityCollection.cs</name>
+  </compound>
+  <compound refid="_horde_8cs" kind="file"><name>Horde.cs</name>
+  </compound>
+  <compound refid="_horde_pool_object_8cs" kind="file"><name>HordePoolObject.cs</name>
+  </compound>
+  <compound refid="_player_manager_8cs" kind="file"><name>PlayerManager.cs</name>
+  </compound>
+  <compound refid="_resource_8cs" kind="file"><name>Resource.cs</name>
+  </compound>
+  <compound refid="_resource_handler_8cs" kind="file"><name>ResourceHandler.cs</name>
+  </compound>
+  <compound refid="_common_service_8cs" kind="file"><name>CommonService.cs</name>
+  </compound>
+  <compound refid="dir_e66564bf046b5db60152ec50996ae830" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets</name>
+  </compound>
+  <compound refid="dir_dcd27a669a6bf34a1253857a01c28bff" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug</name>
+  </compound>
+  <compound refid="dir_e26dc7da62db2ca3cf6cffbbfc715fee" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Castle</name>
+  </compound>
+  <compound refid="dir_a8a75ed4a05cd925b34c8182f57c16eb" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums</name>
+  </compound>
+  <compound refid="dir_934f46a345653ef2b3014a1b37a162c1" kind="dir"><name>G:</name>
+  </compound>
+  <compound refid="dir_867cef03e63debeb9fd91d47bd46ca8f" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game</name>
+  </compound>
+  <compound refid="dir_735d0326215989716abc05c6c3c27bf9" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General</name>
+  </compound>
+  <compound refid="dir_a89a7ef7ab88db1c0bb174a942a41052" kind="dir"><name>G:/Work/git</name>
+  </compound>
+  <compound refid="dir_6cfa4533ead1d64f8430e867346d95a6" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls</name>
+  </compound>
+  <compound refid="dir_e6dee128b2e273ece96e3b589e0fd41f" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Resource</name>
+  </compound>
+  <compound refid="dir_9e749060f8e5318a886bbd8970ffac0b" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts</name>
+  </compound>
+  <compound refid="dir_ab88207fed127a07a3ad61dbd37e8102" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services</name>
+  </compound>
+  <compound refid="dir_214124435e4d87b814d0010324bd2664" kind="dir"><name>G:/Work/git/unity/Swarmania/Swarmania</name>
+  </compound>
+  <compound refid="dir_c12a77dfb38d0909022313e41972d1b5" kind="dir"><name>G:/Work/git/unity/Swarmania</name>
+  </compound>
+  <compound refid="dir_6a3462158a0be7506c8e57b46991b10e" kind="dir"><name>G:/Work/git/unity</name>
+  </compound>
+  <compound refid="dir_9a9e1aabf8142aa8697eb25647f36fb7" kind="dir"><name>G:/Work</name>
+  </compound>
+</doxygenindex>

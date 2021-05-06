@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bullet" kind="class" prot="public">
+    <compoundname>Bullet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bullet_1a3ded03e8e7f3e47acec393763302668b" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Bullet.projectile</definition>
+        <argsstring></argsstring>
+        <name>projectile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_bullet_1a75e914c39a4154ced3d653ae44a05539" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Bullet.speed</definition>
+        <argsstring></argsstring>
+        <name>speed</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bullet_1ac6941e4e535a484e4b3a86b993633572" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Bullet.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="42">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="43" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="44">
+        <label>Bullet</label>
+        <link refid="class_bullet"/>
+        <childnode refid="45" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Bullet.cs" bodystart="5" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_bullet_1a3ded03e8e7f3e47acec393763302668b" prot="private" virt="non-virtual"><scope>Bullet</scope><name>projectile</name></member>
+      <member refid="class_bullet_1a75e914c39a4154ced3d653ae44a05539" prot="private" virt="non-virtual"><scope>Bullet</scope><name>speed</name></member>
+      <member refid="class_bullet_1ac6941e4e535a484e4b3a86b993633572" prot="private" virt="non-virtual"><scope>Bullet</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

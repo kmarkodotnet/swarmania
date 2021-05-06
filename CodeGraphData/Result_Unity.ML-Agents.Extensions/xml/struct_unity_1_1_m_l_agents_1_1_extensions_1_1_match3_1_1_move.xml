@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kind="struct" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Match3::Move</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a632872559b0872d976923236f8d10f4a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Move.MoveIndex</definition>
+        <argsstring></argsstring>
+        <name>MoveIndex</name>
+        <briefdescription>
+<para>Index of the move, from 0 to NumPotentialMoves-1. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="44" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1af80a75183c930cf6a2c6efd791167248" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Move::Row</definition>
+        <argsstring></argsstring>
+        <name>Row</name>
+        <briefdescription>
+<para>Row of the cell that will be moved. </para>        </briefdescription>
+        <detaileddescription>
+<para>Get the other row and column that correspond to this move. </para><para><simplesect kind="return"><para></para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="49" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" compoundref="_abstract_board_8cs" startline="138" endline="165">Unity.MLAgents.Extensions.Match3.AbstractBoard.SimpleIsMoveValid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0fe5bfbbf78e356dfccbc67f964af734" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.Move.Column</definition>
+        <argsstring></argsstring>
+        <name>Column</name>
+        <briefdescription>
+<para>Column of the cell that will be moved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="54" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" compoundref="_abstract_board_8cs" startline="138" endline="165">Unity.MLAgents.Extensions.Match3.AbstractBoard.SimpleIsMoveValid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1ab01283525643467e45a9e077116e5434" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" kindref="member">Direction</ref></type>
+        <definition>Direction Unity.MLAgents.Extensions.Match3.Move.Direction</definition>
+        <argsstring></argsstring>
+        <name>Direction</name>
+        <briefdescription>
+<para>Direction that the cell will be moved. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="59" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" compoundref="_abstract_board_8cs" startline="138" endline="165">Unity.MLAgents.Extensions.Match3.AbstractBoard.SimpleIsMoveValid</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0c7eb3c3b19bec2c4ed56b3ea57a9233" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref></type>
+        <definition>static Move Unity.MLAgents.Extensions.Match3.Move.FromMoveIndex</definition>
+        <argsstring>(int moveIndex, int maxRows, int maxCols)</argsstring>
+        <name>FromMoveIndex</name>
+        <param>
+          <type>int</type>
+          <declname>moveIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxCols</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> from its move index and the board size. This is useful for iterating through all the Moves on a board, or constructing the <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> corresponding to an Agent decision. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moveIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be between 0 and NumPotentialMoves(maxRows, maxCols).</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRows</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxCols</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="71" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="71" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a4f3e7e7653324e40726c7711142941cc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref></type>
+        <definition>static Move Unity.MLAgents.Extensions.Match3.Move.FromPositionAndDirection</definition>
+        <argsstring>(int row, int col, Direction dir, int maxRows, int maxCols)</argsstring>
+        <name>FromPositionAndDirection</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" kindref="member">Direction</ref></type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxRows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxCols</declname>
+        </param>
+        <briefdescription>
+<para>Construct a <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> from the row, column, and direction. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxRows</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxCols</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="147" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="147" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a44628570bc1ff94eae3e06867a25520b" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Unity.MLAgents.Extensions.Match3.Move.NumPotentialMoves</definition>
+        <argsstring>(int maxRows, int maxCols)</argsstring>
+        <name>NumPotentialMoves</name>
+        <param>
+          <type>int</type>
+          <declname>maxRows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxCols</declname>
+        </param>
+        <briefdescription>
+<para>Return the number of potential moves for a board of the given size. This is equivalent to the number of internal edges in the board. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxRows</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxCols</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="255" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="255" bodyend="258"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a31d0405d295b3d2cbdba66c8b5a79b02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Match3.Move.Next</definition>
+        <argsstring>(int maxRows, int maxCols)</argsstring>
+        <name>Next</name>
+        <param>
+          <type>int</type>
+          <declname>maxRows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxCols</declname>
+        </param>
+        <briefdescription>
+<para>Increment the <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> to the next MoveIndex, and update the Row, Column, and Direction accordingly. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxRows</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxCols</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="106" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="106" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a2aff6955be6e5740911d7ceb1a68178e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int int <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0fe5bfbbf78e356dfccbc67f964af734" kindref="member">Column</ref></type>
+        <definition>int int Column Unity.MLAgents.Extensions.Match3.Move.OtherCell</definition>
+        <argsstring>()</argsstring>
+        <name>OtherCell</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="209" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="209" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a654f587941d10c19951b4df297c2e55c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" kindref="member">Direction</ref></type>
+        <definition>Direction Unity.MLAgents.Extensions.Match3.Move.OtherDirection</definition>
+        <argsstring>()</argsstring>
+        <name>OtherDirection</name>
+        <briefdescription>
+<para>Get the opposite direction of this move. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>ArgumentOutOfRangeException</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="231" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="231" bodyend="246"/>
+        <referencedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" compoundref="_abstract_board_8cs" startline="138" endline="165">Unity.MLAgents.Extensions.Match3.AbstractBoard.SimpleIsMoveValid</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Struct that encapsulates a swap of adjacent cells. A <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> can be constructed from either a starting row, column, and direction, or from a &quot;move index&quot; between 0 and <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a44628570bc1ff94eae3e06867a25520b" kindref="member">NumPotentialMoves()</ref>-1. Moves are enumerated as the internal edges of the game grid. Left/right moves come first. There are (maxCols - 1) * maxRows of these. Up/down moves are next. There are (maxRows - 1) * maxCols of these. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="40" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="39" bodyend="259"/>
+    <listofallmembers>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0fe5bfbbf78e356dfccbc67f964af734" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>Column</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1ab01283525643467e45a9e077116e5434" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>Direction</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0c7eb3c3b19bec2c4ed56b3ea57a9233" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>FromMoveIndex</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a4f3e7e7653324e40726c7711142941cc" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>FromPositionAndDirection</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a632872559b0872d976923236f8d10f4a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>MoveIndex</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a31d0405d295b3d2cbdba66c8b5a79b02" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>Next</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a44628570bc1ff94eae3e06867a25520b" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>NumPotentialMoves</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a2aff6955be6e5740911d7ceb1a68178e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>OtherCell</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a654f587941d10c19951b4df297c2e55c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>OtherDirection</name></member>
+      <member refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1af80a75183c930cf6a2c6efd791167248" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Move</scope><name>Row</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

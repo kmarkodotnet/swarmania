@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bug_appearance" kind="class" prot="public">
+    <compoundname>BugAppearance</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bug_appearance_1a01f947c7950a70611ef8832c3d9800b8" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject BugAppearance.bug</definition>
+        <argsstring></argsstring>
+        <name>bug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bug_appearance_1ab376c000c3614c3e5b30dc3aa3f8a4a2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugAppearance.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" bodystart="9" bodyend="12"/>
+        <references refid="class_bug_appearance_1ab923b90816d3f6bcf1539c7cf3fe76aa" compoundref="_bug_appearance_8cs" startline="14" endline="18">SetVisible</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bug_appearance_1ab923b90816d3f6bcf1539c7cf3fe76aa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugAppearance.SetVisible</definition>
+        <argsstring>()</argsstring>
+        <name>SetVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" bodystart="14" bodyend="18"/>
+        <referencedby refid="class_bug_appearance_1ab376c000c3614c3e5b30dc3aa3f8a4a2" compoundref="_bug_appearance_8cs" startline="9" endline="12">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_appearance_1a3ad14fe22524050b645870db4ea24324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugAppearance.SetHidden</definition>
+        <argsstring>()</argsstring>
+        <name>SetHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" line="19" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" bodystart="19" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="30">
+        <label>BugAppearance</label>
+        <link refid="class_bug_appearance"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="32">
+        <label>BugAppearance</label>
+        <link refid="class_bug_appearance"/>
+        <childnode refid="33" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugAppearance.cs" bodystart="5" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_bug_appearance_1a01f947c7950a70611ef8832c3d9800b8" prot="private" virt="non-virtual"><scope>BugAppearance</scope><name>bug</name></member>
+      <member refid="class_bug_appearance_1a3ad14fe22524050b645870db4ea24324" prot="public" virt="non-virtual"><scope>BugAppearance</scope><name>SetHidden</name></member>
+      <member refid="class_bug_appearance_1ab923b90816d3f6bcf1539c7cf3fe76aa" prot="public" virt="non-virtual"><scope>BugAppearance</scope><name>SetVisible</name></member>
+      <member refid="class_bug_appearance_1ab376c000c3614c3e5b30dc3aa3f8a4a2" prot="private" virt="non-virtual"><scope>BugAppearance</scope><name>Start</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

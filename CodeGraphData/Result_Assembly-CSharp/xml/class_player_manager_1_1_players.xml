@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_manager_1_1_players" kind="class" prot="public">
+    <compoundname>PlayerManager::Players</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_player_manager_1_1_players_1a5316082d52a2f47128334ac9bd551559" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="class_player_manager_1_1_player" kindref="compound">Player</ref> &gt;</type>
+        <definition>List&lt;Player&gt; PlayerManager.Players.players</definition>
+        <argsstring></argsstring>
+        <name>players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="71" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_player_manager_1_1_players_1a6bcc79d838a124c675731013e928db66" compoundref="_player_manager_8cs" startline="72" endline="75">PlayerManager.Players.Players</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_player_manager_1_1_players_1a6bcc79d838a124c675731013e928db66" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PlayerManager.Players.Players</definition>
+        <argsstring>()</argsstring>
+        <name>Players</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="72" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="72" bodyend="75"/>
+        <references refid="class_player_manager_1_1_players_1a5316082d52a2f47128334ac9bd551559" compoundref="_player_manager_8cs" startline="71">PlayerManager.Players.players</references>
+      </memberdef>
+      <memberdef kind="function" id="class_player_manager_1_1_players_1a6b05db30f961151a82e634623cc0ecad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void PlayerManager.Players.Add</definition>
+        <argsstring>(Player player)</argsstring>
+        <name>Add</name>
+        <param>
+          <type><ref refid="class_player_manager_1_1_player" kindref="compound">Player</ref></type>
+          <declname>player</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="76" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_player_manager_1_1_players_1a65eac01854cc97c0c262f07b82e9ac3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PlayerManager.Players.IsExists</definition>
+        <argsstring>(string playerId)</argsstring>
+        <name>IsExists</name>
+        <param>
+          <type>string</type>
+          <declname>playerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="81" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="70" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="69" bodyend="85"/>
+    <listofallmembers>
+      <member refid="class_player_manager_1_1_players_1a6b05db30f961151a82e634623cc0ecad" prot="public" virt="non-virtual"><scope>PlayerManager::Players</scope><name>Add</name></member>
+      <member refid="class_player_manager_1_1_players_1a65eac01854cc97c0c262f07b82e9ac3e" prot="public" virt="non-virtual"><scope>PlayerManager::Players</scope><name>IsExists</name></member>
+      <member refid="class_player_manager_1_1_players_1a5316082d52a2f47128334ac9bd551559" prot="private" virt="non-virtual"><scope>PlayerManager::Players</scope><name>players</name></member>
+      <member refid="class_player_manager_1_1_players_1a6bcc79d838a124c675731013e928db66" prot="public" virt="non-virtual"><scope>PlayerManager::Players</scope><name>Players</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

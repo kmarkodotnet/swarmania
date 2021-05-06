@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_player_manager_1_1_player" kind="class" prot="public">
+    <compoundname>PlayerManager::Player</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_player_manager_1_1_player_1a32be0d1ab5e7b191c42702747c374efe" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>System.Guid</type>
+        <definition>System.Guid PlayerManager.Player.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="89" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_player_manager_1_1_player_1aeb5263423872544375281ab2cbea9c12" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string PlayerManager.Player.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="90" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" line="88" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/PlayerManager.cs" bodystart="87" bodyend="91"/>
+    <listofallmembers>
+      <member refid="class_player_manager_1_1_player_1a32be0d1ab5e7b191c42702747c374efe" prot="public" virt="non-virtual"><scope>PlayerManager::Player</scope><name>Id</name></member>
+      <member refid="class_player_manager_1_1_player_1aeb5263423872544375281ab2cbea9c12" prot="public" virt="non-virtual"><scope>PlayerManager::Player</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

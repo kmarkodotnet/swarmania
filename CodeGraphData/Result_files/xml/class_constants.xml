@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_constants" kind="class" prot="public">
+    <compoundname>Constants</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_constants_1ad2de058db56f1603ab89820a08319ac0" prot="public" static="yes" mutable="no">
+        <type>float</type>
+        <definition>float Constants.TimeScale</definition>
+        <argsstring></argsstring>
+        <name>TimeScale</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Constants.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Constants.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_attack_1ae2453126b074aca24a35cf064524a12b" compoundref="_attack_8cs" startline="38" endline="64">Attack.AttackTarget</referencedby>
+        <referencedby refid="class_resource_handler_1aa19120c17af5210c75b8aa991bc384ef" compoundref="_resource_handler_8cs" startline="37" endline="72">ResourceHandler.HarvestTarget</referencedby>
+        <referencedby refid="class_animation_timescale_1a4ecaf976d7734c4ec5d3d2461c33f78f" compoundref="_animation_timescale_8cs" startline="14" endline="17">AnimationTimescale.OnGUI</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Constants.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Constants.cs" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="class_constants_1ad2de058db56f1603ab89820a08319ac0" prot="public" virt="non-virtual"><scope>Constants</scope><name>TimeScale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

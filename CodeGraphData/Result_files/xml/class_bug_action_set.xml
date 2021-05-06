@@ -1,0 +1,406 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bug_action_set" kind="class" prot="public">
+    <compoundname>BugActionSet</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bug_action_set_1a06e1494f75e83ef6e4805c143d0da5a4" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject BugActionSet.nearestEnemy</definition>
+        <argsstring></argsstring>
+        <name>nearestEnemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_bug_action_set_1ae320d74ad06baa69ff06b0707e630e29" compoundref="_bug_action_set_8cs" startline="46" endline="51">FindNearestEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_action_set_1a1d9c7169f5f762862e7fc478f6b14aa6" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject BugActionSet.nearestResource</definition>
+        <argsstring></argsstring>
+        <name>nearestResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_bug_action_set_1aca7ec93f5a1518c3a2d7c53897419aa0" compoundref="_bug_action_set_8cs" startline="53" endline="58">FindNearestResource</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bug_action_set_1ac060f085f4389717242cc7e5e81acbde" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a3d150dea4c6fbf6eaad14d4b460b9ed2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="15" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bug_action_set_1aade549100c6a5f93da11b48a76d2083d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.RunAway</definition>
+        <argsstring>(GameObject nearestEnemy)</argsstring>
+        <name>RunAway</name>
+        <param>
+          <type>GameObject</type>
+          <declname>nearestEnemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="25" bodyend="36"/>
+        <references refid="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" compoundref="_bug_action_set_8cs" startline="156" endline="160">BaseRunAway</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a5aa98bd7f22068a8569ca4c149921c1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.RunAway</definition>
+        <argsstring>(Vector3 directionVector)</argsstring>
+        <name>RunAway</name>
+        <param>
+          <type>Vector3</type>
+          <declname>directionVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="37" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="37" bodyend="44"/>
+        <references refid="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" compoundref="_bug_action_set_8cs" startline="156" endline="160">BaseRunAway</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1ae320d74ad06baa69ff06b0707e630e29" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject BugActionSet.FindNearestEnemy</definition>
+        <argsstring>()</argsstring>
+        <name>FindNearestEnemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="46" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="46" bodyend="51"/>
+        <references refid="class_bug_action_set_1a06e1494f75e83ef6e4805c143d0da5a4" compoundref="_bug_action_set_8cs" startline="7">nearestEnemy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1aca7ec93f5a1518c3a2d7c53897419aa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject BugActionSet.FindNearestResource</definition>
+        <argsstring>()</argsstring>
+        <name>FindNearestResource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="53" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="53" bodyend="58"/>
+        <references refid="class_bug_action_set_1a1d9c7169f5f762862e7fc478f6b14aa6" compoundref="_bug_action_set_8cs" startline="8">nearestResource</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1ab1ecf0141f7f2b6b8373801859828cd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BugActionSet.IsEnemy</definition>
+        <argsstring>(GameObject otherGameObject)</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>otherGameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="60" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a8a08433e6fb84423242d7993f366928f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BugActionSet.IsAnyResource</definition>
+        <argsstring>(GameObject targetResource)</argsstring>
+        <name>IsAnyResource</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetResource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="64" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="64" bodyend="67"/>
+        <referencedby refid="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" compoundref="_bug_action_set_8cs" startline="107" endline="122">MoveToHarvest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a55336bb80348d61687879c1d9c9d4e39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Attacked</definition>
+        <argsstring>()</argsstring>
+        <name>Attacked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="69" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a4cd6cbfa10338a0bb23e22cc8d5cefdd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Dead</definition>
+        <argsstring>()</argsstring>
+        <name>Dead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="74" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Idle</definition>
+        <argsstring>()</argsstring>
+        <name>Idle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="83" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="83" bodyend="86"/>
+        <referencedby refid="class_bug_action_set_1ada58907c75d44bac2ec7dbb47a07b34e" compoundref="_bug_action_set_8cs" startline="124" endline="139">MoveToAttack</referencedby>
+        <referencedby refid="class_bug_action_set_1a8ed7fb8daa730fcc5cf058803f565e2a" compoundref="_bug_action_set_8cs" startline="140" endline="154">MoveToCastle</referencedby>
+        <referencedby refid="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" compoundref="_bug_action_set_8cs" startline="107" endline="122">MoveToHarvest</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a98139e1d5ea8b4bf3f0049e9c829983a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Attack</definition>
+        <argsstring>(GameObject localTargetToAttack=null)</argsstring>
+        <name>Attack</name>
+        <param>
+          <type>GameObject</type>
+          <declname>localTargetToAttack</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="88" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="88" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1ab3b0ddcace60ab4df48e7fc8c76c6e21" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.UnloadResourceToCastle</definition>
+        <argsstring>(GameObject castle)</argsstring>
+        <name>UnloadResourceToCastle</name>
+        <param>
+          <type>GameObject</type>
+          <declname>castle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="97" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="97" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.MoveToHarvest</definition>
+        <argsstring>(GameObject targetToHarcest)</argsstring>
+        <name>MoveToHarvest</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetToHarcest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="107" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="107" bodyend="122"/>
+        <references refid="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" compoundref="_bug_action_set_8cs" startline="83" endline="86">Idle</references>
+        <references refid="class_bug_action_set_1a8a08433e6fb84423242d7993f366928f" compoundref="_bug_action_set_8cs" startline="64" endline="67">IsAnyResource</references>
+        <references refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" compoundref="_bug_action_set_8cs" startline="161" endline="165">Move</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1ada58907c75d44bac2ec7dbb47a07b34e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.MoveToAttack</definition>
+        <argsstring>(GameObject targetToAttack)</argsstring>
+        <name>MoveToAttack</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetToAttack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="124" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="124" bodyend="139"/>
+        <references refid="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" compoundref="_bug_action_set_8cs" startline="83" endline="86">Idle</references>
+        <references refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" compoundref="_bug_action_set_8cs" startline="161" endline="165">Move</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a8ed7fb8daa730fcc5cf058803f565e2a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.MoveToCastle</definition>
+        <argsstring>(GameObject castle)</argsstring>
+        <name>MoveToCastle</name>
+        <param>
+          <type>GameObject</type>
+          <declname>castle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="140" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="140" bodyend="154"/>
+        <references refid="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" compoundref="_bug_action_set_8cs" startline="83" endline="86">Idle</references>
+        <references refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" compoundref="_bug_action_set_8cs" startline="161" endline="165">Move</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.BaseRunAway</definition>
+        <argsstring>(Vector2 target)</argsstring>
+        <name>BaseRunAway</name>
+        <param>
+          <type>Vector2</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="156" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="156" bodyend="160"/>
+        <references refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" compoundref="_bug_action_set_8cs" startline="161" endline="165">Move</references>
+        <referencedby refid="class_bug_action_set_1aade549100c6a5f93da11b48a76d2083d" compoundref="_bug_action_set_8cs" startline="25" endline="36">RunAway</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Move</definition>
+        <argsstring>(Vector2 target)</argsstring>
+        <name>Move</name>
+        <param>
+          <type>Vector2</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="161" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="161" bodyend="165"/>
+        <referencedby refid="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" compoundref="_bug_action_set_8cs" startline="156" endline="160">BaseRunAway</referencedby>
+        <referencedby refid="class_bug_action_set_1ada58907c75d44bac2ec7dbb47a07b34e" compoundref="_bug_action_set_8cs" startline="124" endline="139">MoveToAttack</referencedby>
+        <referencedby refid="class_bug_action_set_1a8ed7fb8daa730fcc5cf058803f565e2a" compoundref="_bug_action_set_8cs" startline="140" endline="154">MoveToCastle</referencedby>
+        <referencedby refid="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" compoundref="_bug_action_set_8cs" startline="107" endline="122">MoveToHarvest</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_bug_action_set_1a6fc02b45f251c1b07b9213fd44c66271" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugActionSet.Harvest</definition>
+        <argsstring>()</argsstring>
+        <name>Harvest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="167" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="167" bodyend="170"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="27">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="26">
+        <label>BugActionSet</label>
+        <link refid="class_bug_action_set"/>
+        <childnode refid="27" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="29">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="28">
+        <label>BugActionSet</label>
+        <link refid="class_bug_action_set"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" line="5" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugActionSet.cs" bodystart="4" bodyend="171"/>
+    <listofallmembers>
+      <member refid="class_bug_action_set_1a98139e1d5ea8b4bf3f0049e9c829983a" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>Attack</name></member>
+      <member refid="class_bug_action_set_1a55336bb80348d61687879c1d9c9d4e39" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>Attacked</name></member>
+      <member refid="class_bug_action_set_1a074cbdc4906dcf6ba0028d419d88eb20" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>BaseRunAway</name></member>
+      <member refid="class_bug_action_set_1a4cd6cbfa10338a0bb23e22cc8d5cefdd" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>Dead</name></member>
+      <member refid="class_bug_action_set_1ae320d74ad06baa69ff06b0707e630e29" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>FindNearestEnemy</name></member>
+      <member refid="class_bug_action_set_1aca7ec93f5a1518c3a2d7c53897419aa0" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>FindNearestResource</name></member>
+      <member refid="class_bug_action_set_1a6fc02b45f251c1b07b9213fd44c66271" prot="package" virt="non-virtual"><scope>BugActionSet</scope><name>Harvest</name></member>
+      <member refid="class_bug_action_set_1ab7e28342df66e73bed48e3765ada2b4e" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>Idle</name></member>
+      <member refid="class_bug_action_set_1a8a08433e6fb84423242d7993f366928f" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>IsAnyResource</name></member>
+      <member refid="class_bug_action_set_1ab1ecf0141f7f2b6b8373801859828cd5" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>IsEnemy</name></member>
+      <member refid="class_bug_action_set_1a85f8a927ea5370f7becb0ab049561a5f" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>Move</name></member>
+      <member refid="class_bug_action_set_1ada58907c75d44bac2ec7dbb47a07b34e" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>MoveToAttack</name></member>
+      <member refid="class_bug_action_set_1a8ed7fb8daa730fcc5cf058803f565e2a" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>MoveToCastle</name></member>
+      <member refid="class_bug_action_set_1a76ff2e2ecabc902e2675faf4d761316b" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>MoveToHarvest</name></member>
+      <member refid="class_bug_action_set_1a06e1494f75e83ef6e4805c143d0da5a4" prot="private" virt="non-virtual"><scope>BugActionSet</scope><name>nearestEnemy</name></member>
+      <member refid="class_bug_action_set_1a1d9c7169f5f762862e7fc478f6b14aa6" prot="private" virt="non-virtual"><scope>BugActionSet</scope><name>nearestResource</name></member>
+      <member refid="class_bug_action_set_1aade549100c6a5f93da11b48a76d2083d" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>RunAway</name></member>
+      <member refid="class_bug_action_set_1a5aa98bd7f22068a8569ca4c149921c1f" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>RunAway</name></member>
+      <member refid="class_bug_action_set_1ac060f085f4389717242cc7e5e81acbde" prot="private" virt="non-virtual"><scope>BugActionSet</scope><name>Start</name></member>
+      <member refid="class_bug_action_set_1ab3b0ddcace60ab4df48e7fc8c76c6e21" prot="public" virt="non-virtual"><scope>BugActionSet</scope><name>UnloadResourceToCastle</name></member>
+      <member refid="class_bug_action_set_1a3d150dea4c6fbf6eaad14d4b460b9ed2" prot="private" virt="non-virtual"><scope>BugActionSet</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

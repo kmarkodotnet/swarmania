@@ -1,0 +1,1070 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_horde" kind="class" prot="public">
+    <compoundname>Horde</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Agent</basecompoundref>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_horde_1acc6d59f0eb6309432c4662b750ab792b" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int Horde.counter</definition>
+        <argsstring></argsstring>
+        <name>counter</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" compoundref="_horde_8cs" startline="27" endline="32">Initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_horde_1ae93452f598afd3e193e08576fe1c3a01" prot="private" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>ConcurrentDictionary&lt; int, <ref refid="class_horde_member" kindref="compound">HordeMember</ref> &gt;</type>
+        <definition>ConcurrentDictionary&lt;int, HordeMember&gt; Horde._members</definition>
+        <argsstring></argsstring>
+        <name>_members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" compoundref="_horde_8cs" startline="346" endline="358">Add</referencedby>
+        <referencedby refid="class_horde_1a9d7b181b69dc83fa890e41ca8c22101c" compoundref="_horde_8cs" startline="338" endline="345">ContainsBug</referencedby>
+        <referencedby refid="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" compoundref="_horde_8cs" startline="613" endline="617">FindHordeCenter</referencedby>
+        <referencedby refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" compoundref="_horde_8cs" startline="586" endline="592">GetAliveSum</referencedby>
+        <referencedby refid="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" compoundref="_horde_8cs" startline="450" endline="472">GetNearestEnemy</referencedby>
+        <referencedby refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" compoundref="_horde_8cs" startline="578" endline="585">GetWeightSum</referencedby>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Lookup</referencedby>
+        <referencedby refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</referencedby>
+        <referencedby refid="class_horde_1a5ce77f872eadb11531dc22d42e301f54" compoundref="_horde_8cs" startline="360" endline="368">Remove</referencedby>
+      </memberdef>
+      <memberdef kind="property" id="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" prot="public" static="yes" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref> &gt;</type>
+        <definition>List&lt;BugTypeEnum&gt; Horde._species</definition>
+        <argsstring></argsstring>
+        <name>_species</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_horde_1a4fd25725d9b71af2c3462d35aa3fbe2c" compoundref="_horde_8cs" startline="125" endline="154">GetCumulativeWeight</referencedby>
+        <referencedby refid="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" compoundref="_horde_8cs" startline="559" endline="568">GetWeightOfSpecies</referencedby>
+        <referencedby refid="class_horde_1a85a11db316ebbb33a27853694a8808cd" compoundref="_horde_8cs" startline="569" endline="577">GetZeroWeightOfSpecies</referencedby>
+        <referencedby refid="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" compoundref="_horde_8cs" startline="27" endline="32">Initialize</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" prot="public" static="no" mutable="no">
+        <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+        <definition>Horde Horde._enemyHorde</definition>
+        <argsstring></argsstring>
+        <name>_enemyHorde</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</referencedby>
+        <referencedby refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" compoundref="_horde_8cs" startline="516" endline="545">AwardBeforeEndEpisode</referencedby>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+        <referencedby refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" compoundref="_horde_8cs" startline="156" endline="177">FindEnemyHorde</referencedby>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_horde_1ae8a26ac19bc9ab5998a68bf7687c2dc8" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Horde._initGameObject</definition>
+        <argsstring></argsstring>
+        <name>_initGameObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1afacbbaef460fe64909d4136736bb7157" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Horde.myTeamId</definition>
+        <argsstring></argsstring>
+        <name>myTeamId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="19" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_horde_1a59f0c250f5611d38cb099421a21569cc" compoundref="_horde_8cs" startline="179" endline="187">Log</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1ac6857ac528686052e21a72146ddee1a9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Horde.teamCount</definition>
+        <argsstring></argsstring>
+        <name>teamCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="20" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1a3cf43c94f5944de2df1a44a9299857be" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Horde.hordeId</definition>
+        <argsstring></argsstring>
+        <name>hordeId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="21" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="21" bodyend="-1"/>
+        <referencedby refid="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" compoundref="_horde_8cs" startline="27" endline="32">Initialize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1aace49e70ad21f667df4d1566005fbfea" prot="private" static="no" mutable="no">
+        <type>List&lt; float &gt;</type>
+        <definition>List&lt;float&gt; Horde.friendsWeights</definition>
+        <argsstring></argsstring>
+        <name>friendsWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="23" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_horde_1a90be4a08746165696766ebf836d00cab" compoundref="_horde_8cs" startline="82" endline="101">AddObservations</referencedby>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+        <referencedby refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" compoundref="_horde_8cs" startline="118" endline="123">GetCumulativeWeights</referencedby>
+        <referencedby refid="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" compoundref="_horde_8cs" startline="103" endline="116">GetWeightsAsString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1a332806e694273d262e97b8b423165609" prot="private" static="no" mutable="no">
+        <type>List&lt; float &gt;</type>
+        <definition>List&lt;float&gt; Horde.enemiesWeights</definition>
+        <argsstring></argsstring>
+        <name>enemiesWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="23" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_horde_1a90be4a08746165696766ebf836d00cab" compoundref="_horde_8cs" startline="82" endline="101">AddObservations</referencedby>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+        <referencedby refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" compoundref="_horde_8cs" startline="156" endline="177">FindEnemyHorde</referencedby>
+        <referencedby refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" compoundref="_horde_8cs" startline="118" endline="123">GetCumulativeWeights</referencedby>
+        <referencedby refid="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" compoundref="_horde_8cs" startline="103" endline="116">GetWeightsAsString</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1a69f8568d2085169134a677713d4d3966" prot="private" static="no" mutable="no">
+        <type><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" kindref="member">HordeStateEnum</ref></type>
+        <definition>HordeStateEnum Horde.state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="24" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+        <referencedby refid="class_horde_1a745994f2b89b6049a29ae9c185234098" compoundref="_horde_8cs" startline="188" endline="205">OnActionReceived</referencedby>
+        <referencedby refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Horde._attack</definition>
+        <argsstring></argsstring>
+        <name>_attack</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="26" bodyend="-1"/>
+        <referencedby refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</referencedby>
+        <referencedby refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" compoundref="_horde_8cs" startline="516" endline="545">AwardBeforeEndEpisode</referencedby>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+        <referencedby refid="class_horde_1a745994f2b89b6049a29ae9c185234098" compoundref="_horde_8cs" startline="188" endline="205">OnActionReceived</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Horde.Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="27" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="27" bodyend="32"/>
+        <references refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" compoundref="_horde_8cs" startline="16">_species</references>
+        <references refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aace55e06d847a08d49d83d6ccf9a1c9a2">AntFlyer</references>
+        <references refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aab341084581b0fcaeea6678a9c7afeb95">AntSlave</references>
+        <references refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa6841d298c95ef7c32b2be93e6d5c96af">AntWarrior</references>
+        <references refid="class_horde_1acc6d59f0eb6309432c4662b750ab792b" compoundref="_horde_8cs" startline="13">counter</references>
+        <references refid="class_horde_1a3cf43c94f5944de2df1a44a9299857be" compoundref="_horde_8cs" startline="21">hordeId</references>
+        <references refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116aa03d4abb9e3c8ad77819bdcc8e7bf8f43">Ladybug</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a5501d55a7855a923528dfea20193d2b4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="35" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="35" bodyend="41"/>
+        <referencedby refid="class_horde_1a12d44b6835c41d94e9269234f7b84a6c" compoundref="_horde_8cs" startline="48" endline="51">OnEpisodeBegin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a1c36c962d85734089ab4c917fe992c7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.SetAgentModel</definition>
+        <argsstring>(string name, NNModel model)</argsstring>
+        <name>SetAgentModel</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>NNModel</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="43" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="43" bodyend="47"/>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a12d44b6835c41d94e9269234f7b84a6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Horde.OnEpisodeBegin</definition>
+        <argsstring>()</argsstring>
+        <name>OnEpisodeBegin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="48" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="48" bodyend="51"/>
+        <references refid="class_horde_1a5501d55a7855a923528dfea20193d2b4" compoundref="_horde_8cs" startline="35" endline="41">Reset</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Horde.CollectObservations</definition>
+        <argsstring>(VectorSensor sensor)</argsstring>
+        <name>CollectObservations</name>
+        <param>
+          <type>VectorSensor</type>
+          <declname>sensor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="52" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="52" bodyend="80"/>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="class_horde_1a90be4a08746165696766ebf836d00cab" compoundref="_horde_8cs" startline="82" endline="101">AddObservations</references>
+        <references refid="class_horde_1a332806e694273d262e97b8b423165609" compoundref="_horde_8cs" startline="23">enemiesWeights</references>
+        <references refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" compoundref="_horde_8cs" startline="23">friendsWeights</references>
+        <references refid="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" compoundref="_horde_8cs" startline="559" endline="568">GetWeightOfSpecies</references>
+        <references refid="class_horde_1a85a11db316ebbb33a27853694a8808cd" compoundref="_horde_8cs" startline="569" endline="577">GetZeroWeightOfSpecies</references>
+        <references refid="class_horde_1a69f8568d2085169134a677713d4d3966" compoundref="_horde_8cs" startline="24">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a745994f2b89b6049a29ae9c185234098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Horde.OnActionReceived</definition>
+        <argsstring>(ActionBuffers actionBuffers)</argsstring>
+        <name>OnActionReceived</name>
+        <param>
+          <type>ActionBuffers</type>
+          <declname>actionBuffers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="188" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="188" bodyend="205"/>
+        <references refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" compoundref="_horde_8cs" startline="26">_attack</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+        <references refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</references>
+        <references refid="class_horde_1a69f8568d2085169134a677713d4d3966" compoundref="_horde_8cs" startline="24">state</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1aaf6550feeddd81e3352efeed16eaa42d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref></type>
+        <definition>BugTypeEnum Horde.GetHordeBugType</definition>
+        <argsstring>()</argsstring>
+        <name>GetHordeBugType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="206" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="206" bodyend="209"/>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a9d7b181b69dc83fa890e41ca8c22101c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Horde.ContainsBug</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>ContainsBug</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="338" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="338" bodyend="345"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a5ce77f872eadb11531dc22d42e301f54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Remove</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>Remove</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="360" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="360" bodyend="368"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Attack</definition>
+        <argsstring>(Horde enemy)</argsstring>
+        <name>Attack</name>
+        <param>
+          <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="401" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="401" bodyend="411"/>
+        <references refid="class_horde_1ae18ec39372ad3f17df3a1f6ac9c296ac" compoundref="_horde_8cs" startline="619" endline="623">AttackEnemy</references>
+        <references refid="class_horde_1aee448f571fbe71c27da404cb42f0ea2f" compoundref="_horde_8cs" startline="426" endline="448">CalculateEnemyToAttack</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.RunAway</definition>
+        <argsstring>(Horde enemy)</argsstring>
+        <name>RunAway</name>
+        <param>
+          <type><ref refid="class_horde" kindref="compound">Horde</ref></type>
+          <declname>enemy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="413" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="413" bodyend="424"/>
+        <references refid="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" compoundref="_horde_8cs" startline="613" endline="617">FindHordeCenter</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Horde.GetNearestEnemy</definition>
+        <argsstring>()</argsstring>
+        <name>GetNearestEnemy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="450" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="450" bodyend="472"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1fa8c6d21187fb58b7a079d70030686b33e">Enemy</references>
+        <references refid="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" compoundref="_horde_8cs" startline="613" endline="617">FindHordeCenter</references>
+        <references refid="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" compoundref="_horde_8cs" startline="374" endline="399">FindNearestEnemy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Lookup</definition>
+        <argsstring>(GameObject bug, string teamId, bool root)</argsstring>
+        <name>Lookup</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>teamId</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="477" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="477" bodyend="513"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" compoundref="_horde_8cs" startline="346" endline="358">Add</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+        <references refid="class_bug_1a170cea8f49ce8d864439618a07562063" compoundref="_bug_8cs" startline="35" endline="38">Bug.GetId</references>
+        <references refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6a157d034f9c98a305eb73776582550027">Inserted</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+        <references refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6acff1272f88046feacfc5cdb3ce9227e2">LookedUp</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <references refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; float &gt;</type>
+        <definition>List&lt;float&gt; Horde.GetWeightOfSpecies</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeightOfSpecies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="559" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="559" bodyend="568"/>
+        <references refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" compoundref="_horde_8cs" startline="16">_species</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a85a11db316ebbb33a27853694a8808cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; float &gt;</type>
+        <definition>List&lt;float&gt; Horde.GetZeroWeightOfSpecies</definition>
+        <argsstring>()</argsstring>
+        <name>GetZeroWeightOfSpecies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="569" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="569" bodyend="577"/>
+        <references refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" compoundref="_horde_8cs" startline="16">_species</references>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Horde.GetWeightSum</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeightSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="578" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="578" bodyend="585"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <referencedby refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" compoundref="_horde_8cs" startline="516" endline="545">AwardBeforeEndEpisode</referencedby>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+        <referencedby refid="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" compoundref="_horde_8cs" startline="267" endline="276">RewardAlives</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a43d3602c90d14e05da32dfc30059a9be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Horde.GetAliveSum</definition>
+        <argsstring>()</argsstring>
+        <name>GetAliveSum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="586" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="586" bodyend="592"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" compoundref="_horde_8cs" startline="516" endline="545">AwardBeforeEndEpisode</referencedby>
+        <referencedby refid="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" compoundref="_horde_8cs" startline="267" endline="276">RewardAlives</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1aebcf0554b4779ae52225b1c912033c80" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; Horde.Members</definition>
+        <argsstring>()</argsstring>
+        <name>Members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="596" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="596" bodyend="612"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="_entity_type_enum_8cs_1a2741b29f6595c4f606e47c9a2a16674bac83640c604dd5e0eacbf3de0a1181101">Bug</references>
+        <referencedby refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" compoundref="_horde_8cs" startline="401" endline="411">Attack</referencedby>
+        <referencedby refid="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" compoundref="_horde_8cs" startline="314" endline="322">CheckIfFinished</referencedby>
+        <referencedby refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" compoundref="_horde_8cs" startline="156" endline="177">FindEnemyHorde</referencedby>
+        <referencedby refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" compoundref="_horde_8cs" startline="586" endline="592">GetAliveSum</referencedby>
+        <referencedby refid="class_horde_1aaf6550feeddd81e3352efeed16eaa42d" compoundref="_horde_8cs" startline="206" endline="209">GetHordeBugType</referencedby>
+        <referencedby refid="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" compoundref="_horde_8cs" startline="559" endline="568">GetWeightOfSpecies</referencedby>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+        <referencedby refid="class_horde_1a59f0c250f5611d38cb099421a21569cc" compoundref="_horde_8cs" startline="179" endline="187">Log</referencedby>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Lookup</referencedby>
+        <referencedby refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" compoundref="_horde_8cs" startline="413" endline="424">RunAway</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_horde_1a90be4a08746165696766ebf836d00cab" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.AddObservations</definition>
+        <argsstring>(VectorSensor sensor, List&lt; float &gt; friendsWeights, List&lt; float &gt; enemiesWeights)</argsstring>
+        <name>AddObservations</name>
+        <param>
+          <type>VectorSensor</type>
+          <declname>sensor</declname>
+        </param>
+        <param>
+          <type>List&lt; float &gt;</type>
+          <declname>friendsWeights</declname>
+        </param>
+        <param>
+          <type>List&lt; float &gt;</type>
+          <declname>enemiesWeights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="82" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="82" bodyend="101"/>
+        <references refid="class_horde_1a332806e694273d262e97b8b423165609" compoundref="_horde_8cs" startline="23">enemiesWeights</references>
+        <references refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" compoundref="_horde_8cs" startline="23">friendsWeights</references>
+        <referencedby refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" compoundref="_horde_8cs" startline="52" endline="80">CollectObservations</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Horde.GetWeightsAsString</definition>
+        <argsstring>()</argsstring>
+        <name>GetWeightsAsString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="103" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="103" bodyend="116"/>
+        <references refid="class_horde_1a332806e694273d262e97b8b423165609" compoundref="_horde_8cs" startline="23">enemiesWeights</references>
+        <references refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" compoundref="_horde_8cs" startline="23">friendsWeights</references>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Horde.GetCumulativeWeights</definition>
+        <argsstring>()</argsstring>
+        <name>GetCumulativeWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="118" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="118" bodyend="123"/>
+        <references refid="class_horde_1a332806e694273d262e97b8b423165609" compoundref="_horde_8cs" startline="23">enemiesWeights</references>
+        <references refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" compoundref="_horde_8cs" startline="23">friendsWeights</references>
+        <references refid="class_horde_1a4fd25725d9b71af2c3462d35aa3fbe2c" compoundref="_horde_8cs" startline="125" endline="154">GetCumulativeWeight</references>
+        <referencedby refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a4fd25725d9b71af2c3462d35aa3fbe2c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float Horde.GetCumulativeWeight</definition>
+        <argsstring>(List&lt; float &gt; weights)</argsstring>
+        <name>GetCumulativeWeight</name>
+        <param>
+          <type>List&lt; float &gt;</type>
+          <declname>weights</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="125" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="125" bodyend="154"/>
+        <references refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" compoundref="_horde_8cs" startline="16">_species</references>
+        <referencedby refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" compoundref="_horde_8cs" startline="118" endline="123">GetCumulativeWeights</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a47452b595b3f26d62dc3f93c791dae18" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.FindEnemyHorde</definition>
+        <argsstring>()</argsstring>
+        <name>FindEnemyHorde</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="156" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="156" bodyend="177"/>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+        <references refid="class_horde_1a332806e694273d262e97b8b423165609" compoundref="_horde_8cs" startline="23">enemiesWeights</references>
+        <references refid="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" compoundref="_horde_8cs" startline="374" endline="399">FindNearestEnemy</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a59f0c250f5611d38cb099421a21569cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Log</definition>
+        <argsstring>(string temaplte)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>string</type>
+          <declname>temaplte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="179" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="179" bodyend="187"/>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <references refid="class_horde_1afacbbaef460fe64909d4136736bb7157" compoundref="_horde_8cs" startline="19">myTeamId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Log</definition>
+        <argsstring>()</argsstring>
+        <name>Log</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="210" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="210" bodyend="256"/>
+        <references refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" compoundref="_horde_8cs" startline="26">_attack</references>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" compoundref="_horde_8cs" startline="118" endline="123">GetCumulativeWeights</references>
+        <references refid="class_horde_1aaf6550feeddd81e3352efeed16eaa42d" compoundref="_horde_8cs" startline="206" endline="209">GetHordeBugType</references>
+        <references refid="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" compoundref="_horde_8cs" startline="103" endline="116">GetWeightsAsString</references>
+        <references refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" compoundref="_horde_8cs" startline="578" endline="585">GetWeightSum</references>
+        <referencedby refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" compoundref="_horde_8cs" startline="346" endline="358">Add</referencedby>
+        <referencedby refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" compoundref="_horde_8cs" startline="401" endline="411">Attack</referencedby>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Lookup</referencedby>
+        <referencedby refid="class_horde_1a745994f2b89b6049a29ae9c185234098" compoundref="_horde_8cs" startline="188" endline="205">OnActionReceived</referencedby>
+        <referencedby refid="class_horde_1a5ce77f872eadb11531dc22d42e301f54" compoundref="_horde_8cs" startline="360" endline="368">Remove</referencedby>
+        <referencedby refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" compoundref="_horde_8cs" startline="413" endline="424">RunAway</referencedby>
+        <referencedby refid="class_horde_1a1c36c962d85734089ab4c917fe992c7a" compoundref="_horde_8cs" startline="43" endline="47">SetAgentModel</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a56b6ff621aebe61d7b7794ec43a2e285" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="259" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="259" bodyend="265"/>
+        <references refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</references>
+        <references refid="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" compoundref="_horde_8cs" startline="267" endline="276">RewardAlives</references>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.RewardAlives</definition>
+        <argsstring>()</argsstring>
+        <name>RewardAlives</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="267" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="267" bodyend="276"/>
+        <references refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" compoundref="_horde_8cs" startline="586" endline="592">GetAliveSum</references>
+        <references refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" compoundref="_horde_8cs" startline="578" endline="585">GetWeightSum</references>
+        <referencedby refid="class_horde_1a56b6ff621aebe61d7b7794ec43a2e285" compoundref="_horde_8cs" startline="259" endline="265">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ab50f795206fe88e86457690b69481b38" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.HandleStates</definition>
+        <argsstring>()</argsstring>
+        <name>HandleStates</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="278" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="278" bodyend="306"/>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</references>
+        <references refid="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" compoundref="_horde_8cs" startline="314" endline="322">CheckIfFinished</references>
+        <references refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" compoundref="_horde_8cs" startline="156" endline="177">FindEnemyHorde</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <references refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</references>
+        <references refid="class_horde_1a69f8568d2085169134a677713d4d3966" compoundref="_horde_8cs" startline="24">state</references>
+        <references refid="class_horde_1ac6857ac528686052e21a72146ddee1a9" compoundref="_horde_8cs" startline="20">teamCount</references>
+        <referencedby refid="class_horde_1a56b6ff621aebe61d7b7794ec43a2e285" compoundref="_horde_8cs" startline="259" endline="265">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.SetState</definition>
+        <argsstring>(HordeStateEnum newState)</argsstring>
+        <name>SetState</name>
+        <param>
+          <type><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" kindref="member">HordeStateEnum</ref></type>
+          <declname>newState</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="308" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="308" bodyend="312"/>
+        <references refid="class_horde_1a69f8568d2085169134a677713d4d3966" compoundref="_horde_8cs" startline="24">state</references>
+        <referencedby refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" compoundref="_horde_8cs" startline="324" endline="335">AttackOrRunaway</referencedby>
+        <referencedby refid="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" compoundref="_horde_8cs" startline="314" endline="322">CheckIfFinished</referencedby>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Lookup</referencedby>
+        <referencedby refid="class_horde_1a745994f2b89b6049a29ae9c185234098" compoundref="_horde_8cs" startline="188" endline="205">OnActionReceived</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.CheckIfFinished</definition>
+        <argsstring>()</argsstring>
+        <name>CheckIfFinished</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="314" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="314" bodyend="322"/>
+        <references refid="_find_object_type_enum_8cs_1a06b554f90d047e70168a7f93ddf47e1fab1c94ca2fbc3e78fc30069c8d0f01680">All</references>
+        <references refid="class_bug_state_handler_1afcf4cd826e6b1de4dbe8ce0432b26c71" compoundref="_bug_state_handler_8cs" startline="16" endline="19">BugStateHandler.GetState</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aae599161956d626eda4cb0a5ffb85271c">Idle</references>
+        <references refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" compoundref="_horde_8cs" startline="596" endline="612">Members</references>
+        <references refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</references>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1a342352ef3ef482897ae24fb27f1168ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.AttackOrRunaway</definition>
+        <argsstring>()</argsstring>
+        <name>AttackOrRunaway</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="324" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="324" bodyend="335"/>
+        <references refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" compoundref="_horde_8cs" startline="26">_attack</references>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" compoundref="_horde_8cs" startline="401" endline="411">Attack</references>
+        <references refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" compoundref="_horde_8cs" startline="413" endline="424">RunAway</references>
+        <references refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" compoundref="_horde_8cs" startline="308" endline="312">SetState</references>
+        <referencedby refid="class_horde_1ab50f795206fe88e86457690b69481b38" compoundref="_horde_8cs" startline="278" endline="306">HandleStates</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.Add</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>Add</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="346" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="346" bodyend="358"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <references refid="class_bug_1a170cea8f49ce8d864439618a07562063" compoundref="_bug_8cs" startline="35" endline="38">Bug.GetId</references>
+        <references refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" compoundref="_horde_8cs" startline="210" endline="256">Log</references>
+        <referencedby refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" compoundref="_horde_8cs" startline="477" endline="513">Lookup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Horde.FindNearestEnemy</definition>
+        <argsstring>(GameObject bug)</argsstring>
+        <name>FindNearestEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>bug</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="374" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="374" bodyend="399"/>
+        <references refid="class_horde_1ad01395631b0b873547457148558e43cd" compoundref="_horde_8cs" startline="625" endline="634">AreEnemies</references>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+        <references refid="class_bug_state_handler_1afcf4cd826e6b1de4dbe8ce0432b26c71" compoundref="_bug_state_handler_8cs" startline="16" endline="19">BugStateHandler.GetState</references>
+        <referencedby refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" compoundref="_horde_8cs" startline="156" endline="177">FindEnemyHorde</referencedby>
+        <referencedby refid="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" compoundref="_horde_8cs" startline="450" endline="472">GetNearestEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1aee448f571fbe71c27da404cb42f0ea2f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject Horde.CalculateEnemyToAttack</definition>
+        <argsstring>(GameObject friend, List&lt; GameObject &gt; enemies)</argsstring>
+        <name>CalculateEnemyToAttack</name>
+        <param>
+          <type>GameObject</type>
+          <declname>friend</declname>
+        </param>
+        <param>
+          <type>List&lt; GameObject &gt;</type>
+          <declname>enemies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="426" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="426" bodyend="448"/>
+        <referencedby refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" compoundref="_horde_8cs" startline="401" endline="411">Attack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Horde.FindHordeCenter</definition>
+        <argsstring>()</argsstring>
+        <name>FindHordeCenter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="613" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="613" bodyend="617"/>
+        <references refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" compoundref="_horde_8cs" startline="14">_members</references>
+        <referencedby refid="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" compoundref="_horde_8cs" startline="450" endline="472">GetNearestEnemy</referencedby>
+        <referencedby refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" compoundref="_horde_8cs" startline="413" endline="424">RunAway</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ae18ec39372ad3f17df3a1f6ac9c296ac" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.AttackEnemy</definition>
+        <argsstring>(GameObject friend, GameObject enemyToAttack)</argsstring>
+        <name>AttackEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>friend</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>enemyToAttack</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="619" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="619" bodyend="623"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e">MoveToAttack</references>
+        <referencedby refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" compoundref="_horde_8cs" startline="401" endline="411">Attack</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_horde_1ad01395631b0b873547457148558e43cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Horde.AreEnemies</definition>
+        <argsstring>(GameObject go1, GameObject go2)</argsstring>
+        <name>AreEnemies</name>
+        <param>
+          <type>GameObject</type>
+          <declname>go1</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>go2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="625" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="625" bodyend="634"/>
+        <referencedby refid="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" compoundref="_horde_8cs" startline="374" endline="399">FindNearestEnemy</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Horde.AwardBeforeEndEpisode</definition>
+        <argsstring>()</argsstring>
+        <name>AwardBeforeEndEpisode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="516" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="516" bodyend="545"/>
+        <references refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" compoundref="_horde_8cs" startline="26">_attack</references>
+        <references refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" compoundref="_horde_8cs" startline="15">_enemyHorde</references>
+        <references refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" compoundref="_horde_8cs" startline="586" endline="592">GetAliveSum</references>
+        <references refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" compoundref="_horde_8cs" startline="578" endline="585">GetWeightSum</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_horde_1a54c76d58b65a8e476c68c6697fe22575" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref> &gt;</type>
+        <definition>static List&lt;BugTypeEnum&gt; Horde.GetSpecies</definition>
+        <argsstring>()</argsstring>
+        <name>GetSpecies</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="549" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="549" bodyend="557"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="83">
+        <label>Agent</label>
+      </node>
+      <node id="82">
+        <label>Horde</label>
+        <link refid="class_horde"/>
+        <childnode refid="83" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="85">
+        <label>Agent</label>
+      </node>
+      <node id="84">
+        <label>Horde</label>
+        <link refid="class_horde"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+        <childnode refid="84" relation="usage">
+          <edgelabel>_enemyHorde</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="11" bodyend="637"/>
+    <listofallmembers>
+      <member refid="class_horde_1a5892dde8b0387eeb1d953e7be672f4cd" prot="private" virt="non-virtual"><scope>Horde</scope><name>_attack</name></member>
+      <member refid="class_horde_1ad5664bf76c71fbf5e720f69dc52d94e8" prot="public" virt="non-virtual"><scope>Horde</scope><name>_enemyHorde</name></member>
+      <member refid="class_horde_1ae8a26ac19bc9ab5998a68bf7687c2dc8" prot="private" virt="non-virtual"><scope>Horde</scope><name>_initGameObject</name></member>
+      <member refid="class_horde_1ae93452f598afd3e193e08576fe1c3a01" prot="private" virt="non-virtual"><scope>Horde</scope><name>_members</name></member>
+      <member refid="class_horde_1aa1de0c5696b3147a7a1d20a37c80bc20" prot="public" virt="non-virtual"><scope>Horde</scope><name>_species</name></member>
+      <member refid="class_horde_1ad2cd7adba0b9e87ab33cf634b5dee060" prot="private" virt="non-virtual"><scope>Horde</scope><name>Add</name></member>
+      <member refid="class_horde_1a90be4a08746165696766ebf836d00cab" prot="private" virt="non-virtual"><scope>Horde</scope><name>AddObservations</name></member>
+      <member refid="class_horde_1ad01395631b0b873547457148558e43cd" prot="private" virt="non-virtual"><scope>Horde</scope><name>AreEnemies</name></member>
+      <member refid="class_horde_1a222eb42af148e3e9cacc21cbc991a7fe" prot="public" virt="non-virtual"><scope>Horde</scope><name>Attack</name></member>
+      <member refid="class_horde_1ae18ec39372ad3f17df3a1f6ac9c296ac" prot="private" virt="non-virtual"><scope>Horde</scope><name>AttackEnemy</name></member>
+      <member refid="class_horde_1a342352ef3ef482897ae24fb27f1168ac" prot="private" virt="non-virtual"><scope>Horde</scope><name>AttackOrRunaway</name></member>
+      <member refid="class_horde_1a4fd59d51c8679f8797a6ee1636fc7b12" prot="package" virt="non-virtual"><scope>Horde</scope><name>AwardBeforeEndEpisode</name></member>
+      <member refid="class_horde_1aee448f571fbe71c27da404cb42f0ea2f" prot="private" virt="non-virtual"><scope>Horde</scope><name>CalculateEnemyToAttack</name></member>
+      <member refid="class_horde_1a0dfeadcc7f709ef2a8eab10ff4ec0d58" prot="private" virt="non-virtual"><scope>Horde</scope><name>CheckIfFinished</name></member>
+      <member refid="class_horde_1ac3e6a5598c63ca76fbffcd3d12c0875b" prot="public" virt="non-virtual"><scope>Horde</scope><name>CollectObservations</name></member>
+      <member refid="class_horde_1a9d7b181b69dc83fa890e41ca8c22101c" prot="public" virt="non-virtual"><scope>Horde</scope><name>ContainsBug</name></member>
+      <member refid="class_horde_1acc6d59f0eb6309432c4662b750ab792b" prot="private" virt="non-virtual"><scope>Horde</scope><name>counter</name></member>
+      <member refid="class_horde_1a332806e694273d262e97b8b423165609" prot="private" virt="non-virtual"><scope>Horde</scope><name>enemiesWeights</name></member>
+      <member refid="class_horde_1a47452b595b3f26d62dc3f93c791dae18" prot="private" virt="non-virtual"><scope>Horde</scope><name>FindEnemyHorde</name></member>
+      <member refid="class_horde_1ac1e8af20439c8e55b3c8e142b5e654c5" prot="private" virt="non-virtual"><scope>Horde</scope><name>FindHordeCenter</name></member>
+      <member refid="class_horde_1ab58fed9e2a9f4c49f7bd3a719739c591" prot="private" virt="non-virtual"><scope>Horde</scope><name>FindNearestEnemy</name></member>
+      <member refid="class_horde_1aace49e70ad21f667df4d1566005fbfea" prot="private" virt="non-virtual"><scope>Horde</scope><name>friendsWeights</name></member>
+      <member refid="class_horde_1a43d3602c90d14e05da32dfc30059a9be" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetAliveSum</name></member>
+      <member refid="class_horde_1a4fd25725d9b71af2c3462d35aa3fbe2c" prot="private" virt="non-virtual"><scope>Horde</scope><name>GetCumulativeWeight</name></member>
+      <member refid="class_horde_1a0aea79f5d52e4e4ccc79bbf04432b081" prot="private" virt="non-virtual"><scope>Horde</scope><name>GetCumulativeWeights</name></member>
+      <member refid="class_horde_1aaf6550feeddd81e3352efeed16eaa42d" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetHordeBugType</name></member>
+      <member refid="class_horde_1a11ce70111b4ebd926bad7ec4ad7c5e08" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetNearestEnemy</name></member>
+      <member refid="class_horde_1a54c76d58b65a8e476c68c6697fe22575" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetSpecies</name></member>
+      <member refid="class_horde_1aba1cd01591631bb8acbb0cac75ab5cea" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetWeightOfSpecies</name></member>
+      <member refid="class_horde_1ad41346e9ca17e33d7d032f70d8b8aec3" prot="private" virt="non-virtual"><scope>Horde</scope><name>GetWeightsAsString</name></member>
+      <member refid="class_horde_1addfc64aa0fa945e8ecf78aaeabc3df62" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetWeightSum</name></member>
+      <member refid="class_horde_1a85a11db316ebbb33a27853694a8808cd" prot="public" virt="non-virtual"><scope>Horde</scope><name>GetZeroWeightOfSpecies</name></member>
+      <member refid="class_horde_1ab50f795206fe88e86457690b69481b38" prot="private" virt="non-virtual"><scope>Horde</scope><name>HandleStates</name></member>
+      <member refid="class_horde_1a3cf43c94f5944de2df1a44a9299857be" prot="private" virt="non-virtual"><scope>Horde</scope><name>hordeId</name></member>
+      <member refid="class_horde_1a8c1de53ce563eb308ad2ee8f2379a640" prot="public" virt="non-virtual"><scope>Horde</scope><name>Initialize</name></member>
+      <member refid="class_horde_1a59f0c250f5611d38cb099421a21569cc" prot="private" virt="non-virtual"><scope>Horde</scope><name>Log</name></member>
+      <member refid="class_horde_1ab9dc4135810ef30a4b927ef077b1ccff" prot="private" virt="non-virtual"><scope>Horde</scope><name>Log</name></member>
+      <member refid="class_horde_1afcfbfcd0bf66ff93ad3e86d4e1b8e55a" prot="public" virt="non-virtual"><scope>Horde</scope><name>Lookup</name></member>
+      <member refid="class_horde_1aebcf0554b4779ae52225b1c912033c80" prot="public" virt="non-virtual"><scope>Horde</scope><name>Members</name></member>
+      <member refid="class_horde_1afacbbaef460fe64909d4136736bb7157" prot="private" virt="non-virtual"><scope>Horde</scope><name>myTeamId</name></member>
+      <member refid="class_horde_1a745994f2b89b6049a29ae9c185234098" prot="public" virt="non-virtual"><scope>Horde</scope><name>OnActionReceived</name></member>
+      <member refid="class_horde_1a12d44b6835c41d94e9269234f7b84a6c" prot="public" virt="non-virtual"><scope>Horde</scope><name>OnEpisodeBegin</name></member>
+      <member refid="class_horde_1a5ce77f872eadb11531dc22d42e301f54" prot="public" virt="non-virtual"><scope>Horde</scope><name>Remove</name></member>
+      <member refid="class_horde_1a5501d55a7855a923528dfea20193d2b4" prot="public" virt="non-virtual"><scope>Horde</scope><name>Reset</name></member>
+      <member refid="class_horde_1a706af9639781b2fd1c97000edd0bdcb8" prot="private" virt="non-virtual"><scope>Horde</scope><name>RewardAlives</name></member>
+      <member refid="class_horde_1ab179eff6d8ceb850c8e2b956b9a12066" prot="public" virt="non-virtual"><scope>Horde</scope><name>RunAway</name></member>
+      <member refid="class_horde_1a1c36c962d85734089ab4c917fe992c7a" prot="public" virt="non-virtual"><scope>Horde</scope><name>SetAgentModel</name></member>
+      <member refid="class_horde_1a7c68392dadbde9ad49a05eb231d661a7" prot="private" virt="non-virtual"><scope>Horde</scope><name>SetState</name></member>
+      <member refid="class_horde_1a69f8568d2085169134a677713d4d3966" prot="private" virt="non-virtual"><scope>Horde</scope><name>state</name></member>
+      <member refid="class_horde_1ac6857ac528686052e21a72146ddee1a9" prot="private" virt="non-virtual"><scope>Horde</scope><name>teamCount</name></member>
+      <member refid="class_horde_1a56b6ff621aebe61d7b7794ec43a2e285" prot="private" virt="non-virtual"><scope>Horde</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

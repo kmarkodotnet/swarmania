@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a8a75ed4a05cd925b34c8182f57c16eb" kind="dir">
+    <compoundname>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums</compoundname>
+    <innerfile refid="_bug_state_enum_8cs">BugStateEnum.cs</innerfile>
+    <innerfile refid="_bug_type_enum_8cs">BugTypeEnum.cs</innerfile>
+    <innerfile refid="_castle_job_enum_8cs">CastleJobEnum.cs</innerfile>
+    <innerfile refid="_castle_state_enum_8cs">CastleStateEnum.cs</innerfile>
+    <innerfile refid="_castle_type_enum_8cs">CastleTypeEnum.cs</innerfile>
+    <innerfile refid="_entity_type_enum_8cs">EntityTypeEnum.cs</innerfile>
+    <innerfile refid="_find_object_type_enum_8cs">FindObjectTypeEnum.cs</innerfile>
+    <innerfile refid="_horde_client_state_enum_8cs">HordeClientStateEnum.cs</innerfile>
+    <innerfile refid="_horde_state_enum_8cs">HordeStateEnum.cs</innerfile>
+    <innerfile refid="_resource_type_enum_8cs">ResourceTypeEnum.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/"/>
+  </compounddef>
+</doxygen>

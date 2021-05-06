@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3" kind="namespace">
+    <compoundname>Unity::MLAgents::Extensions::Match3</compoundname>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board" prot="public">Unity::MLAgents::Extensions::Match3::AbstractBoard</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator" prot="public">Unity::MLAgents::Extensions::Match3::Match3Actuator</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_actuator_component" prot="public">Unity::MLAgents::Extensions::Match3::Match3ActuatorComponent</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor" prot="public">Unity::MLAgents::Extensions::Match3::Match3Sensor</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util" prot="package">Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</innerclass>
+    <innerclass refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component" prot="public">Unity::MLAgents::Extensions::Match3::Match3SensorComponent</innerclass>
+    <innerclass refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" prot="public">Unity::MLAgents::Extensions::Match3::Move</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9d" prot="public" static="no">
+        <name>Match3ObservationType</name>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9da57dea6f5039281b7fee517fc43bf3110" prot="public">
+          <name>Vector</name>
+          <briefdescription>
+<para>Generate a one-hot encoding of the cell type for each cell on the board. If there are special types, these will also be one-hot encoded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9dac1987afedf39327f17c7995795cd6def" prot="public">
+          <name>UncompressedVisual</name>
+          <briefdescription>
+<para>Generate a one-hot encoding of the cell type for each cell on the board, but arranged as a Rows x Columns visual observation. If there are special types, these will also be one-hot encoded. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9da0ce5126fd978d41794046b8b1ab0e33d" prot="public">
+          <name>CompressedVisual</name>
+          <briefdescription>
+<para>Generate a one-hot encoding of the cell type for each cell on the board, but arranged as a Rows x Columns visual observation. If there are special types, these will also be one-hot encoded. During training, these will be sent as a concatenated series of PNG images, with 3 channels per image. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Type of observations to generate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="12" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="11" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" prot="public" static="no">
+        <name>Direction</name>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a258f49887ef8d14ac268c92b02503aaa" prot="public">
+          <name>Up</name>
+          <briefdescription>
+<para><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> up (increasing row direction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a08a38277b0309070706f6652eeae9a53" prot="public">
+          <name>Down</name>
+          <briefdescription>
+<para><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> down (decreasing row direction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a945d5e233cf7d6240f6b783b36a374ff" prot="public">
+          <name>Left</name>
+          <briefdescription>
+<para><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> left (decreasing column direction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099a92b09c7c48c520c3c55e497875da437c" prot="public">
+          <name>Right</name>
+          <briefdescription>
+<para><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> right (increasing column direction). </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Directions for a <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref>. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" line="9" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Move.cs" bodystart="8" bodyend="29"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

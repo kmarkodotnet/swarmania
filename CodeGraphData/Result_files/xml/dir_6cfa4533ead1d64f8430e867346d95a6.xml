@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_6cfa4533ead1d64f8430e867346d95a6" kind="dir">
+    <compoundname>G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls</compoundname>
+    <innerfile refid="_ai_breeder_8cs">AiBreeder.cs</innerfile>
+    <innerfile refid="_ai_entity_collection_8cs">AiEntityCollection.cs</innerfile>
+    <innerfile refid="_entity_collection_8cs">EntityCollection.cs</innerfile>
+    <innerfile refid="_horde_8cs">Horde.cs</innerfile>
+    <innerfile refid="_horde_pool_object_8cs">HordePoolObject.cs</innerfile>
+    <innerfile refid="_player_manager_8cs">PlayerManager.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/"/>
+  </compounddef>
+</doxygen>

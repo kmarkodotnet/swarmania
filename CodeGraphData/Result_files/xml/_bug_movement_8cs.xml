@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_bug_movement_8cs" kind="file">
+    <compoundname>BugMovement.cs</compoundname>
+    <innerclass refid="class_bug_movement" prot="public">BugMovement</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>UnityEngine;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="class_bug_movement" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_bug_movement" kindref="compound">BugMovement</ref><sp/>:<sp/>MonoBehaviour</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7" refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>[SerializeField]<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" kindref="member">MovementSpeed</ref><sp/>=<sp/>1f;</highlight></codeline>
+<codeline lineno="8" refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>Vector3<sp/><ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>;</highlight></codeline>
+<codeline lineno="9" refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>List&lt;BugStateEnum&gt;<sp/><ref refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" kindref="member">BugMoveStates</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>List&lt;BugStateEnum&gt;<sp/>{<sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5" kindref="member">BugStateEnum.Move</ref>,<sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa047cc77d62a791b613cdff1e3553cce1" kindref="member">BugStateEnum.MoveRunAway</ref>,<sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e" kindref="member">BugStateEnum.MoveToAttack</ref>,<sp/><ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa45fadab7d4651692c382b567b760233e" kindref="member">BugStateEnum.MoveToHarvest</ref>,<sp/>BugStateEnum.MoveToCastle<sp/>};</highlight></codeline>
+<codeline lineno="10" refid="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" kindref="member">SetMovementTargetVector</ref>(Vector3<sp/>vector)</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref><sp/>=<sp/>vector;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" kindref="member">Move</ref>(Vector2<sp/>target)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>s<sp/>=<sp/>GetComponent&lt;BugStateHandler&gt;().GetState();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" kindref="member">BugMoveStates</ref>.Contains(s))</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.movementTargetVector<sp/>=<sp/>target;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetComponent&lt;BugMovement&gt;().<ref refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" kindref="member">SetTargetPosition</ref>(<ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetComponent&lt;BugMovement&gt;().<ref refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" kindref="member">TurnUnitToCorrectDirection</ref>(gameObject.transform);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" kindref="member">IsArrivedToTargetVector</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>myPos<sp/>=<sp/>Camera.main.WorldToScreenPoint(gameObject.transform.position);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>targetPos<sp/>=<sp/>Camera.main.WorldToScreenPoint(<ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Debug.Log($&quot;BUG<sp/>{GetComponent&lt;Bug&gt;().GetId()}<sp/><sp/>-<sp/>tr.pos<sp/>{gameObject.transform.position}<sp/>movementTargetVec<sp/>{movementTargetVector}<sp/>myPos<sp/>{myPos}<sp/>targetPos<sp/>{targetPos}&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>diff<sp/>=<sp/>targetPos<sp/>-<sp/>myPos;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>attackDistance<sp/>=<sp/>GetComponent&lt;Attack&gt;().GetAttackRadius();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Mathf.Abs(diff.x)<sp/>&lt;<sp/>attackDistance<sp/>&amp;&amp;<sp/>Mathf.Abs(diff.y)<sp/>&lt;<sp/>attackDistance;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" kindref="member">SetUnitPositions</ref>(Transform<sp/>unit)</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>state<sp/>=<sp/>GetComponent&lt;BugStateHandler&gt;().GetState();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" kindref="member">BugMoveStates</ref>.Contains(state))</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unit<sp/>!=<sp/>null<sp/>&amp;&amp;<sp/>unit.position<sp/>!=<sp/>null<sp/>&amp;&amp;<sp/><ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref><sp/>!=<sp/>null)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>currentSpeed<sp/>=<sp/>(Constants.TimeScale<sp/>*<sp/><ref refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" kindref="member">MovementSpeed</ref><sp/>*<sp/>FindObjectOfType&lt;Config&gt;().GetMovementScale()<sp/>/<sp/>7)<sp/>*<sp/>Time.deltaTime;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>diff<sp/>=<sp/>unit.position<sp/>-<sp/><ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(diff.magnitude<sp/>&gt;<sp/>Mathf.Epsilon)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.position<sp/>=<sp/>Vector3.MoveTowards(unit.position,<sp/><ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>,<sp/>currentSpeed);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GetComponent&lt;SelectableObject&gt;().SetPosition(unit.position);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" kindref="member">TurnUnitToCorrectDirection</ref>(Transform<sp/>unit)</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>myPos<sp/>=<sp/>Camera.main.WorldToScreenPoint(unit.position);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>var<sp/>enemyPos<sp/>=<sp/>Camera.main.WorldToScreenPoint(<ref refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" kindref="member">movementTargetVector</ref>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Vector3<sp/>dir<sp/>=<sp/>enemyPos<sp/>-<sp/>myPos;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>angle<sp/>=<sp/>Mathf.Atan2(dir.y,<sp/>dir.x)<sp/>*<sp/>Mathf.Rad2Deg;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit.rotation<sp/>=<sp/>Quaternion.AngleAxis(angle,<sp/>Vector3.forward);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" kindref="member">SetTargetPosition</ref>(Vector3<sp/>targetVector)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>targetVector.z<sp/>=<sp/>gameObject.transform.position.z;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs"/>
+  </compounddef>
+</doxygen>

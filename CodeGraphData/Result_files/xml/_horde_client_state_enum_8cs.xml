@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_horde_client_state_enum_8cs" kind="file">
+    <compoundname>HordeClientStateEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6" prot="public" static="no">
+        <name>HordeClientStateEnum</name>
+        <enumvalue id="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6a157d034f9c98a305eb73776582550027" prot="public">
+          <name>Inserted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6acff1272f88046feacfc5cdb3ce9227e2" prot="public">
+          <name>LookedUp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeClientStateEnum.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeClientStateEnum.cs" bodystart="7" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6" kindref="member">HordeClientStateEnum</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6a157d034f9c98a305eb73776582550027" kindref="member">Inserted</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6acff1272f88046feacfc5cdb3ce9227e2" kindref="member">LookedUp</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeClientStateEnum.cs"/>
+  </compounddef>
+</doxygen>

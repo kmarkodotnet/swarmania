@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions" kind="class" prot="package">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::ObservationWriterPhysicsExtensions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Unity.MLAgents.Extensions.Sensors.ObservationWriterPhysicsExtensions.WritePoses</definition>
+        <argsstring>(this ObservationWriter writer, PhysicsSensorSettings settings, PoseExtractor poseExtractor, int baseOffset=0)</argsstring>
+        <name>WritePoses</name>
+        <param>
+          <type>this ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kindref="compound">PoseExtractor</ref></type>
+          <declname>poseExtractor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>baseOffset</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Utility method for writing a <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kindref="compound">PoseExtractor</ref> to an ObservationWriter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>poseExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseOffset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The offset into the ObservationWriter to start writing at.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of observations written.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="92" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="92" bodyend="150"/>
+        <references refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1ad81ca1ae71c5632cf12e48733111034c" compoundref="_pose_extractor_8cs" startline="51" endline="65">Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledLocalSpacePoses</references>
+        <references refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1afd438e0eb4212d8d19337c44f9473298" compoundref="_pose_extractor_8cs" startline="89" endline="103">Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledLocalSpaceVelocities</references>
+        <references refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a76e78a8f84de92ddd809a22a651d665c" compoundref="_pose_extractor_8cs" startline="32" endline="46">Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledModelSpacePoses</references>
+        <references refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1a0f09d09be052757df03096eed887e0bb" compoundref="_pose_extractor_8cs" startline="70" endline="84">Unity.MLAgents.Extensions.Sensors.PoseExtractor.GetEnabledModelSpaceVelocities</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0476942d770f0c75fe908c6be3869c76" compoundref="_physics_sensor_settings_8cs" startline="77">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpace</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a5f1549aa05e2718f8a47e48b8b5681a5" compoundref="_physics_sensor_settings_8cs" startline="40">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceLinearVelocity</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a4b6367230400f6477ee178ad3f1ac2c6" compoundref="_physics_sensor_settings_8cs" startline="30">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceRotations</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adff31cd80504dae433daaf8f8f519a3a" compoundref="_physics_sensor_settings_8cs" startline="25">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseLocalSpaceTranslations</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ae77ef47539499e7551f41839273b33fc" compoundref="_physics_sensor_settings_8cs" startline="69">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpace</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1aa5ea7b0974e4e9f48d70bfcc64d7c8e6" compoundref="_physics_sensor_settings_8cs" startline="35">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceLinearVelocity</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1ad25a515a09cf8ebbfeccc7a87594f290" compoundref="_physics_sensor_settings_8cs" startline="20">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceRotations</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1adbd1203e874fe846f60c8090dfb4974f" compoundref="_physics_sensor_settings_8cs" startline="15">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseModelSpaceTranslations</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" line="83" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsSensorSettings.cs" bodystart="82" bodyend="151"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_observation_writer_physics_extensions_1a7717ebd0a6346355da7baa0aa587d9e8" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::ObservationWriterPhysicsExtensions</scope><name>WritePoses</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

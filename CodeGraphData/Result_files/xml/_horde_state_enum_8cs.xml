@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_horde_state_enum_8cs" kind="file">
+    <compoundname>HordeStateEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" prot="public" static="no">
+        <name>HordeStateEnum</name>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa0eceeb45861f9585dd7a97a3e36f85c6" prot="public">
+          <name>Created</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aaa67a83dbab285245a2ec229315ca5120" prot="public">
+          <name>RequestingDecision</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aacac05d08d72ff3eb67cdde030a8230c7" prot="public">
+          <name>DecisionArrived</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa00d99952b7d13847f20fed9923d5cc38" prot="public">
+          <name>InProgressDecision</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa8f3d10eb21bd36347c258679eba9e92b" prot="public">
+          <name>Finished</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeStateEnum.cs" line="2" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeStateEnum.cs" bodystart="1" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" refkind="member"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97a" kindref="member">HordeStateEnum</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa0eceeb45861f9585dd7a97a3e36f85c6" kindref="member">Created</ref>,</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aae599161956d626eda4cb0a5ffb85271c" kindref="member">Idle</ref>,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aaa67a83dbab285245a2ec229315ca5120" kindref="member">RequestingDecision</ref>,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aacac05d08d72ff3eb67cdde030a8230c7" kindref="member">DecisionArrived</ref>,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa00d99952b7d13847f20fed9923d5cc38" kindref="member">InProgressDecision</ref>,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_horde_state_enum_8cs_1ac91e877711c09895b568fd55d813b97aa8f3d10eb21bd36347c258679eba9e92b" kindref="member">Finished</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/HordeStateEnum.cs"/>
+  </compounddef>
+</doxygen>

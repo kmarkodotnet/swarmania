@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util" kind="class" prot="package">
+    <compoundname>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1ac19647e55d06f06b3aac67ade8b7ea04" prot="private" static="no" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.m_Colors</definition>
+        <argsstring></argsstring>
+        <name>m_Colors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="265" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a776e2ec0fdf5664c4d12008fbb523f7d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.m_Height</definition>
+        <argsstring></argsstring>
+        <name>m_Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="266" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1af5c9a19f59c7e7d6fc02bb899704d0e1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.m_Width</definition>
+        <argsstring></argsstring>
+        <name>m_Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="267" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a366f35e3baeb75ad30712eafae4344ed" prot="private" static="yes" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.s_OneHotColors</definition>
+        <argsstring></argsstring>
+        <name>s_OneHotColors</name>
+        <initializer>= { Color.red, Color.green, Color.blue }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="268" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a17b4aef02757864e7c07b1047d39dbc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>delegate int</type>
+        <definition>delegate int Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.GridValueProvider</definition>
+        <argsstring>(int x, int y)</argsstring>
+        <name>GridValueProvider</name>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="270" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a4267bd7ea0ead7c3f58192fcaac0596a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.OneHotToTextureUtil</definition>
+        <argsstring>(int height, int width)</argsstring>
+        <name>OneHotToTextureUtil</name>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="273" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="273" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a21c696c7ede785203e2f4477a2531033" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Match3.OneHotToTextureUtil.EncodeToTexture</definition>
+        <argsstring>(GridValueProvider gridValueProvider, Texture2D texture, int channelOffset)</argsstring>
+        <name>EncodeToTexture</name>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a17b4aef02757864e7c07b1047d39dbc9" kindref="member">GridValueProvider</ref></type>
+          <declname>gridValueProvider</declname>
+        </param>
+        <param>
+          <type>Texture2D</type>
+          <declname>texture</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>channelOffset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="280" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="280" bodyend="301"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Utility class for converting a 2D array of ints representing a one-hot encoding into a texture, suitable for conversion to PNGs for observations. Works by encoding 3 values at a time as pixels in the texture, thus it should be called (maxValue + 2) / 3 times, increasing the channelOffset by 3 each time. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" line="264" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3Sensor.cs" bodystart="263" bodyend="302"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a21c696c7ede785203e2f4477a2531033" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>EncodeToTexture</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a17b4aef02757864e7c07b1047d39dbc9" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>GridValueProvider</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1ac19647e55d06f06b3aac67ade8b7ea04" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>m_Colors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a776e2ec0fdf5664c4d12008fbb523f7d" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>m_Height</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1af5c9a19f59c7e7d6fc02bb899704d0e1" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>m_Width</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a4267bd7ea0ead7c3f58192fcaac0596a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>OneHotToTextureUtil</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_one_hot_to_texture_util_1a366f35e3baeb75ad30712eafae4344ed" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::OneHotToTextureUtil</scope><name>s_OneHotColors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

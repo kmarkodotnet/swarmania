@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_castle_type_enum_8cs" kind="file">
+    <compoundname>CastleTypeEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5" prot="public" static="no">
+        <name>CastleTypeEnum</name>
+        <enumvalue id="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a938db156ad9b67fa1d4276ac67649940" prot="public">
+          <name>Ant</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a605f677627dcfe149b000f93b0e28660" prot="public">
+          <name>Termite</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a1811944b9abeaa2ec9c73902103631c7" prot="public">
+          <name>Beetle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleTypeEnum.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleTypeEnum.cs" bodystart="7" bodyend="12"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Text;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>System.Threading.Tasks;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5" kindref="member">CastleTypeEnum</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a938db156ad9b67fa1d4276ac67649940" kindref="member">Ant</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a605f677627dcfe149b000f93b0e28660" kindref="member">Termite</ref>,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_type_enum_8cs_1ab319130db49d331eb34efbcbeec20cd5a1811944b9abeaa2ec9c73902103631c7" kindref="member">Beetle</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleTypeEnum.cs"/>
+  </compounddef>
+</doxygen>

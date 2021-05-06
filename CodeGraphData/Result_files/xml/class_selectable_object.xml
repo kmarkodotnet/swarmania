@@ -1,0 +1,444 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_selectable_object" kind="class" prot="public">
+    <compoundname>SelectableObject</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548c" prot="public" static="no">
+        <name>SingleSelectStateEnum</name>
+        <enumvalue id="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548ca6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548ca91b442d385b54e1418d81adc34871053" prot="public">
+          <name>Selected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548cad654878909f880dbfea86e1ab67b8e13" prot="public">
+          <name>Deselected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="129" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="128" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_selectable_object_1a358ab2a373977ce450df79767988da8b" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SelectableObject.ownerId</definition>
+        <argsstring></argsstring>
+        <name>ownerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1a80fea77fbeb17dec1ed3f383b0c97e44" compoundref="_selectable_object_8cs" startline="59" endline="62">GetOwnerId</referencedby>
+        <referencedby refid="class_selectable_object_1a066b2ab816b7c7f0bde109a4a602fae0" compoundref="_selectable_object_8cs" startline="64" endline="67">IsOwnedByPlayer</referencedby>
+        <referencedby refid="class_selectable_object_1ace7558423ee75185ab85b3ba103d1213" compoundref="_selectable_object_8cs" startline="44" endline="52">SetOwnerId</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1ab212cc72df67f2b4ee639a5b2c6554de" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SelectableObject.selectionPrefab</definition>
+        <argsstring></argsstring>
+        <name>selectionPrefab</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" compoundref="_selectable_object_8cs" startline="77" endline="100">SetIsSelected</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject SelectableObject.selection</definition>
+        <argsstring></argsstring>
+        <name>selection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1aeb83cd65e2c450719d522a5f40335ab8" compoundref="_selectable_object_8cs" startline="102" endline="105">DestroySelection</referencedby>
+        <referencedby refid="class_selectable_object_1a0c5b0f662b2e918251c669e281c42faa" compoundref="_selectable_object_8cs" startline="39" endline="42">GetSelection</referencedby>
+        <referencedby refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" compoundref="_selectable_object_8cs" startline="77" endline="100">SetIsSelected</referencedby>
+        <referencedby refid="class_selectable_object_1a78c88bb2b88e1d4e01de84ac2604cd34" compoundref="_selectable_object_8cs" startline="69" endline="75">SetPosition</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1a4a029824ec986ef36f041012c27438cd" prot="private" static="no" mutable="no">
+        <type><ref refid="class_player_manager" kindref="compound">PlayerManager</ref></type>
+        <definition>PlayerManager SelectableObject.playerManager</definition>
+        <argsstring></argsstring>
+        <name>playerManager</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" compoundref="_selectable_object_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1ac805de0172d73579ef86149ada316b87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SelectableObject.IsSelected</definition>
+        <argsstring></argsstring>
+        <name>IsSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1ab786723de9db26aa0cfe7b60192481bb" compoundref="_selectable_object_8cs" startline="54" endline="57">GetIsSelected</referencedby>
+        <referencedby refid="class_selectable_object_1abcb7f9055dec18f22389bd0cd99a898e" compoundref="_selectable_object_8cs" startline="107" endline="113">OnMouseOver</referencedby>
+        <referencedby refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" compoundref="_selectable_object_8cs" startline="77" endline="100">SetIsSelected</referencedby>
+        <referencedby refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" compoundref="_selectable_object_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" prot="private" static="no" mutable="no">
+        <type><ref refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548c" kindref="member">SingleSelectStateEnum</ref></type>
+        <definition>SingleSelectStateEnum SelectableObject.SingleSelectState</definition>
+        <argsstring></argsstring>
+        <name>SingleSelectState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1abcb7f9055dec18f22389bd0cd99a898e" compoundref="_selectable_object_8cs" startline="107" endline="113">OnMouseOver</referencedby>
+        <referencedby refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" compoundref="_selectable_object_8cs" startline="18" endline="24">Start</referencedby>
+        <referencedby refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" compoundref="_selectable_object_8cs" startline="26" endline="37">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selectable_object_1a6b262e113ef8985a40dbb022402dff75" prot="private" static="no" mutable="no">
+        <type><ref refid="class_selection_core_component" kindref="compound">SelectionCoreComponent</ref></type>
+        <definition>SelectionCoreComponent SelectableObject.selectionComponent</definition>
+        <argsstring></argsstring>
+        <name>selectionComponent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" compoundref="_selectable_object_8cs" startline="18" endline="24">Start</referencedby>
+        <referencedby refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" compoundref="_selectable_object_8cs" startline="26" endline="37">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="18" bodyend="24"/>
+        <references refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" compoundref="_selectable_object_8cs" startline="12">IsSelected</references>
+        <references refid="class_selectable_object_1a4a029824ec986ef36f041012c27438cd" compoundref="_selectable_object_8cs" startline="11">playerManager</references>
+        <references refid="class_selectable_object_1a6b262e113ef8985a40dbb022402dff75" compoundref="_selectable_object_8cs" startline="15">selectionComponent</references>
+        <references refid="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" compoundref="_selectable_object_8cs" startline="14">SingleSelectState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="26" bodyend="37"/>
+        <references refid="class_selection_core_component_1aed2af4884738de5f14d19904bc6b17d8" compoundref="_selection_core_component_8cs" startline="35" endline="38">SelectionCoreComponent.GetIsSSelecting</references>
+        <references refid="class_selectable_object_1a6b262e113ef8985a40dbb022402dff75" compoundref="_selectable_object_8cs" startline="15">selectionComponent</references>
+        <references refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" compoundref="_selectable_object_8cs" startline="77" endline="100">SetIsSelected</references>
+        <references refid="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" compoundref="_selectable_object_8cs" startline="14">SingleSelectState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1abcb7f9055dec18f22389bd0cd99a898e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.OnMouseOver</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseOver</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="107" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="107" bodyend="113"/>
+        <references refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" compoundref="_selectable_object_8cs" startline="12">IsSelected</references>
+        <references refid="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" compoundref="_selectable_object_8cs" startline="14">SingleSelectState</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1aedb8a7d7f24bbda24132c2c88592d6da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.OnTriggerEnter2D</definition>
+        <argsstring>(Collider2D collision)</argsstring>
+        <name>OnTriggerEnter2D</name>
+        <param>
+          <type>Collider2D</type>
+          <declname>collision</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="115" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="115" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1adee80cbf925edc29ac2d63945c139631" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.OnMouseExit</definition>
+        <argsstring>()</argsstring>
+        <name>OnMouseExit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="122" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="122" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_selectable_object_1a0c5b0f662b2e918251c669e281c42faa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject SelectableObject.GetSelection</definition>
+        <argsstring>()</argsstring>
+        <name>GetSelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="39" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="39" bodyend="42"/>
+        <references refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" compoundref="_selectable_object_8cs" startline="10">selection</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1ace7558423ee75185ab85b3ba103d1213" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.SetOwnerId</definition>
+        <argsstring>(string ownerId)</argsstring>
+        <name>SetOwnerId</name>
+        <param>
+          <type>string</type>
+          <declname>ownerId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="44" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="44" bodyend="52"/>
+        <references refid="class_selectable_object_1a358ab2a373977ce450df79767988da8b" compoundref="_selectable_object_8cs" startline="7">ownerId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1ab786723de9db26aa0cfe7b60192481bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SelectableObject.GetIsSelected</definition>
+        <argsstring>()</argsstring>
+        <name>GetIsSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="54" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="54" bodyend="57"/>
+        <references refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" compoundref="_selectable_object_8cs" startline="12">IsSelected</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1a80fea77fbeb17dec1ed3f383b0c97e44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string SelectableObject.GetOwnerId</definition>
+        <argsstring>()</argsstring>
+        <name>GetOwnerId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="59" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="59" bodyend="62"/>
+        <references refid="class_selectable_object_1a358ab2a373977ce450df79767988da8b" compoundref="_selectable_object_8cs" startline="7">ownerId</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1a066b2ab816b7c7f0bde109a4a602fae0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SelectableObject.IsOwnedByPlayer</definition>
+        <argsstring>()</argsstring>
+        <name>IsOwnedByPlayer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="64" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="64" bodyend="67"/>
+        <references refid="class_selectable_object_1a358ab2a373977ce450df79767988da8b" compoundref="_selectable_object_8cs" startline="7">ownerId</references>
+        <referencedby refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" compoundref="_selectable_object_8cs" startline="77" endline="100">SetIsSelected</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1a78c88bb2b88e1d4e01de84ac2604cd34" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.SetPosition</definition>
+        <argsstring>(Vector3 position)</argsstring>
+        <name>SetPosition</name>
+        <param>
+          <type>Vector3</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="69" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="69" bodyend="75"/>
+        <references refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" compoundref="_selectable_object_8cs" startline="10">selection</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.SetIsSelected</definition>
+        <argsstring>(bool isSelected)</argsstring>
+        <name>SetIsSelected</name>
+        <param>
+          <type>bool</type>
+          <declname>isSelected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="77" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="77" bodyend="100"/>
+        <references refid="class_selectable_object_1a066b2ab816b7c7f0bde109a4a602fae0" compoundref="_selectable_object_8cs" startline="64" endline="67">IsOwnedByPlayer</references>
+        <references refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" compoundref="_selectable_object_8cs" startline="12">IsSelected</references>
+        <references refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" compoundref="_selectable_object_8cs" startline="10">selection</references>
+        <references refid="class_selectable_object_1ab212cc72df67f2b4ee639a5b2c6554de" compoundref="_selectable_object_8cs" startline="8">selectionPrefab</references>
+        <referencedby refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" compoundref="_selectable_object_8cs" startline="26" endline="37">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_object_1aeb83cd65e2c450719d522a5f40335ab8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectableObject.DestroySelection</definition>
+        <argsstring>()</argsstring>
+        <name>DestroySelection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="102" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="102" bodyend="105"/>
+        <references refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" compoundref="_selectable_object_8cs" startline="10">selection</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="127">
+        <label>SelectableObject</label>
+        <link refid="class_selectable_object"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="129">
+        <label>SelectableObject</label>
+        <link refid="class_selectable_object"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+        <childnode refid="131" relation="usage">
+          <edgelabel>selectionComponent</edgelabel>
+        </childnode>
+        <childnode refid="132" relation="usage">
+          <edgelabel>playerManager</edgelabel>
+        </childnode>
+      </node>
+      <node id="133">
+        <label>System</label>
+      </node>
+      <node id="130">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="132">
+        <label>PlayerManager</label>
+        <link refid="class_player_manager"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+        <childnode refid="133" relation="usage">
+          <edgelabel>myId</edgelabel>
+        </childnode>
+        <childnode refid="134" relation="usage">
+          <edgelabel>players</edgelabel>
+        </childnode>
+      </node>
+      <node id="134">
+        <label>PlayerManager.Players</label>
+        <link refid="class_player_manager_1_1_players"/>
+      </node>
+      <node id="131">
+        <label>SelectionCoreComponent</label>
+        <link refid="class_selection_core_component"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/SelectableObject.cs" bodystart="5" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_selectable_object_1aeb83cd65e2c450719d522a5f40335ab8" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>DestroySelection</name></member>
+      <member refid="class_selectable_object_1ab786723de9db26aa0cfe7b60192481bb" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>GetIsSelected</name></member>
+      <member refid="class_selectable_object_1a80fea77fbeb17dec1ed3f383b0c97e44" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>GetOwnerId</name></member>
+      <member refid="class_selectable_object_1a0c5b0f662b2e918251c669e281c42faa" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>GetSelection</name></member>
+      <member refid="class_selectable_object_1a066b2ab816b7c7f0bde109a4a602fae0" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>IsOwnedByPlayer</name></member>
+      <member refid="class_selectable_object_1ac805de0172d73579ef86149ada316b87" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>IsSelected</name></member>
+      <member refid="class_selectable_object_1adee80cbf925edc29ac2d63945c139631" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>OnMouseExit</name></member>
+      <member refid="class_selectable_object_1abcb7f9055dec18f22389bd0cd99a898e" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>OnMouseOver</name></member>
+      <member refid="class_selectable_object_1aedb8a7d7f24bbda24132c2c88592d6da" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>OnTriggerEnter2D</name></member>
+      <member refid="class_selectable_object_1a358ab2a373977ce450df79767988da8b" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>ownerId</name></member>
+      <member refid="class_selectable_object_1a4a029824ec986ef36f041012c27438cd" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>playerManager</name></member>
+      <member refid="class_selectable_object_1ac362082a7108a9128405a649ebf3ee19" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>selection</name></member>
+      <member refid="class_selectable_object_1a6b262e113ef8985a40dbb022402dff75" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>selectionComponent</name></member>
+      <member refid="class_selectable_object_1ab212cc72df67f2b4ee639a5b2c6554de" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>selectionPrefab</name></member>
+      <member refid="class_selectable_object_1a04e176d003eaaeecf858c2e60ffbc218" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>SetIsSelected</name></member>
+      <member refid="class_selectable_object_1ace7558423ee75185ab85b3ba103d1213" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>SetOwnerId</name></member>
+      <member refid="class_selectable_object_1a78c88bb2b88e1d4e01de84ac2604cd34" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>SetPosition</name></member>
+      <member refid="class_selectable_object_1a515a1a1e9e795cb71529bafc4a285621" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>SingleSelectState</name></member>
+      <member refid="class_selectable_object_1a3c463fdef81c192bdbd5c1effcc8548c" prot="public" virt="non-virtual"><scope>SelectableObject</scope><name>SingleSelectStateEnum</name></member>
+      <member refid="class_selectable_object_1a717cfcf2666984946a4eef631db7cdcd" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>Start</name></member>
+      <member refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" prot="private" virt="non-virtual"><scope>SelectableObject</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

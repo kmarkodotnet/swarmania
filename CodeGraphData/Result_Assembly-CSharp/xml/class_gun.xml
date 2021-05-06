@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_gun" kind="class" prot="public">
+    <compoundname>Gun</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gun_1ab627cefe1038ff2c5109d5d26cc08f92" prot="private" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Gun.bullet</definition>
+        <argsstring></argsstring>
+        <name>bullet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" compoundref="_gun_8cs" startline="11" endline="14">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gun.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" bodystart="11" bodyend="14"/>
+        <references refid="class_gun_1ab627cefe1038ff2c5109d5d26cc08f92" compoundref="_gun_8cs" startline="8">bullet</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="74">
+        <label>Gun</label>
+        <link refid="class_gun"/>
+        <childnode refid="75" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="76">
+        <label>Gun</label>
+        <link refid="class_gun"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/General/Gun.cs" bodystart="6" bodyend="15"/>
+    <listofallmembers>
+      <member refid="class_gun_1ab627cefe1038ff2c5109d5d26cc08f92" prot="private" virt="non-virtual"><scope>Gun</scope><name>bullet</name></member>
+      <member refid="class_gun_1aa78da92a03b2bfdd85da6ae73fda7415" prot="private" virt="non-virtual"><scope>Gun</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

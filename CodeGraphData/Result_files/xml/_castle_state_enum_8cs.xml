@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_castle_state_enum_8cs" kind="file">
+    <compoundname>CastleStateEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" prot="public" static="no">
+        <name>CastleStateEnum</name>
+        <enumvalue id="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3ae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3af17105ebbabedfc63353a1904fc386df" prot="public">
+          <name>Attacked</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3adcfafcb4323b102c7e204555d313ba0a" prot="public">
+          <name>Attack</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b" prot="public">
+          <name>Destroyed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleStateEnum.cs" line="2" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleStateEnum.cs" bodystart="1" bodyend="7"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" refkind="member"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3" kindref="member">CastleStateEnum</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3ae599161956d626eda4cb0a5ffb85271c" kindref="member">Idle</ref>,</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3af17105ebbabedfc63353a1904fc386df" kindref="member">Attacked</ref>,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3adcfafcb4323b102c7e204555d313ba0a" kindref="member">Attack</ref>,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b" kindref="member">Destroyed</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleStateEnum.cs"/>
+  </compounddef>
+</doxygen>

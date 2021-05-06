@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_horde_pool_object_8cs" kind="file">
+    <compoundname>HordePoolObject.cs</compoundname>
+    <innerclass refid="class_horde_pool_object" prot="public">HordePoolObject</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="class_horde_pool_object" refkind="compound"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_horde_pool_object" kindref="compound">HordePoolObject</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3" refid="class_horde_pool_object_1a83f2458470e532b7c434937b7911678d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_horde" kindref="compound">Horde</ref><sp/><ref refid="class_horde" kindref="compound">Horde</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="4" refid="class_horde_pool_object_1a5b48a9e71a0df6817c40dd4b7f073c51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" kindref="member">HordePoolObjectState</ref><sp/><ref refid="class_horde_pool_object_1a5b48a9e71a0df6817c40dd4b7f073c51" kindref="member">State</ref><sp/>{<sp/></highlight><highlight class="keyword">get</highlight><highlight class="normal">;<sp/>set;<sp/>}</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164" kindref="member">HordePoolObjectState</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164aa87026a344997ce04709fb7b1377c9e7" kindref="member">ReadyToUse</ref>,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_horde_pool_object_1ab1ae01903349852f6526836d08b6f164a019d1ca7d50cc54b995f60d456435e87" kindref="member">Used</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/HordePoolObject.cs"/>
+  </compounddef>
+</doxygen>

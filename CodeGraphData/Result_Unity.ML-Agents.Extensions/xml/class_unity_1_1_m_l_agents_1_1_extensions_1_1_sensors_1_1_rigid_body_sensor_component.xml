@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SensorComponent</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b9e1f97c8c8e6ac14aa7f011159a30e" prot="public" static="no" mutable="no">
+        <type>Rigidbody</type>
+        <definition>Rigidbody Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.RootBody</definition>
+        <argsstring></argsstring>
+        <name>RootBody</name>
+        <briefdescription>
+<para>The root Rigidbody of the system. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="15" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7c605ff3d25ef5c65f4edb04b62a5820" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.VirtualRoot</definition>
+        <argsstring></argsstring>
+        <name>VirtualRoot</name>
+        <briefdescription>
+<para>Optional GameObject used to determine the root of the poses. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="20" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a23be806d4ee278b4d173cc0c9bf0e617" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+        <definition>PhysicsSensorSettings Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.Settings</definition>
+        <argsstring></argsstring>
+        <name>Settings</name>
+        <initializer>= <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a2d01cbf651cd236beb663cf51f9cc8e2" kindref="member">PhysicsSensorSettings.Default</ref>()</initializer>
+        <briefdescription>
+<para>Settings defining what types of observations will be generated. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="26" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a5f2bb475c39efe2adc09aa80a84184ee" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.sensorName</definition>
+        <argsstring></argsstring>
+        <name>sensorName</name>
+        <briefdescription>
+<para>Optional sensor name. This must be unique for each Agent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="32" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1af00abc594399a596aade97b77b81f6e0" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" kindref="compound">RigidBodyPoseExtractor</ref></type>
+        <definition>RigidBodyPoseExtractor Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.m_PoseExtractor</definition>
+        <argsstring></argsstring>
+        <name>m_PoseExtractor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="36" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b7024b2cc75d91cf2c9a5604369d114" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override ISensor</type>
+        <definition>override ISensor Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.CreateSensor</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSensor</name>
+        <briefdescription>
+<para>Creates a <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" kindref="compound">PhysicsBodySensor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="42" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1ad48948e506d99e20ae9edab9fbbb4676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int[]</type>
+        <definition>override int [] Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.GetObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetObservationShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="49" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="49" bodyend="66"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a68cf3e4f3d3d0b41c87d83c9dfc1b03a" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IList&lt; <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor_1_1_display_node" kindref="compound">PoseExtractor.DisplayNode</ref> &gt;</type>
+        <definition>IList&lt;PoseExtractor.DisplayNode&gt; Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.GetDisplayNodes</definition>
+        <argsstring>()</argsstring>
+        <name>GetDisplayNodes</name>
+        <briefdescription>
+<para>Get the DisplayNodes of the hierarchy. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="72" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7f9ba03454085e9ed17b78b88dbc7674" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.ResetPoseExtractor</definition>
+        <argsstring>()</argsstring>
+        <name>ResetPoseExtractor</name>
+        <briefdescription>
+<para>Reset the pose extractor, trying to keep the enabled state of the corresponding poses the same. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="94" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="94" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7e1eba98172020da194e9926ffd49ff7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.SetPoseEnabled</definition>
+        <argsstring>(int index, bool enabled)</argsstring>
+        <name>SetPoseEnabled</name>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+<para>Toggle the pose at the given index. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enabled</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="110" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="110" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a3c8f89bcb85617bdc03ea7625a199109" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" kindref="compound">RigidBodyPoseExtractor</ref></type>
+        <definition>RigidBodyPoseExtractor Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent.GetPoseExtractor</definition>
+        <argsstring>()</argsstring>
+        <name>GetPoseExtractor</name>
+        <briefdescription>
+<para>Lazy construction of the <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kindref="compound">PoseExtractor</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="81" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="81" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Editor component that creates a <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" kindref="compound">PhysicsBodySensor</ref> for the Agent. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="83">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>SensorComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings</label>
+        <link refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings"/>
+      </node>
+      <node id="85">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodySensorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component"/>
+        <childnode refid="86" relation="public-inheritance">
+        </childnode>
+        <childnode refid="87" relation="usage">
+          <edgelabel>Settings</edgelabel>
+        </childnode>
+        <childnode refid="88" relation="usage">
+          <edgelabel>m_PoseExtractor</edgelabel>
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodyPoseExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor"/>
+        <childnode refid="89" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>PoseExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor"/>
+      </node>
+      <node id="86">
+        <label>SensorComponent</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" line="11" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodySensorComponent.cs" bodystart="10" bodyend="114"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b7024b2cc75d91cf2c9a5604369d114" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>CreateSensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a68cf3e4f3d3d0b41c87d83c9dfc1b03a" prot="package" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>GetDisplayNodes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1ad48948e506d99e20ae9edab9fbbb4676" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a3c8f89bcb85617bdc03ea7625a199109" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>GetPoseExtractor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1af00abc594399a596aade97b77b81f6e0" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>m_PoseExtractor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7f9ba03454085e9ed17b78b88dbc7674" prot="package" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>ResetPoseExtractor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a4b9e1f97c8c8e6ac14aa7f011159a30e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>RootBody</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a5f2bb475c39efe2adc09aa80a84184ee" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>sensorName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7e1eba98172020da194e9926ffd49ff7" prot="package" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>SetPoseEnabled</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a23be806d4ee278b4d173cc0c9bf0e617" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>Settings</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_sensor_component_1a7c605ff3d25ef5c65f4edb04b62a5820" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodySensorComponent</scope><name>VirtualRoot</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

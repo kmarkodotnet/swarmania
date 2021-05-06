@@ -1,0 +1,1446 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::GridSensor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SensorComponent</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">ISensor</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IBuiltInSensor</basecompoundref>
+    <derivedcompoundref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor" prot="public" virt="non-virtual">Unity.MLAgents.Extensions.Sensors.CountingGridSensor</derivedcompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" prot="public" static="no">
+        <name>GridDepthType</name>
+        <enumvalue id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1a781dc97dc62331eec3ea9ec4373a3ca8" prot="public">
+          <name>Channel</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1aadbc0bbd60976f468b6be879680a48c1" prot="public">
+          <name>ChannelHot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Enum describing what kind of depth type the data should be organized as </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="86" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="86" bodyend="86"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22eb4493a9f3b657ed01d9a8b7f88c05" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Sensors.GridSensor.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+<para>Name of this grid sensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="17" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22dd960f4334e19f594c40baf97946f7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.CellScaleX</definition>
+        <argsstring></argsstring>
+        <name>CellScaleX</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+<para>The width of each grid cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="29" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab7f415207e12ed31735eb64c67a6a5b7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.CellScaleZ</definition>
+        <argsstring></argsstring>
+        <name>CellScaleZ</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+<para>The depth of each grid cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="36" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a478435ce71e3129119abf8d64fabb7ac" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.GridNumSideX</definition>
+        <argsstring></argsstring>
+        <name>GridNumSideX</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+<para>The width of the grid . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="43" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad033ff46574e54cd72959dc8661954b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.GridNumSideZ</definition>
+        <argsstring></argsstring>
+        <name>GridNumSideZ</name>
+        <initializer>= 16</initializer>
+        <briefdescription>
+<para>The depth of the grid . </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="50" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a152c50387e415be767404d231048ab0d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.CellScaleY</definition>
+        <argsstring></argsstring>
+        <name>CellScaleY</name>
+        <initializer>= 0.01f</initializer>
+        <briefdescription>
+<para>The height of each grid cell. Changes how much of the vertical axis is observed by a cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="57" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a13b6cf32e32ac3ec724b5993ddb2cc04" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.GridSensor.RotateToAgent</definition>
+        <argsstring></argsstring>
+        <name>RotateToAgent</name>
+        <briefdescription>
+<para>Rotate the grid based on the direction the agent is facing. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="63" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a8d7554bee0e82e1814652ca0bf1daed9" prot="public" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.GridSensor.ChannelDepth</definition>
+        <argsstring></argsstring>
+        <name>ChannelDepth</name>
+        <briefdescription>
+<para>Array holding the depth of each channel. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="69" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a03c7f37a27d77ed3478bcb65c23c658f" prot="public" static="no" mutable="no">
+        <type>string[]</type>
+        <definition>string [] Unity.MLAgents.Extensions.Sensors.GridSensor.DetectableObjects</definition>
+        <argsstring></argsstring>
+        <name>DetectableObjects</name>
+        <briefdescription>
+<para>List of tags that are detected. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="75" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad9104467b2777836fd869359d2f3c40a" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Unity.MLAgents.Extensions.Sensors.GridSensor.ObserveMask</definition>
+        <argsstring></argsstring>
+        <name>ObserveMask</name>
+        <briefdescription>
+<para>The layer mask. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="81" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aec38955b033c6cd4d22839411b9de639" prot="public" static="no" mutable="no">
+        <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" kindref="member">GridDepthType</ref></type>
+        <definition>GridDepthType Unity.MLAgents.Extensions.Sensors.GridSensor.gridDepthType</definition>
+        <argsstring></argsstring>
+        <name>gridDepthType</name>
+        <initializer>= GridDepthType.Channel</initializer>
+        <briefdescription>
+<para>The data layout that the grid should output. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="92" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1c292a2aa779a8424b5f164c80375f0e" prot="public" static="no" mutable="no">
+        <type>GameObject</type>
+        <definition>GameObject Unity.MLAgents.Extensions.Sensors.GridSensor.rootReference</definition>
+        <argsstring></argsstring>
+        <name>rootReference</name>
+        <briefdescription>
+<para>The reference of the root of the agent. This is used to disambiguate objects with the same tag as the agent. Defaults to current GameObject. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="98" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bcb62e4a34b36d9815b87919e8d775" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.ObservationPerCell</definition>
+        <argsstring></argsstring>
+        <name>ObservationPerCell</name>
+        <briefdescription>
+<para>The total number of observations per cell of the grid. Its equivalent to the &quot;channel&quot; on the outgoing tensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="108" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a58b0e7ed33f97f47e1760da6bd72ae26" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.NumberOfObservations</definition>
+        <argsstring></argsstring>
+        <name>NumberOfObservations</name>
+        <briefdescription>
+<para>The total number of observations that this <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor" kindref="compound">GridSensor</ref> provides. It is the length of m_PerceptionBuffer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="114" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a191ff8d4f6cdb0cf5fcca1cc80f9aa68" prot="public" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.GridSensor.ChannelOffsets</definition>
+        <argsstring></argsstring>
+        <name>ChannelOffsets</name>
+        <briefdescription>
+<para>The offsets used to specify where within a cell&apos;s allotted data, certain observations will be inserted. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="120" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aade683d4adc95cd03070913afe8db96d" prot="public" static="no" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Unity.MLAgents.Extensions.Sensors.GridSensor.DebugColors</definition>
+        <argsstring></argsstring>
+        <name>DebugColors</name>
+        <briefdescription>
+<para>Array of Colors used for the grid gizmos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="215" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4ad4b8b4749e985a15956cb7a5e535dc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.GizmoYOffset</definition>
+        <argsstring></argsstring>
+        <name>GizmoYOffset</name>
+        <initializer>= 0f</initializer>
+        <briefdescription>
+<para>The height of the gizmos grid. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="221" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a69438c570834f19e66e2bcbdbb65ebdf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.GridSensor.ShowGizmos</definition>
+        <argsstring></argsstring>
+        <name>ShowGizmos</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Whether to show gizmos or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="227" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a54e32fb855d40eb0170c6f00bcdb3c65" prot="public" static="no" mutable="no">
+        <type>SensorCompressionType</type>
+        <definition>SensorCompressionType Unity.MLAgents.Extensions.Sensors.GridSensor.CompressionType</definition>
+        <argsstring></argsstring>
+        <name>CompressionType</name>
+        <initializer>= SensorCompressionType.PNG</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="229" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="229" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1996cbb52518052a1cfc90cdd99ba81b" prot="protected" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] Unity.MLAgents.Extensions.Sensors.GridSensor.m_PerceptionBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_PerceptionBuffer</name>
+        <briefdescription>
+<para>The main storage of perceptual information. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="125" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad29809e37e4bc943c77f08f8ba041761" prot="protected" static="no" mutable="no">
+        <type>float[]</type>
+        <definition>float [] Unity.MLAgents.Extensions.Sensors.GridSensor.m_ChannelHotDefaultPerceptionBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_ChannelHotDefaultPerceptionBuffer</name>
+        <briefdescription>
+<para>The default value of the perceptionBuffer when using the ChannelHot DepthType. Used to reset the array/ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="130" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5d220ff2a38ea8ecb6f033ccaa4a63e2" prot="protected" static="no" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Unity.MLAgents.Extensions.Sensors.GridSensor.m_PerceptionColors</definition>
+        <argsstring></argsstring>
+        <name>m_PerceptionColors</name>
+        <briefdescription>
+<para>Array of Colors needed in order to load the values of the perception buffer to a texture. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="135" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a37df97f3f6397404efcd22a11551542d" prot="protected" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Unity.MLAgents.Extensions.Sensors.GridSensor.m_perceptionTexture2D</definition>
+        <argsstring></argsstring>
+        <name>m_perceptionTexture2D</name>
+        <briefdescription>
+<para>Texture where the colors are written to so that they can be compressed in PNG format. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="140" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae6e9d5a4ce95dd41c8e5bf4fc81d2c86" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.SphereRadius</definition>
+        <argsstring></argsstring>
+        <name>SphereRadius</name>
+        <briefdescription>
+<para>Radius of grid, used for normalizing the distance. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="159" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab283431950b0e75de8cb59b566a9cc71" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.DiffNumSideZX</definition>
+        <argsstring></argsstring>
+        <name>DiffNumSideZX</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+<para>Difference between GridNumSideZ and gridNumSideX. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="169" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abaa159a3e15f060a3fc50fae166a58cc" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.OffsetGridNumSide</definition>
+        <argsstring></argsstring>
+        <name>OffsetGridNumSide</name>
+        <initializer>= 7.5f</initializer>
+        <briefdescription>
+<para>Offset used for calculating CellToPoint </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="174" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7232f180bfd4972b606aa03e04416ce6" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Sensors.GridSensor.Initialized</definition>
+        <argsstring></argsstring>
+        <name>Initialized</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+<para>Bool if initialized or not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="199" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a11e8acbe646b97ee7403ad4f19e465cd" prot="protected" static="no" mutable="no">
+        <type>Color[]</type>
+        <definition>Color [] Unity.MLAgents.Extensions.Sensors.GridSensor.CellActivity</definition>
+        <argsstring></argsstring>
+        <name>CellActivity</name>
+        <briefdescription>
+<para>Array of colors displaying the DebugColors for each cell in OnDrawGizmos. Only updated if ShowGizmos. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="234" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29ca674c6f8ce12e5dc05eb820f0d4b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.NumImages</definition>
+        <argsstring></argsstring>
+        <name>NumImages</name>
+        <briefdescription>
+<para>Number of PNG formated images that are sent to python during training. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="149" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab5307d98906b070a888cbdc82d30cc98" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.NumChannelsOnLastImage</definition>
+        <argsstring></argsstring>
+        <name>NumChannelsOnLastImage</name>
+        <briefdescription>
+<para>Number of relevant channels on the last image that is sent/ </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="154" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a704eec844b3a029544c1bb6e8524084a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.NumCells</definition>
+        <argsstring></argsstring>
+        <name>NumCells</name>
+        <briefdescription>
+<para>Total Number of cells (width*height) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="164" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a073c0a715c4031954eed5e0d434427dc" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.HalfOfGridX</definition>
+        <argsstring></argsstring>
+        <name>HalfOfGridX</name>
+        <briefdescription>
+<para>Half of the grid in the X direction </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="179" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5645615be18d88c95fa53af8a9b4e7ff" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.HalfOfGridZ</definition>
+        <argsstring></argsstring>
+        <name>HalfOfGridZ</name>
+        <briefdescription>
+<para>Half of the grid in the z direction </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="184" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a228e45103fa072ccfc11e804225dc280" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.PointToCellScalingX</definition>
+        <argsstring></argsstring>
+        <name>PointToCellScalingX</name>
+        <briefdescription>
+<para>Used in the PointToCell method to scale the x value to land in the calculated cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="189" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2fd21230f959c45d53857a843c4cf96c" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Unity.MLAgents.Extensions.Sensors.GridSensor.PointToCellScalingZ</definition>
+        <argsstring></argsstring>
+        <name>PointToCellScalingZ</name>
+        <briefdescription>
+<para>Used in the PointToCell method to scale the y value to land in the calculated cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="194" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8e9b3c9f4b0b89df6c6b880c4ae92a2" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.GridSensor.m_Shape</definition>
+        <argsstring></argsstring>
+        <name>m_Shape</name>
+        <briefdescription>
+<para>Array holding the dimensions of the resulting tensor </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="204" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4299b4221ca8b08ecf9bc3977df3b6d5" prot="private" static="no" mutable="no">
+        <type>Vector3[]</type>
+        <definition>Vector3 [] Unity.MLAgents.Extensions.Sensors.GridSensor.CellPoints</definition>
+        <argsstring></argsstring>
+        <name>CellPoints</name>
+        <briefdescription>
+<para>Array of positions where each position is the center of a cell. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="239" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0b759f829862a33f0868ab3ac5481f16" prot="private" static="no" mutable="no">
+        <type>List&lt; byte[]&gt;</type>
+        <definition>List&lt;byte[]&gt; Unity.MLAgents.Extensions.Sensors.GridSensor.compressedImgs</definition>
+        <argsstring></argsstring>
+        <name>compressedImgs</name>
+        <briefdescription>
+<para>List representing the multiple compressed images of all of the grids </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="244" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad2ee98273a2c59937c09a3728caecfc3" prot="private" static="no" mutable="no">
+        <type>List&lt; byte[]&gt;</type>
+        <definition>List&lt;byte[]&gt; Unity.MLAgents.Extensions.Sensors.GridSensor.byteSizesBytesList</definition>
+        <argsstring></argsstring>
+        <name>byteSizesBytesList</name>
+        <briefdescription>
+<para>List representing the sizes of the multiple images so they can be properly reconstructed on the python side </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="249" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5dcf3f3ecf4722a770da5e4d41fdfee6" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Unity.MLAgents.Extensions.Sensors.GridSensor.DebugDefaultColor</definition>
+        <argsstring></argsstring>
+        <name>DebugDefaultColor</name>
+        <initializer>= new Color(1f, 1f, 1f, 0.25f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="251" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2878a885ca505e585f0d94aa66b0d22a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override ISensor</type>
+        <definition>override ISensor Unity.MLAgents.Extensions.Sensors.GridSensor.CreateSensor</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="254" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="254" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab549cad9b055f4d075ecbe7d96dec402" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.SetParameters</definition>
+        <argsstring>(string[] detectableObjects, int[] channelDepth, GridDepthType gridDepthType, float cellScaleX, float cellScaleZ, int gridWidth, int gridHeight, int observeMaskInt, bool rotateToAgent, Color[] debugColors)</argsstring>
+        <name>SetParameters</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a4be54af21294023f9cea4d0f67239250">SetParameters</reimplementedby>
+        <param>
+          <type>string[]</type>
+          <declname>detectableObjects</declname>
+        </param>
+        <param>
+          <type>int[]</type>
+          <declname>channelDepth</declname>
+        </param>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" kindref="member">GridDepthType</ref></type>
+          <declname>gridDepthType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cellScaleX</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>cellScaleZ</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridWidth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>gridHeight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>observeMaskInt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>rotateToAgent</declname>
+        </param>
+        <param>
+          <type>Color[]</type>
+          <declname>debugColors</declname>
+        </param>
+        <briefdescription>
+<para>Sets the parameters of the grid sensor </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>detectableObjects</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of strings representing the tags to be detected by the sensor</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>channelDepth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of ints representing the depth of each channel</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridDepthType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>enum representing the GridDepthType of the sensor</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellScaleX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float representing the X scaling of each cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellScaleZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>float representing the Z scaling of each cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridWidth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the number of cells in the X direction. Width of the Grid</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gridHeight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the number of cells in the Z direction. Height of the Grid</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>observeMaskInt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>int representing the layer mask to observe</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rotateToAgent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bool if true then the grid is rotated to the rotation of the transform the rootReference</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>debugColors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>array of colors corresponding the the tags in the detectableObjects array</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="272" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="272" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a416435abe00596129dff2b6f83835e5e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.InitGridParameters</definition>
+        <argsstring>()</argsstring>
+        <name>InitGridParameters</name>
+        <briefdescription>
+<para>Initializes the constant parameters used within the perceive method call </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="292" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="292" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a57e8b2b89575d8b3ce3fc8d1908d0cbe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.InitDepthType</definition>
+        <argsstring>()</argsstring>
+        <name>InitDepthType</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1af3a160b28f0d09a928e162dd0a98ef44">InitDepthType</reimplementedby>
+        <briefdescription>
+<para>Initializes the constant parameters that are based on the Grid Depth Type Sets the ObservationPerCell and the ChannelOffsets properties </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="312" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="312" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8063a8b4e3581923312de643f158b60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.InitChannelHotDefaultPerceptionBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>InitChannelHotDefaultPerceptionBuffer</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1ab4ad4fcc1d8ee56905e10870d0479dbb">InitChannelHotDefaultPerceptionBuffer</reimplementedby>
+        <briefdescription>
+<para>Initializes the m_ChannelHotDefaultPerceptionBuffer with default data in the case that the grid depth type is ChannelHot </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="356" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="356" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a094a46956e0e176dcbba18eeec540df2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.InitPerceptionBuffer</definition>
+        <argsstring>()</argsstring>
+        <name>InitPerceptionBuffer</name>
+        <briefdescription>
+<para>Initializes the m_PerceptionBuffer as the main data storage property Calculates the NumImages and NumChannelsOnLastImage that are used for serializing m_PerceptionBuffer </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="372" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="372" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a184b8ebab72f0a5b9e0b9316ff2ccf9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+<para>Calls the initialization methods. Creates the data storing properties used to send the data Establishes </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="400" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="400" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a961a21aeff49ec0cae0addd1082e6ada" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+<para>Clears the perception buffer before loading in new data. If the gridDepthType is ChannelHot, then it initializes the <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a961a21aeff49ec0cae0addd1082e6ada" kindref="member">Reset()</ref> also reinits the cell activity array (for debug) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="421" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="421" bodyend="455"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7dd21f8af1fa4601f972e2fc293157c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.GridSensor.GetFloatObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetFloatObservationShape</name>
+        <briefdescription>
+<para>Gets the shape of the grid observation</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>integer array shape of the grid observation</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="459" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="459" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1af06df27f5cb4862637fc5945c3f3109b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Sensors.GridSensor.GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="466" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="466" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ada4ffb68e772d2b144fe540a797246ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>SensorCompressionType</type>
+        <definition>virtual SensorCompressionType Unity.MLAgents.Extensions.Sensors.GridSensor.GetCompressionType</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="472" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="472" bodyend="475"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a315c1b61f333bf2bb978bd8298a08bc6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BuiltInSensorType</type>
+        <definition>BuiltInSensorType Unity.MLAgents.Extensions.Sensors.GridSensor.GetBuiltInSensorType</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuiltInSensorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="478" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="478" bodyend="481"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0dfc80fea3e72ae46e265033cd36a2de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte [] Unity.MLAgents.Extensions.Sensors.GridSensor.GetCompressedObservation</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressedObservation</name>
+        <briefdescription>
+<para>GetCompressedObservation - Calls Perceive then puts the data stored on the perception buffer onto the m_perceptionTexture2D to be converted to a byte array and returned </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>byte[] containing the compressed observation of the grid observation</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="489" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="489" bodyend="508"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0cb0bc7648a626b985bd4924e3212f70" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float[]</type>
+        <definition>float [] Unity.MLAgents.Extensions.Sensors.GridSensor.Perceive</definition>
+        <argsstring>()</argsstring>
+        <name>Perceive</name>
+        <briefdescription>
+<para>Perceive - Clears the buffers, calls overlap box on the actual cell (the actual perception part) for all found colliders, LoadObjectData is called at the end, Perceive returns the float array of the perceptions </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A float[] containing all of the information collected from the gridsensor</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="537" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="537" bodyend="569"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abe9f16dc1247e53a0620997247d5c61f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.PointToCell</definition>
+        <argsstring>(Vector3 globalPoint)</argsstring>
+        <name>PointToCell</name>
+        <param>
+          <type>Vector3</type>
+          <declname>globalPoint</declname>
+        </param>
+        <briefdescription>
+<para>Finds the cell in which the given global point falls</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The index of the cell in which the global point falls or -1 if the point does not fall into a cell </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>globalPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 3D point in global space</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="770" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="770" bodyend="783"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2e6d2cce19d727866438869c3ad15e9d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.IndexOfTag</definition>
+        <argsstring>(string tag)</argsstring>
+        <name>IndexOfTag</name>
+        <param>
+          <type>string</type>
+          <declname>tag</declname>
+        </param>
+        <briefdescription>
+<para>Utility method to find the index of a tag</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Index of the tag in DetectableObjects, if it is in there</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>tag</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The tag to search for</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="812" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="812" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a97339586c271bb1c650b685706e460d2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int[]</type>
+        <definition>override int [] Unity.MLAgents.Extensions.Sensors.GridSensor.GetObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetObservationShape</name>
+        <briefdescription>
+<para>Gets the observation shape</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int[] of the observation shape</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="857" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="857" bodyend="861"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a82ad27c3e7c10451f9832e4f866234f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.GridSensor.Write</definition>
+        <argsstring>(ObservationWriter writer)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="864" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="864" bodyend="884"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a67134e489d4426adbda680c2b738c1d1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.InitCellPoints</definition>
+        <argsstring>()</argsstring>
+        <name>InitCellPoints</name>
+        <briefdescription>
+<para>Initializes the location of the CellPoints property </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="343" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="343" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a02af5438e271135127dd31bdd653cc9e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="817" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="817" bodyend="850"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aaa61655b9cfde34c34d440d1bbaede99" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void ISensor.</type>
+        <definition>void ISensor. Unity.MLAgents.Extensions.Sensors.GridSensor.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="853" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="853" bodyend="853"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a997b7c5d055222351ace7efc824c309d" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.ChannelsToTexture</definition>
+        <argsstring>(int channelIndex, int numChannelsToAdd)</argsstring>
+        <name>ChannelsToTexture</name>
+        <param>
+          <type>int</type>
+          <declname>channelIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numChannelsToAdd</declname>
+        </param>
+        <briefdescription>
+<para>ChannelsToTexture - Takes the channel index and the numChannelsToAdd. For each cell and for each channel to add, sets it to a value of the color specified for that cell. All colors are then set to the perceptionTexture via SetPixels. m_perceptionTexture2D can then be read as an image as it now contains all of the information that was stored in the channels </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numChannelsToAdd</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="519" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="519" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aa47358cd12d6f4fc3f18f7c621f5a487" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.ParseColliders</definition>
+        <argsstring>(Collider[] foundColliders, int cellIndex, Vector3 cellCenter)</argsstring>
+        <name>ParseColliders</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a2be6341f5eb8709cefa9a4544d844d47">ParseColliders</reimplementedby>
+        <param>
+          <type>Collider[]</type>
+          <declname>foundColliders</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cellIndex</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>cellCenter</declname>
+        </param>
+        <briefdescription>
+<para>Parses the array of colliders found within a cell. Finds the closest gameobject to the agent root reference within the cell </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>foundColliders</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Array of the colliders found within the cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellCenter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The center position of the cell</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="577" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="577" bodyend="606"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abf8cd061ee49f5e89f365273447ecefb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>float[]</type>
+        <definition>virtual float [] Unity.MLAgents.Extensions.Sensors.GridSensor.GetObjectData</definition>
+        <argsstring>(GameObject currentColliderGo, float typeIndex, float normalizedDistance)</argsstring>
+        <name>GetObjectData</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a34cabbf9bc7c7727e8ff13e2f6aa2fe9">GetObjectData</reimplementedby>
+        <param>
+          <type>GameObject</type>
+          <declname>currentColliderGo</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>typeIndex</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>normalizedDistance</declname>
+        </param>
+        <briefdescription>
+<para>GetObjectData - returns an array of values that represent the game object This is one of the few methods that one may need to override to get their required functionality For instance, if one wants specific information about the current gameobject, they can use this method to extract it and then return it in an array format. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A float[] containing the data that holds the representative information of the passed in gameObject </para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentColliderGo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game object that was found colliding with a certain cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>typeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the type (tag) of the gameObject. (e.g., if this GameObject had the 3rd tag out of 4, type_index would be 2.0f)</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalizedDistance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A float between 0 and 1 describing the ratio of the distance currentColliderGo is compared to the edge of the gridsensor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+Here is an example of extenind GetObjectData to include information about a potential Rigidbody: <computeroutput> protected override float[] GetObjectData(GameObject currentColliderGo, float type_index, float normalized_distance) { float[] channelValues = new float[ChannelDepth.Length]; // ChannelDepth.Length = 4 in this example channelValues[0] = type_index; Rigidbody goRb = currentColliderGo.GetComponent&lt;Rigidbody&gt;(); if (goRb != null) { channelValues[1] = goRb.velocity.x; channelValues[2] = goRb.velocity.y; channelValues[3] = goRb.velocity.z; } return channelValues; } </computeroutput> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="641" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="641" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a48cdd87f2f1cb7e4721989b27ad080cb" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.ValidateValues</definition>
+        <argsstring>(float[] channelValues, GameObject currentColliderGo)</argsstring>
+        <name>ValidateValues</name>
+        <param>
+          <type>float[]</type>
+          <declname>channelValues</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>currentColliderGo</declname>
+        </param>
+        <briefdescription>
+<para>Runs basic validation assertions to check that the values can be normalized </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>channelValues</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The values to be validated</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>currentColliderGo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gameobject used for better error messages</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="653" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="653" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a535cb156948697f8b459e0b4f2ead06e" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void Unity.MLAgents.Extensions.Sensors.GridSensor.LoadObjectData</definition>
+        <argsstring>(GameObject currentColliderGo, int cellIndex, float normalized_distance)</argsstring>
+        <name>LoadObjectData</name>
+        <reimplementedby refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor_1a215d534e45a5a1f753d32271b82f9a06">LoadObjectData</reimplementedby>
+        <param>
+          <type>GameObject</type>
+          <declname>currentColliderGo</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cellIndex</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>normalized_distance</declname>
+        </param>
+        <briefdescription>
+<para>LoadObjectData - If the GameObject matches a tag, GetObjectData is called to extract the data from the GameObject then the data is transformed based on the GridDepthType of the gridsensor. Further documetation on the GridDepthType can be found below </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentColliderGo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The game object that was found colliding with a certain cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the current cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalized_distance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A float between 0 and 1 describing the ratio of the distance currentColliderGo is compared to the edge of the gridsensor</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>The observations are &quot;channel based&quot; so each grid is WxHxC where C is the number of channels This typically means that each channel value is normalized between 0 and 1 If channelDepth is 1, the value is assumed normalized, else the value is normalized by the channelDepth The channels are then stored consecutively in PerceptionBuffer. NOTE: This is the only grid type that uses floating point values For example, if a cell contains the 3rd type of 5 possible on the 2nd team of 3 possible teams: channelValues = {2, 1} ObservationPerCell = channelValues.Length channelValues = {2f/5f, 1f/3f} = {.4, .33..} Array.Copy(channelValues, 0, PerceptionBuffer, cell_id*ObservationPerCell, ObservationPerCell); </para><para>The observations are &quot;channel hot&quot; so each grid is WxHxD where D is the sum of all of the channel depths The opposite of the &quot;channel based&quot; case, the channel values are represented as one hot vector per channel and then concatenated together Thus channelDepth is assumed to be greater than 1. For example, if a cell contains the 3rd type of 5 possible on the 2nd team of 3 possible teams, channelValues = {2, 1} channelOffsets = {5, 3} ObservationPerCell = 5 + 3 = 8 channelHotVals = {0, 0, 1, 0, 0, 0, 1, 0} Array.Copy(channelHotVals, 0, PerceptionBuffer, cell_id*ObservationPerCell, ObservationPerCell); </para>        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="674" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="674" bodyend="749"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bf0ff3b3bdb30753fc2565e7611451" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Vector3</type>
+        <definition>Vector3 Unity.MLAgents.Extensions.Sensors.GridSensor.CellToPoint</definition>
+        <argsstring>(int cell, bool shouldTransformPoint=true)</argsstring>
+        <name>CellToPoint</name>
+        <param>
+          <type>int</type>
+          <declname>cell</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>shouldTransformPoint</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Converts the index of the cell to the 3D point (y is zero)</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Vector3 of the position of the center of the cell</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cell</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cell</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>shouldTransformPoint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bool weather to transform the point to the current transform</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="755" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="755" bodyend="763"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2eb468083b267683c2d0f6bbf867f53c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.GridSensor.CopyCellData</definition>
+        <argsstring>(int fromCellID, int toCellID)</argsstring>
+        <name>CopyCellData</name>
+        <param>
+          <type>int</type>
+          <declname>fromCellID</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>toCellID</declname>
+        </param>
+        <briefdescription>
+<para>Copies the data from one cell to another</para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fromCellID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the cell to copy from</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>toCellID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>index of the cell to copy into</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="788" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="788" bodyend="797"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a6a4eec6dc2b85eee09310860ad7403ff" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float[]</type>
+        <definition>static float [] Unity.MLAgents.Extensions.Sensors.GridSensor.CreateCopy</definition>
+        <argsstring>(float[] array)</argsstring>
+        <name>CreateCopy</name>
+        <param>
+          <type>float[]</type>
+          <declname>array</declname>
+        </param>
+        <briefdescription>
+<para>Creates a copy of a float array</para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>float[] of the original data</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The array to copy from&lt;/parma&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="802" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="802" bodyend="807"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Grid-based sensor. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="20">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="19">
+        <label>ISensor</label>
+      </node>
+      <node id="21">
+        <label>Unity.MLAgents.Extensions.Sensors.CountingGridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_counting_grid_sensor"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>SensorComponent</label>
+      </node>
+      <node id="17">
+        <label>Unity.MLAgents.Extensions.Sensors.GridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+        <childnode refid="19" relation="public-inheritance">
+        </childnode>
+        <childnode refid="20" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="25">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="24">
+        <label>ISensor</label>
+      </node>
+      <node id="23">
+        <label>SensorComponent</label>
+      </node>
+      <node id="22">
+        <label>Unity.MLAgents.Extensions.Sensors.GridSensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor"/>
+        <childnode refid="23" relation="public-inheritance">
+        </childnode>
+        <childnode refid="24" relation="public-inheritance">
+        </childnode>
+        <childnode refid="25" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" line="13" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/GridSensor.cs" bodystart="12" bodyend="885"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad2ee98273a2c59937c09a3728caecfc3" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>byteSizesBytesList</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a11e8acbe646b97ee7403ad4f19e465cd" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellActivity</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4299b4221ca8b08ecf9bc3977df3b6d5" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellPoints</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22dd960f4334e19f594c40baf97946f7" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellScaleX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a152c50387e415be767404d231048ab0d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellScaleY</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab7f415207e12ed31735eb64c67a6a5b7" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellScaleZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bf0ff3b3bdb30753fc2565e7611451" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CellToPoint</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a8d7554bee0e82e1814652ca0bf1daed9" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ChannelDepth</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a191ff8d4f6cdb0cf5fcca1cc80f9aa68" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ChannelOffsets</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a997b7c5d055222351ace7efc824c309d" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ChannelsToTexture</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0b759f829862a33f0868ab3ac5481f16" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>compressedImgs</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a54e32fb855d40eb0170c6f00bcdb3c65" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2eb468083b267683c2d0f6bbf867f53c" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CopyCellData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a6a4eec6dc2b85eee09310860ad7403ff" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CreateCopy</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2878a885ca505e585f0d94aa66b0d22a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>CreateSensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aade683d4adc95cd03070913afe8db96d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>DebugColors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5dcf3f3ecf4722a770da5e4d41fdfee6" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>DebugDefaultColor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a03c7f37a27d77ed3478bcb65c23c658f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>DetectableObjects</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab283431950b0e75de8cb59b566a9cc71" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>DiffNumSideZX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a315c1b61f333bf2bb978bd8298a08bc6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetBuiltInSensorType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0dfc80fea3e72ae46e265033cd36a2de" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetCompressedObservation</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ada4ffb68e772d2b144fe540a797246ec" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetCompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7dd21f8af1fa4601f972e2fc293157c8" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetFloatObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1af06df27f5cb4862637fc5945c3f3109b" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abf8cd061ee49f5e89f365273447ecefb" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetObjectData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a97339586c271bb1c650b685706e460d2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a4ad4b8b4749e985a15956cb7a5e535dc" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GizmoYOffset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aec38955b033c6cd4d22839411b9de639" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>gridDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29f23bc4ad3d722d1a09a03a671246e1" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GridDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a478435ce71e3129119abf8d64fabb7ac" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GridNumSideX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad033ff46574e54cd72959dc8661954b5" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>GridNumSideZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a073c0a715c4031954eed5e0d434427dc" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>HalfOfGridX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5645615be18d88c95fa53af8a9b4e7ff" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>HalfOfGridZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2e6d2cce19d727866438869c3ad15e9d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>IndexOfTag</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a67134e489d4426adbda680c2b738c1d1" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>InitCellPoints</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8063a8b4e3581923312de643f158b60" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>InitChannelHotDefaultPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a57e8b2b89575d8b3ce3fc8d1908d0cbe" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>InitDepthType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a416435abe00596129dff2b6f83835e5e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>InitGridParameters</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a7232f180bfd4972b606aa03e04416ce6" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Initialized</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a094a46956e0e176dcbba18eeec540df2" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>InitPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a535cb156948697f8b459e0b4f2ead06e" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>LoadObjectData</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad29809e37e4bc943c77f08f8ba041761" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>m_ChannelHotDefaultPerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1996cbb52518052a1cfc90cdd99ba81b" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>m_PerceptionBuffer</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a5d220ff2a38ea8ecb6f033ccaa4a63e2" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>m_PerceptionColors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a37df97f3f6397404efcd22a11551542d" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>m_perceptionTexture2D</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae8e9b3c9f4b0b89df6c6b880c4ae92a2" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>m_Shape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a22eb4493a9f3b657ed01d9a8b7f88c05" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Name</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a58b0e7ed33f97f47e1760da6bd72ae26" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>NumberOfObservations</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a704eec844b3a029544c1bb6e8524084a" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>NumCells</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab5307d98906b070a888cbdc82d30cc98" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>NumChannelsOnLastImage</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a29ca674c6f8ce12e5dc05eb820f0d4b3" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>NumImages</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a84bcb62e4a34b36d9815b87919e8d775" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ObservationPerCell</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ad9104467b2777836fd869359d2f3c40a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ObserveMask</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abaa159a3e15f060a3fc50fae166a58cc" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>OffsetGridNumSide</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a02af5438e271135127dd31bdd653cc9e" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aa47358cd12d6f4fc3f18f7c621f5a487" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ParseColliders</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a0cb0bc7648a626b985bd4924e3212f70" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Perceive</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1abe9f16dc1247e53a0620997247d5c61f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>PointToCell</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a228e45103fa072ccfc11e804225dc280" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>PointToCellScalingX</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a2fd21230f959c45d53857a843c4cf96c" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>PointToCellScalingZ</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a961a21aeff49ec0cae0addd1082e6ada" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Reset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a1c292a2aa779a8424b5f164c80375f0e" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>rootReference</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a13b6cf32e32ac3ec724b5993ddb2cc04" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>RotateToAgent</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ab549cad9b055f4d075ecbe7d96dec402" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>SetParameters</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a69438c570834f19e66e2bcbdbb65ebdf" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ShowGizmos</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1ae6e9d5a4ce95dd41c8e5bf4fc81d2c86" prot="protected" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>SphereRadius</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a184b8ebab72f0a5b9e0b9316ff2ccf9e" prot="public" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Start</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1aaa61655b9cfde34c34d440d1bbaede99" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Update</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a48cdd87f2f1cb7e4721989b27ad080cb" prot="protected" virt="virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>ValidateValues</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_grid_sensor_1a82ad27c3e7c10451f9832e4f866234f4" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::GridSensor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_926b9ce825e0db91f79bbbadda4b6258" kind="dir">
+    <compoundname>G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3</compoundname>
+    <innerfile refid="_abstract_board_8cs">AbstractBoard.cs</innerfile>
+    <innerfile refid="_match3_actuator_8cs">Match3Actuator.cs</innerfile>
+    <innerfile refid="_match3_actuator_component_8cs">Match3ActuatorComponent.cs</innerfile>
+    <innerfile refid="_match3_sensor_8cs">Match3Sensor.cs</innerfile>
+    <innerfile refid="_match3_sensor_component_8cs">Match3SensorComponent.cs</innerfile>
+    <innerfile refid="_move_8cs">Move.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/"/>
+  </compounddef>
+</doxygen>

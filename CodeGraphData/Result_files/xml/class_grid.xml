@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_grid" kind="class" prot="public">
+    <compoundname>Grid</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" prot="public" static="no" mutable="no">
+        <type>LayerMask</type>
+        <definition>LayerMask Grid.unwalkableMask</definition>
+        <argsstring></argsstring>
+        <name>unwalkableMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a85605d1763151a71205da412d488908d" prot="public" static="no" mutable="no">
+        <type>Vector2</type>
+        <definition>Vector2 Grid.gridWorldSize</definition>
+        <argsstring></argsstring>
+        <name>gridWorldSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" compoundref="_grid_8cs" startline="42" endline="52">NodeFromWorldPoint</referencedby>
+        <referencedby refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" compoundref="_grid_8cs" startline="54" endline="67">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a63282028a75f6f14417c4b8668a3d984" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Grid.nodeRadius</definition>
+        <argsstring></argsstring>
+        <name>nodeRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+        <referencedby refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" compoundref="_grid_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_grid_1a65d1a949d113103cf7c6039facaa412a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_node" kindref="compound">Node</ref>[,]</type>
+        <definition>Node [,] Grid.grid</definition>
+        <argsstring></argsstring>
+        <name>grid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+        <referencedby refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" compoundref="_grid_8cs" startline="42" endline="52">NodeFromWorldPoint</referencedby>
+        <referencedby refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" compoundref="_grid_8cs" startline="54" endline="67">OnDrawGizmos</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Grid.nodeDiameter</definition>
+        <argsstring></argsstring>
+        <name>nodeDiameter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+        <referencedby refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" compoundref="_grid_8cs" startline="54" endline="67">OnDrawGizmos</referencedby>
+        <referencedby refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" compoundref="_grid_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1a57c20289f00d0e530f9728d78803455c" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid.gridSizeX</definition>
+        <argsstring></argsstring>
+        <name>gridSizeX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+        <referencedby refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" compoundref="_grid_8cs" startline="42" endline="52">NodeFromWorldPoint</referencedby>
+        <referencedby refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" compoundref="_grid_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grid.gridSizeY</definition>
+        <argsstring></argsstring>
+        <name>gridSizeY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</referencedby>
+        <referencedby refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" compoundref="_grid_8cs" startline="42" endline="52">NodeFromWorldPoint</referencedby>
+        <referencedby refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" compoundref="_grid_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_grid_1a419f2f09565df8f6777b10ef51bd7316" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="18" bodyend="24"/>
+        <references refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" compoundref="_grid_8cs" startline="26" endline="40">CreateGrid</references>
+        <references refid="class_grid_1a57c20289f00d0e530f9728d78803455c" compoundref="_grid_8cs" startline="16">gridSizeX</references>
+        <references refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" compoundref="_grid_8cs" startline="16">gridSizeY</references>
+        <references refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" compoundref="_grid_8cs" startline="15">nodeDiameter</references>
+        <references refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" compoundref="_grid_8cs" startline="12">nodeRadius</references>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a2bdec7e3a339307893195a1596a5a89e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid.CreateGrid</definition>
+        <argsstring>()</argsstring>
+        <name>CreateGrid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="26" bodyend="40"/>
+        <references refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" compoundref="_grid_8cs" startline="13">grid</references>
+        <references refid="class_grid_1a57c20289f00d0e530f9728d78803455c" compoundref="_grid_8cs" startline="16">gridSizeX</references>
+        <references refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" compoundref="_grid_8cs" startline="16">gridSizeY</references>
+        <references refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" compoundref="_grid_8cs" startline="15">nodeDiameter</references>
+        <references refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" compoundref="_grid_8cs" startline="12">nodeRadius</references>
+        <references refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" compoundref="_grid_8cs" startline="10">unwalkableMask</references>
+        <referencedby refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" compoundref="_grid_8cs" startline="18" endline="24">Start</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_grid_1a175c7599c83913931b5299e7e69a3bd3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grid.OnDrawGizmos</definition>
+        <argsstring>()</argsstring>
+        <name>OnDrawGizmos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="54" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="54" bodyend="67"/>
+        <references refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" compoundref="_grid_8cs" startline="13">grid</references>
+        <references refid="class_grid_1a85605d1763151a71205da412d488908d" compoundref="_grid_8cs" startline="11">gridWorldSize</references>
+        <references refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" compoundref="_grid_8cs" startline="15">nodeDiameter</references>
+        <references refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" compoundref="_grid_8cs" startline="74">Node.worldPosition</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_node" kindref="compound">Node</ref></type>
+        <definition>Node Grid.NodeFromWorldPoint</definition>
+        <argsstring>(Vector3 worldPosition)</argsstring>
+        <name>NodeFromWorldPoint</name>
+        <param>
+          <type>Vector3</type>
+          <declname>worldPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="42" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="42" bodyend="52"/>
+        <references refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" compoundref="_grid_8cs" startline="13">grid</references>
+        <references refid="class_grid_1a57c20289f00d0e530f9728d78803455c" compoundref="_grid_8cs" startline="16">gridSizeX</references>
+        <references refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" compoundref="_grid_8cs" startline="16">gridSizeY</references>
+        <references refid="class_grid_1a85605d1763151a71205da412d488908d" compoundref="_grid_8cs" startline="11">gridWorldSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="70">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="69">
+        <label>Grid</label>
+        <link refid="class_grid"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="73">
+        <label>Node</label>
+        <link refid="class_node"/>
+      </node>
+      <node id="72">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="71">
+        <label>Grid</label>
+        <link refid="class_grid"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+        <childnode refid="73" relation="usage">
+          <edgelabel>grid</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="7" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_grid_1a2bdec7e3a339307893195a1596a5a89e" prot="private" virt="non-virtual"><scope>Grid</scope><name>CreateGrid</name></member>
+      <member refid="class_grid_1a65d1a949d113103cf7c6039facaa412a" prot="private" virt="non-virtual"><scope>Grid</scope><name>grid</name></member>
+      <member refid="class_grid_1a57c20289f00d0e530f9728d78803455c" prot="private" virt="non-virtual"><scope>Grid</scope><name>gridSizeX</name></member>
+      <member refid="class_grid_1aee9993d14b2e40b003307b2debe8c2ef" prot="private" virt="non-virtual"><scope>Grid</scope><name>gridSizeY</name></member>
+      <member refid="class_grid_1a85605d1763151a71205da412d488908d" prot="public" virt="non-virtual"><scope>Grid</scope><name>gridWorldSize</name></member>
+      <member refid="class_grid_1a455fd47044ef3d8da2b0d92062da8e56" prot="private" virt="non-virtual"><scope>Grid</scope><name>nodeDiameter</name></member>
+      <member refid="class_grid_1aa06168d45a666e8a0490bf8a0e34a573" prot="public" virt="non-virtual"><scope>Grid</scope><name>NodeFromWorldPoint</name></member>
+      <member refid="class_grid_1a63282028a75f6f14417c4b8668a3d984" prot="public" virt="non-virtual"><scope>Grid</scope><name>nodeRadius</name></member>
+      <member refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" prot="private" virt="non-virtual"><scope>Grid</scope><name>OnDrawGizmos</name></member>
+      <member refid="class_grid_1a419f2f09565df8f6777b10ef51bd7316" prot="private" virt="non-virtual"><scope>Grid</scope><name>Start</name></member>
+      <member refid="class_grid_1aeb53375e62aeee7bbe5986f9ed951dda" prot="public" virt="non-virtual"><scope>Grid</scope><name>unwalkableMask</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_selectable" kind="class" prot="public">
+    <compoundname>Selectable</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_selectable_1a30352797af83fdea9ad937855034a0e4" prot="package" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool Selectable.isSelected</definition>
+        <argsstring></argsstring>
+        <name>isSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="150" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="151" bodyend="-1"/>
+        <referencedby refid="class_r_t_s_selection_1ad011dd363b977f1d53aab3ace8407afa" compoundref="_r_t_s_selection_8cs" startline="42" endline="115">RTSSelection.Update</referencedby>
+        <referencedby refid="class_r_t_s_selection_1ae2d30f06066a80f37dade85919359cd0" compoundref="_r_t_s_selection_8cs" startline="122" endline="126">RTSSelection.UpdateSelection</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_selectable_1ae9aaf9a193654b1d4fe51b32934a7c16" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Selectable._isSelected</definition>
+        <argsstring></argsstring>
+        <name>_isSelected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="166" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="166" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_selectable_1afc0be25549d91bd9dfd9aa3040e5691b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Selectable.OnEnable</definition>
+        <argsstring>()</argsstring>
+        <name>OnEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="168" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="168" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="class_selectable_1ac54b0f77c5408b80436948df0b9b681e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Selectable.OnDisable</definition>
+        <argsstring>()</argsstring>
+        <name>OnDisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="173" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="173" bodyend="176"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="123">
+        <label>Selectable</label>
+        <link refid="class_selectable"/>
+        <childnode refid="124" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="126">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="125">
+        <label>Selectable</label>
+        <link refid="class_selectable"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" line="148" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/RTSSelection.cs" bodystart="147" bodyend="178"/>
+    <listofallmembers>
+      <member refid="class_selectable_1ae9aaf9a193654b1d4fe51b32934a7c16" prot="private" virt="non-virtual"><scope>Selectable</scope><name>_isSelected</name></member>
+      <member refid="class_selectable_1a30352797af83fdea9ad937855034a0e4" prot="package" virt="non-virtual"><scope>Selectable</scope><name>isSelected</name></member>
+      <member refid="class_selectable_1ac54b0f77c5408b80436948df0b9b681e" prot="private" virt="non-virtual"><scope>Selectable</scope><name>OnDisable</name></member>
+      <member refid="class_selectable_1afc0be25549d91bd9dfd9aa3040e5691b" prot="private" virt="non-virtual"><scope>Selectable</scope><name>OnEnable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_bug_movement" kind="class" prot="public">
+    <compoundname>BugMovement</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_bug_movement_1aa24feff96388f474fe19b3189385d317" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float BugMovement.MovementSpeed</definition>
+        <argsstring></argsstring>
+        <name>MovementSpeed</name>
+        <initializer>= 1f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="7" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="7" bodyend="-1"/>
+        <referencedby refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" compoundref="_bug_movement_8cs" startline="36" endline="53">SetUnitPositions</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 BugMovement.movementTargetVector</definition>
+        <argsstring></argsstring>
+        <name>movementTargetVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" compoundref="_bug_movement_8cs" startline="26" endline="34">IsArrivedToTargetVector</referencedby>
+        <referencedby refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" compoundref="_bug_movement_8cs" startline="15" endline="24">Move</referencedby>
+        <referencedby refid="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" compoundref="_bug_movement_8cs" startline="10" endline="13">SetMovementTargetVector</referencedby>
+        <referencedby refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" compoundref="_bug_movement_8cs" startline="36" endline="53">SetUnitPositions</referencedby>
+        <referencedby refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" compoundref="_bug_movement_8cs" startline="55" endline="63">TurnUnitToCorrectDirection</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" prot="private" static="yes" mutable="no">
+        <type>List&lt; <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" kindref="member">BugStateEnum</ref> &gt;</type>
+        <definition>List&lt;BugStateEnum&gt; BugMovement.BugMoveStates</definition>
+        <argsstring></argsstring>
+        <name>BugMoveStates</name>
+        <initializer>= new List&lt;<ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16a" kindref="member">BugStateEnum</ref>&gt; { <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa6bc362dbf494c61ea117fe3c71ca48a5" kindref="member">BugStateEnum.Move</ref>, <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa047cc77d62a791b613cdff1e3553cce1" kindref="member">BugStateEnum.MoveRunAway</ref>, <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa999a672beb0b122c543292ce53c8857e" kindref="member">BugStateEnum.MoveToAttack</ref>, <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa45fadab7d4651692c382b567b760233e" kindref="member">BugStateEnum.MoveToHarvest</ref>, <ref refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa9edfb8f99786b8d55d8ed576fdd23fad" kindref="member">BugStateEnum.MoveToCastle</ref> }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" compoundref="_bug_movement_8cs" startline="15" endline="24">Move</referencedby>
+        <referencedby refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" compoundref="_bug_movement_8cs" startline="36" endline="53">SetUnitPositions</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugMovement.SetMovementTargetVector</definition>
+        <argsstring>(Vector3 vector)</argsstring>
+        <name>SetMovementTargetVector</name>
+        <param>
+          <type>Vector3</type>
+          <declname>vector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="10" bodyend="13"/>
+        <references refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" compoundref="_bug_movement_8cs" startline="8">movementTargetVector</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugMovement.Move</definition>
+        <argsstring>(Vector2 target)</argsstring>
+        <name>Move</name>
+        <param>
+          <type>Vector2</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="15" bodyend="24"/>
+        <references refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" compoundref="_bug_movement_8cs" startline="9">BugMoveStates</references>
+        <references refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" compoundref="_bug_movement_8cs" startline="8">movementTargetVector</references>
+        <references refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" compoundref="_bug_movement_8cs" startline="65" endline="68">SetTargetPosition</references>
+        <references refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" compoundref="_bug_movement_8cs" startline="55" endline="63">TurnUnitToCorrectDirection</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BugMovement.IsArrivedToTargetVector</definition>
+        <argsstring>()</argsstring>
+        <name>IsArrivedToTargetVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="26" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="26" bodyend="34"/>
+        <references refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" compoundref="_bug_movement_8cs" startline="8">movementTargetVector</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugMovement.SetUnitPositions</definition>
+        <argsstring>(Transform unit)</argsstring>
+        <name>SetUnitPositions</name>
+        <param>
+          <type>Transform</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="36" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="36" bodyend="53"/>
+        <references refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" compoundref="_bug_movement_8cs" startline="9">BugMoveStates</references>
+        <references refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" compoundref="_bug_movement_8cs" startline="7">MovementSpeed</references>
+        <references refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" compoundref="_bug_movement_8cs" startline="8">movementTargetVector</references>
+      </memberdef>
+      <memberdef kind="function" id="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugMovement.SetTargetPosition</definition>
+        <argsstring>(Vector3 targetVector)</argsstring>
+        <name>SetTargetPosition</name>
+        <param>
+          <type>Vector3</type>
+          <declname>targetVector</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="65" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="65" bodyend="68"/>
+        <referencedby refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" compoundref="_bug_movement_8cs" startline="15" endline="24">Move</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BugMovement.TurnUnitToCorrectDirection</definition>
+        <argsstring>(Transform unit)</argsstring>
+        <name>TurnUnitToCorrectDirection</name>
+        <param>
+          <type>Transform</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="55" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="55" bodyend="63"/>
+        <references refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" compoundref="_bug_movement_8cs" startline="8">movementTargetVector</references>
+        <referencedby refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" compoundref="_bug_movement_8cs" startline="15" endline="24">Move</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="34">
+        <label>BugMovement</label>
+        <link refid="class_bug_movement"/>
+        <childnode refid="35" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="36">
+        <label>BugMovement</label>
+        <link refid="class_bug_movement"/>
+        <childnode refid="37" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Bug/BugMovement.cs" bodystart="5" bodyend="70"/>
+    <listofallmembers>
+      <member refid="class_bug_movement_1a933a92fd1b0bb0a713e036c0cf47fc52" prot="private" virt="non-virtual"><scope>BugMovement</scope><name>BugMoveStates</name></member>
+      <member refid="class_bug_movement_1a71e6ae2906f2bffb98130cf460ed6ed3" prot="public" virt="non-virtual"><scope>BugMovement</scope><name>IsArrivedToTargetVector</name></member>
+      <member refid="class_bug_movement_1a6ff797ddee4de0005fcecb595107a7f6" prot="public" virt="non-virtual"><scope>BugMovement</scope><name>Move</name></member>
+      <member refid="class_bug_movement_1aa24feff96388f474fe19b3189385d317" prot="private" virt="non-virtual"><scope>BugMovement</scope><name>MovementSpeed</name></member>
+      <member refid="class_bug_movement_1ad22502c2ee919b140ca0ededa46443ee" prot="private" virt="non-virtual"><scope>BugMovement</scope><name>movementTargetVector</name></member>
+      <member refid="class_bug_movement_1a63da4a6e49faf83a31d914b7d6f8783d" prot="public" virt="non-virtual"><scope>BugMovement</scope><name>SetMovementTargetVector</name></member>
+      <member refid="class_bug_movement_1a33f66f7ea5f7e11825abb73ad0ee81a4" prot="public" virt="non-virtual"><scope>BugMovement</scope><name>SetTargetPosition</name></member>
+      <member refid="class_bug_movement_1a2972e7b4659d548349a6d6c7d746c27f" prot="public" virt="non-virtual"><scope>BugMovement</scope><name>SetUnitPositions</name></member>
+      <member refid="class_bug_movement_1a7ed53da4be33b370083bd9f84ac57060" prot="private" virt="non-virtual"><scope>BugMovement</scope><name>TurnUnitToCorrectDirection</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

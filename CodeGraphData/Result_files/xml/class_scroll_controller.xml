@@ -1,0 +1,191 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_scroll_controller" kind="class" prot="public">
+    <compoundname>ScrollController</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_scroll_controller_1a006061088eb725b18fff286509ceb9d7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollController.zoomSpeed</definition>
+        <argsstring></argsstring>
+        <name>zoomSpeed</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_scroll_controller_1a7cfd580ad90dbbd1dfac4ba5cf4a9d08" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollController.targetOrtho</definition>
+        <argsstring></argsstring>
+        <name>targetOrtho</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+        <referencedby refid="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" compoundref="_scroll_controller_8cs" startline="15" endline="19">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_scroll_controller_1a5f9de14e3a360bad78b686889fbf741a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollController.smoothSpeed</definition>
+        <argsstring></argsstring>
+        <name>smoothSpeed</name>
+        <initializer>= 2.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_scroll_controller_1ab5782ab505b75d4d77620128136d2858" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollController.minOrtho</definition>
+        <argsstring></argsstring>
+        <name>minOrtho</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+        <referencedby refid="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" compoundref="_scroll_controller_8cs" startline="15" endline="19">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_scroll_controller_1ab52bb811b65a269f7bd355abb2612b1d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float ScrollController.maxOrtho</definition>
+        <argsstring></argsstring>
+        <name>maxOrtho</name>
+        <initializer>= 100.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+        <referencedby refid="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" compoundref="_scroll_controller_8cs" startline="15" endline="19">Start</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_scroll_controller_1a293da55d20541c0b4bfcbe0c238a7e1f" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ScrollController.scrolled</definition>
+        <argsstring></argsstring>
+        <name>scrolled</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScrollController.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="15" bodyend="19"/>
+        <references refid="class_scroll_controller_1ab52bb811b65a269f7bd355abb2612b1d" compoundref="_scroll_controller_8cs" startline="12">maxOrtho</references>
+        <references refid="class_scroll_controller_1ab5782ab505b75d4d77620128136d2858" compoundref="_scroll_controller_8cs" startline="11">minOrtho</references>
+        <references refid="class_scroll_controller_1a7cfd580ad90dbbd1dfac4ba5cf4a9d08" compoundref="_scroll_controller_8cs" startline="9">targetOrtho</references>
+      </memberdef>
+      <memberdef kind="function" id="class_scroll_controller_1a31810935acd44a58e3dc39bd245d69a4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScrollController.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="22" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="22" bodyend="27"/>
+        <references refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" compoundref="_scroll_controller_8cs" startline="29" endline="39">Scrolling</references>
+      </memberdef>
+      <memberdef kind="function" id="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ScrollController.Scrolling</definition>
+        <argsstring>()</argsstring>
+        <name>Scrolling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="29" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="29" bodyend="39"/>
+        <references refid="class_scroll_controller_1ab52bb811b65a269f7bd355abb2612b1d" compoundref="_scroll_controller_8cs" startline="12">maxOrtho</references>
+        <references refid="class_scroll_controller_1ab5782ab505b75d4d77620128136d2858" compoundref="_scroll_controller_8cs" startline="11">minOrtho</references>
+        <references refid="class_scroll_controller_1a293da55d20541c0b4bfcbe0c238a7e1f" compoundref="_scroll_controller_8cs" startline="13">scrolled</references>
+        <references refid="class_scroll_controller_1a5f9de14e3a360bad78b686889fbf741a" compoundref="_scroll_controller_8cs" startline="10">smoothSpeed</references>
+        <references refid="class_scroll_controller_1a7cfd580ad90dbbd1dfac4ba5cf4a9d08" compoundref="_scroll_controller_8cs" startline="9">targetOrtho</references>
+        <references refid="class_scroll_controller_1a006061088eb725b18fff286509ceb9d7" compoundref="_scroll_controller_8cs" startline="8">zoomSpeed</references>
+        <referencedby refid="class_scroll_controller_1a31810935acd44a58e3dc39bd245d69a4" compoundref="_scroll_controller_8cs" startline="22" endline="27">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="119">
+        <label>ScrollController</label>
+        <link refid="class_scroll_controller"/>
+        <childnode refid="120" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="121">
+        <label>ScrollController</label>
+        <link refid="class_scroll_controller"/>
+        <childnode refid="122" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/ScrollController.cs" bodystart="5" bodyend="40"/>
+    <listofallmembers>
+      <member refid="class_scroll_controller_1ab52bb811b65a269f7bd355abb2612b1d" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>maxOrtho</name></member>
+      <member refid="class_scroll_controller_1ab5782ab505b75d4d77620128136d2858" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>minOrtho</name></member>
+      <member refid="class_scroll_controller_1a293da55d20541c0b4bfcbe0c238a7e1f" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>scrolled</name></member>
+      <member refid="class_scroll_controller_1aaa60aca3aff6902c8d7429689a40b8be" prot="private" virt="non-virtual"><scope>ScrollController</scope><name>Scrolling</name></member>
+      <member refid="class_scroll_controller_1a5f9de14e3a360bad78b686889fbf741a" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>smoothSpeed</name></member>
+      <member refid="class_scroll_controller_1a732064b02fe4ca8718193fe1f53b22c3" prot="private" virt="non-virtual"><scope>ScrollController</scope><name>Start</name></member>
+      <member refid="class_scroll_controller_1a7cfd580ad90dbbd1dfac4ba5cf4a9d08" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>targetOrtho</name></member>
+      <member refid="class_scroll_controller_1a31810935acd44a58e3dc39bd245d69a4" prot="private" virt="non-virtual"><scope>ScrollController</scope><name>Update</name></member>
+      <member refid="class_scroll_controller_1a006061088eb725b18fff286509ceb9d7" prot="public" virt="non-virtual"><scope>ScrollController</scope><name>zoomSpeed</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">ISensor</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IBuiltInSensor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a8d81c5b73dd151472bc02b3dcabbaf0d" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.m_Shape</definition>
+        <argsstring></argsstring>
+        <name>m_Shape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="14" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a1653dc1d90274908eb02f363b5866a84" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.m_SensorName</definition>
+        <argsstring></argsstring>
+        <name>m_SensorName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="15" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3be78880f5ce9f1f71391d6be0d18d98" prot="private" static="no" mutable="no">
+        <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor" kindref="compound">PoseExtractor</ref></type>
+        <definition>PoseExtractor Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.m_PoseExtractor</definition>
+        <argsstring></argsstring>
+        <name>m_PoseExtractor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="17" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ae087a6fbb25036b9b2e23e952195a1d8" prot="private" static="no" mutable="no">
+        <type>List&lt; <ref refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" kindref="compound">IJointExtractor</ref> &gt;</type>
+        <definition>List&lt;IJointExtractor&gt; Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.m_JointExtractors</definition>
+        <argsstring></argsstring>
+        <name>m_JointExtractors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="18" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1afcea20a8b7a25d2471a1cf9f5dd8468a" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+        <definition>PhysicsSensorSettings Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.m_Settings</definition>
+        <argsstring></argsstring>
+        <name>m_Settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="19" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a0050432b1f75ddd557489cf799901514" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.PhysicsBodySensor</definition>
+        <argsstring>(RigidBodyPoseExtractor poseExtractor, PhysicsSensorSettings settings, string sensorName)</argsstring>
+        <name>PhysicsBodySensor</name>
+        <param>
+          <type><ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_pose_extractor" kindref="compound">RigidBodyPoseExtractor</ref></type>
+          <declname>poseExtractor</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>sensorName</declname>
+        </param>
+        <briefdescription>
+<para>Construct a new <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor" kindref="compound">PhysicsBodySensor</ref> </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>poseExtractor</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sensorName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="27" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="27" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3d8e529bfc433fa90960787320b78d6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>int [] Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.GetObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetObservationShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="73" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a7d2cb62705551695fddda305e7541006" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.Write</definition>
+        <argsstring>(ObservationWriter writer)</argsstring>
+        <name>Write</name>
+        <param>
+          <type>ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="79" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="79" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a01e1398e4c423ebb873cdea1f872739a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte [] Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.GetCompressedObservation</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressedObservation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="90" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a21a0b3017f2e390679a670e637aeee9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="96" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ad4d0d0ecad7fa94e7dfbe0f0e0d0907d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.Reset</definition>
+        <argsstring>()</argsstring>
+        <name>Reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="110" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="110" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa605d91917dbc89d287ec29c28bc9282" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>SensorCompressionType</type>
+        <definition>SensorCompressionType Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.GetCompressionType</definition>
+        <argsstring>()</argsstring>
+        <name>GetCompressionType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="113" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="113" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a59b37f8ebb39ad7eebbd93d335470220" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.GetName</definition>
+        <argsstring>()</argsstring>
+        <name>GetName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="119" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="119" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa695ade5caf742d53c642cff2cd9abdc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>BuiltInSensorType</type>
+        <definition>BuiltInSensorType Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor.GetBuiltInSensorType</definition>
+        <argsstring>()</argsstring>
+        <name>GetBuiltInSensorType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="125" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="125" bodyend="128"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>ISensor implementation that generates observations for a group of Rigidbodies or ArticulationBodies. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="62">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="61">
+        <label>ISensor</label>
+      </node>
+      <node id="60">
+        <label>Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor"/>
+        <childnode refid="61" relation="public-inheritance">
+        </childnode>
+        <childnode refid="62" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="66">
+        <label>Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings</label>
+        <link refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings"/>
+      </node>
+      <node id="65">
+        <label>IBuiltInSensor</label>
+      </node>
+      <node id="64">
+        <label>ISensor</label>
+      </node>
+      <node id="63">
+        <label>Unity.MLAgents.Extensions.Sensors.PhysicsBodySensor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor"/>
+        <childnode refid="64" relation="public-inheritance">
+        </childnode>
+        <childnode refid="65" relation="public-inheritance">
+        </childnode>
+        <childnode refid="66" relation="usage">
+          <edgelabel>m_Settings</edgelabel>
+        </childnode>
+        <childnode refid="67" relation="usage">
+          <edgelabel>m_PoseExtractor</edgelabel>
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Unity.MLAgents.Extensions.Sensors.PoseExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_pose_extractor"/>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" line="13" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/PhysicsBodySensor.cs" bodystart="12" bodyend="130"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa695ade5caf742d53c642cff2cd9abdc" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>GetBuiltInSensorType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a01e1398e4c423ebb873cdea1f872739a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>GetCompressedObservation</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1aa605d91917dbc89d287ec29c28bc9282" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>GetCompressionType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a59b37f8ebb39ad7eebbd93d335470220" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>GetName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3d8e529bfc433fa90960787320b78d6c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ae087a6fbb25036b9b2e23e952195a1d8" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>m_JointExtractors</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a3be78880f5ce9f1f71391d6be0d18d98" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>m_PoseExtractor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a1653dc1d90274908eb02f363b5866a84" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>m_SensorName</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1afcea20a8b7a25d2471a1cf9f5dd8468a" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>m_Settings</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a8d81c5b73dd151472bc02b3dcabbaf0d" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>m_Shape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a0050432b1f75ddd557489cf799901514" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>PhysicsBodySensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1ad4d0d0ecad7fa94e7dfbe0f0e0d0907d" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>Reset</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a21a0b3017f2e390679a670e637aeee9a" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>Update</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_body_sensor_1a7d2cb62705551695fddda305e7541006" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::PhysicsBodySensor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

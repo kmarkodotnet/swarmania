@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_castle_job_enum_8cs" kind="file">
+    <compoundname>CastleJobEnum.cs</compoundname>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dce" prot="public" static="no">
+        <name>CastleJobEnum</name>
+        <enumvalue id="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceae599161956d626eda4cb0a5ffb85271c" prot="public">
+          <name>Idle</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dcea14edc9448aae591ffb606483d50e12ec" prot="public">
+          <name>CreatingUnit</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceaaf35f3c146dae21ca4447ebba8d46f43" prot="public">
+          <name>Healthing</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleJobEnum.cs" line="2" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleJobEnum.cs" bodystart="1" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dce" refkind="member"><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dce" kindref="member">CastleJobEnum</ref></highlight></codeline>
+<codeline lineno="2"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceae599161956d626eda4cb0a5ffb85271c" kindref="member">Idle</ref>,</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dcea14edc9448aae591ffb606483d50e12ec" kindref="member">CreatingUnit</ref>,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_castle_job_enum_8cs_1a952f9d3020fe18da43cd7de69ee83dceaaf35f3c146dae21ca4447ebba8d46f43" kindref="member">Healthing</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Enums/CastleJobEnum.cs"/>
+  </compounddef>
+</doxygen>

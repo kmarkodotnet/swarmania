@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_common_service" kind="class" prot="public">
+    <compoundname>CommonService</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_common_service_1a9e7c72b28494482ae13950dc57b8904d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject CommonService.FindNearestEnemy</definition>
+        <argsstring>(GameObject me)</argsstring>
+        <name>FindNearestEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="10" bodyend="34"/>
+        <references refid="class_common_service_1a5c8a6de4f0cbfa6f18cdc0389dbb6c16" compoundref="_common_service_8cs" startline="92" endline="97">IsAlive</references>
+        <references refid="class_common_service_1a730f290ba8dbbb44d582cac7cba28253" compoundref="_common_service_8cs" startline="43" endline="46">IsEnemy</references>
+      </memberdef>
+      <memberdef kind="function" id="class_common_service_1a730f290ba8dbbb44d582cac7cba28253" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommonService.IsEnemy</definition>
+        <argsstring>(GameObject me, Collider2D unit)</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>me</declname>
+        </param>
+        <param>
+          <type>Collider2D</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="43" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="43" bodyend="46"/>
+        <referencedby refid="class_common_service_1a9e7c72b28494482ae13950dc57b8904d" compoundref="_common_service_8cs" startline="10" endline="34">FindNearestEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_common_service_1a11a0990ebe5ba6d3f7153f67d3011647" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommonService.IsEnemy</definition>
+        <argsstring>(GameObject me, GameObject otherGameObject)</argsstring>
+        <name>IsEnemy</name>
+        <param>
+          <type>GameObject</type>
+          <declname>me</declname>
+        </param>
+        <param>
+          <type>GameObject</type>
+          <declname>otherGameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="47" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="47" bodyend="50"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="package-func">
+      <memberdef kind="function" id="class_common_service_1a1140b23a379a633102b836b05a057b76" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void CommonService.MakeDead</definition>
+        <argsstring>(GameObject gameObject)</argsstring>
+        <name>MakeDead</name>
+        <param>
+          <type>GameObject</type>
+          <declname>gameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="36" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="36" bodyend="41"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+      </memberdef>
+      <memberdef kind="function" id="class_common_service_1a62f2f9eff53f20a1f173c0178fac045e" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>GameObject</type>
+        <definition>GameObject CommonService.FindNearestResource</definition>
+        <argsstring>(GameObject me)</argsstring>
+        <name>FindNearestResource</name>
+        <param>
+          <type>GameObject</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="52" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="52" bodyend="90"/>
+        <references refid="class_resource_handler_1ad0bf0386630bf685c2b53411a14944fc" compoundref="_resource_handler_8cs" startline="14" endline="17">ResourceHandler.GetPreferedResourceType</references>
+        <references refid="class_common_service_1a5e69dab1fd1ff5472dc311f817ec4da4" compoundref="_common_service_8cs" startline="98" endline="101">IsAnyResource</references>
+      </memberdef>
+      <memberdef kind="function" id="class_common_service_1a5c8a6de4f0cbfa6f18cdc0389dbb6c16" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommonService.IsAlive</definition>
+        <argsstring>(GameObject target)</argsstring>
+        <name>IsAlive</name>
+        <param>
+          <type>GameObject</type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="92" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="92" bodyend="97"/>
+        <references refid="_bug_state_enum_8cs_1a7c0ea9fee265bc2f4274dd14ef57d16aa183b62c7f067711f9c5a54913c054617">Dead</references>
+        <references refid="_castle_state_enum_8cs_1a2f9eaeb9d713ce93033c21e5dbbc3ca3aaefbd0597f1bc2493bbc18898243513b">Destroyed</references>
+        <references refid="class_bug_state_handler_1afcf4cd826e6b1de4dbe8ce0432b26c71" compoundref="_bug_state_handler_8cs" startline="16" endline="19">BugStateHandler.GetState</references>
+        <referencedby refid="class_common_service_1a9e7c72b28494482ae13950dc57b8904d" compoundref="_common_service_8cs" startline="10" endline="34">FindNearestEnemy</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_common_service_1a5e69dab1fd1ff5472dc311f817ec4da4" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CommonService.IsAnyResource</definition>
+        <argsstring>(GameObject targetResource)</argsstring>
+        <name>IsAnyResource</name>
+        <param>
+          <type>GameObject</type>
+          <declname>targetResource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="98" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="98" bodyend="101"/>
+        <references refid="class_resource_1aa0fb45318b49ca4697397f9e02cf43e2" compoundref="_resource_8cs" startline="15" endline="18">Resource.GetTotalResourceAmmount</references>
+        <referencedby refid="class_common_service_1a62f2f9eff53f20a1f173c0178fac045e" compoundref="_common_service_8cs" startline="52" endline="90">FindNearestResource</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Services/CommonService.cs" bodystart="8" bodyend="102"/>
+    <listofallmembers>
+      <member refid="class_common_service_1a9e7c72b28494482ae13950dc57b8904d" prot="public" virt="non-virtual"><scope>CommonService</scope><name>FindNearestEnemy</name></member>
+      <member refid="class_common_service_1a62f2f9eff53f20a1f173c0178fac045e" prot="package" virt="non-virtual"><scope>CommonService</scope><name>FindNearestResource</name></member>
+      <member refid="class_common_service_1a5c8a6de4f0cbfa6f18cdc0389dbb6c16" prot="package" virt="non-virtual"><scope>CommonService</scope><name>IsAlive</name></member>
+      <member refid="class_common_service_1a5e69dab1fd1ff5472dc311f817ec4da4" prot="package" virt="non-virtual"><scope>CommonService</scope><name>IsAnyResource</name></member>
+      <member refid="class_common_service_1a730f290ba8dbbb44d582cac7cba28253" prot="public" virt="non-virtual"><scope>CommonService</scope><name>IsEnemy</name></member>
+      <member refid="class_common_service_1a11a0990ebe5ba6d3f7153f67d3011647" prot="public" virt="non-virtual"><scope>CommonService</scope><name>IsEnemy</name></member>
+      <member refid="class_common_service_1a1140b23a379a633102b836b05a057b76" prot="package" virt="non-virtual"><scope>CommonService</scope><name>MakeDead</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

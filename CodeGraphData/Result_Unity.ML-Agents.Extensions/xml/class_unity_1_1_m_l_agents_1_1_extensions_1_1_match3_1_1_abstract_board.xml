@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board" kind="class" prot="public" abstract="yes">
+    <compoundname>Unity::MLAgents::Extensions::Match3::AbstractBoard</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae840fe1477f119181daffbe9c451d4e6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.AbstractBoard.Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <briefdescription>
+<para>Number of rows on the board </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="12" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a177efde9b1aa76839c106de93b5a84ab" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.AbstractBoard.Columns</definition>
+        <argsstring></argsstring>
+        <name>Columns</name>
+        <briefdescription>
+<para>Number of columns on the board </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="17" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a90e99a5cacda4babb1cf42ffc8fa9dcb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.AbstractBoard.NumCellTypes</definition>
+        <argsstring></argsstring>
+        <name>NumCellTypes</name>
+        <briefdescription>
+<para>Maximum number of different types of cells (colors, pieces, etc). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="22" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a9598de6f856a6fece24ff8f4a1923a9b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.AbstractBoard.NumSpecialTypes</definition>
+        <argsstring></argsstring>
+        <name>NumSpecialTypes</name>
+        <briefdescription>
+<para>Maximum number of special types. This can be zero, in which case all cells of the same type are assumed to be equivalent. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="28" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac08cd2e076cb61facc6bf82294f7c76" prot="public" static="no" mutable="no">
+        <type>Action</type>
+        <definition>Action Unity.MLAgents.Extensions.Match3.AbstractBoard.OnNoValidMovesAction</definition>
+        <argsstring></argsstring>
+        <name>OnNoValidMovesAction</name>
+        <briefdescription>
+<para>An optional callback for when the all moves are invalid. Ideally, the game state should be changed before this happens, but this is a way to get notified if not. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="81" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a4b2d69b94af34e6639eac211d436ad56" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract int</type>
+        <definition>abstract int Unity.MLAgents.Extensions.Match3.AbstractBoard.GetCellType</definition>
+        <argsstring>(int row, int col)</argsstring>
+        <name>GetCellType</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>Returns the &quot;color&quot; of the piece at the given row and column. This should be between 0 and NumCellTypes-1 (inclusive). The actual order of the values doesn&apos;t matter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1acbdd179d299c7c32e4fbb27b63946979" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract int</type>
+        <definition>abstract int Unity.MLAgents.Extensions.Match3.AbstractBoard.GetSpecialType</definition>
+        <argsstring>(int row, int col)</argsstring>
+        <name>GetSpecialType</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <briefdescription>
+<para>Returns the special type of the piece at the given row and column. This should be between 0 and NumSpecialTypes (inclusive). The actual order of the values doesn&apos;t matter. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a54d2da7182359cb8c1bbfbec753804b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool Unity.MLAgents.Extensions.Match3.AbstractBoard.IsMoveValid</definition>
+        <argsstring>(Move m)</argsstring>
+        <name>IsMoveValid</name>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the particular <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> is valid for the game. The actual results will depend on the rules of the game, but we provide <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" kindref="member">SimpleIsMoveValid()</ref> that handles basic match3 rules with no special or immovable pieces. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1e2e53190cd82dfd826921c0feaede7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract bool</type>
+        <definition>abstract bool Unity.MLAgents.Extensions.Match3.AbstractBoard.MakeMove</definition>
+        <argsstring>(Move m)</argsstring>
+        <name>MakeMove</name>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref></type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+<para>Instruct the game to make the given move. Returns true if the move was made. Note that during training, a move that was marked as invalid may occasionally still be requested. If this happens, it is safe to do nothing and request another move. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae112747141269d8a43f140667594b733" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Match3.AbstractBoard.NumMoves</definition>
+        <argsstring>()</argsstring>
+        <name>NumMoves</name>
+        <briefdescription>
+<para>Return the total number of moves possible for the board. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="72" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ad5570e162e4ff900b41f8d998eb3845b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> &gt;</type>
+        <definition>IEnumerable&lt;Move&gt; Unity.MLAgents.Extensions.Match3.AbstractBoard.AllMoves</definition>
+        <argsstring>()</argsstring>
+        <name>AllMoves</name>
+        <briefdescription>
+<para>Iterate through all Moves on the board. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="87" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="87" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1890280c07619970f885c2599f4a17bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> &gt;</type>
+        <definition>IEnumerable&lt;Move&gt; Unity.MLAgents.Extensions.Match3.AbstractBoard.ValidMoves</definition>
+        <argsstring>()</argsstring>
+        <name>ValidMoves</name>
+        <briefdescription>
+<para>Iterate through all valid Moves on the board. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="101" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="101" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac2c4297d12ea44c8b68423521bd76e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>IEnumerable&lt; <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> &gt;</type>
+        <definition>IEnumerable&lt;Move&gt; Unity.MLAgents.Extensions.Match3.AbstractBoard.InvalidMoves</definition>
+        <argsstring>()</argsstring>
+        <name>InvalidMoves</name>
+        <briefdescription>
+<para>Iterate through all invalid Moves on the board. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="118" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="118" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Match3.AbstractBoard.SimpleIsMoveValid</definition>
+        <argsstring>(Move move)</argsstring>
+        <name>SimpleIsMoveValid</name>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref></type>
+          <declname>move</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if swapped the cells specified by the move would result in 3 or more cells of the same type in a row. This assumes that all pieces are allowed to be moved; to add extra logic, incorporate it into you <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a54d2da7182359cb8c1bbfbec753804b9" kindref="member">IsMoveValid()</ref> method. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>move</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="138" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="138" bodyend="165"/>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a0fe5bfbbf78e356dfccbc67f964af734" compoundref="_move_8cs" startline="54">Unity.MLAgents.Extensions.Match3.Move.Column</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1ab01283525643467e45a9e077116e5434" compoundref="_move_8cs" startline="59">Unity.MLAgents.Extensions.Match3.Move.Direction</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1a654f587941d10c19951b4df297c2e55c" compoundref="_move_8cs" startline="231" endline="246">Unity.MLAgents.Extensions.Match3.Move.OtherDirection</references>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move_1af80a75183c930cf6a2c6efd791167248" compoundref="_move_8cs" startline="49">Unity.MLAgents.Extensions.Match3.Move.Row</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ab90eccdb315667860f6aed7392f207ad" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Unity.MLAgents.Extensions.Match3.AbstractBoard.CheckHalfMove</definition>
+        <argsstring>(int newRow, int newCol, int newValue, Direction incomingDirection)</argsstring>
+        <name>CheckHalfMove</name>
+        <param>
+          <type>int</type>
+          <declname>newRow</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newCol</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newValue</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ad696436ca7b596285b07f92fe44b6099" kindref="member">Direction</ref></type>
+          <declname>incomingDirection</declname>
+        </param>
+        <briefdescription>
+<para>Check if one of the cells that is swapped during a move matches 3 or more. Since these checks are similar for each cell, we consider the <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_move" kindref="compound">Move</ref> as two &quot;half moves&quot;. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>newRow</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newCol</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newValue</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>incomingDirection</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para></para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="176" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="176" bodyend="230"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>Unity.MLAgents.Extensions.Match3.AbstractBoard</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Unity.MLAgents.Extensions.Match3.AbstractBoard</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" line="8" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/AbstractBoard.cs" bodystart="7" bodyend="232"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ad5570e162e4ff900b41f8d998eb3845b" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>AllMoves</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ab90eccdb315667860f6aed7392f207ad" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>CheckHalfMove</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a177efde9b1aa76839c106de93b5a84ab" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>Columns</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a4b2d69b94af34e6639eac211d436ad56" prot="public" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>GetCellType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1acbdd179d299c7c32e4fbb27b63946979" prot="public" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>GetSpecialType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac2c4297d12ea44c8b68423521bd76e6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>InvalidMoves</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a54d2da7182359cb8c1bbfbec753804b9" prot="public" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>IsMoveValid</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1e2e53190cd82dfd826921c0feaede7b" prot="public" virt="pure-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>MakeMove</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a90e99a5cacda4babb1cf42ffc8fa9dcb" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>NumCellTypes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae112747141269d8a43f140667594b733" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>NumMoves</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a9598de6f856a6fece24ff8f4a1923a9b" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>NumSpecialTypes</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1aac08cd2e076cb61facc6bf82294f7c76" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>OnNoValidMovesAction</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1ae840fe1477f119181daffbe9c451d4e6" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>Rows</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a5f4e6c6a9090ff2abfbed803611cc353" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>SimpleIsMoveValid</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_abstract_board_1a1890280c07619970f885c2599f4a17bd" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::AbstractBoard</scope><name>ValidMoves</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

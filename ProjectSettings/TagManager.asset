@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - bug
+  - castle
+  - resource
+  - castleBaseSprite
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - terrian
+  - terrian object
+  - bug
+  - castle
+  - resource
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - selection
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - control panel
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: terrian
+    uniqueID: 1554495783
+    locked: 0
+  - name: terrian object
+    uniqueID: 221550483
+    locked: 0
+  - name: bug
+    uniqueID: 368550763
+    locked: 0
+  - name: castle
+    uniqueID: 1745075647
+    locked: 0
+  - name: resource
+    uniqueID: 564718179
+    locked: 0
+  - name: selection
+    uniqueID: 3028283105
+    locked: 0
+  - name: control panel
+    uniqueID: 3383821415
+    locked: 0

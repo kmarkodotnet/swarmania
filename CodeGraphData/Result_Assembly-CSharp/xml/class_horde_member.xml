@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_horde_member" kind="class" prot="public">
+    <compoundname>HordeMember</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_horde_member_1a487dcd03cc2f7a18929600c3c4dfdc24" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>GameObject</type>
+        <definition>GameObject HordeMember.Bug</definition>
+        <argsstring></argsstring>
+        <name>Bug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="642" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_horde_member_1ab7358fcecd63aa226cd5339baabca489" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="_horde_client_state_enum_8cs_1acafc900ee673f3d2464ae939796c2cd6" kindref="member">HordeClientStateEnum</ref></type>
+        <definition>HordeClientStateEnum HordeMember.State</definition>
+        <argsstring></argsstring>
+        <name>State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="643" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" line="641" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/Horde.cs" bodystart="640" bodyend="644"/>
+    <listofallmembers>
+      <member refid="class_horde_member_1a487dcd03cc2f7a18929600c3c4dfdc24" prot="public" virt="non-virtual"><scope>HordeMember</scope><name>Bug</name></member>
+      <member refid="class_horde_member_1ab7358fcecd63aa226cd5339baabca489" prot="public" virt="non-virtual"><scope>HordeMember</scope><name>State</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

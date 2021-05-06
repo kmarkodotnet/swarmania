@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_ai_breeder" kind="class" prot="public">
+    <compoundname>AiBreeder</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" prot="private" static="no" mutable="no">
+        <type>List&lt; GameObject &gt;</type>
+        <definition>List&lt;GameObject&gt; AiBreeder.bugPrefabs</definition>
+        <argsstring></argsstring>
+        <name>bugPrefabs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="11" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" compoundref="_ai_breeder_8cs" startline="105" endline="112">Breed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" prot="private" static="no" mutable="no">
+        <type>List&lt; int &gt;</type>
+        <definition>List&lt;int&gt; AiBreeder.playerWeights</definition>
+        <argsstring></argsstring>
+        <name>playerWeights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="12" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="12" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.maxSteps</definition>
+        <argsstring></argsstring>
+        <name>maxSteps</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="13" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="13" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" compoundref="_ai_breeder_8cs" startline="38" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.maxN</definition>
+        <argsstring></argsstring>
+        <name>maxN</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="14" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="14" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+        <referencedby refid="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" compoundref="_ai_breeder_8cs" startline="59" endline="62">GetMaxN</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.maxM</definition>
+        <argsstring></argsstring>
+        <name>maxM</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="15" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="15" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+        <referencedby refid="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" compoundref="_ai_breeder_8cs" startline="63" endline="66">GetMaxM</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.randomRange</definition>
+        <argsstring></argsstring>
+        <name>randomRange</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="16" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="16" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.currentStep</definition>
+        <argsstring></argsstring>
+        <name>currentStep</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="18" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="18" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" compoundref="_ai_breeder_8cs" startline="38" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int AiBreeder.currentBreed</definition>
+        <argsstring></argsstring>
+        <name>currentBreed</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="19" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+        <referencedby refid="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" compoundref="_ai_breeder_8cs" startline="72" endline="75">GetCurrentBreed</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" prot="private" static="no" mutable="no">
+        <type><ref refid="_bug_type_enum_8cs_1a8d08fffa9ec2c5d2270293592293116a" kindref="member">BugTypeEnum</ref>[]</type>
+        <definition>BugTypeEnum [] AiBreeder.bugTypes</definition>
+        <argsstring></argsstring>
+        <name>bugTypes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="20" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" compoundref="_ai_breeder_8cs" startline="33" endline="36">Start</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ai_breeder_1a69d4f599302d379c3b00f89fc093104a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Awake</definition>
+        <argsstring>()</argsstring>
+        <name>Awake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="21" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="21" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Start</definition>
+        <argsstring>()</argsstring>
+        <name>Start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="33" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="33" bodyend="36"/>
+        <references refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" compoundref="_ai_breeder_8cs" startline="20">bugTypes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="38" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="38" bodyend="49"/>
+        <references refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</references>
+        <references refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" compoundref="_ai_breeder_8cs" startline="18">currentStep</references>
+        <references refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" compoundref="_ai_breeder_8cs" startline="13">maxSteps</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.BreedOne</definition>
+        <argsstring>(GameObject gameObject, int playerIndex, int deltaN, int deltaM)</argsstring>
+        <name>BreedOne</name>
+        <param>
+          <type>GameObject</type>
+          <declname>gameObject</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>playerIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deltaN</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deltaM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="114" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="114" bodyend="125"/>
+        <referencedby refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" compoundref="_ai_breeder_8cs" startline="105" endline="112">Breed</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="50" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="50" bodyend="57"/>
+        <referencedby refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" compoundref="_ai_breeder_8cs" startline="77" endline="104">Breed</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiBreeder.GetMaxN</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxN</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="59" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="59" bodyend="62"/>
+        <references refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" compoundref="_ai_breeder_8cs" startline="14">maxN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiBreeder.GetMaxM</definition>
+        <argsstring>()</argsstring>
+        <name>GetMaxM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="63" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="63" bodyend="66"/>
+        <references refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" compoundref="_ai_breeder_8cs" startline="15">maxM</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1a9431f51c9778c302577ed600d9d75a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiBreeder.GetPlayersNum</definition>
+        <argsstring>()</argsstring>
+        <name>GetPlayersNum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="67" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int AiBreeder.GetCurrentBreed</definition>
+        <argsstring>()</argsstring>
+        <name>GetCurrentBreed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="72" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="72" bodyend="75"/>
+        <references refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" compoundref="_ai_breeder_8cs" startline="19">currentBreed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Breed</definition>
+        <argsstring>()</argsstring>
+        <name>Breed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="77" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="77" bodyend="104"/>
+        <references refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" compoundref="_ai_breeder_8cs" startline="50" endline="57">Clear</references>
+        <references refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" compoundref="_ai_breeder_8cs" startline="19">currentBreed</references>
+        <references refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" compoundref="_ai_breeder_8cs" startline="15">maxM</references>
+        <references refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" compoundref="_ai_breeder_8cs" startline="14">maxN</references>
+        <references refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" compoundref="_ai_breeder_8cs" startline="12">playerWeights</references>
+        <references refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" compoundref="_ai_breeder_8cs" startline="16">randomRange</references>
+        <referencedby refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" compoundref="_ai_breeder_8cs" startline="38" endline="49">Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void AiBreeder.Breed</definition>
+        <argsstring>(int playerIndex, int playerWeight, int deltaN, int deltaM)</argsstring>
+        <name>Breed</name>
+        <param>
+          <type>int</type>
+          <declname>playerIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>playerWeight</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deltaN</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>deltaM</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="105" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="105" bodyend="112"/>
+        <references refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" compoundref="_ai_breeder_8cs" startline="114" endline="125">BreedOne</references>
+        <references refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" compoundref="_ai_breeder_8cs" startline="11">bugPrefabs</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>AiBreeder</label>
+        <link refid="class_ai_breeder"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>MonoBehaviour</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>AiBreeder</label>
+        <link refid="class_ai_breeder"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MonoBehaviour</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" line="10" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/GroupControls/AiBreeder.cs" bodystart="9" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_ai_breeder_1a69d4f599302d379c3b00f89fc093104a" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>Awake</name></member>
+      <member refid="class_ai_breeder_1ad6330f056523bb9d339f45d07532d054" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>Breed</name></member>
+      <member refid="class_ai_breeder_1a41619613fec57227a83f3af06332a2b7" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>Breed</name></member>
+      <member refid="class_ai_breeder_1a9449ecbbaeb8e82feaf8c3815ccb234a" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>BreedOne</name></member>
+      <member refid="class_ai_breeder_1a15bbd6a58d6e13981d6e9b4aa71150cd" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>bugPrefabs</name></member>
+      <member refid="class_ai_breeder_1a47a99b3c3b468279813ce6786efdabf5" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>bugTypes</name></member>
+      <member refid="class_ai_breeder_1a3ec29c9055d57a8584c87700b60f4136" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>Clear</name></member>
+      <member refid="class_ai_breeder_1addd8bd7dc7db4c8480c097008cf4e289" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>currentBreed</name></member>
+      <member refid="class_ai_breeder_1a33e30408d5be0f0f389d885a45ac0131" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>currentStep</name></member>
+      <member refid="class_ai_breeder_1a9e0d8552ab723c4422667b83424f4ea3" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>GetCurrentBreed</name></member>
+      <member refid="class_ai_breeder_1ab2bd746a92509b5939d478068ea148ff" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>GetMaxM</name></member>
+      <member refid="class_ai_breeder_1abd4fc03d8df8d37660c38ee2260c8e5b" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>GetMaxN</name></member>
+      <member refid="class_ai_breeder_1a9431f51c9778c302577ed600d9d75a3d" prot="public" virt="non-virtual"><scope>AiBreeder</scope><name>GetPlayersNum</name></member>
+      <member refid="class_ai_breeder_1a2a0b42ac47ca7a3f743eb0c30152b53e" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>maxM</name></member>
+      <member refid="class_ai_breeder_1a9eb42f9da7e031039c5d08aa7159c15e" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>maxN</name></member>
+      <member refid="class_ai_breeder_1adfe2497c162773262f14c0ac62f681d6" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>maxSteps</name></member>
+      <member refid="class_ai_breeder_1a7db92672a826f9d5ee9e665a2df95e68" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>playerWeights</name></member>
+      <member refid="class_ai_breeder_1a934062e451ce81cdc2cc8e40fbc56be1" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>randomRange</name></member>
+      <member refid="class_ai_breeder_1acc8ecd95e73efb7ea54f40c4f3e64752" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>Start</name></member>
+      <member refid="class_ai_breeder_1ac8a6bb23d5eba04fda8b3155eb70ce32" prot="private" virt="non-virtual"><scope>AiBreeder</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

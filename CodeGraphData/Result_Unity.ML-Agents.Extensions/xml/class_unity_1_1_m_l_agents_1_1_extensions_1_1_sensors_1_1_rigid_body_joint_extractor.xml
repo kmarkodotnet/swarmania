@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</compoundname>
+    <basecompoundref refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor" prot="public" virt="non-virtual">Unity.MLAgents.Extensions.Sensors.IJointExtractor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a77a367d6c0533ee8fac3256aea9563fd" prot="private" static="no" mutable="no">
+        <type>Rigidbody</type>
+        <definition>Rigidbody Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.m_Body</definition>
+        <argsstring></argsstring>
+        <name>m_Body</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="8" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ac7304f3df6daa52fe12422b25db9a2e5" prot="private" static="no" mutable="no">
+        <type>Joint</type>
+        <definition>Joint Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.m_Joint</definition>
+        <argsstring></argsstring>
+        <name>m_Joint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="9" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a929fa744bde1e17d575c6a67187d7349" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.RigidBodyJointExtractor</definition>
+        <argsstring>(Rigidbody body)</argsstring>
+        <name>RigidBodyJointExtractor</name>
+        <param>
+          <type>Rigidbody</type>
+          <declname>body</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="11" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="11" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.NumObservations</definition>
+        <argsstring>(PhysicsSensorSettings settings)</argsstring>
+        <name>NumObservations</name>
+        <reimplements refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1ae81b02cbdda0df00f908dab8aabe5765">NumObservations</reimplements>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+<para>Determine the number of observations that would be generated for the particular joint using the provided <ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of floats that will be written.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="17" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.Write</definition>
+        <argsstring>(PhysicsSensorSettings settings, ObservationWriter writer, int offset)</argsstring>
+        <name>Write</name>
+        <reimplements refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor_1a0ba793473e5d4503441c505cd7279498">Write</reimplements>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <param>
+          <type>ObservationWriter</type>
+          <declname>writer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+<para>Write the observations to the ObservationWriter, starting at the specified offset. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>settings</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>writer</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Number of floats that were written.</para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="39" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="39" bodyend="59"/>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" compoundref="_physics_sensor_settings_8cs" startline="50">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseJointForces</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static int Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor.NumObservations</definition>
+        <argsstring>(Rigidbody body, Joint joint, PhysicsSensorSettings settings)</argsstring>
+        <name>NumObservations</name>
+        <param>
+          <type>Rigidbody</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>Joint</type>
+          <declname>joint</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings" kindref="compound">PhysicsSensorSettings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="22" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="22" bodyend="37"/>
+        <references refid="struct_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_physics_sensor_settings_1a0b6a1d6f3b80929fa2dd802c9411cb6f" compoundref="_physics_sensor_settings_8cs" startline="50">Unity.MLAgents.Extensions.Sensors.PhysicsSensorSettings.UseJointForces</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor"/>
+        <childnode refid="76" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>IJointExtractor</label>
+        <link refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="77">
+        <label>Unity.MLAgents.Extensions.Sensors.RigidBodyJointExtractor</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="78">
+        <label>IJointExtractor</label>
+        <link refid="interface_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_i_joint_extractor"/>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" line="7" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Sensors/RigidBodyJointExtractor.cs" bodystart="6" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a77a367d6c0533ee8fac3256aea9563fd" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>m_Body</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ac7304f3df6daa52fe12422b25db9a2e5" prot="private" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>m_Joint</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a5e668c2b91689a4577c62d8fda64262f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>NumObservations</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1ad00d5c4dd9000d1bfc1e3ac7ba5c91ae" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>NumObservations</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a929fa744bde1e17d575c6a67187d7349" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>RigidBodyJointExtractor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_sensors_1_1_rigid_body_joint_extractor_1a424f6090551d5bbb09fa4680d76e0e1c" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Sensors::RigidBodyJointExtractor</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

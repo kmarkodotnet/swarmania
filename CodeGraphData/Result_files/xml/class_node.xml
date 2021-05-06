@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_node" kind="class" prot="public">
+    <compoundname>Node</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_node_1a4e569471a1e7cf6ac2439266d4be3182" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Node.walkable</definition>
+        <argsstring></argsstring>
+        <name>walkable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="73" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" compoundref="_grid_8cs" startline="76" endline="80">Node</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_node_1ae20cabf197a68687cfafb62dddaeb042" prot="public" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 Node.worldPosition</definition>
+        <argsstring></argsstring>
+        <name>worldPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="74" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="74" bodyend="-1"/>
+        <referencedby refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" compoundref="_grid_8cs" startline="76" endline="80">Node</referencedby>
+        <referencedby refid="class_grid_1a175c7599c83913931b5299e7e69a3bd3" compoundref="_grid_8cs" startline="54" endline="67">Grid.OnDrawGizmos</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Node.Node</definition>
+        <argsstring>(bool _walkable, Vector3 _worldPos)</argsstring>
+        <name>Node</name>
+        <param>
+          <type>bool</type>
+          <declname>_walkable</declname>
+        </param>
+        <param>
+          <type>Vector3</type>
+          <declname>_worldPos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="76" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="76" bodyend="80"/>
+        <references refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" compoundref="_grid_8cs" startline="73">walkable</references>
+        <references refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" compoundref="_grid_8cs" startline="74">worldPosition</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" line="71" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/Grid.cs" bodystart="70" bodyend="81"/>
+    <listofallmembers>
+      <member refid="class_node_1ae3062e5613d7ae8a82e7e968625c51b5" prot="public" virt="non-virtual"><scope>Node</scope><name>Node</name></member>
+      <member refid="class_node_1a4e569471a1e7cf6ac2439266d4be3182" prot="public" virt="non-virtual"><scope>Node</scope><name>walkable</name></member>
+      <member refid="class_node_1ae20cabf197a68687cfafb62dddaeb042" prot="public" virt="non-virtual"><scope>Node</scope><name>worldPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component" kind="class" prot="public">
+    <compoundname>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">SensorComponent</basecompoundref>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a151ba494961b748b190d4c7ff96a6199" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Unity.MLAgents.Extensions.Match3.Match3SensorComponent.SensorName</definition>
+        <argsstring></argsstring>
+        <name>SensorName</name>
+        <initializer>= &quot;Match3 Sensor&quot;</initializer>
+        <briefdescription>
+<para>Name of the generated <ref refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor" kindref="compound">Match3Sensor</ref> object. Note that changing this at runtime does not affect how the Agent sorts the sensors. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" line="14" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1aae34981410bd3b7e2922c4a5c32e699f" prot="public" static="no" mutable="no">
+        <type><ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1ac6a2956f0e8133b076ef764ccee9fb9d" kindref="member">Match3ObservationType</ref></type>
+        <definition>Match3ObservationType Unity.MLAgents.Extensions.Match3.Match3SensorComponent.ObservationType</definition>
+        <argsstring></argsstring>
+        <name>ObservationType</name>
+        <initializer>= Match3ObservationType.Vector</initializer>
+        <briefdescription>
+<para>Type of observation to generate. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" line="19" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a531740aa669eb68b41de79bfa99309b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override ISensor</type>
+        <definition>override ISensor Unity.MLAgents.Extensions.Match3.Match3SensorComponent.CreateSensor</definition>
+        <argsstring>()</argsstring>
+        <name>CreateSensor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" line="22" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" bodystart="22" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a75f2e08983d8fb2fe535c7e9d95a5727" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override int[]</type>
+        <definition>override int [] Unity.MLAgents.Extensions.Match3.Match3SensorComponent.GetObservationShape</definition>
+        <argsstring>()</argsstring>
+        <name>GetObservationShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" line="29" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" bodystart="29" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor component for a <ref refid="namespace_unity_1_1_m_l_agents_1_1_extensions_1_1_match3" kindref="compound">Match3</ref> game. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="50">
+        <label>Unity.MLAgents.Extensions.Match3.Match3SensorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component"/>
+        <childnode refid="51" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>SensorComponent</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="52">
+        <label>Unity.MLAgents.Extensions.Match3.Match3SensorComponent</label>
+        <link refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component"/>
+        <childnode refid="53" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>SensorComponent</label>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" line="9" column="1" bodyfile="G:/Work/git/unity/com.unity.ml-agents.extensions/Runtime/Match3/Match3SensorComponent.cs" bodystart="8" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a531740aa669eb68b41de79bfa99309b3" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</scope><name>CreateSensor</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a75f2e08983d8fb2fe535c7e9d95a5727" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</scope><name>GetObservationShape</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1aae34981410bd3b7e2922c4a5c32e699f" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</scope><name>ObservationType</name></member>
+      <member refid="class_unity_1_1_m_l_agents_1_1_extensions_1_1_match3_1_1_match3_sensor_component_1a151ba494961b748b190d4c7ff96a6199" prot="public" virt="non-virtual"><scope>Unity::MLAgents::Extensions::Match3::Match3SensorComponent</scope><name>SensorName</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

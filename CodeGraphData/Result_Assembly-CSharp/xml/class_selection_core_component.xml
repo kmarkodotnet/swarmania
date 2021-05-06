@@ -1,0 +1,161 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_selection_core_component" kind="class" prot="public">
+    <compoundname>SelectionCoreComponent</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">MonoBehaviour</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_selection_core_component_1acf7d1902f6376ba0dffb6d1ccab9be32" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float SelectionCoreComponent.selectionEpsilon</definition>
+        <argsstring></argsstring>
+        <name>selectionEpsilon</name>
+        <initializer>= 0.05f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="6" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SelectionCoreComponent.isSelecting</definition>
+        <argsstring></argsstring>
+        <name>isSelecting</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="8" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_selection_core_component_1aed2af4884738de5f14d19904bc6b17d8" compoundref="_selection_core_component_8cs" startline="35" endline="38">GetIsSSelecting</referencedby>
+        <referencedby refid="class_selection_core_component_1af0592be7906e4d25c6eb8bf14ee755bd" compoundref="_selection_core_component_8cs" startline="40" endline="54">IsWithinSelectionBounds</referencedby>
+        <referencedby refid="class_selection_core_component_1a18cc956c815f615b31e6655bd1343bbf" compoundref="_selection_core_component_8cs" startline="25" endline="33">OnGUI</referencedby>
+        <referencedby refid="class_selection_core_component_1a9b130e331cf66d0203c9126c2b4103ee" compoundref="_selection_core_component_8cs" startline="11" endline="23">Update</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" prot="private" static="no" mutable="no">
+        <type>Vector3</type>
+        <definition>Vector3 SelectionCoreComponent.mousePosition1</definition>
+        <argsstring></argsstring>
+        <name>mousePosition1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="9" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="9" bodyend="-1"/>
+        <referencedby refid="class_selection_core_component_1af0592be7906e4d25c6eb8bf14ee755bd" compoundref="_selection_core_component_8cs" startline="40" endline="54">IsWithinSelectionBounds</referencedby>
+        <referencedby refid="class_selection_core_component_1a18cc956c815f615b31e6655bd1343bbf" compoundref="_selection_core_component_8cs" startline="25" endline="33">OnGUI</referencedby>
+        <referencedby refid="class_selection_core_component_1a9b130e331cf66d0203c9126c2b4103ee" compoundref="_selection_core_component_8cs" startline="11" endline="23">Update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_selection_core_component_1a9b130e331cf66d0203c9126c2b4103ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionCoreComponent.Update</definition>
+        <argsstring>()</argsstring>
+        <name>Update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="11" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="11" bodyend="23"/>
+        <references refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" compoundref="_selection_core_component_8cs" startline="8">isSelecting</references>
+        <references refid="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" compoundref="_selection_core_component_8cs" startline="9">mousePosition1</references>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_core_component_1a18cc956c815f615b31e6655bd1343bbf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SelectionCoreComponent.OnGUI</definition>
+        <argsstring>()</argsstring>
+        <name>OnGUI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="25" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="25" bodyend="33"/>
+        <references refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" compoundref="_selection_core_component_8cs" startline="8">isSelecting</references>
+        <references refid="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" compoundref="_selection_core_component_8cs" startline="9">mousePosition1</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_selection_core_component_1aed2af4884738de5f14d19904bc6b17d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SelectionCoreComponent.GetIsSSelecting</definition>
+        <argsstring>()</argsstring>
+        <name>GetIsSSelecting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="35" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="35" bodyend="38"/>
+        <references refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" compoundref="_selection_core_component_8cs" startline="8">isSelecting</references>
+        <referencedby refid="class_selectable_object_1a05c629ca88ec6b89bd3841e8d7c596b7" compoundref="_selectable_object_8cs" startline="26" endline="37">SelectableObject.Update</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_selection_core_component_1af0592be7906e4d25c6eb8bf14ee755bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SelectionCoreComponent.IsWithinSelectionBounds</definition>
+        <argsstring>(GameObject gameObject)</argsstring>
+        <name>IsWithinSelectionBounds</name>
+        <param>
+          <type>GameObject</type>
+          <declname>gameObject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="40" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="40" bodyend="54"/>
+        <references refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" compoundref="_selection_core_component_8cs" startline="8">isSelecting</references>
+        <references refid="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" compoundref="_selection_core_component_8cs" startline="9">mousePosition1</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="140">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="139">
+        <label>SelectionCoreComponent</label>
+        <link refid="class_selection_core_component"/>
+        <childnode refid="140" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="142">
+        <label>MonoBehaviour</label>
+      </node>
+      <node id="141">
+        <label>SelectionCoreComponent</label>
+        <link refid="class_selection_core_component"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" line="5" column="1" bodyfile="G:/Work/git/unity/Swarmania/Swarmania/Assets/Scripts/Game/SelectionCoreComponent.cs" bodystart="4" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_selection_core_component_1aed2af4884738de5f14d19904bc6b17d8" prot="public" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>GetIsSSelecting</name></member>
+      <member refid="class_selection_core_component_1a3fc4b66fe7787e74e937154122552361" prot="private" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>isSelecting</name></member>
+      <member refid="class_selection_core_component_1af0592be7906e4d25c6eb8bf14ee755bd" prot="public" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>IsWithinSelectionBounds</name></member>
+      <member refid="class_selection_core_component_1a3af41ee9150f3228cb1ac4b8ca92ce83" prot="private" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>mousePosition1</name></member>
+      <member refid="class_selection_core_component_1a18cc956c815f615b31e6655bd1343bbf" prot="private" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>OnGUI</name></member>
+      <member refid="class_selection_core_component_1acf7d1902f6376ba0dffb6d1ccab9be32" prot="private" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>selectionEpsilon</name></member>
+      <member refid="class_selection_core_component_1a9b130e331cf66d0203c9126c2b4103ee" prot="private" virt="non-virtual"><scope>SelectionCoreComponent</scope><name>Update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
