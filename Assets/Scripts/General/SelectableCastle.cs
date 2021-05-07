@@ -21,8 +21,8 @@ public class SelectableCastle : SelectableObject
 
     protected override void SetIcons(Sprite sprite, int id)
     {
-        //FindObjectOfType<Control>().SetupCastleIcon(sprite);
-        //FindObjectOfType<Control>().SetupCastleBugs(gameObject);
+        FindObjectOfType<Control>().SetupCastleIcon(sprite);
+        FindObjectOfType<Control>().SetupCastleBugs(gameObject);
     }
 
     protected override string GetIconGameObjectName()

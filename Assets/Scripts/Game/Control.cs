@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class Control : MonoBehaviour
 {
-    [SerializeField] List<Vector3> basePoint;
-    [SerializeField] List<Vector3> baseSize;
+    [SerializeField] Dictionary<string, Vector3> basePoint;
+    [SerializeField] Dictionary<string, Vector3> baseSize;
     [SerializeField] GameObject bugTypePlaceholderPrefab;
 
     [SerializeField] Texture2D menuTexture;
@@ -80,14 +80,15 @@ public class Control : MonoBehaviour
 
     private void Start()
     {
-        basePoint = new List<Vector3>();
-        baseSize = new List<Vector3>();
+        basePoint = new Dictionary<string, Vector3>();
+        baseSize = new Dictionary<string, Vector3>();
         var srs = gameObject.GetComponentsInChildren<SpriteRenderer>();
         foreach (var sr in srs)
         {
-            basePoint.Add(Camera.main.WorldToViewportPoint(sr.transform.position));
+            var path = sr.GetPath();
+            basePoint.Add(path, Camera.main.WorldToViewportPoint(sr.transform.position));
             var size = (Camera.main.transform.position - sr.transform.position).magnitude / Camera.main.orthographicSize;
-            baseSize.Add(new Vector3(size * 2f, size * 2f, size));
+            baseSize.Add(path, new Vector3(size * 2f, size * 2f, size));
         }
 
         RemoveBugIcons();
@@ -99,8 +100,9 @@ public class Control : MonoBehaviour
         var srs = gameObject.GetComponentsInChildren<SpriteRenderer>();//.ToList().Where(sr => sr.gameObject.tag == "castleBaseSprite").ToArray();
         for (int i = 0; i < srs.Length; i++)
         {
-            srs[i].transform.position = Camera.main.ViewportToWorldPoint(basePoint[i]);
-            srs[i].transform.localScale = (baseSize[i] * Camera.main.orthographicSize) / 10;
+            var path = srs[i].GetPath();
+            srs[i].transform.position = Camera.main.ViewportToWorldPoint(basePoint[path]);
+            srs[i].transform.localScale = (baseSize[path] * Camera.main.orthographicSize) / 10;
         }
         //foreach (var sr in srs)
         //{
@@ -172,12 +174,6 @@ public class Control : MonoBehaviour
         this.selectedBugs = selectedBugs;
         var cs = new CommonService();
 
-        var castle = cs.GetChildrenByName(transform, "castle");
-        if (castle.gameObject.activeSelf)
-        {
-            RemoveCastleIcon();
-        }
-
         var bugs = cs.GetChildrenByName(transform, "bugs");
         bugs.gameObject.SetActive(true);
 
@@ -206,6 +202,12 @@ public class Control : MonoBehaviour
             bugIcon.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
 
             j++;
+        }
+
+        var castle = cs.GetChildrenByName(transform, "castle");
+        if (castle.gameObject.activeSelf)
+        {
+            RemoveCastleIcon();
         }
     }
 
