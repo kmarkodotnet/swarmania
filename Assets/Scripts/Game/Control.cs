@@ -313,4 +313,19 @@ public class Control : MonoBehaviour
             bugIcon.gameObject.SetActive(false);
         }
     }
+
+
+    private void OnMouseOver()
+    {
+        var cs = new CommonService();
+        var currentState = cs.GetCursorState();
+        if (currentState != CursorStateEnum.IconSelection)
+        {
+            cs.SetCursorState(CursorStateEnum.IconSelection, FindObjectOfType<Config>().GetIconSelectionCursorTexture());
+        }
+        if (Input.GetMouseButtonDown(0))
+        {
+            Control.ControlClickLocked = true;
+        }
+    }
 }
