@@ -32,7 +32,7 @@ public class SelectableCastle : SelectableObject
 
     protected override void RemoveIcon()
     {
-        //FindObjectOfType<Control>().RemoveCastleIcon();
-        //FindObjectOfType<Control>().ClearCastleBugs();        
+        FindObjectOfType<Control>().RemoveCastleIcon();
+        FindObjectOfType<Control>().ClearCastleBugs();        
     }
 }

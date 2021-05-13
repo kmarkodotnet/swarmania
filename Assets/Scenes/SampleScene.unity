@@ -901,7 +901,7 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 17.274818, y: 1.9731102}
+    - - {x: 18.54615, y: 1.3556069}
       - {x: 17.483055, y: 2.8503795}
       - {x: 17.420906, y: 3.5534852}
       - {x: 10.391102, y: 3.4364264}
@@ -914,9 +914,9 @@ PolygonCollider2D:
       - {x: -6.716657, y: 2.1103659}
       - {x: -12.1148205, y: 3.9963188}
       - {x: -15.401542, y: 3.9957747}
-      - {x: -17.006151, y: 0.9265201}
+      - {x: -17.659979, y: 1.6166714}
       - {x: -17.76146, y: -2.1120954}
-      - {x: -17.917803, y: -3.9631195}
+      - {x: -16.755442, y: -3.7451763}
       - {x: -13.773304, y: -4.0055056}
       - {x: -10.742159, y: -3.9604988}
       - {x: -8.252445, y: -3.721152}
@@ -926,7 +926,7 @@ PolygonCollider2D:
       - {x: 3.2003007, y: -3.4969757}
       - {x: 6.03499, y: -3.7910154}
       - {x: 16.24332, y: -3.4606497}
-      - {x: 17.44204, y: -0.3448106}
+      - {x: 18.713371, y: -1.5071709}
 --- !u!1001 &1108999592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1999,6 +1999,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1052040725}
     m_Modifications:
+    - target: {fileID: 813421584, guid: dc7d7d1990f02d94bb8f86b8e486ff33, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 813421584, guid: dc7d7d1990f02d94bb8f86b8e486ff33, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4894368289180404892, guid: dc7d7d1990f02d94bb8f86b8e486ff33,
         type: 3}
       propertyPath: m_RootOrder
@@ -2067,6 +2075,11 @@ PrefabInstance:
     - target: {fileID: 4894368291006135502, guid: dc7d7d1990f02d94bb8f86b8e486ff33,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5707083145565339783, guid: dc7d7d1990f02d94bb8f86b8e486ff33,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

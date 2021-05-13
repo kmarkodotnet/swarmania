@@ -40,7 +40,6 @@ public class SelectionCoreComponent : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                Debug.Log("Selection reset");
                 selectedBugs = new Dictionary<int, GameObject>();
                 selectedCastle = null;
                 isSelecting = true;
@@ -60,23 +59,18 @@ public class SelectionCoreComponent : MonoBehaviour
 
     }
 
-    internal void SetMemoryBack(Dictionary<int, GameObject> selectedBugsMemory, GameObject selectedCastleMemory)
-    {
-        //Debug.LogError("SelectionCoreComponentBack");
-        //selectedBugs = selectedBugsMemory;
-        //selectedCastle = selectedCastleMemory;
-    }
-
     public void RefreshSelectedIcons()
     {
         if (selectedBugs.Count <= 0)
         {
             FindObjectOfType<Control>().RemoveBugIcons();
         }
-        else
+        else if(selectedBugs.Count > 0)
         {
-            Debug.LogError(selectedBugs.Count);
             FindObjectOfType<Control>().SetBugIcons(selectedBugs);
+        }else if(selectedCastle == null)
+        {
+            FindObjectOfType<Control>().RemoveCastleIcon();
         }
     }
 
@@ -103,6 +97,11 @@ public class SelectionCoreComponent : MonoBehaviour
         {
             selectedCastle = gameObject;
             return true;
+        }
+        else if (gameObject.GetComponent<SelectableCastle>() && selectedBugs.Count > 0)
+        {
+            selectedCastle = null;
+            return false;
         }
         else if(gameObject.GetComponent<SelectableBug>()  && selectedBugs.Count < 20)
         {

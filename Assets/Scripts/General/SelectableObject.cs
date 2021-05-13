@@ -13,7 +13,7 @@ public class SelectableObject : MonoBehaviour
     protected bool IsSelected;
 
     protected SingleSelectStateEnum SingleSelectState;
-    protected SelectionCoreComponent selectionComponent;
+    protected SelectionCoreComponent selectionCoreComponent;
 
     [SerializeField]
     protected Texture2D menuIcon;
@@ -22,18 +22,18 @@ public class SelectableObject : MonoBehaviour
 
     protected void Start()
     {
-        selectionComponent = FindObjectOfType<SelectionCoreComponent>();
+        selectionCoreComponent = FindObjectOfType<SelectionCoreComponent>();
         IsSelected = false;
         SingleSelectState = SingleSelectStateEnum.None;
     }
 
     protected void Update()
     {
-        if (selectionComponent && selectionComponent.GetIsSSelecting())
+        if (selectionCoreComponent && selectionCoreComponent.GetIsSSelecting())
         {
             if (IsOwnedByPlayer())
             {
-                var isSelected = selectionComponent.IsWithinSelectionBounds(gameObject);
+                var isSelected = selectionCoreComponent.IsWithinSelectionBounds(gameObject);
                 SetIsSelected(isSelected);
             }
             else
@@ -92,28 +92,36 @@ public class SelectableObject : MonoBehaviour
         var id = GetId();
         if (isSelected)
         {
-            var isObjectSelected = selectionComponent.SetSelected(id, gameObject);
+            var isObjectSelected = selectionCoreComponent.SetSelected(id, gameObject);
             if (!selection && isObjectSelected)
             {
                 IsSelected = isSelected;
                 SetIconCore();
                 FindObjectOfType<SelectionControl>().AddSelectedObject(gameObject);
                 selection = GetSelectionGamObject();
-                selectionComponent.RefreshSelectedIcons();
+                selectionCoreComponent.RefreshSelectedIcons();
+            }if (selection && !isObjectSelected)
+            {
+                RemoveSelectableObjectSelection(id);
             }
         }
         else
         {
             if (selection)
             {
-                RemoveIcon();
-                selectionComponent.RemoveSelected(id, gameObject);
-                Destroy(selection);
-                FindObjectOfType<SelectionControl>().CleanSelectableObject(gameObject);
-                IsSelected = false;
-                selectionComponent.RefreshSelectedIcons();
+                RemoveSelectableObjectSelection(id);
             }
         }
+    }
+
+    private void RemoveSelectableObjectSelection(int id)
+    {
+        RemoveIcon();
+        selectionCoreComponent.RemoveSelected(id, gameObject);
+        Destroy(selection);
+        FindObjectOfType<SelectionControl>().CleanSelectableObject(gameObject);
+        IsSelected = false;
+        selectionCoreComponent.RefreshSelectedIcons();
     }
 
     protected virtual GameObject GetSelectionGamObject()
