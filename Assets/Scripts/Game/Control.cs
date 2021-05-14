@@ -323,8 +323,9 @@ public class Control : MonoBehaviour
         {
             cs.SetCursorState(CursorStateEnum.IconSelection, FindObjectOfType<Config>().GetIconSelectionCursorTexture());
         }
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
         {
+            Debug.Log("2");
             Control.ControlClickLocked = true;
         }
     }

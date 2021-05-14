@@ -12,6 +12,13 @@ public class BugMovement : MonoBehaviour
         movementTargetVector = vector;
     }
 
+    public void Stop()
+    {
+        var p = gameObject.transform.position;
+        var target = new Vector2(p.x, p.y);
+        Move(target);
+    }
+
     public void Move(Vector2 target)
     {
         var s = GetComponent<BugStateHandler>().GetState();

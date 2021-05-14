@@ -36,10 +36,12 @@ public class SelectionCoreComponent : MonoBehaviour
 
     void Update()
     {
+
         if(!Control.ControlClickLocked)
         {
             if (Input.GetMouseButtonDown(0))
             {
+                Debug.Log("3");
                 selectedBugs = new Dictionary<int, GameObject>();
                 selectedCastle = null;
                 isSelecting = true;
@@ -48,12 +50,14 @@ public class SelectionCoreComponent : MonoBehaviour
             }
             if (Input.GetMouseButtonUp(0))
             {
+                Debug.Log("4");
                 isSelecting = false;
                 RefreshSelectedIcons();
             }
         }
         else
         {
+            Debug.Log("5");
             Control.ControlClickLocked = false;
         }
 
@@ -71,6 +75,15 @@ public class SelectionCoreComponent : MonoBehaviour
         }else if(selectedCastle == null)
         {
             FindObjectOfType<Control>().RemoveCastleIcon();
+        }
+    }
+
+    public void Stop()
+    {
+        var bugs = selectedBugs.Values;
+        foreach (var bug in bugs)
+        {
+            bug.GetComponent<BugMovement>().Stop();
         }
     }
 
