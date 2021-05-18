@@ -25,12 +25,17 @@ public class BaseCommand : MonoBehaviour
 
     public void OnMouseUp()
     {
-        Click();
+        //Click();
     }
 
     protected void OnMouseOver()
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = spriteHover;
+        if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
+        {
+            Click();
+            Control.ControlClickLocked = true;
+        }
     }
 
     protected void OnMouseExit()
