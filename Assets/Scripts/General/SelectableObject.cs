@@ -43,6 +43,7 @@ public class SelectableObject : MonoBehaviour
         }
         else if (SingleSelectState != SingleSelectStateEnum.None)
         {
+            Debug.Log("SELECT");
             SetIsSelected(SingleSelectState == SingleSelectStateEnum.Selected);
             SingleSelectState = SingleSelectStateEnum.None;
         }
@@ -164,7 +165,6 @@ public class SelectableObject : MonoBehaviour
             //&& EventSystem.current.IsPointerOverGameObject()
             )
         {
-            Debug.LogError("SSelectableObject");
             SingleSelectState = IsSelected ? SingleSelectStateEnum.Deselected : SingleSelectStateEnum.Selected;
         }
     }

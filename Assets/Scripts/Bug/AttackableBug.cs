@@ -13,14 +13,19 @@ public class AttackableBug : MonoBehaviour
         var selectedObjects = FindObjectOfType<SelectionControl>().GetSelectedObjects();
         if (selectedObjects.Any() && IsEnemy(selectedObjects.First()))
         {
-            if (new CommonService().GetCursorState() != CursorStateEnum.Attack)
+            if (!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Attack)
             {
                 new CommonService().SetCursorState(CursorStateEnum.Attack, FindObjectOfType<Config>().GetAttackCursorTexture());
             }
-            if (Input.GetMouseButtonDown(1))
+            if (!Context.IsContextActive() && Input.GetMouseButtonDown(1))
             {
                 FindObjectOfType<SelectionControl>().Attack(gameObject);
-            }            
+            }
+            if (Context.IsContextActive() && Input.GetMouseButtonDown(0))
+            {
+                FindObjectOfType<SelectionControl>().Attack(gameObject);
+                Context.FinishContext();
+            }
         }
     }
 

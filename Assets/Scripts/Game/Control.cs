@@ -319,13 +319,12 @@ public class Control : MonoBehaviour
     {
         var cs = new CommonService();
         var currentState = cs.GetCursorState();
-        if (currentState != CursorStateEnum.IconSelection)
+        if (!Context.IsContextActive() && currentState != CursorStateEnum.Default)
         {
-            cs.SetCursorState(CursorStateEnum.IconSelection, FindObjectOfType<Config>().GetIconSelectionCursorTexture());
+            cs.SetCursorState(CursorStateEnum.Default, FindObjectOfType<Config>().GetIconSelectionCursorTexture());
         }
         if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
         {
-            Debug.Log("2");
             Control.ControlClickLocked = true;
         }
     }

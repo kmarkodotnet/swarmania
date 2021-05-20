@@ -9,9 +9,24 @@ public class Config : MonoBehaviour
     [SerializeField] float harvestPeriodicyScale = 1f;
 
     [SerializeField] Texture2D attackCursorTexture;
-    [SerializeField] Texture2D defaultCursorTexture;
-    [SerializeField] Texture2D iconSelectionCursorTexture;
+    [SerializeField] Texture2D moveCursorTexture;
+    [SerializeField] Texture2D harvestCursorTexture;
 
+    [SerializeField] Texture2D inactiveAttackCursorTexture;
+    [SerializeField] Texture2D inactiveMoveCursorTexture;
+    [SerializeField] Texture2D inactiveHarvestCursorTexture;
+
+    [SerializeField] Texture2D defaultSelectionCursorTexture;
+
+    public static Texture2D moveCursorTextureStatic;
+    public static Texture2D attackCursorTextureStatic;
+    public static Texture2D harvestCursorTextureStatic;
+
+    public static Texture2D inactiveMoveCursorTextureStatic;
+    public static Texture2D inactiveAttackCursorTextureStatic;
+    public static Texture2D inactiveHarvestCursorTextureStatic;
+
+    public static Texture2D defaultSelectionCursorTextureStatic;
 
     private void Awake()
     {
@@ -25,10 +40,25 @@ public class Config : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+    private void Start()
+    {
+        moveCursorTextureStatic = moveCursorTexture;
+        attackCursorTextureStatic = attackCursorTexture;
+        harvestCursorTextureStatic = harvestCursorTexture;
+
+        inactiveMoveCursorTextureStatic = inactiveMoveCursorTexture;
+        inactiveAttackCursorTextureStatic = inactiveAttackCursorTexture;
+        inactiveHarvestCursorTextureStatic = inactiveHarvestCursorTexture;
+
+        defaultSelectionCursorTextureStatic = defaultSelectionCursorTexture;
+
+        var cs = new CommonService();
+        cs.SetCursorState(CursorStateEnum.Default, defaultSelectionCursorTexture);
+    }
 
     public Texture2D GetDefaultCursorTexture()
     {
-        return defaultCursorTexture;
+        return moveCursorTexture;
     }
     public Texture2D GetAttackCursorTexture()
     {
@@ -36,7 +66,7 @@ public class Config : MonoBehaviour
     }
     public Texture2D GetIconSelectionCursorTexture()
     {
-        return iconSelectionCursorTexture;
+        return defaultSelectionCursorTexture;
     }
 
     public float GetMovementScale()

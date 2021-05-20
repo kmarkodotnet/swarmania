@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Resource : MonoBehaviour
 {
@@ -15,6 +13,16 @@ public class Resource : MonoBehaviour
     public float GetTotalResourceAmmount()
     {
         return resourceAmmount;
+    }
+
+    private void OnMouseOver()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("harvest");
+            FindObjectOfType<SelectionControl>().Harvest(gameObject);
+            Context.FinishContext();
+        }
     }
 
     public float GetResourceAmmount(float resourceToCarry)

@@ -621,7 +621,7 @@ PrefabInstance:
     - target: {fileID: 2751454094116689669, guid: 48076293ad688d346bbbab0165f22ca5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751454094116689669, guid: 48076293ad688d346bbbab0165f22ca5,
         type: 3}
@@ -855,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 2751454094116689669, guid: 81a86f3534f25c84496c80c862384178,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751454094116689669, guid: 81a86f3534f25c84496c80c862384178,
         type: 3}
@@ -1444,7 +1444,7 @@ PrefabInstance:
     - target: {fileID: 2751454094116689669, guid: 0df5c97276daf144783656bcb166d2ae,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751454094116689669, guid: 0df5c97276daf144783656bcb166d2ae,
         type: 3}
@@ -1861,7 +1861,7 @@ PrefabInstance:
     - target: {fileID: 2751454094116689669, guid: 69d5dd9d7073e75478b4c81e308eba23,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751454094116689669, guid: 69d5dd9d7073e75478b4c81e308eba23,
         type: 3}
@@ -2048,6 +2048,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
         type: 3}
+      propertyPath: moveCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 8e8148889a04d6d4ea2d0f221ba100ea, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
       propertyPath: attackCursorTexture
       value: 
       objectReference: {fileID: 2800000, guid: e4b12bde548bd8a44ba1e8223509e9b9, type: 3}
@@ -2063,7 +2068,32 @@ PrefabInstance:
       objectReference: {fileID: 2800000, guid: 8e8148889a04d6d4ea2d0f221ba100ea, type: 3}
     - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
         type: 3}
+      propertyPath: harvestCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: dad9be7fcfaa11d409f5900968c0111a, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
+      propertyPath: inactiveMoveCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 74f78c2492329384ba6e411406a0d22c, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
       propertyPath: iconSelectionCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: f297e45ea42b42144b99facee8dfc86b, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
+      propertyPath: inactiveAttackCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: 441b1915154afe343915902e7d931e88, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
+      propertyPath: inactiveHarvestCursorTexture
+      value: 
+      objectReference: {fileID: 2800000, guid: ec713a6f146b09c41bc3fa276259ba60, type: 3}
+    - target: {fileID: 7903667297800259507, guid: 275d96e798272134f9fde40a140305bb,
+        type: 3}
+      propertyPath: defaultSelectionCursorTexture
       value: 
       objectReference: {fileID: 2800000, guid: f297e45ea42b42144b99facee8dfc86b, type: 3}
     m_RemovedComponents: []
@@ -2102,7 +2132,7 @@ PrefabInstance:
     - target: {fileID: 2751454094116689669, guid: e7c3ac3d361093f4c8ccf806b4274f86,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2751454094116689669, guid: e7c3ac3d361093f4c8ccf806b4274f86,
         type: 3}
@@ -2308,7 +2338,7 @@ PrefabInstance:
     - target: {fileID: 3570888550249132533, guid: 5cbfe0abfe6c8c447844e9aca2b81ce3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3570888550249132533, guid: 5cbfe0abfe6c8c447844e9aca2b81ce3,
         type: 3}
@@ -2794,7 +2824,7 @@ PrefabInstance:
     - target: {fileID: 6456756900777138486, guid: 231cd1160cfcedf4aaa305f0985d4562,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.718469
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6456756900777138486, guid: 231cd1160cfcedf4aaa305f0985d4562,
         type: 3}

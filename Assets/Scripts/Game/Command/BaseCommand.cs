@@ -54,7 +54,6 @@ public class BaseCommand : MonoBehaviour
 
     public virtual void Click()
     {
-        Debug.Log("1");
         Control.ControlClickLocked = true;
         switch (CommandType)
         {
@@ -101,22 +100,21 @@ public class BaseCommand : MonoBehaviour
 
     private void Harvest()
     {
-        Debug.Log("Harvest");
+        Context.Harvest();
     }
 
     private void Attack()
     {
-        Debug.Log("Attack");
+        Context.Attack();
     }
 
     private void Stop()
     {
-        Debug.Log("Stop");
         FindObjectOfType<SelectionCoreComponent>().Stop();
     }
 
     private void Move()
     {
-        Debug.Log("Move");
+        Context.Move();
     }
 }

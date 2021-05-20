@@ -33,33 +33,55 @@ public class SelectionCoreComponent : MonoBehaviour
         selectedBugs = new Dictionary<int, GameObject>();
         selectedCastle = null;
     }
+    private void OnMouseUp()
+    {
+        if (Context.IsMove())
+        {
+            Debug.Log("lets move");
+            Move();
+        }
+    }
+
+    private void OnMouseOver()
+    {
+        if (Context.IsMove())
+        {
+            Context.ActivateMove();
+        }
+    }
+    private void OnMouseExit()
+    {
+        if (Context.IsMove())
+        {
+            Context.InactivateMove();
+        }
+    }
 
     void Update()
     {
-
-        if(!Control.ControlClickLocked)
+        if (!Context.IsContextActive())
         {
-            if (Input.GetMouseButtonDown(0))
+            if (!Control.ControlClickLocked)
             {
-                Debug.Log("3");
-                selectedBugs = new Dictionary<int, GameObject>();
-                selectedCastle = null;
-                isSelecting = true;
-                mousePosition1 = Input.mousePosition;
+                if (Input.GetMouseButtonDown(0))
+                {
+                    selectedBugs = new Dictionary<int, GameObject>();
+                    selectedCastle = null;
+                    isSelecting = true;
+                    mousePosition1 = Input.mousePosition;
 
+                }
+                if (Input.GetMouseButtonUp(0))
+                {
+                    isSelecting = false;
+                    RefreshSelectedIcons();
+                }
             }
-            if (Input.GetMouseButtonUp(0))
+            else
             {
-                Debug.Log("4");
-                isSelecting = false;
-                RefreshSelectedIcons();
+                Control.ControlClickLocked = false;
             }
-        }
-        else
-        {
-            Debug.Log("5");
-            Control.ControlClickLocked = false;
-        }
+        }       
 
     }
 
@@ -85,6 +107,12 @@ public class SelectionCoreComponent : MonoBehaviour
         {
             bug.GetComponent<BugMovement>().Stop();
         }
+    }
+
+    public void Move()
+    {
+        FindObjectOfType<SelectionControl>().Move();
+        Context.FinishContext();
     }
 
     void OnGUI()
@@ -114,6 +142,10 @@ public class SelectionCoreComponent : MonoBehaviour
         else if (gameObject.GetComponent<SelectableCastle>() && selectedBugs.Count > 0)
         {
             selectedCastle = null;
+            return false;
+        }
+        else if (gameObject.GetComponent<SelectableBug>() && selectedBugs.Count > 0 && !gameObject.GetComponent<SelectableBug>().IsOwnedByPlayer())
+        {
             return false;
         }
         else if(gameObject.GetComponent<SelectableBug>()  && selectedBugs.Count < 20)

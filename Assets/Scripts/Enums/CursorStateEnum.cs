@@ -1,6 +1,7 @@
 ﻿public enum CursorStateEnum
 {
-    Default,
+    Move,
     Attack,
-    IconSelection
+    Harvest,
+    Default
 }

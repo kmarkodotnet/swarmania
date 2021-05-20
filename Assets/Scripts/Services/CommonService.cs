@@ -6,7 +6,7 @@ public class CommonService
 {
     public CursorMode cursorMode = CursorMode.Auto;
     public Vector2 hotSpot = Vector2.zero;
-    private static CursorStateEnum _cursorState = CursorStateEnum.Default;
+    private static CursorStateEnum _cursorState = CursorStateEnum.Move;
     public CursorStateEnum GetCursorState()
     {
         return _cursorState;

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameArea : MonoBehaviour
@@ -32,9 +33,14 @@ public class GameArea : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if(new CommonService().GetCursorState() != CursorStateEnum.Default)
+        if (!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Move && FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
         {
-            new CommonService().SetCursorState(CursorStateEnum.Default, FindObjectOfType<Config>().GetDefaultCursorTexture());
+            Debug.LogError("move");
+            new CommonService().SetCursorState(CursorStateEnum.Move, FindObjectOfType<Config>().GetDefaultCursorTexture());
+        }else if(!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Default && !FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
+        {
+            Debug.LogError("default");
+            new CommonService().SetCursorState(CursorStateEnum.Move, Config.defaultSelectionCursorTextureStatic);
         }
         if (Input.GetMouseButtonDown(1))
         {

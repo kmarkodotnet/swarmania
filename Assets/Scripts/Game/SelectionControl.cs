@@ -49,18 +49,25 @@ public class SelectionControl : MonoBehaviour
     {
         AttackedObject = null;
         if (SelectedObjects.Any())
-        {
-            
+        {   
             var target = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             var owned = SelectedObjects.Where(o => o.GetComponent<BugActionSet>() != null && IsBugOwnedByPlayer(o));
-
-            Debug.Log($"any {SelectedObjects.Count} {owned.Count()}");
 
             owned.ToList()
                 .ForEach(o => o.GetComponent<BugActionSet>().Move(target));
         }
     }
 
+    public void Harvest(GameObject target)
+    {
+        if (SelectedObjects.Any())
+        {
+            var owned = SelectedObjects.Where(o => o.GetComponent<BugActionSet>() != null && IsBugOwnedByPlayer(o));
+
+            owned.ToList()
+                .ForEach(o => o.GetComponent<BugActionSet>().MoveToHarvest(target));
+        }
+    }
     private bool IsBugOwnedByPlayer(GameObject bug)
     { 
         var isOwned = bug.GetComponent<SelectableBug>().IsOwnedByPlayer();
