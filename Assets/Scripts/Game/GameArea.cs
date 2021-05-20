@@ -36,7 +36,7 @@ public class GameArea : MonoBehaviour
         if (!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Move && FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
         {
             Debug.LogError("move");
-            new CommonService().SetCursorState(CursorStateEnum.Move, FindObjectOfType<Config>().GetDefaultCursorTexture());
+            new CommonService().SetCursorState(CursorStateEnum.Move, FindObjectOfType<Config>().GetMoveCursorTexture());
         }else if(!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Default && !FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
         {
             Debug.LogError("default");

@@ -56,7 +56,7 @@ public class Config : MonoBehaviour
         cs.SetCursorState(CursorStateEnum.Default, defaultSelectionCursorTexture);
     }
 
-    public Texture2D GetDefaultCursorTexture()
+    public Texture2D GetMoveCursorTexture()
     {
         return moveCursorTexture;
     }
@@ -64,7 +64,12 @@ public class Config : MonoBehaviour
     {
         return attackCursorTexture;
     }
-    public Texture2D GetIconSelectionCursorTexture()
+
+    public Texture2D GetHarvestCursorTexture()
+    {
+        return harvestCursorTexture;
+    }
+    public Texture2D GetDefaultCursorTexture()
     {
         return defaultSelectionCursorTexture;
     }

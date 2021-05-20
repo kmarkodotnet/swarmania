@@ -17,11 +17,13 @@ public class BugMovement : MonoBehaviour
         var p = gameObject.transform.position;
         var target = new Vector2(p.x, p.y);
         Move(target);
+        GetComponent<BugStateHandler>().SetState(BugStateEnum.Idle);
     }
 
     public void Move(Vector2 target)
     {
         var s = GetComponent<BugStateHandler>().GetState();
+        Debug.LogWarning(s);
         if (BugMoveStates.Contains(s))
         {
             this.movementTargetVector = target;

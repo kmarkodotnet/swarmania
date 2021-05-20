@@ -17,11 +17,34 @@ public class Resource : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        Debug.Log("over");
+        if (Context.IsHarvest())
         {
             Debug.Log("harvest");
-            FindObjectOfType<SelectionControl>().Harvest(gameObject);
-            Context.FinishContext();
+            Context.ActivateHarvest();
+            if (Input.GetMouseButtonDown(0))
+            {
+                FindObjectOfType<SelectionControl>().Harvest(gameObject);
+                Context.FinishContext();
+            }
+        }else if (!Context.IsContextActive())
+        {
+            var cs = new CommonService();
+            cs.SetCursorState(CursorStateEnum.Harvest, FindObjectOfType<Config>().GetHarvestCursorTexture());
+            if (Input.GetMouseButtonDown(1))
+            {
+                FindObjectOfType<SelectionControl>().Harvest(gameObject);
+            }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        Debug.Log("exit");
+        if (Context.IsHarvest())
+        {
+            Debug.Log("no harvest");
+            Context.InactivateHarvest();
         }
     }
 
