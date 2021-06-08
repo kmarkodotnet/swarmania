@@ -13,19 +13,33 @@ public class AttackableBug : MonoBehaviour
         var selectedObjects = FindObjectOfType<SelectionControl>().GetSelectedObjects();
         if (selectedObjects.Any() && IsEnemy(selectedObjects.First()))
         {
-            if (!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Attack)
+            if (new CommonService().GetCursorState() != CursorStateEnum.Attack)
             {
                 new CommonService().SetCursorState(CursorStateEnum.Attack, FindObjectOfType<Config>().GetAttackCursorTexture());
+            }else if (Context.IsAttack())
+            {
+                Context.ActivateAttack();
             }
             if (!Context.IsContextActive() && Input.GetMouseButtonDown(1))
             {
+                //TODO: context-ben félrekattint, akkor legyen lezárva
+                //TODO: context-ben jobb-al kattint, legyen szintén lezárva
                 FindObjectOfType<SelectionControl>().Attack(gameObject);
+                Context.FinishContext();
             }
-            if (Context.IsContextActive() && Input.GetMouseButtonDown(0))
+            if (Context.IsContextActive() && Context.IsAttack() && Input.GetMouseButtonDown(0))
             {
                 FindObjectOfType<SelectionControl>().Attack(gameObject);
                 Context.FinishContext();
             }
+        }
+    }
+
+    private void OnMouseExit()
+    {
+        if (Context.IsAttack())
+        {
+            Context.InactivateAttack();
         }
     }
 

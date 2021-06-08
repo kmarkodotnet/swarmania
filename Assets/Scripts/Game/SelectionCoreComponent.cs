@@ -98,6 +98,11 @@ public class SelectionCoreComponent : MonoBehaviour
         {
             FindObjectOfType<Control>().RemoveCastleIcon();
         }
+
+        if(selectedCastle != null)
+        {
+            FindObjectOfType<Control>().SetControl();
+        }
     }
 
     public void Stop()

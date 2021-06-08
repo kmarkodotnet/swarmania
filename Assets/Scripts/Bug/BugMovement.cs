@@ -23,7 +23,6 @@ public class BugMovement : MonoBehaviour
     public void Move(Vector2 target)
     {
         var s = GetComponent<BugStateHandler>().GetState();
-        Debug.LogWarning(s);
         if (BugMoveStates.Contains(s))
         {
             this.movementTargetVector = target;

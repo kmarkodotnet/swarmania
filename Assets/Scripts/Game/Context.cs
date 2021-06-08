@@ -11,16 +11,22 @@
     }
     public static void FinishContext()
     {
-        isMove = false;
-        isAttack = false;
-        isHarvest = false;
-        isContextActive = false;
+        ResetVariables();
         var cs = new CommonService();
         cs.SetCursorState(CursorStateEnum.Move, Config.moveCursorTextureStatic);
     }
 
+    private static void ResetVariables()
+    {
+        isMove = false;
+        isAttack = false;
+        isHarvest = false;
+        isContextActive = false;
+    }
+
     public static void Move()
     {
+        ResetVariables();
         isMove = true;
         isContextActive = true;
         InactivateMove();
@@ -37,11 +43,12 @@
     }
     public static bool IsMove()
     {
-        return isContextActive && isMove;
+        return IsContextActive() && isMove;
     }
 
     public static void Attack()
     {
+        ResetVariables();
         isAttack = true;
         isContextActive = true;
         InactivateAttack();
@@ -58,11 +65,12 @@
     }
     public static bool IsAttack()
     {
-        return isContextActive && isAttack;
+        return IsContextActive() && isAttack;
     }
 
     public static void Harvest()
     {
+        ResetVariables();
         isHarvest = true;
         isContextActive = true;
         InactivateHarvest();
@@ -79,6 +87,6 @@
     }
     public static bool IsHarvest()
     {
-        return isContextActive && isHarvest;
+        return IsContextActive() && isHarvest;
     }
 }

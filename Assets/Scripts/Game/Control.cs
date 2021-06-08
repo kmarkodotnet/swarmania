@@ -88,7 +88,12 @@ public class Control : MonoBehaviour
             var path = sr.GetPath();
             basePoint.Add(path, Camera.main.WorldToViewportPoint(sr.transform.position));
             var size = (Camera.main.transform.position - sr.transform.position).magnitude / Camera.main.orthographicSize;
-            baseSize.Add(path, new Vector3(size * 2f, size * 2f, size));
+            var defaultSize = 2f;
+            if (path.Contains("bugTypePlaceholder"))
+            {
+                defaultSize = 1f;
+            }
+            baseSize.Add(path, new Vector3(size * defaultSize, size * defaultSize, size));
         }
 
         RemoveBugIcons();
@@ -111,28 +116,46 @@ public class Control : MonoBehaviour
         //}
     }
 
-    internal void SetBugActions()
+
+    private void SetActionHarvestIcon(bool active)
     {
-        CreateActionStopIcon();
-        CreateActionMoveIcon();
-        CreateActionAttackIcon();
-        CreateActionHarvestIcon();
+        SetCommandIcon("harvestCommand", active);
     }
 
-    private void CreateActionHarvestIcon()
+    private void SetActionAttackIcon(bool active)
     {
+        SetCommandIcon("attackCommand", active);
     }
 
-    private void CreateActionAttackIcon()
+    private void SetActionMoveIcon(bool active)
     {
+        SetCommandIcon("moveCommand", active);
     }
 
-    private void CreateActionMoveIcon()
+    private void SetActionStopIcon(bool active)
     {
+        SetCommandIcon("stopCommand", active);
+    }
+    private void SetCommandIcon(string commandIconName, bool active)
+    {
+        var cs = new CommonService();
+        var bugs = cs.GetChildrenByName(transform, "bugs");
+        var commands = cs.GetChildrenByName(bugs, "commands");
+        var commandIcon = cs.GetChildrenByName(commands, commandIconName);
+        commandIcon.gameObject.SetActive(active);
     }
 
-    private void CreateActionStopIcon()
+    public void SetControl()
     {
+        var cs = new CommonService();
+        var background = cs.GetChildrenByName(transform, "background");
+        background.gameObject.SetActive(true);
+    }
+    public void RemoveControl()
+    {
+        var cs = new CommonService();
+        var background = cs.GetChildrenByName(transform, "background");
+        background.gameObject.SetActive(false);
     }
 
     internal void SetupCastleBugs(GameObject gameObject)
@@ -143,12 +166,19 @@ public class Control : MonoBehaviour
         GameObject[] bugPrefabs = gameObject.GetComponent<CastleStateHandler>().GetBugPrefabs();
         for (int i = 0; i < bugPrefabs.Length; i++)
         {
-            var bugSprite = GetBugSprite(bugPrefabs[i]);
+            var bug = cs.GetChildrenByName(bugPrefabs[i].transform, "Bug");
+            var sprite = bug.GetComponent<SpriteRenderer>().sprite;
+
+            var bugHover = cs.GetChildrenByName(bugPrefabs[i].transform, "BugHover");
+            var spriteHover = bugHover.GetComponent<SpriteRenderer>().sprite;
+
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
 
-            var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
-            bugIcon.GetComponent<SpriteRenderer>().sprite = bugSprite;
-            bugIcon.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
+            bugSpritePlaceholder.GetComponent<BaseCommand>().SetSprite(sprite);
+            bugSpritePlaceholder.GetComponent<BaseCommand>().SetSpriteHover(spriteHover);
+
+            bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = sprite;
+            bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
         }
     }
 
@@ -157,12 +187,6 @@ public class Control : MonoBehaviour
 
     }
 
-    private Sprite GetBugSprite(GameObject gameObject)
-    {
-        var cs = new CommonService();
-        var bug = cs.GetChildrenByName(gameObject.transform, "Bug");
-        return bug.GetComponent<SpriteRenderer>().sprite;
-    }
 
     public void RemoveBugIcon(int id)
     {
@@ -171,6 +195,8 @@ public class Control : MonoBehaviour
 
     internal void SetBugIcons(Dictionary<int, GameObject> selectedBugs)
     {
+        
+        SetControl();
         this.selectedBugs = selectedBugs;
         var cs = new CommonService();
 
@@ -190,16 +216,22 @@ public class Control : MonoBehaviour
             var placeholder = cs.GetChildrenByName(iconsPlaceholder, "bugTypePlaceholder" + j);
             placeholder.gameObject.SetActive(true);
 
-            var bugIcon = cs.GetChildrenByName(placeholder, "bugIcon");
+            //var bugIcon = cs.GetChildrenByName(placeholder, "bugIcon");
             placeholder.localScale = new Vector3(1f, 1f, 1);
 
-            bugIcon.gameObject.SetActive(true);
+            placeholder.gameObject.SetActive(true);
 
             var bug = cs.GetChildrenByName(selectedBug.Value.transform, "Bug");
             var sprite = bug.GetComponent<SpriteRenderer>().sprite;
 
-            bugIcon.GetComponent<SpriteRenderer>().sprite = sprite;
-            bugIcon.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
+            var bugHover = cs.GetChildrenByName(selectedBug.Value.transform, "BugHover");
+            var spriteHover = bug.GetComponent<SpriteRenderer>().sprite;
+
+            placeholder.GetComponent<BaseCommand>().SetSprite(sprite);
+            placeholder.GetComponent<BaseCommand>().SetSpriteHover(spriteHover);
+
+            placeholder.GetComponent<SpriteRenderer>().sprite = sprite;            
+            placeholder.GetComponent<SpriteRenderer>().size = new Vector2(0.2f, 0.2f);
 
             j++;
         }
@@ -209,6 +241,11 @@ public class Control : MonoBehaviour
         {
             RemoveCastleIcon();
         }
+
+        SetActionStopIcon(true);
+        SetActionMoveIcon(true);
+        SetActionAttackIcon(true);
+        SetActionHarvestIcon(true);
     }
 
     public void SetBugIcon(Sprite bugSprite, int id)
@@ -266,10 +303,19 @@ public class Control : MonoBehaviour
             var placeholder = cs.GetChildrenByName(iconsPlaceholder, "bugTypePlaceholder" + i);
             placeholder.gameObject.SetActive(false);
         }
+
+        SetActionStopIcon(false);
+        SetActionMoveIcon(false);
+        SetActionAttackIcon(false);
+        SetActionHarvestIcon(false);
+
+        RemoveControl();
     }
+    
 
     public void SetupCastleIcon(Sprite castleSprite)
     {
+        SetControl();
         var cs = new CommonService();
         var bugs = cs.GetChildrenByName(transform, "bugs");
         bugs.gameObject.SetActive(false);
@@ -285,10 +331,10 @@ public class Control : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
-            var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
-            bugIcon.gameObject.SetActive(true);
-            bugIcon.GetComponent<SpriteRenderer>().sprite = null;
-            bugIcon.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
+            //var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
+            bugSpritePlaceholder.gameObject.SetActive(true);
+            bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = null;
+            bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
         }
     }
 
@@ -309,9 +355,10 @@ public class Control : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
-            var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
-            bugIcon.gameObject.SetActive(false);
+            //var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
+            bugSpritePlaceholder.gameObject.SetActive(false);
         }
+        RemoveControl();
     }
 
 
@@ -325,6 +372,7 @@ public class Control : MonoBehaviour
         }
         if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
         {
+            Context.FinishContext();
             Control.ControlClickLocked = true;
         }
     }

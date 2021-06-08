@@ -45,6 +45,7 @@ public class RTSSelection : MonoBehaviour
             //&& EventSystem.current.IsPointerOverGameObject()
             )
         {
+            Context.FinishContext();
             Debug.LogError("RTSSelection");
             Ray mouseToWorldRay = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;

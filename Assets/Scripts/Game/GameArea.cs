@@ -33,19 +33,26 @@ public class GameArea : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Move && FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
+        if (!Context.IsContextActive())
         {
-            Debug.LogError("move");
-            new CommonService().SetCursorState(CursorStateEnum.Move, FindObjectOfType<Config>().GetMoveCursorTexture());
-        }else if(!Context.IsContextActive() && new CommonService().GetCursorState() != CursorStateEnum.Default && !FindObjectOfType<SelectionControl>().GetSelectedObjects().Any())
-        {
-            Debug.LogError("default");
-            new CommonService().SetCursorState(CursorStateEnum.Move, Config.defaultSelectionCursorTextureStatic);
+            var state = new CommonService().GetCursorState();
+            var anySelectedObjects = FindObjectOfType<SelectionControl>().GetSelectedObjects().Any();
+            if (state != CursorStateEnum.Move && anySelectedObjects)
+            {
+                new CommonService().SetCursorState(CursorStateEnum.Move, FindObjectOfType<Config>().GetMoveCursorTexture());
+            }
+            else if (state != CursorStateEnum.Default && !anySelectedObjects)
+            {
+                Debug.LogError("default");
+                new CommonService().SetCursorState(CursorStateEnum.Move, Config.defaultSelectionCursorTextureStatic);
+            }
         }
+        
         if (Input.GetMouseButtonDown(1))
         {
             Debug.Log("move");
             FindObjectOfType<SelectionControl>().Move();
+            Context.FinishContext();
         }
         if (Input.GetKey(KeyCode.LeftShift) && Input.GetMouseButtonDown(0))
         {

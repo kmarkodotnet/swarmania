@@ -19,6 +19,16 @@ public class BaseCommand : MonoBehaviour
     //    set { click = value; }
     //}
 
+    public void SetSprite(Sprite sprite)
+    {
+        this.sprite = sprite;
+    }
+
+    public void SetSpriteHover(Sprite spriteHover)
+    {
+        this.spriteHover = spriteHover;
+    }
+
     protected void Update()
     {
     }
@@ -30,6 +40,7 @@ public class BaseCommand : MonoBehaviour
 
     protected void OnMouseOver()
     {
+        Debug.Log("spriteHover " + spriteHover);
         gameObject.GetComponent<SpriteRenderer>().sprite = spriteHover;
         if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
         {
@@ -111,6 +122,7 @@ public class BaseCommand : MonoBehaviour
     private void Stop()
     {
         FindObjectOfType<SelectionCoreComponent>().Stop();
+        Context.FinishContext();
     }
 
     private void Move()
