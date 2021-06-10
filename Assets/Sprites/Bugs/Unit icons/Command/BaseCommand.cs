@@ -40,7 +40,6 @@ public class BaseCommand : MonoBehaviour
 
     protected void OnMouseOver()
     {
-        Debug.Log("spriteHover " + spriteHover);
         gameObject.GetComponent<SpriteRenderer>().sprite = spriteHover;
         if (Input.GetMouseButtonDown(0) && !Control.ControlClickLocked)
         {
@@ -96,17 +95,17 @@ public class BaseCommand : MonoBehaviour
 
     private void CreateBug3()
     {
-        Debug.Log("CreateBug3");
+        Context.CreateBug(2);
     }
 
     private void CreateBug2()
     {
-        Debug.Log("CreateBug2");
+        Context.CreateBug(1);
     }
 
     private void CreateBug1()
     {
-        Debug.Log("CreateBug1");
+        Context.CreateBug(0);
     }
 
     private void Harvest()

@@ -16,9 +16,9 @@ public class SelectableObject : MonoBehaviour
     protected SelectionCoreComponent selectionCoreComponent;
 
     [SerializeField]
-    protected Texture2D menuIcon;
+    protected Sprite menuIcon;
     [SerializeField]
-    protected Texture2D menuIconRo;
+    protected Sprite menuIconRo;
 
     protected void Start()
     {
@@ -49,12 +49,12 @@ public class SelectableObject : MonoBehaviour
         }
     }
 
-    public Texture2D GetMenuIcon()
+    public Sprite GetMenuIcon()
     {
         return menuIcon;
     }
 
-    public Texture2D GetMenuIconRo()
+    public Sprite GetMenuIconRo()
     {
         return menuIconRo;
     }

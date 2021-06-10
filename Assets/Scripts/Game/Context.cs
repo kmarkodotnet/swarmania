@@ -1,9 +1,27 @@
-﻿public static class Context
+﻿using System;
+using UnityEngine;
+
+public static class Context
 {
     private static bool isContextActive { get; set; }
     private static bool isMove { get; set; }
     private static bool isAttack { get; set; }
     private static bool isHarvest { get; set; }
+
+    private static GameObject castle { get; set; }
+    private static GameObject[] castleBugPrefabs { get; set; }
+
+    internal static void SetupCastle(GameObject gameObject, GameObject[] bugPrefabs)
+    {
+        castle = gameObject;
+        castleBugPrefabs = bugPrefabs;
+    }
+
+    internal static void CreateBug(int bugNum)
+    {
+        var bugType = castleBugPrefabs[bugNum].GetComponent<AttackableBug>().GetBugType();
+        castle.GetComponent<CastleStateHandler>().AddNewBugToQueue(bugType);
+    }
 
     public static bool IsContextActive()
     {
@@ -80,11 +98,13 @@
         var cs = new CommonService();
         cs.SetCursorState(CursorStateEnum.Harvest, Config.harvestCursorTextureStatic);
     }
+
     public static void InactivateHarvest()
     {
         var cs = new CommonService();
         cs.SetCursorState(CursorStateEnum.Harvest, Config.inactiveHarvestCursorTextureStatic);
     }
+
     public static bool IsHarvest()
     {
         return IsContextActive() && isHarvest;

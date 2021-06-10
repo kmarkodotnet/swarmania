@@ -43,7 +43,6 @@ public class GameArea : MonoBehaviour
             }
             else if (state != CursorStateEnum.Default && !anySelectedObjects)
             {
-                Debug.LogError("default");
                 new CommonService().SetCursorState(CursorStateEnum.Move, Config.defaultSelectionCursorTextureStatic);
             }
         }

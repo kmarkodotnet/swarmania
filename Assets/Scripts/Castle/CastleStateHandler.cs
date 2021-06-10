@@ -34,19 +34,31 @@ public class CastleStateHandler : MonoBehaviour
         InitializeResourceAmmount();
         AddNewBugToQueue(bugPrefabKeys[0]);
         bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
-        //AddNewBugToQueue(bugPrefabKeys[1]);
-        //AddNewBugToQueue(bugPrefabKeys[2]);
-        //AddNewBugToQueue(bugPrefabKeys[1]);
-        //AddNewBugToQueue(bugPrefabKeys[0]);
         castleJob = CastleJobEnum.CreatingUnit;
     }
 
-    private void AddNewBugToQueue(BugTypeEnum bugTypeEnum)
+
+    private void Update()
     {
+        var utcNow = System.DateTime.UtcNow;
+        if (utcNow > start.AddSeconds(defaultScale) && castleState != CastleStateEnum.Destroyed)
+        {
+            Debug.Log("tick");
+            DoCastleJob();
+            HandleCastleState();
+            start = utcNow;
+        }
+    }
+
+    public void AddNewBugToQueue(BugTypeEnum bugTypeEnum)
+    {
+        Debug.Log("AddNewBugToQueue");
         var firstNullIndex = bugCreationQueue.ToList().IndexOf(null);
         if(firstNullIndex >= 0 && firstNullIndex < bugCreationQueue.Length)
         {
             bugCreationQueue[firstNullIndex] = bugTypeEnum;
+            Debug.Log("added");
+            bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
         }
     }
 
@@ -76,17 +88,6 @@ public class CastleStateHandler : MonoBehaviour
     internal GameObject[] GetBugPrefabs()
     {
         return this.bugPrefabs;
-    }
-
-    private void Update()
-    {
-        var utcNow = System.DateTime.UtcNow;
-        if (utcNow > start.AddSeconds(defaultScale) && castleState != CastleStateEnum.Destroyed)
-        {
-            DoCastleJob();
-            HandleCastleState();
-            start = utcNow;
-        }
     }
 
     private void SetState(CastleStateEnum mewCastleState)
@@ -166,6 +167,7 @@ public class CastleStateHandler : MonoBehaviour
 
     private void CreateUnit()
     {
+        Debug.Log($"bugCreationTimeLeft: {bugCreationTimeLeft} - bugCreationPeriod: {bugCreationPeriod}");
         if (bugCreationTimeLeft - bugCreationPeriod <= Mathf.Epsilon)
         {
             CreateBug();

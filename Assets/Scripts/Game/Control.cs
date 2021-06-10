@@ -166,11 +166,8 @@ public class Control : MonoBehaviour
         GameObject[] bugPrefabs = gameObject.GetComponent<CastleStateHandler>().GetBugPrefabs();
         for (int i = 0; i < bugPrefabs.Length; i++)
         {
-            var bug = cs.GetChildrenByName(bugPrefabs[i].transform, "Bug");
-            var sprite = bug.GetComponent<SpriteRenderer>().sprite;
-
-            var bugHover = cs.GetChildrenByName(bugPrefabs[i].transform, "BugHover");
-            var spriteHover = bugHover.GetComponent<SpriteRenderer>().sprite;
+            var sprite = bugPrefabs[i].GetComponent<SelectableBug>().GetMenuIcon();
+            var spriteHover = bugPrefabs[i].GetComponent<SelectableBug>().GetMenuIconRo();
 
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
 
@@ -180,6 +177,7 @@ public class Control : MonoBehaviour
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = sprite;
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
         }
+        Context.SetupCastle(gameObject, bugPrefabs);
     }
 
     internal void ClearCastleBugs()
@@ -187,15 +185,13 @@ public class Control : MonoBehaviour
 
     }
 
-
     public void RemoveBugIcon(int id)
     {
         SetBugIcon(null, id);
     }
 
     internal void SetBugIcons(Dictionary<int, GameObject> selectedBugs)
-    {
-        
+    {        
         SetControl();
         this.selectedBugs = selectedBugs;
         var cs = new CommonService();
@@ -221,11 +217,13 @@ public class Control : MonoBehaviour
 
             placeholder.gameObject.SetActive(true);
 
-            var bug = cs.GetChildrenByName(selectedBug.Value.transform, "Bug");
-            var sprite = bug.GetComponent<SpriteRenderer>().sprite;
+            var sprite = selectedBug.Value.GetComponent<SelectableBug>().GetMenuIcon();
+            var spriteHover = selectedBug.Value.GetComponent<SelectableBug>().GetMenuIconRo();
+            //var bug = cs.GetChildrenByName(selectedBug.Value.transform, "Bug");
+            //var sprite = bug.GetComponent<SpriteRenderer>().sprite;
 
-            var bugHover = cs.GetChildrenByName(selectedBug.Value.transform, "BugHover");
-            var spriteHover = bug.GetComponent<SpriteRenderer>().sprite;
+            //var bugHover = cs.GetChildrenByName(selectedBug.Value.transform, "BugHover");
+            //var spriteHover = bug.GetComponent<SpriteRenderer>().sprite;
 
             placeholder.GetComponent<BaseCommand>().SetSprite(sprite);
             placeholder.GetComponent<BaseCommand>().SetSpriteHover(spriteHover);
