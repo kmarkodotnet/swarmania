@@ -33,7 +33,7 @@ public class CastleStateHandler : MonoBehaviour
         start = System.DateTime.UtcNow;
         InitializeResourceAmmount();
         AddNewBugToQueue(bugPrefabKeys[0]);
-        bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
+        //bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
         castleJob = CastleJobEnum.CreatingUnit;
     }
 
@@ -58,7 +58,6 @@ public class CastleStateHandler : MonoBehaviour
         {
             bugCreationQueue[firstNullIndex] = bugTypeEnum;
             Debug.Log("added");
-            bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
         }
     }
 
@@ -79,7 +78,7 @@ public class CastleStateHandler : MonoBehaviour
         int x = 0;
         foreach (ResourceTypeEnum resourceType in resourceTypes)
         {
-            ownedResourceAmmount[x] = 0;
+            ownedResourceAmmount[x] = 15;
             x++;
         }
         ownedResourceAmmount[resourceTypes.IndexOf(preferedResourceType)] += startValueOfPreferedResourceType;
@@ -170,21 +169,29 @@ public class CastleStateHandler : MonoBehaviour
         Debug.Log($"bugCreationTimeLeft: {bugCreationTimeLeft} - bugCreationPeriod: {bugCreationPeriod}");
         if (bugCreationTimeLeft - bugCreationPeriod <= Mathf.Epsilon)
         {
-            CreateBug();
+            if(BugCreationInProgress)
+            {
+                CreateBug();
+                BugCreationInProgress = false;
+            }
             SetNewCreationUnit();
         }
         bugCreationTimeLeft -= bugCreationPeriod;
     }
-
+    public bool BugCreationInProgress { get; set; }
     private void SetNewCreationUnit()
     {
-
-        if(bugCreationQueue[0] != null && HasEnoughResource(bugCreationQueue[0].Value))
+        //Debug.Log($"bugCreationQueue[0] != nul: {bugCreationQueue[0] != null} - HasEnoughResource(bugCreationQueue[0].Value): {HasEnoughResource(bugCreationQueue[0].Value)}");
+        if (bugCreationQueue[0] != null && HasEnoughResource(bugCreationQueue[0].Value))
         {
+            Debug.Log("Create");
             TakeResourceForCreation(bugCreationQueue[0].Value);
             bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
-        }else
+            BugCreationInProgress = true;
+        }
+        else
         {
+            Debug.Log("NO Create");
             bugCreationTimeLeft = -1;
         }    
     }
