@@ -74,10 +74,4 @@ public class PlayerManager : MonoBehaviour
             return players.Any(p => p.Id.ToString().ToUpper() == playerId.ToUpper());
         }
     }
-
-    public class Player
-    {
-        public string Id { get; set; }
-        public string Name { get; set; }
-    }
 }
