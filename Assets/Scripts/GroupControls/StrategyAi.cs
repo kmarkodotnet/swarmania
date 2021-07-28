@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public class StrategyAi : MonoBehaviour
 {
@@ -7,10 +8,10 @@ public class StrategyAi : MonoBehaviour
     //folyamatos csekkolása annak, hogy kell-e role-t cserélni
 
     //külön művelet a
-        //születések szabályzására
-        //cserére
-        //scoutingra, ki merre menjen
-            //de a támadás, védekezés, menekülés, az nem ilyen szinten lesz eldöntve
+    //születések szabályzására
+    //cserére
+    //scoutingra, ki merre menjen
+    //de a támadás, védekezés, menekülés, az nem ilyen szinten lesz eldöntve
 
 
     /*
@@ -34,8 +35,4 @@ public class StrategyAi : MonoBehaviour
 
     */
 
-    void Update()
-    {
-        
-    }
 }

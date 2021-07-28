@@ -3,9 +3,57 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+
+public class Strategy : MonoBehaviour
+{
+
+    [SerializeField]
+    private string PlayerId;
+
+    [SerializeField]
+    private Power Power;
+
+    public Power GetPower()
+    {
+        return Power;
+    }
+
+    void Update()
+    {
+        RequestStrategyIfNeeded();
+        SelectNextBugTypeIfNeeded();
+        GetNewbornBugStrategy();
+        SwapBugStrategies();
+    }
+
+    private void RequestStrategyIfNeeded()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void RequestStrategyResponse()
+    {
+
+    }
+
+    private void SwapBugStrategies()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void GetNewbornBugStrategy()
+    {
+        throw new NotImplementedException();
+    }
+
+    private void SelectNextBugTypeIfNeeded()
+    {
+        throw new NotImplementedException();
+    }
+}
 public enum StrategyEnum
 {
-    CollectFood,
+    //CollectFood,
     Scout,
     Offensive,
     Defensive,
