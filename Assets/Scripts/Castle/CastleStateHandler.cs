@@ -84,6 +84,11 @@ public class CastleStateHandler : MonoBehaviour
         ownedResourceAmmount[resourceTypes.IndexOf(preferedResourceType)] += startValueOfPreferedResourceType;
     }
 
+    public float GetResourcesSum()
+    {
+        return ownedResourceAmmount.Sum();
+    }
+
     internal GameObject[] GetBugPrefabs()
     {
         return this.bugPrefabs;

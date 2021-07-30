@@ -42,6 +42,11 @@ public class PlayerManager : MonoBehaviour
 
     }
 
+    public List<string> GetEnemyIds(string playerId)
+    {
+        return players.GetPlayers().Where(p => p.Id.ToLower() != playerId.ToLower()).Select(p => p.Id).ToList();
+    }
+
     public bool IsExistingPlayer(string id)
     {
         return players.IsExists(id);
@@ -72,6 +77,11 @@ public class PlayerManager : MonoBehaviour
         public bool IsExists(string playerId)
         {
             return players.Any(p => p.Id.ToString().ToUpper() == playerId.ToUpper());
+        }
+
+        public List<Player> GetPlayers()
+        {
+            return players;
         }
     }
 }

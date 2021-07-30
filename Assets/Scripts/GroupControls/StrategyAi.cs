@@ -1,7 +1,9 @@
 ﻿using System;
+using Unity.MLAgents;
+using Unity.MLAgents.Actuators;
 using UnityEngine;
 
-public class StrategyAi : MonoBehaviour
+public class StrategyAi : Agent, IStrategy
 {
     //scroll oldalra, határokkal
     //egység születése után döntés, hogy milyen role-ban legyen
@@ -34,5 +36,25 @@ public class StrategyAi : MonoBehaviour
     az egyes bug-ok típusát menet közben is lehet cserélni
 
     */
+    GameObject _go;
+    public void RequestStrategyDecision(GameObject go, Power myPower, Power enemyPower)
+    {
+        RequestDecision();
+        Debug.Log("AI");
+        _go = go;
+        Response();
+    }
 
+
+    public override void OnActionReceived(ActionBuffers actionBuffers)
+    {
+        var attack = actionBuffers.ContinuousActions[0];
+        var runaway = actionBuffers.ContinuousActions[1];
+        Response();
+    }
+
+    private void Response()
+    {
+        _go.GetComponent<StrategyHandler>().StrategyResponse(StrategyEnum.Defensive);
+    }
 }

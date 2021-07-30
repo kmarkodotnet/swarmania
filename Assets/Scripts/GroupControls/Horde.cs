@@ -54,9 +54,7 @@ public class Horde : Agent
         if(state != HordeStateEnum.Created)
         {
             //Debug.Log(state);
-
         }
-
 
         if (state == HordeStateEnum.RequestingDecision && _enemyHorde) { 
             friendsWeights = GetWeightOfSpecies();

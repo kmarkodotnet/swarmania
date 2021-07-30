@@ -29,7 +29,8 @@ public class Bug : MonoBehaviour
 
     void Start()
     {
-
+        var ownerId = gameObject.GetComponent<SelectableBug>().GetOwnerId();
+        FindObjectOfType<ObjectCollector>().AddBug(ownerId, bugId, gameObject);
     }
 
     private void Update()

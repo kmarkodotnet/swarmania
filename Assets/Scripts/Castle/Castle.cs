@@ -22,6 +22,12 @@ public class Castle : MonoBehaviour
         castleId = NextId;
     }
 
+    private void Start()
+    {
+        var ownerId = gameObject.GetComponent<SelectableCastle>().GetOwnerId();
+        FindObjectOfType<ObjectCollector>().AddCastle(ownerId, castleId, gameObject);
+    }
+
     public int GetId()
     {
         return castleId;
