@@ -11,6 +11,7 @@ public class Bug : MonoBehaviour
     [SerializeField] float bugCreationResourceAmmount = 10;
     [SerializeField] float bugCreationTime = 10;
     [SerializeField] GameObject birthCastle;
+    [SerializeField] StrategyEnum bugStrategyType;
 
     private static int _nextId;
     private static int NextId
@@ -41,6 +42,11 @@ public class Bug : MonoBehaviour
         {
             //Debug.LogWarning(bugId);
         }
+    }
+
+    public void SetBugStrategy(StrategyEnum strategyEnum)
+    {
+        bugStrategyType = strategyEnum;
     }
 
     public int GetId()

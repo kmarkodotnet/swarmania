@@ -21,10 +21,11 @@ public class ObjectCollector : MonoBehaviour
 
     public void AddBug(string ownerId, int bugId, GameObject bug)
     {
-        if (_bugs.ContainsKey(ownerId))
+        if (!_bugs.ContainsKey(ownerId))
         {
-            _bugs[ownerId].Add(bugId, bug);
+            _bugs.Add(ownerId, new Dictionary<int, GameObject>());
         }
+        _bugs[ownerId].Add(bugId, bug);
     }
 
     public Dictionary<string, Dictionary<int, GameObject>> Bugs()
@@ -47,10 +48,11 @@ public class ObjectCollector : MonoBehaviour
 
     public void AddCastle(string ownerId, int castleId, GameObject castle)
     {
-        if (_castles.ContainsKey(ownerId))
+        if (!_castles.ContainsKey(ownerId))
         {
-            _castles[ownerId].Add(castleId, castle);
+            _castles.Add(ownerId, new Dictionary<int, GameObject>());
         }
+        _castles[ownerId].Add(castleId, castle);
     }
 
     public Dictionary<string, Dictionary<int, GameObject>> Castles()

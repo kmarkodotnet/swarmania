@@ -11,10 +11,25 @@ public class StrategyHandler : MonoBehaviour
     [SerializeField]
     private Power Power;
 
+    [SerializeField]
+    private float decisionRequestTimeInterval = 10000;
+
+    private DateTime? nextDecisionRequestTime = null;
+    private bool _isNewBorn;
+
+    System.Random _r;
+    StrategyEnum strategyType;
+
+
     private void Start()
     {
-        _strategy = gameObject.AddComponent<StrategyAi>();
-        //_strategy = gameObject.AddComponent<StrategyAlgo>();
+        PlayerId = gameObject.GetComponentInParent<Player>().GetId();
+        nextDecisionRequestTime = DateTime.Now.AddMilliseconds(decisionRequestTimeInterval);
+        //_strategy = gameObject.AddComponent<StrategyAi>();
+        _isNewBorn = false;
+        _strategy = gameObject.AddComponent<StrategyAlgo>();
+
+        _r = new System.Random();
     }
 
     public Power GetPower()
@@ -25,49 +40,56 @@ public class StrategyHandler : MonoBehaviour
     void Update()
     {
         RequestStrategyIfNeeded();
-        SelectNextBugTypeIfNeeded();
-        GetNewbornBugStrategy();
-        SwapBugStrategies();
+        if (IsNewBornBug())
+        {
+            SwapBugStrategies();
+        }
+    }
+
+    private bool IsNewBornBug()
+    {
+        return _isNewBorn;
+    }
+    public void SetNewBornBug()
+    {
+        _isNewBorn = true;
     }
 
     private void RequestStrategyIfNeeded()
     {
-        var enemyIds = FindObjectOfType<PlayerManager>().GetEnemyIds(PlayerId);
-        var enemiesPower = new Power();
-
-        foreach (var enemyId in enemyIds)
+        if (nextDecisionRequestTime.HasValue && DateTime.Now > nextDecisionRequestTime.Value)
         {
-            var enemyPower = FindObjectOfType<ObjectCollector>().GetPower(enemyId);
-            enemiesPower.Add(enemyPower);
+
+            var enemyIds = FindObjectOfType<PlayerManager>().GetEnemyIds(PlayerId);
+            var enemiesPower = new Power();
+
+            foreach (var enemyId in enemyIds)
+            {
+                var enemyPower = FindObjectOfType<ObjectCollector>().GetPower(enemyId);
+                enemiesPower.Add(enemyPower);
+            }
+
+            var myPower = FindObjectOfType<ObjectCollector>().GetPower(PlayerId);
+            _strategy.RequestStrategyDecision(gameObject, myPower, enemiesPower);
+
+            nextDecisionRequestTime = DateTime.Now.AddMilliseconds(decisionRequestTimeInterval);
         }
-
-        var myPower = FindObjectOfType<ObjectCollector>().GetPower(PlayerId);
-        _strategy.RequestStrategyDecision(gameObject, myPower, enemiesPower);
     }
 
-    public void RequestStrategyResponse()
-    {
-
-    }
 
     private void SwapBugStrategies()
     {
         
     }
 
-    private void GetNewbornBugStrategy()
+    public void BugCreatedByCastle(Bug bug)
     {
-        
-    }
-
-    private void SelectNextBugTypeIfNeeded()
-    {
-        
+        bug.SetBugStrategy(strategyType);
     }
 
 
     public void StrategyResponse(StrategyEnum response)
     {
-        Debug.Log("Response");
+        strategyType = response;
     }
 }

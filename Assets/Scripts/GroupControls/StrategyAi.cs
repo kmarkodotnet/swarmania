@@ -33,7 +33,9 @@ public class StrategyAi : Agent, IStrategy
     Off a várostól tavolabb
     Scoutt még távolabb
 
-    az egyes bug-ok típusát menet közben is lehet cserélni
+    - az egyes bug-ok típusát menet közben is lehet cserélni
+
+    - központi TICK, amire rá van kötve az összes időzített metódus
 
     */
     GameObject _go;
@@ -42,7 +44,6 @@ public class StrategyAi : Agent, IStrategy
         RequestDecision();
         Debug.Log("AI");
         _go = go;
-        Response();
     }
 
 

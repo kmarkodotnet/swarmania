@@ -242,7 +242,17 @@ public class CastleStateHandler : MonoBehaviour
     {
         var bugType = bugCreationQueue[0];
         GameObject bug = CreateBug(bugType.Value);
+
+        RegisterBugToPlayer(bug.GetComponent<Bug>());
+
         ShiftQueue();
+    }
+
+    private void RegisterBugToPlayer(Bug bug)
+    {
+        var ownerId = GetComponent<SelectableObject>().GetOwnerId();
+        var owner = FindObjectsOfType<Player>().First(o => o.GetId() == ownerId);
+        owner.RegisterBug(bug);
     }
 
     private void ShiftQueue()
