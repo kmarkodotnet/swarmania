@@ -19,8 +19,10 @@ public static class Context
 
     internal static void CreateBug(int bugNum)
     {
-        var bugType = castleBugPrefabs[bugNum].GetComponent<AttackableBug>().GetBugType();
+        var bugType = castleBugPrefabs[bugNum-1].GetComponent<AttackableBug>().GetBugType();
         castle.GetComponent<CastleStateHandler>().AddNewBugToQueue(bugType);
+        var n = castle.GetComponent<CastleStateHandler>().GetLevelXBugNumber(bugNum);
+        Debug.LogWarning($"BUGNUM {bugNum} is {n}");
     }
 
     public static bool IsContextActive()

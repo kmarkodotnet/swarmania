@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ResourceMap
+public class ResourceMap : MonoBehaviour
 {
     Dictionary<ResourceTypeEnum, List<ResourceLocation>> _resources;
 
-    public ResourceMap()
+    private void Awake()
     {
-        _resources = new Dictionary<ResourceTypeEnum, List<ResourceLocation>>();
-        var values = Enum.GetValues(typeof(ResourceTypeEnum));
-        foreach (ResourceTypeEnum enumValue in values)
+        var c = FindObjectsOfType<ResourceMap>().Length;
+        if (c > 1)
         {
-            _resources.Add(enumValue, new List<ResourceLocation>());
+            Destroy(gameObject);
+        }
+        else
+        {
+            DontDestroyOnLoad(gameObject);
         }
     }
 
@@ -31,7 +34,16 @@ public class ResourceMap
 
     public void Add(ResourceTypeEnum resource, ResourceLocation location)
     {
-        if(!KnownResource(resource, location))
+        if(_resources == null)
+        {
+            _resources = new Dictionary<ResourceTypeEnum, List<ResourceLocation>>();
+        }
+        if (!_resources.ContainsKey(resource))
+        {
+            _resources.Add(resource, new List<ResourceLocation>());
+            _resources[resource].Add(location);
+        }
+        else if(!KnownResource(resource, location))
             _resources[resource].Add(location);
     }
 

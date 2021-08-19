@@ -71,4 +71,8 @@ public class Bug : MonoBehaviour
     {
         return birthCastle;
     }
+    public StrategyEnum GetStrategy()
+    {
+        return bugStrategyType;
+    }
 }

@@ -95,17 +95,17 @@ public class BaseCommand : MonoBehaviour
 
     private void CreateBug3()
     {
-        Context.CreateBug(2);
+        Context.CreateBug(3);
     }
 
     private void CreateBug2()
     {
-        Context.CreateBug(1);
+        Context.CreateBug(2);
     }
 
     private void CreateBug1()
     {
-        Context.CreateBug(0);
+        Context.CreateBug(1);
     }
 
     private void Harvest()

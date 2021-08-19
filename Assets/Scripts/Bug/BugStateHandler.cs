@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BugStateHandler : MonoBehaviour
 {
-    [SerializeField] BugStateEnum state = BugStateEnum.Idle;
+    [SerializeField] BugStateEnum state = BugStateEnum.NewBorn;
     bool? decideAttack;
     [SerializeField] GameObject targetToAttack;
     [SerializeField] GameObject targetToHarvest;
@@ -16,10 +16,6 @@ public class BugStateHandler : MonoBehaviour
     public BugStateEnum GetState()
     {
         return state;
-    }
-    public void InitState(BugStateEnum value)
-    {
-        state = BugStateEnum.Idle;
     }
     public void SetState(BugStateEnum value)
     {
@@ -220,7 +216,13 @@ public class BugStateHandler : MonoBehaviour
                     var state = GetComponent<BugStateHandler>().GetState();
                     GetComponent<BugActionSet>().MoveToHarvest(targetToHarvest);
                 }
-            }            
+            }
+        }
+        else if (state == BugStateEnum.NewBorn)
+        {
+            var currentPosition = gameObject.transform.position;
+            var strategy = GetComponent<Bug>().GetStrategy();
+            GetComponent<BugActionSet>().ApplyStrategy(strategy, currentPosition);
         }
     }
 

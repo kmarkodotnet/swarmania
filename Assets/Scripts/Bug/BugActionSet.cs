@@ -166,4 +166,30 @@ public class BugActionSet : MonoBehaviour
     {
         GetComponent<BugStateHandler>().SetState(BugStateEnum.Harvest);
     }
+
+    internal void ApplyStrategy(StrategyEnum strategy, Vector3 currentPosition)
+    {
+        float distance = GetDistanceBasedOnStrategy(strategy);
+        var a = Random.Range(0, 360);
+        var xp = Mathf.Sin(a) * distance;
+        var yp = Mathf.Cos(a) * distance;
+        var xn = currentPosition.x + xp;
+        var yn = currentPosition.y + yp;
+        this.Move(new Vector2() { x = xn, y = yn });
+    }
+
+    private float GetDistanceBasedOnStrategy(StrategyEnum strategy)
+    {
+        switch (strategy)
+        {
+            case StrategyEnum.Defensive:
+                return 5f;
+            case StrategyEnum.Offensive:
+                return 10f;
+            case StrategyEnum.Scout:
+                return 15f;
+            default:
+                throw new System.Exception("No strategy");
+        }
+    }
 }

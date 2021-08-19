@@ -24,6 +24,7 @@ public class CastleStateHandler : MonoBehaviour
 
     float bugCreationPeriod = 0.1f;
     float bugCreationTimeLeft;
+    float bugTotalCreationTime;
     System.DateTime start;
 
     private void Start()
@@ -52,15 +53,34 @@ public class CastleStateHandler : MonoBehaviour
 
     public void AddNewBugToQueue(BugTypeEnum bugTypeEnum)
     {
-        Debug.Log("AddNewBugToQueue");
         var firstNullIndex = bugCreationQueue.ToList().IndexOf(null);
         if(firstNullIndex >= 0 && firstNullIndex < bugCreationQueue.Length)
         {
             bugCreationQueue[firstNullIndex] = bugTypeEnum;
-            Debug.Log("added");
         }
     }
 
+    public int GetLevel1BugNumber()
+    {
+        return GetLevelXBugNumber(1);
+    }
+    public int GetLevel2BugNumber()
+    {
+        return GetLevelXBugNumber(2);
+    }
+    public int GetLevel3BugNumber()
+    {
+        return GetLevelXBugNumber(3);
+    }
+    public int GetLevelXBugNumber(int level)
+    {
+        var ds = new DictionaryService();
+        if (bugCreationQueue != null && bugCreationQueue.Length > 0)
+        {
+            return bugCreationQueue.Count(b => b.HasValue && ds.GetBugLevel(b.Value) == level);
+        }
+        return 0;
+    }
     List<ResourceTypeEnum> GetResourceTypes()
     {
         var rts = new List<ResourceTypeEnum>();
@@ -154,6 +174,15 @@ public class CastleStateHandler : MonoBehaviour
         }
     }
 
+    internal System.Tuple<int, float> GetActualBugTypeAndPercentage()
+    {
+        if (IsAnyBugInQueue())
+        {
+            return new System.Tuple<int, float>(new DictionaryService().GetBugLevel(bugCreationQueue[0].Value), 1 - (bugCreationTimeLeft / bugTotalCreationTime));
+        }
+        return null;
+    }
+
     private bool IsAnyBugInQueue()
     {
         if (bugCreationQueue == null || bugCreationQueue.Length <= 0)
@@ -191,7 +220,8 @@ public class CastleStateHandler : MonoBehaviour
         {
             Debug.Log("Create");
             TakeResourceForCreation(bugCreationQueue[0].Value);
-            bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
+            bugTotalCreationTime = GetCreationTimeOfBug(bugCreationQueue[0].Value); ;
+            bugCreationTimeLeft = bugTotalCreationTime;
             BugCreationInProgress = true;
         }
         else

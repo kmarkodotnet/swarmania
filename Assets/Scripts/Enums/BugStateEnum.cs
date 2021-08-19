@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public enum BugStateEnum
 {
+    NewBorn,
     Idle,
     Move,
     MoveToAttack,

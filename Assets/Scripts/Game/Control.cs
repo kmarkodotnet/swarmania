@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Control : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Control : MonoBehaviour
     Dictionary<int, GameObject> selectedBugs;
 
     public static bool ControlClickLocked = false;
-
+    GameObject SelectedCastle;
 
     private void Awake()
     {
@@ -109,6 +110,12 @@ public class Control : MonoBehaviour
             srs[i].transform.position = Camera.main.ViewportToWorldPoint(basePoint[path]);
             srs[i].transform.localScale = (baseSize[path] * Camera.main.orthographicSize) / 10;
         }
+        if (SelectedCastle != null)
+        { 
+            var csh = SelectedCastle.GetComponent<CastleStateHandler>();
+            RefreshBugInQueueCounters(new int[3] { csh.GetLevel1BugNumber(), csh.GetLevel2BugNumber(), csh.GetLevel3BugNumber() });
+            GetBugCreationPercentage();
+        }
         //foreach (var sr in srs)
         //{
         //    if(Camera.main.orthographicSize> 0)
@@ -116,6 +123,19 @@ public class Control : MonoBehaviour
         //}
     }
 
+    private void GetBugCreationPercentage()
+    {
+        var csh = SelectedCastle.GetComponent<CastleStateHandler>();
+        var typeAndPercentage = csh.GetActualBugTypeAndPercentage();
+        if(typeAndPercentage != null && typeAndPercentage.Item2 < 1)
+        {
+            RefreshInprogressBugAndPercentage(typeAndPercentage.Item1, typeAndPercentage.Item2);
+        }
+        else
+        {
+            RefreshNoInprogressBug();
+        }
+    }
 
     private void SetActionHarvestIcon(bool active)
     {
@@ -178,16 +198,12 @@ public class Control : MonoBehaviour
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
         }
         Context.SetupCastle(gameObject, bugPrefabs);
+        SelectedCastle = gameObject;
     }
 
     internal void ClearCastleBugs()
     {
 
-    }
-
-    public void RemoveBugIcon(int id)
-    {
-        SetBugIcon(null, id);
     }
 
     internal void SetBugIcons(Dictionary<int, GameObject> selectedBugs)
@@ -246,31 +262,6 @@ public class Control : MonoBehaviour
         SetActionHarvestIcon(true);
     }
 
-    public void SetBugIcon(Sprite bugSprite, int id)
-    {
-        //var cs = new CommonService();
-
-        //var castle = cs.GetChildrenByName(transform, "castle");
-        //if(castle.gameObject.activeSelf)
-        //{
-        //    RemoveCastleIcon();
-        //}
-
-        //var bugs = cs.GetChildrenByName(transform, "bugs");
-        //bugs.gameObject.SetActive(transform);
-
-        //var iconsPlaceholder = cs.GetChildrenByName(bugs, "iconsPlaceholder");
-        //int index = GetNextEmptyPlaceholderIndex(iconsPlaceholder);
-        //var bugTypePlaceholder = cs.GetChildrenByName(iconsPlaceholder, "bugTypePlaceholder" + index);
-
-        //bugTypePlaceholder.gameObject.GetComponent<BugPlaceholder>().SetId(id);
-        //var bugIcon = cs.GetChildrenByName(bugTypePlaceholder, "bugIcon");
-        //bugTypePlaceholder.localScale = new Vector3(1f, 1f, 1);
-
-        //bugIcon.GetComponent<SpriteRenderer>().sprite = bugSprite;
-        //bugIcon.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
-    }
-
     private int GetNextEmptyPlaceholderIndex(Transform iconsPlaceholder)
     {
         var cs = new CommonService();
@@ -309,7 +300,47 @@ public class Control : MonoBehaviour
 
         RemoveControl();
     }
-    
+    private void RefreshNoInprogressBug()
+    {
+        RefreshInprogressBugAndPercentage(-1, 0);
+    }
+    private void RefreshInprogressBugAndPercentage(int num, float percent)
+    {
+        SetControl();
+        var cs = new CommonService();
+        var castle = cs.GetChildrenByName(transform, "castle");
+        var bugTypeChooser = cs.GetChildrenByName(castle, "bugTypeChooser");
+        for (int i = 0; i < 3; i++)
+        {
+            var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
+            var counter = cs.GetChildrenByName(bugSpritePlaceholder, "counter");
+            var canvas = cs.GetChildrenByName(counter, "Canvas");
+            var slider = cs.GetChildrenByName(canvas, "Slider");
+            if(i == num - 1)
+            {
+                slider.gameObject.SetActive(true);
+                slider.gameObject.GetComponent<Slider>().value = percent;
+            }else
+            {
+                slider.gameObject.SetActive(false);
+            }
+        }
+    }
+    private void RefreshBugInQueueCounters(int[] nums)
+    {
+        SetControl();
+        var cs = new CommonService();
+        var castle = cs.GetChildrenByName(transform, "castle");
+        var bugTypeChooser = cs.GetChildrenByName(castle, "bugTypeChooser");
+        for (int i = 0; i < 3; i++)
+        {
+            var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
+            var counter = cs.GetChildrenByName(bugSpritePlaceholder, "counter");
+            var canvas = cs.GetChildrenByName(counter, "Canvas");
+            var text = cs.GetChildrenByName(canvas, "Text");
+            text.gameObject.GetComponent<Text>().text = nums[i].ToString();
+        }
+    }
 
     public void SetupCastleIcon(Sprite castleSprite)
     {
@@ -333,6 +364,12 @@ public class Control : MonoBehaviour
             bugSpritePlaceholder.gameObject.SetActive(true);
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = null;
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
+            var counter = cs.GetChildrenByName(bugSpritePlaceholder, "counter");
+            var canvas = cs.GetChildrenByName(counter, "Canvas");
+            var text = cs.GetChildrenByName(canvas, "Text");
+            text.gameObject.GetComponent<Text>().text = "1";
+            Debug.LogWarning($"canvas {canvas==null} - text {text == null} - text.gameObject.GetComponent<Text>() {text.gameObject.GetComponent<Text>() == null}");
+            //counter.transform.localPosition = bugSpritePlaceholder.transform.localPosition;
         }
     }
 
@@ -353,7 +390,6 @@ public class Control : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
-            //var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
             bugSpritePlaceholder.gameObject.SetActive(false);
         }
         RemoveControl();

@@ -9,6 +9,6 @@ public class LivingObject : MonoBehaviour
 
     public float GetLookDistance()
     {
-        return lookDistance;
+        return lookDistance*10;
     }
 }

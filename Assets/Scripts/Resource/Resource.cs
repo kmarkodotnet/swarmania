@@ -5,6 +5,11 @@ public class Resource : MonoBehaviour
     [SerializeField] ResourceTypeEnum resourceType;
     [SerializeField] float resourceAmmount = 1;
 
+    private void Start()
+    {
+        FindObjectOfType<ResourceMap>().Add(resourceType, new ResourceLocation {  X = gameObject.transform.position.x, Y = gameObject.transform.position.y});
+    }
+
     public ResourceTypeEnum GetResourceType()
     {
         return resourceType;
