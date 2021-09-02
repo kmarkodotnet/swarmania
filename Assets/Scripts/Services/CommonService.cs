@@ -95,8 +95,9 @@ public class CommonService
         float nearestDistance = 0;
 
         nearResources = nearResources.Where(nr => IsAnyResource(nr.gameObject));
-
-        foreach (var unit in nearResources.Where(r => me.GetComponent<ResourceHandler>().GetPreferedResourceType() == r.GetComponent<Resource>().GetResourceType()))
+        var preferedResourceType = me.GetComponent<ResourceHandler>().GetPreferedResourceType();
+        var filteredResources = nearResources.Where(r => preferedResourceType == r.GetComponent<Resource>().GetResourceType());
+        foreach (var unit in filteredResources)
         {
             var myCollider = me.GetComponent<CapsuleCollider2D>();
             var otherCollider = unit;

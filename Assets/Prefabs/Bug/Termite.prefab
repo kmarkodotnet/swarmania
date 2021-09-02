@@ -212,6 +212,8 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
 --- !u!114 &7616570298016439381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +270,7 @@ MonoBehaviour:
   bugCreationResourceAmmount: 10
   bugCreationTime: 1
   birthCastle: {fileID: 0}
+  bugStrategyType: 0
 --- !u!114 &1719644254745810880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +357,8 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
 --- !u!1 &2751454094709868837
 GameObject:
   m_ObjectHideFlags: 0

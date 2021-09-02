@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6456756900475907527}
   - component: {fileID: 1815709653559818192}
   - component: {fileID: 1978941712216941302}
+  - component: {fileID: 4687769268314539400}
   m_Layer: 10
   m_Name: Scarab
   m_TagString: Untagged
@@ -212,6 +213,8 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
 --- !u!114 &6456756900475907525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +271,7 @@ MonoBehaviour:
   bugCreationResourceAmmount: 10
   bugCreationTime: 1
   birthCastle: {fileID: 0}
+  bugStrategyType: 0
 --- !u!114 &6456756900475907530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +358,25 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
+--- !u!114 &4687769268314539400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6456756900777138485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d16f1d058bcbdd44ae9b880016f2639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preferedResourceType: 0
+  resourceType: 0
+  maxResourceCarryAmmount: 1
+  resourceCarryAmmount: 0
+  periodicity: 1
 --- !u!1 &9181141006393466904
 GameObject:
   m_ObjectHideFlags: 0

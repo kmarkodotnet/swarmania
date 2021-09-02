@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 3817886593805151031}
   - component: {fileID: 2019643484}
   - component: {fileID: 1066103532464534434}
+  - component: {fileID: 2913400923701086737}
   m_Layer: 10
   m_Name: LadyBug
   m_TagString: bug
@@ -212,6 +213,8 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
 --- !u!114 &72929213883540418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +271,7 @@ MonoBehaviour:
   bugCreationResourceAmmount: 10
   bugCreationTime: 1
   birthCastle: {fileID: 0}
+  bugStrategyType: 0
 --- !u!114 &2751454094497583415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -354,6 +358,25 @@ MonoBehaviour:
   ownerId: 1
   selectionPrefab: {fileID: 4758933824430707192, guid: d9dfacf637b4b964ea0808010fdbe01b,
     type: 3}
+  menuIcon: {fileID: 0}
+  menuIconRo: {fileID: 0}
+--- !u!114 &2913400923701086737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2751454094116689668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d16f1d058bcbdd44ae9b880016f2639, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  preferedResourceType: 0
+  resourceType: 0
+  maxResourceCarryAmmount: 1
+  resourceCarryAmmount: 0
+  periodicity: 1
 --- !u!1 &2751454094709868837
 GameObject:
   m_ObjectHideFlags: 0
