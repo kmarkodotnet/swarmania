@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -147,5 +148,16 @@ public class CommonService
     internal bool IsAnyResource(GameObject targetResource)
     {
         return (targetResource.GetComponent<Resource>() != null && targetResource.GetComponent<Resource>().GetTotalResourceAmmount() > 0);
+    }
+
+    public List<ResourceTypeEnum> GetResourceTypes()
+    {
+        var rts = new List<ResourceTypeEnum>();
+        var resourceTypes = System.Enum.GetValues(typeof(ResourceTypeEnum));
+        foreach (ResourceTypeEnum resourceType in resourceTypes)
+        {
+            rts.Add(resourceType);
+        }
+        return rts;
     }
 }

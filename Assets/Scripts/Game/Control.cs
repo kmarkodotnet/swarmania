@@ -27,6 +27,7 @@ public class Control : MonoBehaviour
         }
     }
 
+
     //public bool IsSelectionActive()
     //{
     //    return selectedBugs != null && selectedBugs.Count > 0;
@@ -177,6 +178,12 @@ public class Control : MonoBehaviour
         var background = cs.GetChildrenByName(transform, "background");
         background.gameObject.SetActive(false);
     }
+    internal void RemoveResources()
+    {
+        var cs = new CommonService();
+        var resources = cs.GetChildrenByName(transform, "resources");
+        resources.gameObject.SetActive(false);
+    }
 
     internal void SetupCastleBugs(GameObject gameObject)
     {
@@ -199,6 +206,44 @@ public class Control : MonoBehaviour
         }
         Context.SetupCastle(gameObject, bugPrefabs);
         SelectedCastle = gameObject;
+        RefreshResourcesNumber(SelectedCastle);
+    }
+
+    private void RefreshResourcesNumber(GameObject selectedCastle)
+    {
+        var cs = new CommonService();
+        var resources = cs.GetChildrenByName(transform, "resources");
+        var canvas = cs.GetChildrenByName(resources, "Canvas");
+
+        var resourceTypes = cs.GetResourceTypes();
+        var ors = selectedCastle.GetComponent<CastleStateHandler>().GetOwnedResources();
+        var x = 0;
+        foreach (var item in resourceTypes)
+        {
+            switch (item)
+            {
+                case ResourceTypeEnum.Honey:
+                    var honeyText = cs.GetChildrenByName(canvas, "HoneyText");
+                    honeyText.GetComponent<Text>().text = ors[x].ToString();
+                    break;
+                case ResourceTypeEnum.Meat:
+                    var meatText = cs.GetChildrenByName(canvas, "MeatText");
+                    meatText.GetComponent<Text>().text = ors[x].ToString();
+                    break;
+                case ResourceTypeEnum.Seed:
+                    var seedText = cs.GetChildrenByName(canvas, "SeedText");
+                    seedText.GetComponent<Text>().text = ors[x].ToString();
+                    break;
+            }
+            x++;
+        }
+    }
+
+    internal void SetupResources()
+    {
+        var cs = new CommonService();
+        var resources = cs.GetChildrenByName(transform, "resources");
+        resources.gameObject.SetActive(true);
     }
 
     internal void ClearCastleBugs()
@@ -392,7 +437,9 @@ public class Control : MonoBehaviour
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
             bugSpritePlaceholder.gameObject.SetActive(false);
         }
+        RemoveResources();
         RemoveControl();
+        SelectedCastle = null;
     }
 
 

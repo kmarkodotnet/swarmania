@@ -20,6 +20,7 @@ public class SelectableCastle : SelectableObject
     {
         FindObjectOfType<Control>().SetupCastleIcon(sprite);
         FindObjectOfType<Control>().SetupCastleBugs(gameObject);
+        FindObjectOfType<Control>().SetupResources();
     }
 
     protected override string GetIconGameObjectName()

@@ -81,19 +81,11 @@ public class CastleStateHandler : MonoBehaviour
         }
         return 0;
     }
-    List<ResourceTypeEnum> GetResourceTypes()
-    {
-        var rts = new List<ResourceTypeEnum>();
-        var resourceTypes = System.Enum.GetValues(typeof(ResourceTypeEnum));
-        foreach (ResourceTypeEnum resourceType in resourceTypes)
-        {
-            rts.Add(resourceType);
-        }
-        return rts;
-    }
+    
     private void InitializeResourceAmmount()
     {
-        var resourceTypes = GetResourceTypes();
+        var cs = new CommonService();
+        var resourceTypes = cs.GetResourceTypes();
         ownedResourceAmmount = new float[resourceTypes.Count];
         int x = 0;
         foreach (ResourceTypeEnum resourceType in resourceTypes)
@@ -102,6 +94,11 @@ public class CastleStateHandler : MonoBehaviour
             x++;
         }
         ownedResourceAmmount[resourceTypes.IndexOf(preferedResourceType)] += startValueOfPreferedResourceType;
+    }
+
+    public float[] GetOwnedResources()
+    {
+        return ownedResourceAmmount;
     }
 
     public float GetResourcesSum()
@@ -236,13 +233,15 @@ public class CastleStateHandler : MonoBehaviour
         var resourceTypeNeeded = bugPrefabs[bugPrefabKeys.ToList().IndexOf(bugType)].GetComponent<Bug>().GetBugCreationResoucreType();
         var resourceAmmountNeeded = bugPrefabs[bugPrefabKeys.ToList().IndexOf(bugType)].GetComponent<Bug>().GetBugCreationResourceAmmount();
 
-        var resourceTypes = GetResourceTypes();
+        var cs = new CommonService();
+        var resourceTypes = cs.GetResourceTypes();
         ownedResourceAmmount[resourceTypes.IndexOf(resourceTypeNeeded)] -= resourceAmmountNeeded;
     }
 
     public void AddResource(ResourceTypeEnum resourceType, float ammount)
     {
-        var resourceTypes = GetResourceTypes();
+        var cs = new CommonService();
+        var resourceTypes = cs.GetResourceTypes();
         ownedResourceAmmount[resourceTypes.IndexOf(resourceType)] += ammount;
     }
 
@@ -252,7 +251,8 @@ public class CastleStateHandler : MonoBehaviour
         var resourceAmmountNeeded = bugPrefabs[bugPrefabKeys.ToList().IndexOf(bugType)].GetComponent<Bug>().GetBugCreationResourceAmmount();
 
         var result = false;
-        var resourceTypes = GetResourceTypes();
+        var cs = new CommonService();
+        var resourceTypes = cs.GetResourceTypes();
         for (int i = 0; i < ownedResourceAmmount.Length; i++)
         {
             if (resourceTypes[i]== resourceTypeNeeded && ownedResourceAmmount[i] - resourceAmmountNeeded >= 0)
