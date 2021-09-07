@@ -124,6 +124,11 @@ public class Control : MonoBehaviour
         //}
     }
 
+    private void FixedUpdate()
+    {
+        RefreshResourcesNumber(SelectedCastle);
+    }
+
     private void GetBugCreationPercentage()
     {
         var csh = SelectedCastle.GetComponent<CastleStateHandler>();
@@ -211,31 +216,34 @@ public class Control : MonoBehaviour
 
     private void RefreshResourcesNumber(GameObject selectedCastle)
     {
-        var cs = new CommonService();
-        var resources = cs.GetChildrenByName(transform, "resources");
-        var canvas = cs.GetChildrenByName(resources, "Canvas");
-
-        var resourceTypes = cs.GetResourceTypes();
-        var ors = selectedCastle.GetComponent<CastleStateHandler>().GetOwnedResources();
-        var x = 0;
-        foreach (var item in resourceTypes)
+        if(selectedCastle != null && selectedCastle.GetComponent<CastleStateHandler>() != null)
         {
-            switch (item)
+            var cs = new CommonService();
+            var resources = cs.GetChildrenByName(transform, "resources");
+            var canvas = cs.GetChildrenByName(resources, "Canvas");
+
+            var resourceTypes = cs.GetResourceTypes();
+            var ors = selectedCastle.GetComponent<CastleStateHandler>().GetOwnedResources();
+            var x = 0;
+            foreach (var item in resourceTypes)
             {
-                case ResourceTypeEnum.Honey:
-                    var honeyText = cs.GetChildrenByName(canvas, "HoneyText");
-                    honeyText.GetComponent<Text>().text = ors[x].ToString();
-                    break;
-                case ResourceTypeEnum.Meat:
-                    var meatText = cs.GetChildrenByName(canvas, "MeatText");
-                    meatText.GetComponent<Text>().text = ors[x].ToString();
-                    break;
-                case ResourceTypeEnum.Seed:
-                    var seedText = cs.GetChildrenByName(canvas, "SeedText");
-                    seedText.GetComponent<Text>().text = ors[x].ToString();
-                    break;
+                switch (item)
+                {
+                    case ResourceTypeEnum.Honey:
+                        var honeyText = cs.GetChildrenByName(canvas, "HoneyText");
+                        honeyText.GetComponent<Text>().text = ors[x].ToString();
+                        break;
+                    case ResourceTypeEnum.Meat:
+                        var meatText = cs.GetChildrenByName(canvas, "MeatText");
+                        meatText.GetComponent<Text>().text = ors[x].ToString();
+                        break;
+                    case ResourceTypeEnum.Seed:
+                        var seedText = cs.GetChildrenByName(canvas, "SeedText");
+                        seedText.GetComponent<Text>().text = ors[x].ToString();
+                        break;
+                }
+                x++;
             }
-            x++;
         }
     }
 

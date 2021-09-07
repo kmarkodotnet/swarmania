@@ -187,8 +187,19 @@ public class SelectionCoreComponent : MonoBehaviour
         var viewportBounds =
             Utils.GetViewportBounds(camera, mousePosition1, Input.mousePosition);
         var c = gameObject.transform.position;
+        
         c = Camera.main.WorldToViewportPoint(c);
+        c.z = viewportBounds.extents.z;
         var isSelected =  viewportBounds.Contains(c);
+
+        if (!isSelected && viewportBounds.extents.x < Mathf.Epsilon && viewportBounds.extents.y < Mathf.Epsilon )
+        {
+            var bs = gameObject.GetComponent<CapsuleCollider2D>().bounds;
+            var p = viewportBounds.center;
+            p = Camera.main.ViewportToWorldPoint(p);
+            p.z = bs.extents.z;
+            isSelected = bs.Contains(p);
+        }
 
         return isSelected;
     }
