@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using Assets.Scripts.Enums;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using Unity.Barracuda;
@@ -34,14 +35,6 @@ public class EntityCollection : MonoBehaviour
 
     }
 
-    private void Start()
-    {
-        //var breeder = FindObjectOfType<AiBreeder>();
-        //maxHordesNumber = breeder.GetPlayersNum() * breeder.GetMaxN() * breeder.GetMaxM()*2;
-        
-        //breeder.Breed();
-    }
-
     private Dictionary<string, List<HordePoolObject>> CreateHordePool(int v)
     {
         var hpd = new Dictionary<string, List<HordePoolObject>>();
@@ -55,7 +48,7 @@ public class EntityCollection : MonoBehaviour
                 hp.Add(new HordePoolObject
                 {
                     Horde = h,
-                    State = HordePoolObject.HordePoolObjectState.ReadyToUse
+                    State = HordePoolObjectState.ReadyToUse
                 });
             }
             hpd.Add(team, hp);
@@ -82,7 +75,7 @@ public class EntityCollection : MonoBehaviour
         {
             for (int i = 0; i < _hordePool[hp.Key].Count; i++)
             {
-                _hordePool[hp.Key][i].State = HordePoolObject.HordePoolObjectState.ReadyToUse;
+                _hordePool[hp.Key][i].State = HordePoolObjectState.ReadyToUse;
             }
         }
     }
@@ -101,12 +94,12 @@ public class EntityCollection : MonoBehaviour
     private Horde GetHorde(string teamId)
     {
         Debug.Log(teamId);
-        var readyToUseHorde = _hordePool[teamId].FirstOrDefault(h => h.State == HordePoolObject.HordePoolObjectState.ReadyToUse);
+        var readyToUseHorde = _hordePool[teamId].FirstOrDefault(h => h.State == HordePoolObjectState.ReadyToUse);
         if(readyToUseHorde == null)
         {
             var x = string.Join(", ",_hordePool.Select(h => h.Key));
         }
-        readyToUseHorde.State = HordePoolObject.HordePoolObjectState.Used;
+        readyToUseHorde.State = HordePoolObjectState.Used;
         return readyToUseHorde.Horde;
     }
 

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 
 public class AttackableBug : MonoBehaviour
@@ -16,30 +13,30 @@ public class AttackableBug : MonoBehaviour
             if (new CommonService().GetCursorState() != CursorStateEnum.Attack)
             {
                 new CommonService().SetCursorState(CursorStateEnum.Attack, FindObjectOfType<Config>().GetAttackCursorTexture());
-            }else if (Context.IsAttack())
+            }else if (ControlContext.IsAttack())
             {
-                Context.ActivateAttack();
+                ControlContext.ActivateAttack();
             }
-            if (!Context.IsContextActive() && Input.GetMouseButtonDown(1))
+            if (!ControlContext.IsContextActive() && Input.GetMouseButtonDown(1))
             {
                 //TODO: context-ben félrekattint, akkor legyen lezárva
                 //TODO: context-ben jobb-al kattint, legyen szintén lezárva
                 FindObjectOfType<SelectionControl>().Attack(gameObject);
-                Context.FinishContext();
+                ControlContext.FinishContext();
             }
-            if (Context.IsContextActive() && Context.IsAttack() && Input.GetMouseButtonDown(0))
+            if (ControlContext.IsContextActive() && ControlContext.IsAttack() && Input.GetMouseButtonDown(0))
             {
                 FindObjectOfType<SelectionControl>().Attack(gameObject);
-                Context.FinishContext();
+                ControlContext.FinishContext();
             }
         }
     }
 
     private void OnMouseExit()
     {
-        if (Context.IsAttack())
+        if (ControlContext.IsAttack())
         {
-            Context.InactivateAttack();
+            ControlContext.InactivateAttack();
         }
     }
 

@@ -6,7 +6,6 @@ public class SelectionControl : MonoBehaviour
 {
     List<GameObject> SelectedObjects;
     GameObject AttackedObject;
-    Vector2 groundPoint;
 
     private void Awake()
     {
@@ -89,7 +88,7 @@ public class SelectionControl : MonoBehaviour
         return SelectedObjects;
     }
 
-    public void CleanSelectableObject(GameObject selectableObject)
+    public void RemoveSelectableObject(GameObject selectableObject)
     {
         SelectedObjects.Remove(selectableObject);
     }

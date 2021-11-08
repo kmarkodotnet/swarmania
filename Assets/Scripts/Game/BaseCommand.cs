@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BaseCommand : MonoBehaviour
 {
@@ -10,14 +7,6 @@ public class BaseCommand : MonoBehaviour
 
     [SerializeField] protected Sprite sprite;
     [SerializeField] protected Sprite spriteHover;
-    //[SerializeField]
-    //public ICommandClick click;
-
-    //public ICommandClick clickV
-    //{
-    //    get { return click; }
-    //    set { click = value; }
-    //}
 
     public void SetSprite(Sprite sprite)
     {
@@ -95,37 +84,37 @@ public class BaseCommand : MonoBehaviour
 
     private void CreateBug3()
     {
-        Context.CreateBug(3);
+        ControlContext.CreateBug(3);
     }
 
     private void CreateBug2()
     {
-        Context.CreateBug(2);
+        ControlContext.CreateBug(2);
     }
 
     private void CreateBug1()
     {
-        Context.CreateBug(1);
+        ControlContext.CreateBug(1);
     }
 
     private void Harvest()
     {
-        Context.Harvest();
+        ControlContext.Harvest();
     }
 
     private void Attack()
     {
-        Context.Attack();
+        ControlContext.Attack();
     }
 
     private void Stop()
     {
         FindObjectOfType<SelectionCoreComponent>().Stop();
-        Context.FinishContext();
+        ControlContext.FinishContext();
     }
 
     private void Move()
     {
-        Context.Move();
+        ControlContext.Move();
     }
 }

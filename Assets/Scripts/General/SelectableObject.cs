@@ -120,7 +120,7 @@ public class SelectableObject : MonoBehaviour
         RemoveIcon();
         selectionCoreComponent.RemoveSelected(id, gameObject);
         Destroy(selection);
-        FindObjectOfType<SelectionControl>().CleanSelectableObject(gameObject);
+        FindObjectOfType<SelectionControl>().RemoveSelectableObject(gameObject);
         IsSelected = false;
         selectionCoreComponent.RefreshSelectedIcons();
     }

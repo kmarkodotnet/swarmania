@@ -1,7 +1,6 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
-public static class Context
+public static class ControlContext
 {
     private static bool isContextActive { get; set; }
     private static bool isMove { get; set; }
@@ -78,11 +77,13 @@ public static class Context
         var cs = new CommonService();
         cs.SetCursorState(CursorStateEnum.Attack, Config.attackCursorTextureStatic);
     }
+
     public static void InactivateAttack()
     {
         var cs = new CommonService();
         cs.SetCursorState(CursorStateEnum.Attack, Config.inactiveAttackCursorTextureStatic);
     }
+
     public static bool IsAttack()
     {
         return IsContextActive() && isAttack;

@@ -35,7 +35,7 @@ public class SelectionCoreComponent : MonoBehaviour
     }
     private void OnMouseUp()
     {
-        if (Context.IsMove())
+        if (ControlContext.IsMove())
         {
             Debug.Log("lets move");
             Move();
@@ -44,22 +44,22 @@ public class SelectionCoreComponent : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Context.IsMove())
+        if (ControlContext.IsMove())
         {
-            Context.ActivateMove();
+            ControlContext.ActivateMove();
         }
     }
     private void OnMouseExit()
     {
-        if (Context.IsMove())
+        if (ControlContext.IsMove())
         {
-            Context.InactivateMove();
+            ControlContext.InactivateMove();
         }
     }
 
     void Update()
     {
-        if (!Context.IsContextActive())
+        if (!ControlContext.IsContextActive())
         {
             if (!Control.ControlClickLocked)
             {
@@ -117,7 +117,7 @@ public class SelectionCoreComponent : MonoBehaviour
     public void Move()
     {
         FindObjectOfType<SelectionControl>().Move();
-        Context.FinishContext();
+        ControlContext.FinishContext();
     }
 
     void OnGUI()

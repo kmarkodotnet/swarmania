@@ -22,17 +22,17 @@ public class Resource : MonoBehaviour
 
     private void OnMouseOver()
     {
-        if (Context.IsHarvest())
+        if (ControlContext.IsHarvest())
         {
-            Context.ActivateHarvest();
+            ControlContext.ActivateHarvest();
             if (Input.GetMouseButtonDown(0))
             {
                 FindObjectOfType<SelectionControl>().Harvest(gameObject);
-                Context.FinishContext();
+                ControlContext.FinishContext();
             }
         }else
         {
-            if (!Context.IsContextActive())
+            if (!ControlContext.IsContextActive())
             {
                 var cs = new CommonService();
                 cs.SetCursorState(CursorStateEnum.Harvest, FindObjectOfType<Config>().GetHarvestCursorTexture());
@@ -40,16 +40,16 @@ public class Resource : MonoBehaviour
             if (Input.GetMouseButtonDown(1))
             {
                 FindObjectOfType<SelectionControl>().Harvest(gameObject);
-                Context.FinishContext();
+                ControlContext.FinishContext();
             }
         }
     }
 
     private void OnMouseExit()
     {
-        if (Context.IsHarvest())
+        if (ControlContext.IsHarvest())
         {
-            Context.InactivateHarvest();
+            ControlContext.InactivateHarvest();
         }
     }
 

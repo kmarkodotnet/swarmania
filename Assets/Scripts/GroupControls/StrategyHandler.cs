@@ -50,6 +50,7 @@ public class StrategyHandler : MonoBehaviour
     {
         return _isNewBorn;
     }
+
     public void SetNewBornBug()
     {
         _isNewBorn = true;
@@ -75,7 +76,6 @@ public class StrategyHandler : MonoBehaviour
             nextDecisionRequestTime = DateTime.Now.AddMilliseconds(decisionRequestTimeInterval);
         }
     }
-
 
     private void SwapBugStrategies()
     {

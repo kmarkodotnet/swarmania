@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-public enum CastleTypeEnum
+﻿public enum CastleTypeEnum
 {
-    Ant,
-    Termite,
-    Beetle
+    Ant = 1,
+    Termite = 2,
+    Beetle = 3
 }

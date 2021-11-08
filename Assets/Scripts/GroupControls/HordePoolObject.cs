@@ -1,11 +1,7 @@
-﻿public class HordePoolObject
+﻿using Assets.Scripts.Enums;
+
+public class HordePoolObject
 {
     public Horde Horde { get; set; }
-    public HordePoolObjectState State { get; set; }
-
-    public enum HordePoolObjectState
-    {
-        ReadyToUse,
-        Used
-    }
+    public HordePoolObjectState State { get; set; }    
 }
