@@ -37,11 +37,6 @@ public class Bug : MonoBehaviour
     private void Update()
     {
         current++;
-
-        if (current > 150)
-        {
-            //Debug.LogWarning(bugId);
-        }
     }
 
     public void SetBugStrategy(StrategyEnum strategyEnum)

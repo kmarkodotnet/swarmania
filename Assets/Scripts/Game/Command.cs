@@ -1,23 +1,11 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class BaseCommand : MonoBehaviour
+public class Command : MonoBehaviour
 {
     [SerializeField] 
     protected CommandTypeEnum CommandType;
-
     [SerializeField] protected Sprite sprite;
     [SerializeField] protected Sprite spriteHover;
-    //[SerializeField]
-    //public ICommandClick click;
-
-    //public ICommandClick clickV
-    //{
-    //    get { return click; }
-    //    set { click = value; }
-    //}
 
     public void SetSprite(Sprite sprite)
     {

@@ -1,9 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using Unity.Barracuda;
-using Unity.MLAgents;
-using Unity.MLAgents.Policies;
 using UnityEngine;
 
 public class AiBreeder : MonoBehaviour

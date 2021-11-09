@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BugStateHandler : MonoBehaviour
 {
@@ -11,7 +8,6 @@ public class BugStateHandler : MonoBehaviour
     [SerializeField] GameObject targetToHarvest;
     [SerializeField] GameObject targetCastle;
     [SerializeField] float carriedResource;
-    bool requested = false;
 
     public BugStateEnum GetState()
     {
@@ -20,15 +16,7 @@ public class BugStateHandler : MonoBehaviour
     public void SetState(BugStateEnum value)
     {
         if (state != BugStateEnum.Dead)
-        {
-            if(value == BugStateEnum.Idle)
-            {
-                //Debug.Log($"BUG {GetComponent<Bug>().GetId()} CHANGE STATE {state} => {value}");
-            }
-            else
-            {
-                //Debug.Log($"BUG {GetComponent<Bug>().GetId()} CHANGE STATE {state} => {value}");
-            }            
+        {         
             state = value;
         }
     }
@@ -36,7 +24,6 @@ public class BugStateHandler : MonoBehaviour
     public void SetDecideAttack(bool decideAttack)
     {
         this.decideAttack = decideAttack;
-        requested = false;
     }
     public void SetNoAttackTarget(GameObject targetToDelete)
     {
@@ -63,7 +50,6 @@ public class BugStateHandler : MonoBehaviour
     }
     public void HandleStates()
     {
-        //Debug.Log(state);
         if(GetComponent<Health>().GetHealth() <= 0)
         {
             SetState(BugStateEnum.Dead);
@@ -163,7 +149,6 @@ public class BugStateHandler : MonoBehaviour
 
                 if (currentDistance.distance <= attackDistance)
                 {
-                    //Debug.Log($"{gameObject.GetComponent<SelectableObject>().GetOwnerId()}:{gameObject.GetComponent<Bug>().GetId()} - set attack state - {targetToAttack.GetComponent<Bug>().GetId()}");
                     GetComponent<BugActionSet>().Attack();
                 }
             }

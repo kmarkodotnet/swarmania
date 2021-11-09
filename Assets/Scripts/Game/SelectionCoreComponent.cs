@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class SelectionCoreComponent : MonoBehaviour
 {
@@ -9,7 +7,6 @@ public class SelectionCoreComponent : MonoBehaviour
 
     bool isSelecting = false;
     Vector3 mousePosition1;
-    bool isSelected = false;
     Dictionary<int, GameObject> selectedBugs;
 
     GameObject selectedCastle;
@@ -127,14 +124,7 @@ public class SelectionCoreComponent : MonoBehaviour
             var rect = Utils.GetScreenRect(mousePosition1, Input.mousePosition);
             Utils.DrawScreenRect(rect, new Color(0.8f, 0.8f, 0.95f, 0.25f));
             Utils.DrawScreenRectBorder(rect, 2, new Color(0.8f, 0.8f, 0.95f));
-            
         }
-        //if (set.Count > 0 && !isSelecting)
-        //{
-        //    var rect2 = Utils.GetScreenRect(Camera.main.ViewportToScreenPoint(new Vector3(0.1f, 0.06f, 0)), Camera.main.ViewportToScreenPoint(new Vector3(0.9f, 0.2f, 0)));
-        //    Utils.DrawScreenRect(rect2, new Color(0.8f, 0.2f, 0.15f, 0.75f));
-        //    Utils.DrawScreenRectBorder(rect2, 3, new Color(0.3f, 0.1f, 0.15f));
-        //}
     }
 
     internal bool SetSelected(int id, GameObject gameObject)

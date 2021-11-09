@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
@@ -22,10 +21,8 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        myId = "0";// System.Guid.NewGuid();
+        myId = "0";
         InitPlayers();
-        //Time.timeScale = 500;
-        //void FixedUpdate
     }
 
     private void InitPlayers()
@@ -33,15 +30,6 @@ public class PlayerManager : MonoBehaviour
         players = new Players();
         var ps = FindObjectsOfType<Player>();
         ps.ToList().ForEach(p => players.Add(p));
-        //players.Add(new Player { Id = myId, Name = "me" });
-        //players.Add(new Player
-        //{
-        //    Id =
-        //    "1"//System.Guid.NewGuid()
-        //    ,
-        //    Name = "Enemy1"
-        //});
-
     }
 
     public List<string> GetEnemyIds(string playerId)

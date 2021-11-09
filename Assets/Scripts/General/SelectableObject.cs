@@ -1,7 +1,6 @@
 ﻿using Assets.Scripts.Enums;
 using System;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 public class SelectableObject : MonoBehaviour
 {
@@ -9,7 +8,6 @@ public class SelectableObject : MonoBehaviour
     [SerializeField] protected GameObject selectionPrefab;
 
     protected GameObject selection;
-    //protected PlayerManager playerManager;
     protected bool IsSelected;
 
     protected SingleSelectStateEnum SingleSelectState;
@@ -132,7 +130,7 @@ public class SelectableObject : MonoBehaviour
 
     protected virtual void RemoveIcon()
     {
-        //throw new NotImplementedException();
+
     }
 
     protected void SetIconCore()

@@ -1,7 +1,4 @@
-﻿using Assets.Scripts.Enums;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SelectableBug : SelectableObject
 {
@@ -18,11 +15,6 @@ public class SelectableBug : SelectableObject
     {
         return "Bug";
     }
-
-    //protected override void RemoveIcon()
-    //{
-    //    FindObjectOfType<Control>().RemoveBugIcon(GetId());
-    //}
 
     public void SetPosition(Vector3 position)
     {

@@ -1,7 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+//TODO: must use by castles
 public class AnimationTimescale : MonoBehaviour
 {
     Animator m_Animator;

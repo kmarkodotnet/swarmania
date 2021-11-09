@@ -27,59 +27,6 @@ public class Control : MonoBehaviour
         }
     }
 
-
-    //public bool IsSelectionActive()
-    //{
-    //    return selectedBugs != null && selectedBugs.Count > 0;
-    //}
-
-    //private void OnGUI()
-    //{
-    //    //if (selectionMemory)
-    //    //{
-    //    //    FindObjectOfType<SelectionCoreComponent>().SetMemoryBack(selectedBugsMemory, selectedCastleMemory);
-    //    //}
-    //    if(selectedBugs != null && selectedBugs.Count > 0)
-    //    {
-    //        GUIStyle container = new GUIStyle();
-    //        container.normal.background = menuTexture;
-
-    //        var width = menuTexture.width * (0.8f);
-    //        var height = menuTexture.height * (0.6f);
-
-    //        GUI.Box(new Rect(Screen.width / 2 - (width / 2), Screen.height - (height + 30), width, height), "", container);
-
-    //        int baseXOffset = 100;
-    //        int baseYOffset = 100;
-    //        int offset = 48;
-    //        int j = 0;
-    //        foreach (var item in selectedBugs)
-    //        {
-    //            var bugGO = item.Value;
-    //            GUIStyle icon = new GUIStyle();
-    //            icon.normal.background = bugGO.GetComponent<SelectableBug>().GetMenuIcon();
-    //            icon.hover.background = bugGO.GetComponent<SelectableBug>().GetMenuIconRo();
-
-    //            if (GUI.Button(new Rect(Screen.width / 2 - (width / 2) + j * offset + baseXOffset, Screen.height - (height + 30) + + baseYOffset, offset - 1, offset - 1), "", icon))
-    //            {
-    //                Debug.LogError("sdfsfsdf");
-    //            }
-
-    //            j++;
-    //        }
-    //    }
-    //}
-
-    //Dictionary<int, GameObject> selectedBugsMemory;
-    //GameObject selectedCastleMemory;
-    //bool selectionMemory = false;
-    //internal void SetSelectionMemory(Dictionary<int, GameObject> selectedBugs, GameObject selectedCastle)
-    //{
-    //    selectedBugsMemory = selectedBugs;
-    //    selectedCastleMemory = selectedCastle;
-    //    selectionMemory = true;
-    //}
-
     private void Start()
     {
         basePoint = new Dictionary<string, Vector3>();
@@ -117,11 +64,6 @@ public class Control : MonoBehaviour
             RefreshBugInQueueCounters(new int[3] { csh.GetLevel1BugNumber(), csh.GetLevel2BugNumber(), csh.GetLevel3BugNumber() });
             GetBugCreationPercentage();
         }
-        //foreach (var sr in srs)
-        //{
-        //    if(Camera.main.orthographicSize> 0)
-        //        sr.transform.localScale = new Vector3(20 * (1 / Camera.main.orthographicSize), 20 * (1 / Camera.main.orthographicSize), sr.transform.localScale.z);
-        //}
     }
 
     private void FixedUpdate()
@@ -203,8 +145,8 @@ public class Control : MonoBehaviour
 
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
 
-            bugSpritePlaceholder.GetComponent<BaseCommand>().SetSprite(sprite);
-            bugSpritePlaceholder.GetComponent<BaseCommand>().SetSpriteHover(spriteHover);
+            bugSpritePlaceholder.GetComponent<Command>().SetSprite(sprite);
+            bugSpritePlaceholder.GetComponent<Command>().SetSpriteHover(spriteHover);
 
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = sprite;
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
@@ -281,21 +223,15 @@ public class Control : MonoBehaviour
             var placeholder = cs.GetChildrenByName(iconsPlaceholder, "bugTypePlaceholder" + j);
             placeholder.gameObject.SetActive(true);
 
-            //var bugIcon = cs.GetChildrenByName(placeholder, "bugIcon");
             placeholder.localScale = new Vector3(1f, 1f, 1);
 
             placeholder.gameObject.SetActive(true);
 
             var sprite = selectedBug.Value.GetComponent<SelectableBug>().GetMenuIcon();
             var spriteHover = selectedBug.Value.GetComponent<SelectableBug>().GetMenuIconRo();
-            //var bug = cs.GetChildrenByName(selectedBug.Value.transform, "Bug");
-            //var sprite = bug.GetComponent<SpriteRenderer>().sprite;
 
-            //var bugHover = cs.GetChildrenByName(selectedBug.Value.transform, "BugHover");
-            //var spriteHover = bug.GetComponent<SpriteRenderer>().sprite;
-
-            placeholder.GetComponent<BaseCommand>().SetSprite(sprite);
-            placeholder.GetComponent<BaseCommand>().SetSpriteHover(spriteHover);
+            placeholder.GetComponent<Command>().SetSprite(sprite);
+            placeholder.GetComponent<Command>().SetSpriteHover(spriteHover);
 
             placeholder.GetComponent<SpriteRenderer>().sprite = sprite;            
             placeholder.GetComponent<SpriteRenderer>().size = new Vector2(0.2f, 0.2f);
@@ -314,23 +250,6 @@ public class Control : MonoBehaviour
         SetActionAttackIcon(true);
         SetActionHarvestIcon(true);
     }
-
-    private int GetNextEmptyPlaceholderIndex(Transform iconsPlaceholder)
-    {
-        var cs = new CommonService();
-        int? placeholderIndex = null;
-        for (int i = 0; i < 20; i++)
-        {
-            var placeholder = cs.GetChildrenByName(iconsPlaceholder, "bugTypePlaceholder" + i);
-            var id = placeholder.gameObject.GetComponent<BugPlaceholder>().GetId();
-            if (!id.HasValue && !placeholderIndex.HasValue)
-            {
-                placeholderIndex = i;
-            }
-        }
-        return placeholderIndex.Value;
-    }
-
 
     public void RemoveBugIcons()
     {
@@ -413,7 +332,6 @@ public class Control : MonoBehaviour
         for (int i = 0; i < 3; i++)
         {
             var bugSpritePlaceholder = cs.GetChildrenByName(bugTypeChooser, "bugTypePlaceholder" + i);
-            //var bugIcon = cs.GetChildrenByName(bugSpritePlaceholder.transform, "bugIcon");
             bugSpritePlaceholder.gameObject.SetActive(true);
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().sprite = null;
             bugSpritePlaceholder.GetComponent<SpriteRenderer>().size = new Vector2(0.5f, 0.5f);
@@ -422,7 +340,6 @@ public class Control : MonoBehaviour
             var text = cs.GetChildrenByName(canvas, "Text");
             text.gameObject.GetComponent<Text>().text = "1";
             Debug.LogWarning($"canvas {canvas==null} - text {text == null} - text.gameObject.GetComponent<Text>() {text.gameObject.GetComponent<Text>() == null}");
-            //counter.transform.localPosition = bugSpritePlaceholder.transform.localPosition;
         }
     }
 
@@ -449,7 +366,6 @@ public class Control : MonoBehaviour
         RemoveControl();
         SelectedCastle = null;
     }
-
 
     private void OnMouseOver()
     {

@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Attack : MonoBehaviour
@@ -9,7 +7,6 @@ public class Attack : MonoBehaviour
     [SerializeField] float attackRadius = 0.1f;
     [SerializeField] float periodicity = 1f;
     [SerializeField] float lookDistance = 5f;
-    //[SerializeField] Attacker attackerPrefab;
 
     bool spawn = true;
 
@@ -51,8 +48,6 @@ public class Attack : MonoBehaviour
             {
                 targetToAttack = GetComponent<BugActionSet>().FindNearestEnemy();
                 GetComponent<BugActionSet>().MoveToAttack(targetToAttack);
-                //targetToAttack = null;
-                //GetComponent<BugActionSet>().Idle();
             }
             else
             {

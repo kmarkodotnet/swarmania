@@ -1,12 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-
+﻿using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
-
 	public LayerMask unwalkableMask;
 	public Vector2 gridWorldSize;
 	public float nodeRadius;
@@ -64,18 +59,5 @@ public class Grid : MonoBehaviour
 				Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - .1f));
 			}
 		}
-	}
-}
-
-public class Node
-{
-
-	public bool walkable;
-	public Vector3 worldPosition;
-
-	public Node(bool _walkable, Vector3 _worldPos)
-	{
-		walkable = _walkable;
-		worldPosition = _worldPos;
 	}
 }

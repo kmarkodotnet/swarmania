@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BugActionSet : MonoBehaviour
 {
@@ -106,7 +105,6 @@ public class BugActionSet : MonoBehaviour
 
     public void MoveToHarvest(GameObject targetToHarcest)
     {
-        //Debug.Log($"{gameObject.GetComponent<SelectableObject>().GetOwnerId()}:{gameObject.GetComponent<Bug>().GetId()} - move attack - {targetToAttack.GetComponent<Bug>().GetId()}");
         GetComponent<BugStateHandler>().SetTargetToHarvest(targetToHarcest);
         if (targetToHarcest && new CommonService().IsAnyResource(targetToHarcest))
         {

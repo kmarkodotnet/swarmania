@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using UnityEngine;
 public class CastleStateHandler : MonoBehaviour
 {
@@ -34,7 +32,6 @@ public class CastleStateHandler : MonoBehaviour
         start = System.DateTime.UtcNow;
         InitializeResourceAmmount();
         AddNewBugToQueue(bugPrefabKeys[0]);
-        //bugCreationTimeLeft = GetCreationTimeOfBug(bugCreationQueue[0].Value);
         castleJob = CastleJobEnum.CreatingUnit;
     }
 
@@ -212,7 +209,6 @@ public class CastleStateHandler : MonoBehaviour
     public bool BugCreationInProgress { get; set; }
     private void SetNewCreationUnit()
     {
-        //Debug.Log($"bugCreationQueue[0] != nul: {bugCreationQueue[0] != null} - HasEnoughResource(bugCreationQueue[0].Value): {HasEnoughResource(bugCreationQueue[0].Value)}");
         if (bugCreationQueue[0] != null && HasEnoughResource(bugCreationQueue[0].Value))
         {
             Debug.Log("Create");

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
@@ -56,8 +53,6 @@ public class Health : MonoBehaviour
             
             gameObject.GetComponent<SelectableObject>().DestroySelection();
         }
-        
-        //Destroy(gameObject);
     }
 
     internal void AddHealth(int healthIncreasingValue)

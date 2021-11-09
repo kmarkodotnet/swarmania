@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class BugMovement : MonoBehaviour
@@ -73,7 +72,6 @@ public class BugMovement : MonoBehaviour
         var currentSpeed = (Constants.TimeScale * MovementSpeed * FindObjectOfType<Config>().GetMovementScale()) * Time.deltaTime;
 
         unit.rotation = Quaternion.Lerp(unit.rotation, Quaternion.AngleAxis(angle, Vector3.forward), currentSpeed);
-            //AngleAxis(angle, Vector3.forward);
     }
 
     public void SetTargetPosition(Vector3 targetVector)
